@@ -1,0 +1,100 @@
+═══════════════════════════════════════════════════════════════
+✅ NETTOYAGE DU PROJET YAFI - COMPLÉTÉ
+═══════════════════════════════════════════════════════════════
+
+📅 Date: 20 Mars 2026
+⏱️ Heure: 20:45 UTC
+
+───────────────────────────────────────────────────────────────
+📊 STATISTIQUES DU NETTOYAGE
+───────────────────────────────────────────────────────────────
+
+Fichiers supprimés: 18
+Espace libéré: ~262 KB
+Fichiers restants: ~40 (Production-ready)
+
+───────────────────────────────────────────────────────────────
+🗑️ FICHIERS SUPPRIMÉS
+───────────────────────────────────────────────────────────────
+
+EXTRACTION PDF (7 fichiers):
+  ✓ check_pdf_structure.py
+  ✓ extract_pdf_utf8.py
+  ✓ extract_pdf_v2.py
+  ✓ extract_pdf.py
+  ✓ extract_real_pdf.py
+  ✓ find_pdfs.py
+  ✓ side_by_side_test.py
+
+RÉSULTATS DE TESTS (9 fichiers):
+  ✓ test_results_1773762389.json
+  ✓ test_results.json
+  ✓ test_out.txt
+  ✓ huge_results_utf8.txt
+  ✓ huge_results.txt
+  ✓ eval_results_adv.txt
+  ✓ eval_results.txt
+  ✓ results_final.txt
+  ✓ results.txt
+
+SUIVI OBSOLÈTE (2 fichiers):
+  ✓ COMPLETION_CHECKLIST.txt
+  ✓ LAUNCHERS_SUMMARY.txt
+
+───────────────────────────────────────────────────────────────
+✅ FICHIERS ESSENTIELS CONSERVÉS
+───────────────────────────────────────────────────────────────
+
+🧠 BASE DE CONNAISSANCES:
+  ✓ knowledge_base_orientation.pl
+  ✓ inference_rules.pl
+  ✓ yafi_orientation_integration.pl
+  ✓ backend/knowledge_base_orientation
+  ✓ backend/yafi_knowledge_context.json
+  ✓ backend/yafi_vector_index.faiss
+  ✓ backend/knowledge_chunks.json
+
+🚀 PRODUCTION:
+  ✓ backend/server.py
+  ✓ backend/enhanced_rag.py
+  ✓ backend/llm_engine.py
+  ✓ backend/embedding_service.py
+  ✓ backend/vector_knowledge.py
+  ✓ index.html
+  ✓ vite.config.ts
+  ✓ package.json
+
+📚 DOCUMENTATION:
+  ✓ README.md
+  ✓ ORIENTATION_PROLOG_GUIDE.md
+  ✓ ORIENTATION_CONVERSION_REPORT.md
+  ✓ FILES_OVERVIEW.md
+  ✓ MESSAGE_FLOW.md
+  ✓ CLEANUP_REPORT.md ← NOUVEAU
+  ✓ KNOWLEDGE_BASE_FILES.md ← NOUVEAU
+
+───────────────────────────────────────────────────────────────
+📁 STRUCTURE POST-NETTOYAGE
+───────────────────────────────────────────────────────────────
+
+YAFI-main/
+├── 📚 Fichiers Essentiels (Prolog + Config)
+├── 🧠 backend/ (Production + Connaissance)
+├── 📁 archived/ ← NOUVEAU (Pour archiver tests)
+└── 📄 Documentation complète
+
+───────────────────────────────────────────────────────────────
+🎯 RÉSULTAT
+───────────────────────────────────────────────────────────────
+
+✅ Projet nettoyé et prêt pour production
+✅ Base de connaissances intacte
+✅ Tous les fichiers essentiels conservés
+✅ Dossier 'archived/' créé pour futurs archivages
+
+───────────────────────────────────────────────────────────────
+
+Pour les fichiers de test à archiver:
+  → Voir: CLEANUP_REPORT.md → Scripts de test & Diagnostic
+
+═══════════════════════════════════════════════════════════════

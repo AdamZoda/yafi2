@@ -1,0 +1,314 @@
+{
+  "eval_huge_1771753528": {
+    "bac": "SVT",
+    "moyenne": 10.0,
+    "ville": "Tanger",
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": "GENERAL_ADVICE",
+    "history": [],
+    "last_seen": "2026-02-22T09:46:37.272045",
+    "created_at": "2026-02-22T09:46:32.535535"
+  },
+  "eval_huge_1771754116": {
+    "bac": "SVT",
+    "moyenne": 10.0,
+    "ville": "Tanger",
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": "GENERAL_ADVICE",
+    "history": [],
+    "last_seen": "2026-02-22T09:57:20.657458",
+    "created_at": "2026-02-22T09:57:06.986131"
+  },
+  "eval_huge_1771754806": {
+    "bac": "SVT",
+    "moyenne": 10.0,
+    "ville": "Tanger",
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": "GENERAL_ADVICE",
+    "history": [],
+    "last_seen": "2026-02-22T10:09:39.098098",
+    "created_at": "2026-02-22T10:09:20.304505"
+  },
+  "eval_huge_1771755108": {
+    "bac": "SVT",
+    "moyenne": 10.0,
+    "ville": "Tanger",
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": "GENERAL_ADVICE",
+    "history": [],
+    "last_seen": "2026-02-22T10:14:18.189879",
+    "created_at": "2026-02-22T10:14:08.567995"
+  },
+  "eval_huge_1771755702": {
+    "bac": "SVT",
+    "moyenne": 10.0,
+    "ville": "Tanger",
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": "GENERAL_ADVICE",
+    "history": [],
+    "last_seen": "2026-02-22T10:24:03.520103",
+    "created_at": "2026-02-22T10:23:53.000294"
+  },
+  "default": {
+    "bac": "SVT",
+    "moyenne": 12.0,
+    "ville": "Rabat",
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "text": "bts ou dut ?",
+        "ts": 1774054313.4629421
+      },
+      {
+        "role": "assistant",
+        "text": "Le BTS et le DUT sont des formations courtes de 2 ans très prisées pour une insertion professionnelle rapide.",
+        "ts": 1774054313.4940503
+      },
+      {
+        "role": "user",
+        "content": "quels sont les débouchés pour un bac svt ?",
+        "ts": 1774064825.045436
+      },
+      {
+        "role": "assistant",
+        "content": "🎓 **BAC SVT** :\nMedecine, Pharmacie, Dentaire, Biologie, Paramedical.\n✅ Voie royale pour la Sante. Profil polyvalent.\n💡 Moyenne >= 14-15 imperative pour Medecine. Sinon, viser le Prive ou les filieres Bio.",
+        "ts": 1774064825.124017
+      },
+      {
+        "role": "user",
+        "content": "quel était le seuil de médecine 2023 ?",
+        "ts": 1774065740.6892083
+      },
+      {
+        "role": "assistant",
+        "content": "Pour la Médecine (FMP), l'admission se fait par concours commun national après présélection sur dossier.",
+        "ts": 1774065740.6937008
+      },
+      {
+        "role": "user",
+        "content": "quels sont les débouchés pour un bac svt ?",
+        "ts": 1774065754.3112109
+      },
+      {
+        "role": "assistant",
+        "content": "🎓 **BAC SVT** :\nMedecine, Pharmacie, Dentaire, Biologie, Paramedical.\n✅ Voie royale pour la Sante. Profil polyvalent.\n💡 Moyenne >= 14-15 imperative pour Medecine. Sinon, viser le Prive ou les filieres Bio.",
+        "ts": 1774065754.327054
+      },
+      {
+        "role": "user",
+        "content": "liste des écoles à marrakech",
+        "ts": 1774067057.8349504
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas trouvé de réponse précise pour ce mot-clé, mais je suis expert en orientation post-bac au Maroc. Peux-tu préciser ta question ?",
+        "ts": 1774067057.8397171
+      }
+    ],
+    "last_seen": "2026-03-21T04:24:17.839756",
+    "created_at": "2026-02-22T10:39:21.967605",
+    "budget": 0,
+    "ecole": "ENSA"
+  },
+  "test_llm_pipeline": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": "GENERAL_ADVICE",
+    "history": [],
+    "last_seen": "2026-03-17T12:36:25.687258",
+    "created_at": "2026-03-17T12:36:25.494193"
+  },
+  "complex_test_1": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "interets": [],
+    "last_topic": "architecture",
+    "last_entity": "architecture",
+    "last_intent": "WHERE_TO_STUDY",
+    "history": [],
+    "last_seen": "2026-03-17T15:02:25.832348",
+    "created_at": "2026-03-17T15:02:21.206853"
+  },
+  "test": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": null,
+    "history": [],
+    "last_seen": "2026-03-17T15:42:06.039781",
+    "created_at": "2026-03-17T15:15:27.148830"
+  },
+  "test_complex": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "interets": [],
+    "last_topic": "architecture",
+    "last_entity": "architecture",
+    "last_intent": "WHERE_TO_STUDY",
+    "history": [],
+    "last_seen": "2026-03-17T15:15:34.321734",
+    "created_at": "2026-03-17T15:15:33.119986"
+  },
+  "test_session_1773761969": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": "ADMISSION_PROCEDURE",
+    "history": [],
+    "last_seen": "2026-03-17T15:40:22.792428",
+    "created_at": "2026-03-17T15:39:33.956766"
+  },
+  "test_1773762336": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": "ADMISSION_PROCEDURE",
+    "history": [],
+    "last_seen": "2026-03-17T15:46:29.795997",
+    "created_at": "2026-03-17T15:45:39.291745"
+  },
+  "test_1": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": "GENERAL_ADVICE",
+    "history": [],
+    "last_seen": "2026-03-17T16:20:51.442436",
+    "created_at": "2026-03-17T15:55:43.693616"
+  },
+  "test_4": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": null,
+    "history": [],
+    "last_seen": "2026-03-17T16:22:28.545445",
+    "created_at": "2026-03-17T15:55:43.809935"
+  },
+  "test_5": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": null,
+    "history": [],
+    "last_seen": "2026-03-17T17:51:28.542215",
+    "created_at": "2026-03-17T15:55:44.094643"
+  },
+  "test_3": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": "ADMISSION_PROCEDURE",
+    "history": [],
+    "last_seen": "2026-03-17T16:21:49.759034",
+    "created_at": "2026-03-17T15:55:43.771958"
+  },
+  "test_7": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": "COMPARE_SCHOOLS",
+    "history": [],
+    "last_seen": "2026-03-17T17:52:40.856590",
+    "created_at": "2026-03-17T16:02:06.228096"
+  },
+  "test_6": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": "SOFT_SKILLS",
+    "history": [],
+    "last_seen": "2026-03-17T17:51:59.445016",
+    "created_at": "2026-03-17T16:02:06.273323"
+  },
+  "test_8": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": "ADMISSION_PROCEDURE",
+    "history": [],
+    "last_seen": "2026-03-17T16:02:15.381786",
+    "created_at": "2026-03-17T16:02:06.423523"
+  },
+  "test_9": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "interets": [],
+    "last_topic": null,
+    "last_entity": null,
+    "last_intent": null,
+    "history": [],
+    "last_seen": "2026-03-17T16:02:50.751477",
+    "created_at": "2026-03-17T16:02:44.906209"
+  },
+  "test_bot_session": {
+    "bac": "PC",
+    "moyenne": 15.5,
+    "ville": "Rabat",
+    "budget": null,
+    "ecole": null,
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "text": "Hello, I have a Bac PC",
+        "ts": 1774047732.1841526
+      }
+    ],
+    "last_seen": "2026-03-20T23:02:12.184173",
+    "created_at": "2026-03-20T23:02:12.180923"
+  }
+}

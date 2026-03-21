@@ -1,0 +1,2086 @@
+{
+  "total_chunks": 231,
+  "source_file": "C:\\Users\\user\\Documents\\chat\\YAFI-main\\backend\\yafi_knowledge_context.json",
+  "chunk_size": 400,
+  "chunks": [
+    {
+      "text": "Question: J'ai une moyenne de 12, que faire ?\n\nRéponse: Avec une moyenne de 12/20, vous avez plusieurs options intéressantes au Maroc :\n\n### Établissements Publics Accessibles\n- **Facultés des Sciences et Techniques (FST)** : Acceptent généralement à partir de 11-12 de moyenne\n- **Facultés des Sciences (FS)** : Pas de seuil strict, admission sur dossier\n- **Facultés des Lettres et Sciences Humaines** : Accessibles avec votre moyenne\n- **ENCG** : Certai",
+      "metadata": {
+        "question": "J'ai une moyenne de 12, que faire ?",
+        "category": "Admissions",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: J'ai une moyenne de 12, que faire ?\n\n(Suite) nes ENCG acceptent à partir de 12 (Agadir, Settat, El Jadida)\n- **OFPPT** : Excellente option avec des formations professionnalisantes\n\n### Filières Recommandées\n- **Licences professionnelles** : Plus pratiques et orientées emploi\n- **DUT/BTS** : Formations courtes (2 ans) très appréciées par les employeurs\n- **Écoles supérieures de technologie (EST)** : Bon compromis entre théorie et pratique\n\n##",
+      "metadata": {
+        "question": "J'ai une moyenne de 12, que faire ?",
+        "category": "Admissions",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: J'ai une moyenne de 12, que faire ?\n\n(Suite) # Conseils Stratégiques\n1. **Valorisez votre dossier** : Participez à des activités parascolaires\n2. **Préparez bien le concours** : Pour les écoles à concours (ENSA, ENCG)\n3. **Considérez le privé** : Certaines écoles privées offrent de bons programmes\n4. **Pensez aux formations techniques** : Souvent sous-estimées mais très demandées\n\n### Perspectives d'Évolution\nAvec 12/20, vous pouvez viser un",
+      "metadata": {
+        "question": "J'ai une moyenne de 12, que faire ?",
+        "category": "Admissions",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: J'ai une moyenne de 12, que faire ?\n\n(Suite) e licence puis un master si vous améliorez vos résultats. Beaucoup d'étudiants avec cette moyenne réussissent brillamment en se concentrant sur leur passion.\n\n---",
+      "metadata": {
+        "question": "J'ai une moyenne de 12, que faire ?",
+        "category": "Admissions",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quels sont les débouchés pour un Bac SVT ?\n\nRéponse: Le Bac Sciences de la Vie et de la Terre (SVT) ouvre de nombreuses portes dans les domaines scientifiques et médicaux.\n\n### Filières Médicales et Paramédicales\n- **Médecine** : Concours très sélectif (seuil ~16-17/20)\n- **Médecine dentaire** : Seuil légèrement inférieur (~15-16/20)\n- **Pharmacie** : Accessible avec ~14-15/20\n- **Infirmier(ère)** : IFCS, formation de 3 ans\n- **Kinésithérapie** : Éc",
+      "metadata": {
+        "question": "Quels sont les débouchés pour un Bac SVT ?",
+        "category": "Orientation",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quels sont les débouchés pour un Bac SVT ?\n\n(Suite) oles privées principalement\n- **Sage-femme** : Formation de 3 ans dans les IFCS\n\n### Sciences de la Vie\n- **Biologie** : Licence puis master (recherche, industrie)\n- **Biotechnologie** : Secteur en pleine expansion\n- **Agronomie** : IAV, ENA, écoles d'agriculture\n- **Environnement** : Gestion des ressources naturelles\n- **Nutrition et diététique** : Métier en forte demande\n\n### Sciences de la Terr",
+      "metadata": {
+        "question": "Quels sont les débouchés pour un Bac SVT ?",
+        "category": "Orientation",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quels sont les débouchés pour un Bac SVT ?\n\n(Suite) e\n- **Géologie** : Mines, pétrole, eau\n- **Géophysique** : Exploration pétrolière\n- **Hydrogéologie** : Gestion de l'eau\n\n### Autres Options\n- **Ingénierie** : ENSA (Génie biologique, agroalimentaire)\n- **Enseignement** : CRMEF après licence\n- **Vétérinaire** : IAV Hassan II\n\n### Débouchés Professionnels\n- Laboratoires d'analyses médicales\n- Industrie pharmaceutique\n- Agroalimentaire\n- Recherche s",
+      "metadata": {
+        "question": "Quels sont les débouchés pour un Bac SVT ?",
+        "category": "Orientation",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quels sont les débouchés pour un Bac SVT ?\n\n(Suite) cientifique\n- Enseignement\n- Environnement et développement durable\n\n---",
+      "metadata": {
+        "question": "Quels sont les débouchés pour un Bac SVT ?",
+        "category": "Orientation",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi l'ENCG ?\n\nRéponse: L'**ENCG (École Nationale de Commerce et de Gestion)** est un réseau d'écoles publiques marocaines formant des cadres en management et gestion.\n\n### Présentation\n- **Statut** : Établissement public d'enseignement supérieur\n- **Tutelle** : Ministère de l'Enseignement Supérieur\n- **Nombre d'écoles** : 10 ENCG au Maroc\n- **Diplôme** : Licence (3 ans) + Master (2 ans)\n\n### Localisation des ENCG\n1. ENC",
+      "metadata": {
+        "question": "C'est quoi l'ENCG ?",
+        "category": "Écoles",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi l'ENCG ?\n\n(Suite) G Casablanca\n2. ENCG Agadir\n3. ENCG Settat\n4. ENCG Tanger\n5. ENCG Kenitra\n6. ENCG El Jadida\n7. ENCG Oujda\n8. ENCG Marrakech\n9. ENCG Fès\n10. ENCG Dakhla\n\n### Conditions d'Admission\n- **Bac acceptés** : Tous les bacs (Éco, Sciences, Lettres)\n- **Seuil** : Variable selon l'ENCG (12 à 14/20 généralement)\n- **Concours** : Étude de dossier + test écrit + entretien oral\n- **Inscription** : Via la platefo",
+      "metadata": {
+        "question": "C'est quoi l'ENCG ?",
+        "category": "Écoles",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi l'ENCG ?\n\n(Suite) rme Tawjihi\n\n### Filières Proposées\n**Licence (Bac+3)**\n- Gestion\n- Commerce\n- Finance\n- Marketing\n\n**Master (Bac+5)**\n- Management\n- Finance et Comptabilité\n- Marketing et Action Commerciale\n- Logistique\n- Commerce International\n- Audit et Contrôle de Gestion\n\n### Avantages\n- ✅ Formation gratuite (école publique)\n- ✅ Diplôme reconnu nationalement et internationalement\n- ✅ Stages obligatoires en e",
+      "metadata": {
+        "question": "C'est quoi l'ENCG ?",
+        "category": "Écoles",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi l'ENCG ?\n\n(Suite) ntreprise\n- ✅ Réseau d'anciens élèves puissant\n- ✅ Taux d'employabilité élevé (>80%)\n\n### Débouchés\n- Cadres en entreprise\n- Consultants\n- Auditeurs\n- Responsables marketing\n- Contrôleurs de gestion\n- Entrepreneurs\n\n---",
+      "metadata": {
+        "question": "C'est quoi l'ENCG ?",
+        "category": "Écoles",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment s'inscrire à la Fac ?\n\nRéponse: L'inscription à la faculté au Maroc suit un processus bien défini.\n\n### Étape 1 : Préinscription en Ligne\n**Plateforme** : www.tawjihi.ma (CursusSup)\n**Période** : Généralement juin-juillet après les résultats du Bac\n**Documents nécessaires** :\n- Numéro de Massar\n- Relevé de notes du Bac\n- Carte d'identité nationale\n\n### Étape 2 : Choix des Filières\n- Sélectionnez jusqu'à 10 choix\n- Classez-les pa",
+      "metadata": {
+        "question": "Comment s'inscrire à la Fac ?",
+        "category": "Admissions",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment s'inscrire à la Fac ?\n\n(Suite) r ordre de préférence\n- Vérifiez les critères d'admission de chaque filière\n\n### Étape 3 : Résultats d'Affectation\n- Consultez les résultats sur Tawjihi\n- Vous serez affecté selon votre classement et les places disponibles\n- Possibilité de liste d'attente\n\n### Étape 4 : Inscription Définitive\n**À la faculté, présentez** :\n- Baccalauréat original + 2 copies certifiées\n- Relevé de notes du Bac (2 co",
+      "metadata": {
+        "question": "Comment s'inscrire à la Fac ?",
+        "category": "Admissions",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment s'inscrire à la Fac ?\n\n(Suite) pies)\n- 4 photos d'identité récentes\n- Copie CIN (2 exemplaires)\n- Certificat de scolarité\n- Enveloppes timbrées\n- Frais d'inscription (~500-1000 DH selon la faculté)\n\n### Étape 5 : Retrait de la Carte d'Étudiant\n- Généralement 2-3 semaines après l'inscription\n- Permet l'accès aux services universitaires\n\n### Calendrier Type\n- **Juin** : Résultats du Bac\n- **Juin-Juillet** : Préinscription en lign",
+      "metadata": {
+        "question": "Comment s'inscrire à la Fac ?",
+        "category": "Admissions",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment s'inscrire à la Fac ?\n\n(Suite) e\n- **Juillet-Août** : Affectation et inscription définitive\n- **Septembre** : Rentrée universitaire\n\n### Conseils Importants\n- ⚠️ Respectez les délais (très stricts)\n- ⚠️ Gardez des copies de tous vos documents\n- ⚠️ Vérifiez régulièrement votre email et Tawjihi\n- ⚠️ Préparez vos documents à l'avance\n\n---",
+      "metadata": {
+        "question": "Comment s'inscrire à la Fac ?",
+        "category": "Admissions",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Y a-t-il une ENSA à Tanger ?\n\nRéponse: **Oui**, il y a une ENSA à Tanger : l'**ENSA Tanger (École Nationale des Sciences Appliquées de Tanger)**.\n\n### Informations Générales\n- **Création** : 2008\n- **Localisation** : Quartier Mghogha, Tanger\n- **Tutelle** : Université Abdelmalek Essaâdi\n- **Type** : École d'ingénieurs publique\n\n### Filières Proposées (Cycle Ingénieur - 5 ans)\n1. **Génie Informatique**\n2. **Génie Industriel**\n3. **Génie",
+      "metadata": {
+        "question": "Y a-t-il une ENSA à Tanger ?",
+        "category": "Écoles",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Y a-t-il une ENSA à Tanger ?\n\n(Suite)  Civil**\n4. **Génie des Systèmes Électriques et Télécommunications**\n5. **Génie Mécatronique**\n\n### Admission\n**Cycle Préparatoire Intégré (2 ans)**\n- Concours national CNC\n- Bac Sciences Maths ou Sciences Expérimentales\n- Seuil : Généralement 13-14/20 minimum\n- Épreuves : Maths, Physique, Français\n\n**Cycle Ingénieur (3 ans)**\n- Après prépa intégrée ENSA\n- Ou après CPGE (Classes Préparatoires)\n- O",
+      "metadata": {
+        "question": "Y a-t-il une ENSA à Tanger ?",
+        "category": "Écoles",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Y a-t-il une ENSA à Tanger ?\n\n(Suite) u après DUT/DEUST (sur dossier)\n\n### Avantages\n- ✅ Formation d'ingénieur reconnue par l'État\n- ✅ Frais de scolarité abordables (~3000 DH/an)\n- ✅ Stages en entreprise obligatoires\n- ✅ Partenariats internationaux\n- ✅ Bon taux d'insertion professionnelle\n\n### Contact\n- **Site web** : www.ensa-tanger.ac.ma\n- **Email** : contact@ensa-tanger.ac.ma\n- **Téléphone** : 0539-39-39-54\n\n### Autres ENSA au Maro",
+      "metadata": {
+        "question": "Y a-t-il une ENSA à Tanger ?",
+        "category": "Écoles",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Y a-t-il une ENSA à Tanger ?\n\n(Suite) c\nIl existe 12 ENSA au total : Agadir, Al Hoceima, Berrechid, El Jadida, Fès, Kénitra, Khouribga, Marrakech, Oujda, Safi, Tanger, Tétouan.\n\n---",
+      "metadata": {
+        "question": "Y a-t-il une ENSA à Tanger ?",
+        "category": "Écoles",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quel était le seuil de médecine 2023 ?\n\nRéponse: Les seuils d'admission en médecine varient selon les facultés et évoluent chaque année.\n\n### Seuils Médecine 2023 (Approximatifs)\n\n**Facultés les Plus Sélectives**\n- **Casablanca** : ~17.5-18/20\n- **Rabat** : ~17-17.5/20\n- **Fès** : ~16.5-17/20\n\n**Facultés Moyennement Sélectives**\n- **Marrakech** : ~16-16.5/20\n- **Oujda** : ~15.5-16/20\n- **Tanger** : ~15.5-16/20\n\n**Facultés Moins Sélectives**\n- **",
+      "metadata": {
+        "question": "Quel était le seuil de médecine 2023 ?",
+        "category": "Admissions",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quel était le seuil de médecine 2023 ?\n\n(Suite) Agadir** : ~15-15.5/20\n- **Béni Mellal** : ~14.5-15/20\n- **Laâyoune** : ~14-14.5/20\n- **Dakhla** : ~13.5-14/20\n\n### Facteurs Influençant le Seuil\n1. **Nombre de places disponibles**\n2. **Nombre de candidats**\n3. **Niveau général des bacheliers**\n4. **Localisation de la faculté**\n\n### Évolution des Seuils\n- **Tendance** : Légère augmentation chaque année\n- **2020** : Seuils plus bas (COVID-19)\n- **",
+      "metadata": {
+        "question": "Quel était le seuil de médecine 2023 ?",
+        "category": "Admissions",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quel était le seuil de médecine 2023 ?\n\n(Suite) 2021-2023** : Retour à la normale avec hausse progressive\n\n### Conseils pour Maximiser vos Chances\n1. **Visez 16/20 minimum** pour être compétitif\n2. **Multipliez les choix** : Inscrivez-vous dans plusieurs facultés\n3. **Considérez les nouvelles facultés** : Souvent des seuils plus bas\n4. **Préparez un plan B** : Pharmacie, dentaire, ou sciences\n\n### Autres Filières Médicales (Seuils 2023)\n- **Méd",
+      "metadata": {
+        "question": "Quel était le seuil de médecine 2023 ?",
+        "category": "Admissions",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quel était le seuil de médecine 2023 ?\n\n(Suite) ecine Dentaire** : 15-16/20\n- **Pharmacie** : 14-15/20\n- **IFCS (Infirmier)** : 12-13/20\n\n### Important\n⚠️ Ces seuils sont **indicatifs** et peuvent varier. Consultez toujours les annonces officielles du Ministère de l'Enseignement Supérieur.\n\n---",
+      "metadata": {
+        "question": "Quel était le seuil de médecine 2023 ?",
+        "category": "Admissions",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Différence entre FST et Fac ?\n\nRéponse: FST et Faculté classique sont deux types d'établissements universitaires avec des différences importantes.\n\n### FST (Faculté des Sciences et Techniques)\n\n**Caractéristiques**\n- Orientation **professionnalisante**\n- Accès **sélectif** (sur dossier/concours)\n- Effectifs **limités** (30-40 étudiants/classe)\n- Stages **obligatoires** en entreprise\n- Équipements **modernes**\n\n**Filières**\n- Génie Infor",
+      "metadata": {
+        "question": "Différence entre FST et Fac ?",
+        "category": "Écoles",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Différence entre FST et Fac ?\n\n(Suite) matique\n- Génie Électrique\n- Génie Mécanique\n- Génie Civil\n- Biotechnologie\n- Chimie Industrielle\n\n**Avantages**\n- ✅ Formation pratique et appliquée\n- ✅ Meilleur encadrement\n- ✅ Taux d'employabilité élevé\n- ✅ Partenariats avec l'industrie\n- ✅ Équipements de pointe\n\n**Inconvénients**\n- ❌ Accès plus difficile\n- ❌ Programme plus chargé\n- ❌ Moins de flexibilité\n\n### Faculté Classique (FS - Faculté des",
+      "metadata": {
+        "question": "Différence entre FST et Fac ?",
+        "category": "Écoles",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Différence entre FST et Fac ?\n\n(Suite)  Sciences)\n\n**Caractéristiques**\n- Orientation **académique/recherche**\n- Accès **ouvert** (pas de sélection)\n- Effectifs **importants** (100-300 étudiants/amphi)\n- Théorie **dominante**\n- Autonomie **requise**\n\n**Filières**\n- Mathématiques\n- Physique\n- Chimie\n- Biologie\n- Géologie\n- Informatique\n\n**Avantages**\n- ✅ Accès facile\n- ✅ Base théorique solide\n- ✅ Idéal pour la recherche\n- ✅ Plus de libe",
+      "metadata": {
+        "question": "Différence entre FST et Fac ?",
+        "category": "Écoles",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Différence entre FST et Fac ?\n\n(Suite) rté\n- ✅ Possibilité de se réorienter\n\n**Inconvénients**\n- ❌ Amphithéâtres bondés\n- ❌ Moins d'encadrement\n- ❌ Formation moins professionnalisante\n- ❌ Taux d'échec plus élevé\n\n### Tableau Comparatif\n\n| Critère | FST | Faculté Classique |\n|---------|-----|-------------------|\n| Sélection | Oui (12-13/20) | Non |\n| Effectifs | 30-40 | 100-300 |\n| Stages | Obligatoires | Optionnels |\n| Débouchés | Indu",
+      "metadata": {
+        "question": "Différence entre FST et Fac ?",
+        "category": "Écoles",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Différence entre FST et Fac ?\n\n(Suite) strie | Recherche/Enseignement |\n| Encadrement | Bon | Limité |\n| Équipements | Modernes | Variables |\n\n### Quelle Option Choisir ?\n\n**Choisissez FST si :**\n- Vous voulez travailler rapidement\n- Vous aimez la pratique\n- Vous avez un bon dossier\n- Vous visez l'industrie\n\n**Choisissez Faculté si :**\n- Vous visez la recherche/doctorat\n- Vous préférez la théorie\n- Vous voulez plus de liberté\n- Votre m",
+      "metadata": {
+        "question": "Différence entre FST et Fac ?",
+        "category": "Écoles",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Différence entre FST et Fac ?\n\n(Suite) oyenne est moyenne\n\n---",
+      "metadata": {
+        "question": "Différence entre FST et Fac ?",
+        "category": "Écoles",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment avoir une bourse Minhaty ?\n\nRéponse: La bourse **Minhaty** est une aide financière de l'État marocain pour les étudiants de l'enseignement supérieur.\n\n### Types de Bourses\n\n**1. Bourse Complète**\n- Montant : ~2400 DH/mois (10 mois)\n- Total annuel : ~24 000 DH\n- Hébergement en cité universitaire\n\n**2. Demi-Bourse**\n- Montant : ~1200 DH/mois\n- Pas d'hébergement\n\n### Critères d'Éligibilité\n\n**Critères Sociaux (Prioritaires)**\n- Revenu f",
+      "metadata": {
+        "question": "Comment avoir une bourse Minhaty ?",
+        "category": "Bourses",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment avoir une bourse Minhaty ?\n\n(Suite) amilial faible\n- Famille nombreuse\n- Situation sociale difficile\n- Orphelins\n- Enfants de veuves\n\n**Critères Académiques**\n- Bac avec mention (Bien ou Très Bien) : priorité\n- Moyenne générale du Bac\n- Pas de redoublement\n\n**Critères Géographiques**\n- Éloignement du domicile familial\n- Zones rurales ou enclavées\n\n### Procédure de Demande\n\n**Étape 1 : Inscription en Ligne**\n- Site : www.minhaty.ma\n-",
+      "metadata": {
+        "question": "Comment avoir une bourse Minhaty ?",
+        "category": "Bourses",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment avoir une bourse Minhaty ?\n\n(Suite)  Période : Généralement juillet-août\n- Créez un compte avec votre numéro Massar\n\n**Étape 2 : Remplir le Formulaire**\n- Informations personnelles\n- Situation familiale\n- Revenus des parents\n- Coordonnées bancaires (RIB)\n\n**Étape 3 : Documents à Fournir**\n- Copie CIN\n- Relevé de notes du Bac\n- Certificat de scolarité\n- Attestation de revenu des parents\n- Certificat de résidence\n- Composition familia",
+      "metadata": {
+        "question": "Comment avoir une bourse Minhaty ?",
+        "category": "Bourses",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment avoir une bourse Minhaty ?\n\n(Suite) le (attestation)\n- RIB (compte bancaire)\n\n**Étape 4 : Suivi du Dossier**\n- Consultez régulièrement Minhaty\n- Vérifiez votre email\n- Résultats généralement en septembre-octobre\n\n### Montants et Paiement\n\n**Calendrier de Versement**\n- Octobre à Juillet (10 mois)\n- Virement bancaire mensuel\n- Suspension en cas d'échec ou abandon\n\n**Renouvellement**\n- Automatique si réussite\n- Mise à jour annuelle du ",
+      "metadata": {
+        "question": "Comment avoir une bourse Minhaty ?",
+        "category": "Bourses",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment avoir une bourse Minhaty ?\n\n(Suite) dossier\n- Vérification des résultats\n\n### Conseils pour Maximiser vos Chances\n\n1. **Déposez tôt** : Dès l'ouverture de la plateforme\n2. **Dossier complet** : Tous les documents requis\n3. **Informations exactes** : Pas de fausses déclarations\n4. **Suivez votre dossier** : Vérifiez régulièrement\n5. **Recours possible** : En cas de refus injustifié\n\n### Autres Aides Disponibles\n\n- **Bourse d'Excellen",
+      "metadata": {
+        "question": "Comment avoir une bourse Minhaty ?",
+        "category": "Bourses",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment avoir une bourse Minhaty ?\n\n(Suite) ce** : Pour les meilleurs étudiants\n- **Aide sociale ponctuelle** : Services sociaux universitaires\n- **Prêts étudiants** : Banques partenaires\n- **Bourses privées** : Fondations et entreprises\n\n### Contact\n- **Site** : www.minhaty.ma\n- **Email** : contact@minhaty.ma\n- **Hotline** : 0801-00-55-55\n\n---",
+      "metadata": {
+        "question": "Comment avoir une bourse Minhaty ?",
+        "category": "Bourses",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quels sont les frais de l'UIR ?\n\nRéponse: L'**UIR (Université Internationale de Rabat)** est une université privée marocaine avec des frais de scolarité variables selon les filières.\n\n### Frais de Scolarité 2023-2024\n\n**École d'Ingénierie (ESIN)**\n- Cycle Préparatoire : 65 000 - 70 000 DH/an\n- Cycle Ingénieur : 75 000 - 85 000 DH/an\n- Total sur 5 ans : ~380 000 DH\n\n**École de Management (ESIAM)**\n- Licence : 60 000 - 65 000 DH/an\n- Master",
+      "metadata": {
+        "question": "Quels sont les frais de l'UIR ?",
+        "category": "Écoles",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quels sont les frais de l'UIR ?\n\n(Suite)  : 70 000 - 75 000 DH/an\n\n**École d'Architecture (EAR)**\n- Année : 70 000 - 75 000 DH/an\n- Total sur 5 ans : ~360 000 DH\n\n**École de Droit (EDDH)**\n- Licence : 55 000 - 60 000 DH/an\n- Master : 65 000 - 70 000 DH/an\n\n**École de Médecine Dentaire**\n- Année : 90 000 - 100 000 DH/an\n- Total sur 5 ans : ~475 000 DH\n\n**École de Pharmacie**\n- Année : 85 000 - 95 000 DH/an\n- Total sur 6 ans : ~540 000 DH\n",
+      "metadata": {
+        "question": "Quels sont les frais de l'UIR ?",
+        "category": "Écoles",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quels sont les frais de l'UIR ?\n\n(Suite) \n### Frais Additionnels\n\n**Frais d'Inscription (Une fois)**\n- Première année : 5 000 - 8 000 DH\n- Comprend : dossier, carte étudiant, assurance\n\n**Autres Frais Annuels**\n- Matériel pédagogique : 2 000 - 3 000 DH\n- Activités parascolaires : Inclus\n- Bibliothèque : Inclus\n- Accès WiFi : Inclus\n\n### Facilités de Paiement\n\n**Options Disponibles**\n1. **Paiement annuel** : Réduction de 5%\n2. **Paiement ",
+      "metadata": {
+        "question": "Quels sont les frais de l'UIR ?",
+        "category": "Écoles",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quels sont les frais de l'UIR ?\n\n(Suite) semestriel** : 2 versements\n3. **Paiement trimestriel** : 3 versements\n4. **Paiement mensuel** : 10 versements (frais supplémentaires)\n\n**Bourses et Aides**\n- **Bourse d'Excellence** : 25-50% de réduction\n- **Bourse Sociale** : Selon revenus familiaux\n- **Bourse Sportive** : Pour athlètes de haut niveau\n- **Prêt étudiant** : Partenariat avec banques\n\n### Comparaison avec d'Autres Universités Privé",
+      "metadata": {
+        "question": "Quels sont les frais de l'UIR ?",
+        "category": "Écoles",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quels sont les frais de l'UIR ?\n\n(Suite) es\n\n| Université | Ingénierie/an | Management/an |\n|------------|---------------|---------------|\n| UIR | 75 000 DH | 60 000 DH |\n| UM6P | 80 000 DH | 65 000 DH |\n| UIC | 70 000 DH | 55 000 DH |\n| UEMF | 65 000 DH | 50 000 DH |\n\n### Ce Qui Est Inclus\n\n✅ Enseignement de qualité\n✅ Professeurs qualifiés (PhD)\n✅ Équipements modernes\n✅ Bibliothèque riche\n✅ Accès laboratoires\n✅ Activités sportives\n✅ Clu",
+      "metadata": {
+        "question": "Quels sont les frais de l'UIR ?",
+        "category": "Écoles",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quels sont les frais de l'UIR ?\n\n(Suite) bs étudiants\n✅ Réseau d'entreprises\n✅ Stages garantis\n✅ Accompagnement carrière\n\n### Avantages de l'UIR\n\n- Diplômes reconnus internationalement\n- Partenariats avec universités étrangères\n- Campus moderne (Technopolis)\n- Taux d'employabilité élevé (>85%)\n- Possibilité d'échange international\n\n### Est-ce que ça Vaut le Coût ?\n\n**Oui, si :**\n- Vous cherchez une formation de qualité\n- Vous voulez un r",
+      "metadata": {
+        "question": "Quels sont les frais de l'UIR ?",
+        "category": "Écoles",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quels sont les frais de l'UIR ?\n\n(Suite) éseau professionnel\n- Vous visez l'international\n- Votre famille peut assumer les frais\n\n**Non, si :**\n- Budget limité (optez pour le public)\n- Vous pouvez intégrer une grande école publique\n- Vous préférez l'autonomie\n\n### Contact pour Informations\n- **Site** : www.uir.ac.ma\n- **Email** : admission@uir.ac.ma\n- **Téléphone** : 0537-68-88-00\n\n---",
+      "metadata": {
+        "question": "Quels sont les frais de l'UIR ?",
+        "category": "Écoles",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que je peux faire ingénieur avec un Bac Eco ?\n\nRéponse: **Oui, c'est possible**, mais avec certaines limitations et conditions.\n\n### Options Directes (Rares)\n\n**1. ENSA - Génie Industriel**\n- Certaines ENSA acceptent Bac Éco\n- Filière : Génie Industriel et Logistique\n- Condition : Très bon niveau en maths\n- Seuil : Généralement 14-15/20 minimum\n\n**2. Écoles Privées**\n- EMSI : Ingénierie Informatique\n- SUPTECH : Plusieurs filières\n- HEM Engineering : Ma",
+      "metadata": {
+        "question": "Est-ce que je peux faire ingénieur avec un Bac Eco ?",
+        "category": "Orientation",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que je peux faire ingénieur avec un Bac Eco ?\n\n(Suite) nagement + Ingénierie\n- Condition : Bon dossier + test d'admission\n\n### Options Indirectes (Recommandées)\n\n**Parcours 1 : Via ENCG**\n1. Intégrer ENCG (Bac+5)\n2. Master en Management Industriel\n3. Passerelle vers écoles d'ingénieurs (certaines)\n\n**Parcours 2 : Via Licence Professionnelle**\n1. Licence Pro en Gestion Industrielle\n2. Concours d'accès en école d'ingénieurs\n3. Cycle ingénieur (3 ans)\n\n*",
+      "metadata": {
+        "question": "Est-ce que je peux faire ingénieur avec un Bac Eco ?",
+        "category": "Orientation",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que je peux faire ingénieur avec un Bac Eco ?\n\n(Suite) *Parcours 3 : Via DUT/BTS**\n1. DUT Génie Industriel\n2. Concours parallèle école d'ingénieurs\n3. Intégration en 3ème année\n\n**Parcours 4 : Réorientation**\n1. Année de mise à niveau scientifique\n2. Concours ENSA ou autres écoles\n3. Cycle ingénieur complet\n\n### Filières d'Ingénierie Accessibles\n\n**Avec Bac Éco (Direct ou Passerelle)**\n- ✅ Génie Industriel\n- ✅ Génie Logistique\n- ✅ Génie Informatique d",
+      "metadata": {
+        "question": "Est-ce que je peux faire ingénieur avec un Bac Eco ?",
+        "category": "Orientation",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que je peux faire ingénieur avec un Bac Eco ?\n\n(Suite) e Gestion\n- ✅ Management de Projets\n- ✅ Ingénierie Financière\n\n**Difficiles/Impossibles**\n- ❌ Génie Civil (base scientifique requise)\n- ❌ Génie Électrique\n- ❌ Génie Mécanique\n- ❌ Génie Chimique\n\n### Compétences à Développer\n\n**Mathématiques**\n- Renforcer vos bases\n- Cours particuliers si nécessaire\n- Niveau Bac Sciences Maths souhaité\n\n**Informatique**\n- Apprendre la programmation\n- Maîtriser Exce",
+      "metadata": {
+        "question": "Est-ce que je peux faire ingénieur avec un Bac Eco ?",
+        "category": "Orientation",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que je peux faire ingénieur avec un Bac Eco ?\n\n(Suite) l avancé\n- Bases de données\n\n**Gestion de Projet**\n- Votre atout principal\n- Compétences en management\n- Vision business\n\n### Écoles Privées Acceptant Bac Éco\n\n| École | Filière | Condition |\n|-------|---------|-----------|\n| EMSI | Info Gestion | Test + Entretien |\n| SUPTECH | Plusieurs | Dossier |\n| HEM Engineering | Management Tech | Concours |\n| EIDIA | Digital | Test |\n\n### Conseils Pratiques",
+      "metadata": {
+        "question": "Est-ce que je peux faire ingénieur avec un Bac Eco ?",
+        "category": "Orientation",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que je peux faire ingénieur avec un Bac Eco ?\n\n(Suite) \n\n1. **Renforcez vos maths** : Essentiel pour réussir\n2. **Visez le génie industriel** : Plus accessible\n3. **Considérez ENCG** : Excellent compromis\n4. **Préparez-vous bien** : Tests d'admission exigeants\n5. **Soyez réaliste** : Certaines filières sont fermées\n\n### Alternative : Ingénieur-Manager\n\nProfil très recherché combinant :\n- Compétences techniques (ingénierie)\n- Compétences managériales (",
+      "metadata": {
+        "question": "Est-ce que je peux faire ingénieur avec un Bac Eco ?",
+        "category": "Orientation",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que je peux faire ingénieur avec un Bac Eco ?\n\n(Suite) économie)\n- Vision business + expertise technique\n\n**Formations Recommandées**\n- ENCG + Master Spécialisé\n- École de Commerce + Spécialisation Tech\n- Double diplôme Ingénieur-Manager\n\n### Conclusion\n\nOui, c'est possible mais :\n- ⚠️ Nécessite un excellent niveau en maths\n- ⚠️ Options limitées par rapport à Bac Sciences\n- ⚠️ Parcours souvent indirect\n- ✅ Profil ingénieur-manager très valorisé\n\n---\n\n",
+      "metadata": {
+        "question": "Est-ce que je peux faire ingénieur avec un Bac Eco ?",
+        "category": "Orientation",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que je peux faire ingénieur avec un Bac Eco ?\n\n(Suite) *[Les réponses continuent pour les 20 autres questions avec le même niveau de détail...]*",
+      "metadata": {
+        "question": "Est-ce que je peux faire ingénieur avec un Bac Eco ?",
+        "category": "Orientation",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Où étudier l'architecture au Maroc ?\n\nRéponse: L'architecture est une filière prestigieuse au Maroc avec plusieurs options d'études.\n\n### Écoles Nationales d'Architecture (ENA) - Publiques\n\n**1. ENA Rabat**\n- La plus ancienne (1980)\n- Localisation : Madinat Al Irfane, Rabat\n- Places : ~120 étudiants/an\n- Seuil : 14-15/20 minimum\n- Spécialités : Architecture, Urbanisme, Patrimoine\n\n**2. ENA Tétouan**\n- Création : 2015\n- Université Abdelmalek Es",
+      "metadata": {
+        "question": "Où étudier l'architecture au Maroc ?",
+        "category": "Orientation",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Où étudier l'architecture au Maroc ?\n\n(Suite) saâdi\n- Places : ~80 étudiants/an\n- Seuil : 13-14/20\n\n**3. ENA Marrakech**\n- Création : 2015\n- Université Cadi Ayyad\n- Places : ~80 étudiants/an\n- Seuil : 13-14/20\n- Focus : Architecture saharienne et traditionnelle\n\n**4. ENA Fès**\n- Création : 2015\n- Université Sidi Mohamed Ben Abdellah\n- Places : ~80 étudiants/an\n- Seuil : 13-14/20\n\n**5. ENA Oujda**\n- Création : 2017\n- Université Mohammed Premie",
+      "metadata": {
+        "question": "Où étudier l'architecture au Maroc ?",
+        "category": "Orientation",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Où étudier l'architecture au Maroc ?\n\n(Suite) r\n- Places : ~60 étudiants/an\n- Seuil : 12.5-13.5/20\n\n**6. ENA Agadir**\n- Création : 2017\n- Université Ibn Zohr\n- Places : ~60 étudiants/an\n- Seuil : 12.5-13.5/20\n\n### Écoles Privées\n\n**1. UIR - École d'Architecture de Rabat (EAR)**\n- Frais : 70 000-75 000 DH/an\n- Diplôme reconnu\n- Partenariats internationaux\n- Campus moderne\n\n**2. UIC - École d'Architecture de Casablanca**\n- Frais : 65 000-70 000",
+      "metadata": {
+        "question": "Où étudier l'architecture au Maroc ?",
+        "category": "Orientation",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Où étudier l'architecture au Maroc ?\n\n(Suite)  DH/an\n- Formation internationale\n- Échanges avec l'Europe\n\n**3. UEMF - École d'Architecture de Fès**\n- Frais : 60 000-65 000 DH/an\n- Focus patrimoine marocain\n\n### Conditions d'Admission\n\n**Bacs Acceptés**\n- ✅ Sciences Mathématiques (priorité)\n- ✅ Sciences Expérimentales\n- ✅ Sciences et Technologies\n- ⚠️ Bac Lettres (rare, selon école)\n\n**Procédure de Sélection**\n1. **Présélection sur dossier**\n ",
+      "metadata": {
+        "question": "Où étudier l'architecture au Maroc ?",
+        "category": "Orientation",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Où étudier l'architecture au Maroc ?\n\n(Suite)   - Relevé de notes du Bac\n   - Notes de 1ère et 2ème année Bac\n   - Lettre de motivation\n\n2. **Concours d'accès**\n   - Épreuve de dessin (4h)\n   - Épreuve de culture générale\n   - Test de créativité\n   - Entretien oral\n\n3. **Critères d'évaluation**\n   - Sens artistique (40%)\n   - Niveau académique (30%)\n   - Motivation (20%)\n   - Culture générale (10%)\n\n### Programme d'Études (6 ans)\n\n**Années 1-",
+      "metadata": {
+        "question": "Où étudier l'architecture au Maroc ?",
+        "category": "Orientation",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Où étudier l'architecture au Maroc ?\n\n(Suite) 2 : Tronc Commun**\n- Dessin technique\n- Histoire de l'architecture\n- Mathématiques appliquées\n- Physique du bâtiment\n- Informatique (CAO/DAO)\n\n**Années 3-4 : Approfondissement**\n- Projets architecturaux\n- Urbanisme\n- Structure et construction\n- Développement durable\n- Patrimoine\n\n**Années 5-6 : Spécialisation**\n- Projet de fin d'études\n- Stage en agence (6 mois)\n- Mémoire de recherche\n\n### Logicie",
+      "metadata": {
+        "question": "Où étudier l'architecture au Maroc ?",
+        "category": "Orientation",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Où étudier l'architecture au Maroc ?\n\n(Suite) ls à Maîtriser\n- AutoCAD\n- SketchUp\n- Revit\n- 3ds Max\n- Photoshop\n- Lumion\n\n### Débouchés Professionnels\n\n**Secteur Public**\n- Architecte urbaniste\n- Conservateur du patrimoine\n- Inspecteur des monuments historiques\n\n**Secteur Privé**\n- Architecte d'intérieur\n- Architecte paysagiste\n- Chef de projet immobilier\n- Designer urbain\n- BIM Manager\n\n**Libéral**\n- Cabinet d'architecture\n- Consultant indép",
+      "metadata": {
+        "question": "Où étudier l'architecture au Maroc ?",
+        "category": "Orientation",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Où étudier l'architecture au Maroc ?\n\n(Suite) endant\n- Expert judiciaire\n\n**Salaires**\n- Débutant : 6 000-8 000 DH/mois\n- Confirmé (5 ans) : 12 000-20 000 DH/mois\n- Senior : 25 000-50 000 DH/mois\n- Associé : 50 000+ DH/mois\n\n### Conseils pour Réussir\n\n1. **Développez votre créativité** : Dessinez régulièrement\n2. **Visitez des bâtiments** : Développez votre culture architecturale\n3. **Préparez le concours** : Cours de dessin recommandés\n4. **",
+      "metadata": {
+        "question": "Où étudier l'architecture au Maroc ?",
+        "category": "Orientation",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Où étudier l'architecture au Maroc ?\n\n(Suite) Soyez patient** : Formation longue mais passionnante\n5. **Réseau** : Participez aux événements du secteur\n\n---",
+      "metadata": {
+        "question": "Où étudier l'architecture au Maroc ?",
+        "category": "Orientation",
+        "chunk_type": "detail_9",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Conseils pour gérer le stress du Bac\n\nRéponse: Le stress du Bac est normal, mais il peut être géré efficacement avec les bonnes stratégies.\n\n### Comprendre le Stress du Bac\n\n**Causes Principales**\n- Pression familiale et sociale\n- Enjeu important pour l'avenir\n- Volume de révisions important\n- Peur de l'échec\n- Comparaison avec les autres\n\n**Symptômes Courants**\n- Troubles du sommeil\n- Perte d'appétit\n- Difficultés de concentration\n- Maux de t",
+      "metadata": {
+        "question": "Conseils pour gérer le stress du Bac",
+        "category": "Conseils",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Conseils pour gérer le stress du Bac\n\n(Suite) ête/ventre\n- Irritabilité\n\n### Stratégies de Gestion du Stress\n\n**1. Organisation et Planification**\n\n**Planning de Révisions**\n- Commencez 3 mois avant\n- 2-3 matières par jour maximum\n- Alternez matières difficiles/faciles\n- Prévoyez des pauses (15 min/2h)\n- Réservez 1 jour/semaine de repos\n\n**Exemple de Planning Quotidien**\n```\n08h00-10h00 : Maths (matière difficile)\n10h00-10h30 : Pause + petit-",
+      "metadata": {
+        "question": "Conseils pour gérer le stress du Bac",
+        "category": "Conseils",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Conseils pour gérer le stress du Bac\n\n(Suite) déjeuner\n10h30-12h30 : Physique-Chimie\n12h30-14h00 : Déjeuner + repos\n14h00-16h00 : Français (matière moyenne)\n16h00-16h30 : Pause + sport\n16h30-18h00 : SVT/Histoire-Géo\n18h00-19h00 : Révision rapide\n19h00-22h00 : Temps libre + dîner\n22h00 : Coucher\n```\n\n**2. Techniques de Révision Efficaces**\n\n**Méthode Pomodoro**\n- 25 min de travail concentré\n- 5 min de pause\n- Après 4 cycles : 15-20 min de paus",
+      "metadata": {
+        "question": "Conseils pour gérer le stress du Bac",
+        "category": "Conseils",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Conseils pour gérer le stress du Bac\n\n(Suite) e\n\n**Techniques de Mémorisation**\n- Fiches de révision colorées\n- Mind mapping (cartes mentales)\n- Répétition espacée\n- Enseignez à quelqu'un\n- Enregistrez-vous et réécoutez\n\n**Révision Active vs Passive**\n- ✅ Faire des exercices\n- ✅ Expliquer à voix haute\n- ✅ Créer des quiz\n- ❌ Relire passivement\n- ❌ Surligner sans comprendre\n\n**3. Hygiène de Vie**\n\n**Sommeil (Crucial !)**\n- 7-8h par nuit minimum",
+      "metadata": {
+        "question": "Conseils pour gérer le stress du Bac",
+        "category": "Conseils",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Conseils pour gérer le stress du Bac\n\n(Suite) \n- Couchez-vous à heure fixe\n- Évitez écrans 1h avant\n- Chambre fraîche et sombre\n- Pas de café après 16h\n\n**Alimentation**\n- Petit-déjeuner copieux\n- 3 repas équilibrés/jour\n- Fruits et légumes\n- Oméga-3 (poisson, noix)\n- Hydratation (1.5-2L eau/jour)\n\n**Aliments Anti-Stress**\n- Bananes (magnésium)\n- Chocolat noir (modération)\n- Amandes et noix\n- Poisson gras\n- Thé vert\n\n**Activité Physique**\n- 3",
+      "metadata": {
+        "question": "Conseils pour gérer le stress du Bac",
+        "category": "Conseils",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Conseils pour gérer le stress du Bac\n\n(Suite) 0 min/jour minimum\n- Marche, jogging, vélo\n- Sport collectif (détente)\n- Yoga, stretching\n- Évitez sédentarité\n\n**4. Techniques de Relaxation**\n\n**Respiration Profonde (5 min)**\n1. Inspirez par le nez (4 secondes)\n2. Retenez (4 secondes)\n3. Expirez par la bouche (6 secondes)\n4. Répétez 10 fois\n\n**Méditation Guidée**\n- Applications : Petit Bambou, Calm\n- 10-15 min/jour\n- Le matin ou avant de dormir",
+      "metadata": {
+        "question": "Conseils pour gérer le stress du Bac",
+        "category": "Conseils",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Conseils pour gérer le stress du Bac\n\n(Suite) \n\n**Visualisation Positive**\n- Imaginez votre réussite\n- Visualisez l'examen se passant bien\n- Pensées positives\n\n**5. Gestion de l'Anxiété**\n\n**Pendant les Révisions**\n- Acceptez de ne pas tout savoir\n- Concentrez-vous sur l'essentiel\n- Évitez les comparaisons\n- Célébrez les petites victoires\n\n**La Veille de l'Examen**\n- ❌ Pas de révisions intensives\n- ✅ Révision légère des fiches\n- ✅ Préparez vo",
+      "metadata": {
+        "question": "Conseils pour gérer le stress du Bac",
+        "category": "Conseils",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Conseils pour gérer le stress du Bac\n\n(Suite) s affaires\n- ✅ Couchez-vous tôt\n- ✅ Activité relaxante\n\n**Le Jour J**\n- Arrivez 30 min en avance\n- Évitez discussions stressantes\n- Respirez profondément\n- Lisez bien les consignes\n- Commencez par les questions faciles\n\n**6. Soutien Social**\n\n**Famille**\n- Communiquez vos besoins\n- Demandez de l'espace si nécessaire\n- Acceptez le soutien\n\n**Amis**\n- Groupes de révision (limités)\n- Partagez vos inq",
+      "metadata": {
+        "question": "Conseils pour gérer le stress du Bac",
+        "category": "Conseils",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Conseils pour gérer le stress du Bac\n\n(Suite) uiétudes\n- Évitez compétition malsaine\n\n**Professionnels**\n- Psychologue scolaire (gratuit)\n- Médecin si symptômes physiques\n- Ligne d'écoute : Allô Jeunes (080-200-3030)\n\n### Erreurs à Éviter\n\n❌ Réviser toute la nuit\n❌ Abuser du café/boissons énergisantes\n❌ S'isoler complètement\n❌ Négliger les pauses\n❌ Comparer avec les autres\n❌ Paniquer si vous bloquez\n❌ Réviser jusqu'à la dernière minute\n\n### Q",
+      "metadata": {
+        "question": "Conseils pour gérer le stress du Bac",
+        "category": "Conseils",
+        "chunk_type": "detail_9",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Conseils pour gérer le stress du Bac\n\n(Suite) ue Faire en Cas de Panique ?\n\n**Technique d'Urgence (5-4-3-2-1)**\n- 5 choses que vous voyez\n- 4 choses que vous touchez\n- 3 choses que vous entendez\n- 2 choses que vous sentez\n- 1 chose que vous goûtez\n\n**Pendant l'Examen**\n1. Posez votre stylo\n2. Fermez les yeux\n3. Respirez profondément (3 fois)\n4. Buvez de l'eau\n5. Reprenez calmement\n\n### Après le Bac\n\n**En Attendant les Résultats**\n- Déconnecte",
+      "metadata": {
+        "question": "Conseils pour gérer le stress du Bac",
+        "category": "Conseils",
+        "chunk_type": "detail_10",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Conseils pour gérer le stress du Bac\n\n(Suite) z des révisions\n- Profitez de vos loisirs\n- Évitez de ressasser\n- Préparez plan B si nécessaire\n\n**Si Échec**\n- Ce n'est PAS la fin du monde\n- Rattrapage possible\n- Redoublement = nouvelle chance\n- Alternatives existent\n\n### Ressources Utiles\n\n**Applications**\n- Forest (concentration)\n- Calm (méditation)\n- Sleep Cycle (sommeil)\n- MyStudyLife (planning)\n\n**Numéros d'Aide**\n- Allô Jeunes : 080-200-3",
+      "metadata": {
+        "question": "Conseils pour gérer le stress du Bac",
+        "category": "Conseils",
+        "chunk_type": "detail_11",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Conseils pour gérer le stress du Bac\n\n(Suite) 030\n- Écoute Santé : 080-100-1818\n\n### Message Important\n\n> 💚 **Rappelez-vous** : Le Bac est important, mais ce n'est qu'une étape. Votre valeur ne se résume pas à une note. Prenez soin de vous, faites de votre mieux, et tout ira bien !\n\n---",
+      "metadata": {
+        "question": "Conseils pour gérer le stress du Bac",
+        "category": "Conseils",
+        "chunk_type": "detail_12",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les meilleures écoles d'informatique ?\n\nRéponse: Le Maroc dispose d'excellentes écoles d'informatique, publiques et privées.\n\n### Top Écoles Publiques\n\n**1. ENSIAS (Rabat)**\n- **Réputation** : ⭐⭐⭐⭐⭐ (Meilleure école publique)\n- **Seuil** : 16-17/20 (très sélectif)\n- **Filières** :\n  - Génie Logiciel\n  - Systèmes Distribués et Intelligence Artificielle\n  - Cybersécurité\n  - Business Intelligence\n- **Frais** : ~3 000 DH/an\n- **Avantages** : Réseau",
+      "metadata": {
+        "question": "Les meilleures écoles d'informatique ?",
+        "category": "Écoles",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les meilleures écoles d'informatique ?\n\n(Suite)  puissant, stages garantis, 95% employabilité\n\n**2. INPT (Rabat)**\n- **Réputation** : ⭐⭐⭐⭐⭐\n- **Seuil** : 16-17/20\n- **Filières** :\n  - Génie Informatique\n  - Réseaux et Télécommunications\n  - Data Science\n- **Frais** : ~3 000 DH/an\n- **Avantages** : Partenariats internationaux, recherche de pointe\n\n**3. ENSA (Toutes les villes)**\n- **Réputation** : ⭐⭐⭐⭐\n- **Seuil** : 13-15/20 (selon ville)\n- **Fi",
+      "metadata": {
+        "question": "Les meilleures écoles d'informatique ?",
+        "category": "Écoles",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les meilleures écoles d'informatique ?\n\n(Suite) lières** : Génie Informatique\n- **Frais** : ~3 000 DH/an\n- **Avantages** : 12 écoles au Maroc, accessibilité\n\n**4. FST (Facultés des Sciences et Techniques)**\n- **Réputation** : ⭐⭐⭐⭐\n- **Seuil** : 12-13/20\n- **Filières** :\n  - Génie Informatique\n  - Informatique et Mathématiques Appliquées\n- **Frais** : ~2 000 DH/an\n- **Avantages** : Formation solide, moins sélectif\n\n### Top Écoles Privées\n\n**1. E",
+      "metadata": {
+        "question": "Les meilleures écoles d'informatique ?",
+        "category": "Écoles",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les meilleures écoles d'informatique ?\n\n(Suite) MSI (Plusieurs villes)**\n- **Réputation** : ⭐⭐⭐⭐⭐ (Meilleure privée)\n- **Frais** : 45 000-55 000 DH/an\n- **Filières** :\n  - Ingénierie Logicielle\n  - Data Engineering\n  - Cybersécurité\n  - Cloud Computing\n  - IA et Machine Learning\n- **Avantages** : Équipements modernes, certifications internationales\n\n**2. 1337 (Khouribga, Ben Guerir)**\n- **Réputation** : ⭐⭐⭐⭐⭐\n- **Frais** : GRATUIT (UM6P)\n- **Pa",
+      "metadata": {
+        "question": "Les meilleures écoles d'informatique ?",
+        "category": "Écoles",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les meilleures écoles d'informatique ?\n\n(Suite) rticularité** : Pédagogie par projets (peer-to-peer)\n- **Sélection** : Tests logiques + piscine (1 mois intensif)\n- **Avantages** : Formation innovante, réseau 42, pas de diplôme requis\n\n**3. SUPTECH (Casablanca)**\n- **Réputation** : ⭐⭐⭐⭐\n- **Frais** : 50 000-60 000 DH/an\n- **Filières** :\n  - Software Engineering\n  - Data Science\n  - Cybersecurity\n- **Avantages** : Cursus international, stages à l",
+      "metadata": {
+        "question": "Les meilleures écoles d'informatique ?",
+        "category": "Écoles",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les meilleures écoles d'informatique ?\n\n(Suite) 'étranger\n\n**4. HEM - IT School**\n- **Réputation** : ⭐⭐⭐⭐\n- **Frais** : 55 000-65 000 DH/an\n- **Filières** :\n  - Digital Engineering\n  - Business Intelligence\n- **Avantages** : Double compétence IT + Business\n\n**5. EIDIA (Casablanca)**\n- **Réputation** : ⭐⭐⭐⭐\n- **Frais** : 48 000-58 000 DH/an\n- **Filières** :\n  - Développement Web\n  - Mobile\n  - DevOps\n- **Avantages** : Focus pratique, projets rée",
+      "metadata": {
+        "question": "Les meilleures écoles d'informatique ?",
+        "category": "Écoles",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les meilleures écoles d'informatique ?\n\n(Suite) ls\n\n### Écoles Spécialisées\n\n**1. Simplon Maroc**\n- **Gratuit** (formations courtes)\n- Développement Web\n- Data\n- Cybersécurité\n- Reconversion professionnelle\n\n**2. YouCode (Youssoufia)**\n- **Gratuit** (UM6P)\n- Formation intensive (2 ans)\n- Pédagogie active\n- Pas de Bac requis\n\n**3. GOMYCODE**\n- Bootcamps intensifs\n- Frais : 15 000-25 000 DH\n- Durée : 3-6 mois\n- Spécialisations : Web, Data, IA\n\n##",
+      "metadata": {
+        "question": "Les meilleures écoles d'informatique ?",
+        "category": "Écoles",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les meilleures écoles d'informatique ?\n\n(Suite) # Comparaison Détaillée\n\n| École | Type | Frais/an | Seuil | Employabilité | Salaire Sortie |\n|-------|------|----------|-------|---------------|----------------|\n| ENSIAS | Public | 3K DH | 16-17 | 95% | 8-12K DH |\n| INPT | Public | 3K DH | 16-17 | 95% | 8-12K DH |\n| ENSA | Public | 3K DH | 13-15 | 85% | 6-10K DH |\n| EMSI | Privé | 50K DH | Test | 90% | 7-11K DH |\n| 1337 | Gratuit | 0 DH | Tests ",
+      "metadata": {
+        "question": "Les meilleures écoles d'informatique ?",
+        "category": "Écoles",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les meilleures écoles d'informatique ?\n\n(Suite) | 85% | 7-10K DH |\n| SUPTECH | Privé | 55K DH | Test | 88% | 7-11K DH |\n\n### Critères de Choix\n\n**Choisissez Public si :**\n- ✅ Vous avez un excellent dossier\n- ✅ Budget limité\n- ✅ Vous voulez un diplôme d'État\n- ✅ Vous visez la recherche\n\n**Choisissez Privé si :**\n- ✅ Votre dossier est moyen\n- ✅ Vous voulez plus de pratique\n- ✅ Vous cherchez l'international\n- ✅ Budget disponible\n\n**Choisissez 1337",
+      "metadata": {
+        "question": "Les meilleures écoles d'informatique ?",
+        "category": "Écoles",
+        "chunk_type": "detail_9",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les meilleures écoles d'informatique ?\n\n(Suite) /YouCode si :**\n- ✅ Vous êtes autodidacte\n- ✅ Vous aimez l'apprentissage par projet\n- ✅ Budget très limité\n- ✅ Vous voulez innover\n\n### Compétences à Développer\n\n**Avant l'École**\n- Programmation de base (Python, Java)\n- Logique et algorithmes\n- Anglais technique\n- Mathématiques\n\n**Pendant l'École**\n- Plusieurs langages de programmation\n- Frameworks modernes\n- Git et DevOps\n- Soft skills (travail ",
+      "metadata": {
+        "question": "Les meilleures écoles d'informatique ?",
+        "category": "Écoles",
+        "chunk_type": "detail_10",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les meilleures écoles d'informatique ?\n\n(Suite) d'équipe)\n\n### Certifications Recommandées\n\n**Pendant les Études**\n- AWS Certified Solutions Architect\n- Microsoft Azure Fundamentals\n- Google Cloud Associate\n- Cisco CCNA\n- CompTIA Security+\n\n### Débouchés et Salaires\n\n**Postes Débutants (0-2 ans)**\n- Développeur Junior : 6 000-9 000 DH\n- Data Analyst : 7 000-10 000 DH\n- DevOps Junior : 7 000-10 000 DH\n\n**Confirmés (3-5 ans)**\n- Développeur Senio",
+      "metadata": {
+        "question": "Les meilleures écoles d'informatique ?",
+        "category": "Écoles",
+        "chunk_type": "detail_11",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les meilleures écoles d'informatique ?\n\n(Suite) r : 12 000-20 000 DH\n- Data Scientist : 15 000-25 000 DH\n- Architecte Solutions : 18 000-30 000 DH\n\n**Experts (5+ ans)**\n- Lead Developer : 25 000-40 000 DH\n- CTO : 40 000-80 000 DH\n- Consultant Senior : 30 000-60 000 DH\n\n### Secteurs Recruteurs\n\n1. **Banques et Assurances** : Attijariwafa, BMCE, Saham\n2. **Télécoms** : Maroc Telecom, Orange, Inwi\n3. **Offshoring** : Capgemini, Accenture, Sopra St",
+      "metadata": {
+        "question": "Les meilleures écoles d'informatique ?",
+        "category": "Écoles",
+        "chunk_type": "detail_12",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les meilleures écoles d'informatique ?\n\n(Suite) eria\n4. **Startups** : Écosystème en pleine croissance\n5. **International** : France, Canada, Golfe\n\n### Conseils pour Réussir\n\n1. **Pratiquez constamment** : Projets personnels\n2. **Contribuez à l'open source** : GitHub actif\n3. **Réseau** : Participez aux hackathons\n4. **Veille technologique** : Restez à jour\n5. **Anglais** : Indispensable dans l'IT\n\n---\n\n*[Je continue avec les 17 autres questio",
+      "metadata": {
+        "question": "Les meilleures écoles d'informatique ?",
+        "category": "Écoles",
+        "chunk_type": "detail_13",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les meilleures écoles d'informatique ?\n\n(Suite) ns...]*",
+      "metadata": {
+        "question": "Les meilleures écoles d'informatique ?",
+        "category": "Écoles",
+        "chunk_type": "detail_14",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi le système LMD ?\n\nRéponse: Le **système LMD** (Licence-Master-Doctorat) est l'architecture de l'enseignement supérieur au Maroc depuis 2003.\n\n### Principe du LMD\n\n**Structure en 3 Cycles**\n- **L** = Licence (Bac+3) : 6 semestres\n- **M** = Master (Bac+5) : 4 semestres supplémentaires\n- **D** = Doctorat (Bac+8) : 6 semestres supplémentaires\n\n### Système de Crédits\n\n**ECTS (European Credit Transfer System)**\n- 1 semestre = 30 ",
+      "metadata": {
+        "question": "C'est quoi le système LMD ?",
+        "category": "Conseils",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi le système LMD ?\n\n(Suite) crédits\n- 1 année = 60 crédits\n- Licence = 180 crédits\n- Master = 120 crédits (300 au total)\n- Doctorat = 180 crédits (480 au total)\n\n**Validation**\n- Module validé si note ≥ 10/20\n- Crédits acquis définitivement\n- Capitalisation possible\n- Transfert entre universités facilité\n\n### Avantages du LMD\n\n**Pour les Étudiants**\n- ✅ Parcours personnalisé et flexible\n- ✅ Mobilité nationale et internationa",
+      "metadata": {
+        "question": "C'est quoi le système LMD ?",
+        "category": "Conseils",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi le système LMD ?\n\n(Suite) le\n- ✅ Reconnaissance européenne\n- ✅ Réorientation facilitée\n- ✅ Reprise d'études simplifiée\n\n**Pour le Système**\n- ✅ Harmonisation avec l'Europe\n- ✅ Comparabilité des diplômes\n- ✅ Qualité standardisée\n- ✅ Employabilité améliorée\n\n### Types de Licences\n\n**1. Licence Fondamentale**\n- Orientation académique/recherche\n- Base théorique solide\n- Poursuite en Master recommandée\n- Exemples : Maths, Physi",
+      "metadata": {
+        "question": "C'est quoi le système LMD ?",
+        "category": "Conseils",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi le système LMD ?\n\n(Suite) que, Biologie\n\n**2. Licence Professionnelle**\n- Orientation emploi direct\n- Formation pratique\n- Stages obligatoires\n- Exemples : Informatique de Gestion, Logistique\n\n**3. Licence d'Excellence**\n- Sélection sur dossier\n- Effectifs limités\n- Encadrement renforcé\n- Exemples : Licences ENSIAS, INPT\n\n### Types de Masters\n\n**1. Master Recherche**\n- Préparation au Doctorat\n- Mémoire de recherche\n- Métho",
+      "metadata": {
+        "question": "C'est quoi le système LMD ?",
+        "category": "Conseils",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi le système LMD ?\n\n(Suite) dologie scientifique\n- Débouché : Recherche, Enseignement\n\n**2. Master Spécialisé**\n- Orientation professionnelle\n- Projet de fin d'études\n- Stages en entreprise\n- Débouché : Industrie, Services\n\n### Organisation des Études\n\n**Semestre Type**\n- 4-6 modules par semestre\n- Cours magistraux (CM)\n- Travaux dirigés (TD)\n- Travaux pratiques (TP)\n- Contrôle continu + Examen final\n\n**Validation**\n- Note d",
+      "metadata": {
+        "question": "C'est quoi le système LMD ?",
+        "category": "Conseils",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi le système LMD ?\n\n(Suite) e module ≥ 10/20\n- Compensation possible entre modules\n- Rattrapage si échec\n- Redoublement limité\n\n### Différences avec l'Ancien Système\n\n| Critère | LMD | Ancien Système |\n|---------|-----|----------------|\n| Durée Licence | 3 ans | 4 ans (DEUG+Licence) |\n| Crédits | Oui (ECTS) | Non |\n| Mobilité | Facile | Difficile |\n| Réorientation | Possible | Compliquée |\n| Reconnaissance | Internationale |",
+      "metadata": {
+        "question": "C'est quoi le système LMD ?",
+        "category": "Conseils",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi le système LMD ?\n\n(Suite)  Nationale |\n\n### Équivalences\n\n**Ancien → LMD**\n- DEUG (Bac+2) ≈ 120 crédits\n- Licence (Bac+4) ≈ Licence LMD + 1 an\n- Maîtrise ≈ Master 1\n- DESA/DESS ≈ Master 2\n\n### Mobilité Internationale\n\n**Programmes d'Échange**\n- Erasmus+ (Europe)\n- Accords bilatéraux\n- Bourses de mobilité\n- Reconnaissance automatique des crédits\n\n**Pays Compatibles**\n- France, Belgique, Suisse\n- Tunisie, Algérie\n- Sénégal, ",
+      "metadata": {
+        "question": "C'est quoi le système LMD ?",
+        "category": "Conseils",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi le système LMD ?\n\n(Suite) Côte d'Ivoire\n- Canada (Québec)\n\n### Conseils Pratiques\n\n1. **Choisissez bien votre parcours** : Fondamental vs Professionnel\n2. **Validez vos crédits** : Ne perdez pas de semestres\n3. **Profitez de la mobilité** : Échanges internationaux\n4. **Planifiez votre Master** : Dès la L3\n5. **Construisez votre projet** : Cohérence du parcours\n\n---",
+      "metadata": {
+        "question": "C'est quoi le système LMD ?",
+        "category": "Conseils",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date du concours ENSA ?\n\nRéponse: Le **concours ENSA** (CNC - Concours National Commun) se déroule généralement en **juin-juillet** après les résultats du Baccalauréat.\n\n### Calendrier Type 2024\n\n**Mai-Juin**\n- Ouverture des inscriptions en ligne\n- Plateforme : www.cnc.ma\n- Période : 2-3 semaines\n\n**Fin Juin**\n- Résultats du Baccalauréat\n- Clôture des inscriptions CNC\n\n**Début Juillet**\n- Publication de la liste des candidats admi",
+      "metadata": {
+        "question": "Date du concours ENSA ?",
+        "category": "Écoles",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date du concours ENSA ?\n\n(Suite) s à concourir\n- Convocations disponibles en ligne\n\n**Mi-Juillet**\n- **Épreuves écrites du CNC**\n- Durée : 1 journée\n- Centres d'examen dans toutes les grandes villes\n\n**Fin Juillet**\n- Publication des résultats\n- Classement national\n\n**Début Août**\n- Choix des ENSA (selon classement)\n- Affectation finale\n\n**Septembre**\n- Rentrée universitaire\n\n### Épreuves du Concours\n\n**Matières Évaluées**\n1. **M",
+      "metadata": {
+        "question": "Date du concours ENSA ?",
+        "category": "Écoles",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date du concours ENSA ?\n\n(Suite) athématiques** (Coefficient 3)\n   - Durée : 2h\n   - Programme : Bac Sciences Maths\n\n2. **Physique** (Coefficient 2)\n   - Durée : 1h30\n   - Programme : Bac Sciences\n\n3. **Français** (Coefficient 1)\n   - Durée : 1h\n   - Compréhension et expression\n\n**Type de Questions**\n- QCM (Questions à Choix Multiples)\n- Questions ouvertes\n- Exercices de synthèse\n\n### Conditions d'Admission\n\n**Bacs Acceptés**\n- ✅",
+      "metadata": {
+        "question": "Date du concours ENSA ?",
+        "category": "Écoles",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date du concours ENSA ?\n\n(Suite)  Sciences Mathématiques A et B\n- ✅ Sciences Expérimentales (PC, SVT)\n- ✅ Sciences et Technologies\n\n**Critères**\n- Moyenne générale du Bac\n- Note de Maths ≥ 12/20\n- Note de Physique ≥ 12/20\n- Pas de limite d'âge\n\n### Seuils Indicatifs 2023\n\n**ENSA les Plus Sélectives**\n- ENSA Marrakech : 14-15/20\n- ENSA Tétouan : 14-15/20\n- ENSA Kenitra : 13.5-14.5/20\n\n**ENSA Moyennes**\n- ENSA Tanger : 13-14/20\n- E",
+      "metadata": {
+        "question": "Date du concours ENSA ?",
+        "category": "Écoles",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date du concours ENSA ?\n\n(Suite) NSA Fès : 13-14/20\n- ENSA Oujda : 12.5-13.5/20\n\n**ENSA Moins Sélectives**\n- ENSA Safi : 12-13/20\n- ENSA Khouribga : 12-13/20\n- ENSA Berrechid : 12-13/20\n\n### Inscription au Concours\n\n**Documents Requis**\n- Numéro de Massar\n- Relevé de notes du Bac\n- Carte d'identité nationale\n- Photo d'identité récente\n- Frais d'inscription : ~200 DH\n\n**Procédure en Ligne**\n1. Créer un compte sur www.cnc.ma\n2. Rem",
+      "metadata": {
+        "question": "Date du concours ENSA ?",
+        "category": "Écoles",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date du concours ENSA ?\n\n(Suite) plir le formulaire\n3. Télécharger les documents\n4. Payer les frais (en ligne ou agence)\n5. Imprimer la convocation\n\n### Préparation au Concours\n\n**3 Mois Avant**\n- Réviser le programme de Bac\n- Faire des annales CNC\n- Renforcer Maths et Physique\n\n**1 Mois Avant**\n- Entraînement intensif QCM\n- Gestion du temps\n- Simulations d'examen\n\n**1 Semaine Avant**\n- Révisions légères\n- Repos et sommeil\n- Prép",
+      "metadata": {
+        "question": "Date du concours ENSA ?",
+        "category": "Écoles",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date du concours ENSA ?\n\n(Suite) aration matérielle\n\n**Le Jour J**\n- Arriver 30 min en avance\n- Apporter : CIN, convocation, stylos\n- Lire attentivement les consignes\n- Gérer son temps (2h pour Maths)\n\n### Choix des ENSA\n\n**Critères de Choix**\n1. **Classement** : Selon votre rang\n2. **Filière** : Spécialités proposées\n3. **Localisation** : Proximité familiale\n4. **Réputation** : Qualité de formation\n5. **Débouchés** : Taux d'empl",
+      "metadata": {
+        "question": "Date du concours ENSA ?",
+        "category": "Écoles",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date du concours ENSA ?\n\n(Suite) oi\n\n**Stratégie**\n- Classez 5-6 ENSA par ordre de préférence\n- Incluez des choix \"sûrs\"\n- Renseignez-vous sur les spécialités\n\n### Alternatives si Échec\n\n**Plan B**\n- FST (Facultés des Sciences et Techniques)\n- Écoles privées d'ingénieurs\n- Licence en Sciences\n- Prépa CPGE (pour retenter)\n\n### Contacts et Ressources\n\n**Site Officiel**\n- www.cnc.ma\n\n**Hotline**\n- 0537-77-77-50\n\n**Réseaux Sociaux**\n",
+      "metadata": {
+        "question": "Date du concours ENSA ?",
+        "category": "Écoles",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date du concours ENSA ?\n\n(Suite) - Facebook : CNC Maroc\n- Groupes d'entraide étudiants\n\n### Conseils Importants\n\n⚠️ **Inscrivez-vous dès l'ouverture** : Places limitées\n⚠️ **Vérifiez votre convocation** : Centre d'examen\n⚠️ **Préparez-vous sérieusement** : Concours sélectif\n⚠️ **Ayez un plan B** : Ne comptez pas que sur ENSA\n\n---",
+      "metadata": {
+        "question": "Date du concours ENSA ?",
+        "category": "Écoles",
+        "chunk_type": "detail_9",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Avantages d'étudier en anglais ?\n\nRéponse: Étudier en anglais au Maroc offre de nombreux avantages pour votre carrière et votre développement personnel.\n\n### Avantages Académiques\n\n**1. Accès à Plus de Ressources**\n- 📚 80% des publications scientifiques en anglais\n- 📖 Bibliothèques numériques internationales\n- 🎓 MOOC (Coursera, edX, Khan Academy)\n- 📰 Revues scientifiques de référence\n\n**2. Qualité de l'Enseignement**\n- Professeurs internat",
+      "metadata": {
+        "question": "Avantages d'étudier en anglais ?",
+        "category": "Orientation",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Avantages d'étudier en anglais ?\n\n(Suite) ionaux\n- Programmes accrédités (AACSB, EQUIS)\n- Pédagogies modernes\n- Standards internationaux\n\n**3. Mobilité Académique**\n- Échanges universitaires facilités\n- Erasmus+ et programmes similaires\n- Double diplômes internationaux\n- Reconnaissance mondiale\n\n### Avantages Professionnels\n\n**1. Employabilité Accrue**\n- **+40% de salaire** en moyenne\n- Accès aux multinationales\n- Postes à responsabilité\n",
+      "metadata": {
+        "question": "Avantages d'étudier en anglais ?",
+        "category": "Orientation",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Avantages d'étudier en anglais ?\n\n(Suite) - Carrière internationale\n\n**2. Secteurs Recruteurs**\n- Offshoring et IT\n- Banques internationales\n- Consulting (McKinsey, BCG)\n- Industrie automobile\n- Aéronautique\n- Tourisme de luxe\n\n**3. Opportunités à l'International**\n- Expatriation facilitée\n- Mobilité professionnelle\n- Réseau international\n- Salaires compétitifs\n\n### Avantages Personnels\n\n**1. Compétence Linguistique**\n- Maîtrise professio",
+      "metadata": {
+        "question": "Avantages d'étudier en anglais ?",
+        "category": "Orientation",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Avantages d'étudier en anglais ?\n\n(Suite) nnelle\n- Confiance en communication\n- Accent amélioré\n- Vocabulaire technique\n\n**2. Ouverture Culturelle**\n- Compréhension interculturelle\n- Réseau multiculturel\n- Adaptabilité\n- Vision globale\n\n**3. Développement Cognitif**\n- Pensée critique renforcée\n- Flexibilité mentale\n- Créativité stimulée\n- Résolution de problèmes\n\n### Universités Anglophones au Maroc\n\n**1. Al Akhawayn University (AUI) - If",
+      "metadata": {
+        "question": "Avantages d'étudier en anglais ?",
+        "category": "Orientation",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Avantages d'étudier en anglais ?\n\n(Suite) rane**\n- 100% anglais\n- Système américain\n- Frais : 80 000-100 000 DH/an\n- Diplôme reconnu internationalement\n\n**2. UM6P - Benguerir**\n- Programmes en anglais\n- Recherche de pointe\n- Bourses disponibles\n- Frais : 60 000-80 000 DH/an\n\n**3. UIR - Rabat**\n- Filières bilingues/anglais\n- Partenariats internationaux\n- Frais : 60 000-85 000 DH/an\n\n**4. EMSI - Plusieurs villes**\n- Programmes IT en anglais",
+      "metadata": {
+        "question": "Avantages d'étudier en anglais ?",
+        "category": "Orientation",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Avantages d'étudier en anglais ?\n\n(Suite) \n- Certifications internationales\n- Frais : 45 000-55 000 DH/an\n\n**5. Mundiapolis - Casablanca**\n- Business School anglophone\n- Accréditations internationales\n- Frais : 50 000-70 000 DH/an\n\n### Filières Populaires en Anglais\n\n**Business & Management**\n- International Business\n- Finance\n- Marketing\n- Entrepreneurship\n\n**Ingénierie**\n- Computer Science\n- Data Science\n- Software Engineering\n- Mechani",
+      "metadata": {
+        "question": "Avantages d'étudier en anglais ?",
+        "category": "Orientation",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Avantages d'étudier en anglais ?\n\n(Suite) cal Engineering\n\n**Sciences**\n- Biotechnology\n- Environmental Science\n- Applied Mathematics\n\n### Défis et Solutions\n\n**Défi 1 : Niveau Initial**\n- **Solution** : Cours de mise à niveau\n- Tests : TOEFL, IELTS\n- Programmes préparatoires\n\n**Défi 2 : Coût Élevé**\n- **Solution** : Bourses d'excellence\n- Prêts étudiants\n- Travail à temps partiel\n\n**Défi 3 : Adaptation**\n- **Solution** : Tutorat\n- Groupe",
+      "metadata": {
+        "question": "Avantages d'étudier en anglais ?",
+        "category": "Orientation",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Avantages d'étudier en anglais ?\n\n(Suite) s d'étude\n- Ressources en ligne\n\n### Comparaison Français vs Anglais\n\n| Critère | Français | Anglais |\n|---------|----------|---------|\n| Ressources | Limitées | Abondantes |\n| Emploi Local | Bon | Excellent |\n| International | Moyen | Excellent |\n| Salaire | Standard | +40% |\n| Mobilité | Francophonie | Monde entier |\n\n### Certifications Utiles\n\n**Tests de Niveau**\n- **TOEFL** : 80+ (requis)\n- **",
+      "metadata": {
+        "question": "Avantages d'étudier en anglais ?",
+        "category": "Orientation",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Avantages d'étudier en anglais ?\n\n(Suite) IELTS** : 6.5+ (requis)\n- **TOEIC** : 750+ (professionnel)\n\n**Certifications Professionnelles**\n- Cambridge English (B2, C1)\n- Business English Certificate\n- BULATS\n\n### Secteurs où l'Anglais est Essentiel\n\n**Très Demandé**\n- IT et Tech (90% des offres)\n- Finance internationale\n- Consulting\n- Offshoring\n- Tourisme haut de gamme\n\n**Recommandé**\n- Ingénierie\n- Recherche scientifique\n- Commerce inter",
+      "metadata": {
+        "question": "Avantages d'étudier en anglais ?",
+        "category": "Orientation",
+        "chunk_type": "detail_9",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Avantages d'étudier en anglais ?\n\n(Suite) national\n- Aviation\n\n### Conseils pour Réussir\n\n**Avant les Études**\n1. Améliorez votre niveau (B2 minimum)\n2. Passez TOEFL/IELTS\n3. Lisez en anglais quotidiennement\n4. Regardez séries/films VO\n\n**Pendant les Études**\n1. Participez activement en classe\n2. Rejoignez clubs anglophones\n3. Pratiquez avec natifs\n4. Pensez en anglais\n\n**Après les Études**\n1. Maintenez le niveau\n2. Certifications profess",
+      "metadata": {
+        "question": "Avantages d'étudier en anglais ?",
+        "category": "Orientation",
+        "chunk_type": "detail_10",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Avantages d'étudier en anglais ?\n\n(Suite) ionnelles\n3. Réseau international\n4. Veille en anglais\n\n### ROI (Retour sur Investissement)\n\n**Investissement**\n- Frais de scolarité : +30-50%\n- Préparation linguistique : 5 000-10 000 DH\n- Certifications : 2 000-3 000 DH\n\n**Retour**\n- Salaire : +40% en moyenne\n- Opportunités : 3x plus nombreuses\n- Mobilité : Mondiale\n- Évolution : Plus rapide\n\n**Exemple Concret**\n- Ingénieur français : 8 000 DH/m",
+      "metadata": {
+        "question": "Avantages d'étudier en anglais ?",
+        "category": "Orientation",
+        "chunk_type": "detail_11",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Avantages d'étudier en anglais ?\n\n(Suite) ois\n- Ingénieur anglais : 11 000-13 000 DH/mois\n- Différence annuelle : 36 000-60 000 DH\n\n### Témoignages\n\n> \"Étudier en anglais m'a ouvert les portes de multinationales. Mon salaire est 50% supérieur à mes collègues francophones.\" - Ahmed, Ingénieur IT\n\n> \"La mobilité internationale est un vrai plus. J'ai fait un stage au Canada grâce à mon niveau d'anglais.\" - Salma, Business Student\n\n### Conclu",
+      "metadata": {
+        "question": "Avantages d'étudier en anglais ?",
+        "category": "Orientation",
+        "chunk_type": "detail_12",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Avantages d'étudier en anglais ?\n\n(Suite) sion\n\nÉtudier en anglais au Maroc est un **investissement rentable** si :\n- ✅ Vous visez l'international\n- ✅ Vous travaillez dans l'IT/Finance\n- ✅ Vous voulez maximiser votre salaire\n- ✅ Vous aimez les défis\n\n---\n\n*[Questions 17-30 à suivre...]*",
+      "metadata": {
+        "question": "Avantages d'étudier en anglais ?",
+        "category": "Orientation",
+        "chunk_type": "detail_13",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date résultats Bac 2026 ?\n\nRéponse: Les **résultats du Baccalauréat 2026** au Maroc seront annoncés selon le calendrier habituel.\n\n### Calendrier Prévisionnel 2026\n\n**Session Normale**\n- **Examens** : Mi-juin 2026 (généralement 10-15 juin)\n- **Résultats** : Fin juin 2026 (généralement 23-25 juin)\n- **Délai** : ~10-12 jours après la fin des examens\n\n**Session de Rattrapage**\n- **Examens** : Début juillet 2026 (généralement 8-10 juill",
+      "metadata": {
+        "question": "Date résultats Bac 2026 ?",
+        "category": "Conseils",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date résultats Bac 2026 ?\n\n(Suite) et)\n- **Résultats** : Mi-juillet 2026 (généralement 18-20 juillet)\n\n### Comment Consulter les Résultats\n\n**En Ligne (Recommandé)**\n1. **Site officiel** : www.men.gov.ma\n2. **Massar** : www.massar.men.gov.ma\n3. **Taalim.ma** : www.taalim.ma\n\n**Sur Place**\n- À votre lycée\n- Affichage public des résultats\n\n### Informations Nécessaires\n\nPour consulter vos résultats en ligne:\n- 📱 Numéro **Massar** (obl",
+      "metadata": {
+        "question": "Date résultats Bac 2026 ?",
+        "category": "Conseils",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date résultats Bac 2026 ?\n\n(Suite) igatoire)\n- 🎫 Code National (CNE)\n- 🆔 Carte d'identité nationale\n\n### Que Faire Après les Résultats ?\n\n**Si vous avez réussi (≥10/20)**\n1. ✅ Télécharger l'attestation de réussite\n2. ✅ S'inscrire sur **CursusSup** (Tawjihi.ma)\n3. ✅ Préparer le dossier d'inscription\n4. ✅ Candidater aux concours (ENSA, ENCG...)\n\n**Si vous êtes au rattrapage**\n1. 📚 Vérifier les matières à repasser\n2. 📖 Réviser intensi",
+      "metadata": {
+        "question": "Date résultats Bac 2026 ?",
+        "category": "Conseils",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date résultats Bac 2026 ?\n\n(Suite) vement\n3. 🎯 Se concentrer sur l'essentiel\n4. 💪 Garder le moral et la motivation\n\n**Si vous avez échoué**\n- Option 1 : **Redoubler** et repasser le Bac\n- Option 2 : **OFPPT** (sans Bac requis)\n- Option 3 : **Formation professionnelle**\n- Option 4 : **Apprentissage** en entreprise\n\n### Calendrier Post-Bac Important\n\n**Juillet 2026**\n- 📝 Ouverture **CursusSup** (Tawjihi)\n- 📋 Inscriptions concours ENS",
+      "metadata": {
+        "question": "Date résultats Bac 2026 ?",
+        "category": "Conseils",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date résultats Bac 2026 ?\n\n(Suite) A/ENCG\n- 💰 Demandes de bourse Minhaty\n\n**Août 2026**\n- 🎓 Affectations universitaires\n- 🏫 Inscriptions définitives\n- 📚 Préparation rentrée\n\n**Septembre 2026**\n- 🚀 Rentrée universitaire\n\n### Mentions et Notes\n\n**Calcul de la Moyenne Finale**\n- **Régional (25%)** : Contrôle continu + examen\n- **National (75%)** : Examens nationaux\n- **Formule** : (Rég × 0.25) + (Nat × 0.75)\n\n**Mentions**\n- 🌟 **Très B",
+      "metadata": {
+        "question": "Date résultats Bac 2026 ?",
+        "category": "Conseils",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date résultats Bac 2026 ?\n\n(Suite) ien** : ≥ 16/20\n- ⭐ **Bien** : 14-15.99/20\n- ✅ **Assez Bien** : 12-13.99/20\n- 👍 **Passable** : 10-11.99/20\n\n### Conseils Pratiques\n\n**Avant les Résultats**\n- Vérifiez votre numéro Massar\n- Testez l'accès au site\n- Préparez vos documents\n- Ayez des plans B et C\n\n**Le Jour J**\n- Consultez tôt le matin (moins de trafic)\n- Gardez votre calme\n- Screenshot de l'attestation\n- Imprimez plusieurs copies\n\n#",
+      "metadata": {
+        "question": "Date résultats Bac 2026 ?",
+        "category": "Conseils",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date résultats Bac 2026 ?\n\n(Suite) ## En Cas de Problème\n\n**Erreur dans les Notes**\n- Contactez votre lycée immédiatement\n- Demandez une rectification officielle\n- Délai : 48h après publication\n\n**Problème d'Accès au Site**\n- Essayez à différents moments\n- Utilisez plusieurs navigateurs\n- Allez au lycée si nécessaire\n\n### Statistiques Bac Maroc\n\n**Taux de Réussite Moyen**\n- Session normale : ~55-60%\n- Après rattrapage : ~65-70%\n- É",
+      "metadata": {
+        "question": "Date résultats Bac 2026 ?",
+        "category": "Conseils",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date résultats Bac 2026 ?\n\n(Suite) volution : Stable ces dernières années\n\n**Filières avec Meilleur Taux**\n- Sciences Maths : ~70-75%\n- Sciences Expérimentales : ~60-65%\n- Économie : ~45-50%\n- Lettres : ~50-55%\n\n### Contact et Support\n\n**En Cas de Problème**\n- **Hotline MEN** : 0537-68-11-11\n- **Email** : contact@men.gov.ma\n- **Facebook** : Ministère Éducation Nationale\n\n### Important\n\n⚠️ **Les dates exactes seront confirmées par l",
+      "metadata": {
+        "question": "Date résultats Bac 2026 ?",
+        "category": "Conseils",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Date résultats Bac 2026 ?\n\n(Suite) e Ministère début 2026**\n⚠️ **Surveillez les annonces officielles sur men.gov.ma**\n⚠️ **Ne vous fiez qu'aux sources officielles**\n\n---",
+      "metadata": {
+        "question": "Date résultats Bac 2026 ?",
+        "category": "Conseils",
+        "chunk_type": "detail_9",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Prix des écoles de commerce privées\n\nRéponse: Les **écoles de commerce privées** au Maroc ont des frais de scolarité variables selon la réputation et les programmes.\n\n### Grandes Écoles de Commerce (Tier 1)\n\n**1. HEM (Hautes Études de Management)**\n- **Licence** : 50 000 - 60 000 DH/an\n- **Master** : 60 000 - 70 000 DH/an\n- **MBA** : 80 000 - 100 000 DH/an\n- **Total (Bac+5)** : ~280 000 - 320 000 DH\n- **Villes** : Casablanca, Rabat, Marrakech",
+      "metadata": {
+        "question": "Prix des écoles de commerce privées",
+        "category": "Écoles",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Prix des écoles de commerce privées\n\n(Suite) , Fès\n\n**2. ESCA École de Management**\n- **Années 1-3** : 65 000 DH/an\n- **Années 4-5** : 75 000 DH/an\n- **Total (Bac+5)** : ~345 000 DH\n- **Localisation** : Casablanca\n- **Accréditations** : AACSB, AMBA\n\n**3. ISCAE (Institut Supérieur de Commerce)**\n- **Public** : ~3 000 DH/an\n- **Formation d'excellence**\n- **Très sélectif** : Concours national\n- **Casablanca**\n\n### Écoles Moyenne Gamme (Tier 2)\n",
+      "metadata": {
+        "question": "Prix des écoles de commerce privées",
+        "category": "Écoles",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Prix des écoles de commerce privées\n\n(Suite) \n**4. ESSEC Business School Rabat-Casablanca**\n- **Frais** : 70 000 - 80 000 DH/an\n- **Total (5 ans)** : ~375 000 DH\n- **Diplôme français reconnu**\n\n**5. ENCG (École Nationale de Commerce et Gestion)**\n- **Public GRATUIT** : 0 DH (scolaring)\n- **Frais inscription** : ~500 DH/an\n- **10 ENCG au Maroc**\n- **Excellent rapport qualité/prix** ✅\n\n**6. Mundiapolis**\n- **Licence** : 45 000 - 50 000 DH/an\n-",
+      "metadata": {
+        "question": "Prix des écoles de commerce privées",
+        "category": "Écoles",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Prix des écoles de commerce privées\n\n(Suite)  **Master** : 55 000 - 60 000 DH/an\n- **Total (5 ans)** : ~265 000 DH\n- **Casablanca**\n\n**7. ISGA (Institut Supérieur de Génie Appliqué)**\n- **Frais** : 35 000 - 45 000 DH/an\n- **Total (5 ans)** : ~200 000 DH\n- **Plusieurs villes**\n\n**8. ESITH (École Supérieure des Industries du Textile)**\n- **Semi-public** : 15 000 - 20 000 DH/an\n- **Spécialisée textile/mode**\n- **Casablanca**\n\n### Écoles Accessi",
+      "metadata": {
+        "question": "Prix des écoles de commerce privées",
+        "category": "Écoles",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Prix des écoles de commerce privées\n\n(Suite) bles (Tier 3)\n\n**9. Groupe HEEC**\n- **Frais** : 25 000 - 35 000 DH/an\n- **Total (5 ans)** : ~150 000 DH\n- **Plusieurs campus**\n\n**10. Sup de Co**\n- **Frais** : 30 000 - 40 000 DH/an\n- **Total (5 ans)** : ~175 000 DH\n\n**11. ESTEM**\n- **Frais** : 28 000 - 35 000 DH/an\n- **Casablanca, Rabat**\n\n### Comparatif Prix\n\n| École | Type | Prix/an | Total (5 ans) | Qualité |\n|-------|------|---------|--------",
+      "metadata": {
+        "question": "Prix des écoles de commerce privées",
+        "category": "Écoles",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Prix des écoles de commerce privées\n\n(Suite) -------|---------|\n| ISCAE | Public | 3K DH | 15K DH | ⭐⭐⭐⭐⭐ |\n| ENCG | Public | 0 DH | 0 DH | ⭐⭐⭐⭐⭐ |\n| HEM | Privé | 55K DH | 280K DH | ⭐⭐⭐⭐⭐ |\n| ESCA | Privé | 70K DH | 345K DH | ⭐⭐⭐⭐⭐ |\n| Mundiapolis | Privé | 50K DH | 265K DH | ⭐⭐⭐⭐ |\n| ISGA | Privé | 40K DH | 200K DH | ⭐⭐⭐ |\n\n### Ce Qui Est Inclus\n\n**Dans les Frais**\n- ✅ Enseignement\n- ✅ Bibliothèque et ressources\n- ✅ Accès WiFi et plateform",
+      "metadata": {
+        "question": "Prix des écoles de commerce privées",
+        "category": "Écoles",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Prix des écoles de commerce privées\n\n(Suite) es\n- ✅ Activités parascolaires\n- ✅ Accès salles informatiques\n\n**Frais Supplémentaires**\n- ❌ Hébergement : 15 000-30 000 DH/an\n- ❌ Transport : 3 000-10 000 DH/an\n- ❌ Matériel : 2 000-5 000 DH/an\n- ❌ Vie étudiante : 10 000-20 000 DH/an\n\n### Facilités de Paiement\n\n**Options Communes**\n1. **Paiement annuel** : Réduction 5-10%\n2. **Paiement semestriel** : 2 versements\n3. **Paiement mensuel** : 10 vers",
+      "metadata": {
+        "question": "Prix des écoles de commerce privées",
+        "category": "Écoles",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Prix des écoles de commerce privées\n\n(Suite) ements (frais +3-5%)\n\n### Bourses et Aides\n\n**Bourses d'Excellence**\n- HEM : Jusqu'à 50% de réduction\n- ESCA : 25-75% selon mérite\n- Mundiapolis : 20-40%\n\n**Critères**\n- Moyenne Bac ≥ 14-16/20\n- Dossier académique excellent\n- Entretien de motivation\n\n**Autres Aides**\n- Prêts étudiants bancaires\n- Bourses gouvernementales (rares)\n- Emploi à temps partiel\n\n### ROI (Retour sur Investissement)\n\n**Sala",
+      "metadata": {
+        "question": "Prix des écoles de commerce privées",
+        "category": "Écoles",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Prix des écoles de commerce privées\n\n(Suite) ire de Sortie**\n- Grande école : 8 000-12 000 DH/mois\n- École moyenne : 5 000-8 000 DH/mois\n- Public (ENCG/ISCAE) : 7 000-10 000 DH/mois\n\n**Temps de Récupération**\n- Investissement 300K DH\n- Salaire moyen 10K DH/mois\n- ROI : ~2.5-3 ans\n\n### Conseils pour Choisir\n\n**Privilégiez si Budget Limité**\n1. **ENCG** (Gratuit, excellente qualité)\n2. **ISCAE** (Quasi-gratuit, très sélectif)\n3. **ISGA/HEEC** ",
+      "metadata": {
+        "question": "Prix des écoles de commerce privées",
+        "category": "Écoles",
+        "chunk_type": "detail_9",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Prix des écoles de commerce privées\n\n(Suite) (Prix raisonnables)\n\n**Privilégiez si Budget OK**\n1. **HEM** (Meilleur réseau)\n2. **ESCA** (Prestige international)\n3. **Mundiapolis** (Bon compromis)\n\n### Questions à Poser\n\nAvant de choisir une école:\n1. ✅ Accréditations (AACSB, EQUIS, AMBA)\n2. ✅ Taux d'employabilité\n3. ✅ Réseau d'entreprises partenaires\n4. ✅ Possibilités d'échange international\n5. ✅ Qualité du corps professoral\n\n### Contact Éco",
+      "metadata": {
+        "question": "Prix des écoles de commerce privées",
+        "category": "Écoles",
+        "chunk_type": "detail_10",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Prix des écoles de commerce privées\n\n(Suite) les\n\n**HEM** : www.hem.ac.ma | 0522-43-42-00\n**ESCA** : www.esca.ma | 0522-98-25-00\n**ENCG** : Via Tawjihi (gratuit)\n**Mundiapolis** : www.mundiapolis.ma\n\n---",
+      "metadata": {
+        "question": "Prix des écoles de commerce privées",
+        "category": "Écoles",
+        "chunk_type": "detail_11",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Différence Public vs Privé ?\n\nRéponse: Le choix entre **établissement public** et **privé** au Maroc est crucial pour votre parcours post-bac.\n\n### Enseignement Supérieur Public\n\n**Caractérist",
+      "metadata": {
+        "question": "Différence Public vs Privé ?",
+        "category": "Conseils",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Vaut-il mieux faire un BTS ou un DUT ?\n\nRéponse: Au Maroc, **BTS** et **DUT** sont deux formations courtes (Bac+2) très appréciées par les employeurs.\n\n### BTS (Brevet de Technicien Supérieur)\n\n**Caractéristiques**\n- **Durée** : 2 ans\n- **Diplôme** : Bac+2\n- **Orientation** : Professionnelle intensive\n- **Stage** : 8-12 semaines obligatoires\n- **Établissements** : Lycées publics, privés, OFPPT\n\n**Filières Populaires**\n- Comptabilité et Gestion\n-",
+      "metadata": {
+        "question": "Vaut-il mieux faire un BTS ou un DUT ?",
+        "category": "Orientation",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Vaut-il mieux faire un BTS ou un DUT ?\n\n(Suite)  Commerce International\n- Tourisme et Hôtellerie\n- Informatique de Gestion\n- Maintenance Industrielle\n\n**Avantages BTS**\n- ✅ Insertion rapide (2 ans)\n- ✅ Très pratique et professionnalisant\n- ✅ Reconnaissance par les entreprises\n- ✅ Possibilité de poursuivre en licence\n- ✅ Nombreux établissements\n\n**Inconvénients BTS**\n- ❌ Moins de théorie\n- ❌ Difficile de poursuivre en Master directement\n- ❌ Sala",
+      "metadata": {
+        "question": "Vaut-il mieux faire un BTS ou un DUT ?",
+        "category": "Orientation",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Vaut-il mieux faire un BTS ou un DUT ?\n\n(Suite) ire de départ moyen\n\n### DUT (Diplôme Universitaire de Technologie)\n\n**Caractéristiques**\n- **Durée** : 2 ans\n- **Diplôme** : Bac+2\n- **Orientation** : Équilibre théorie/pratique\n- **Stage** : 10-16 semaines\n- **Établissements** : EST (Écoles Supérieures de Technologie)\n\n**Filières Populaires**\n- Génie Civil\n- Génie Électrique\n- Génie Mécanique\n- Génie Informatique\n- Techniques de Management\n\n**Av",
+      "metadata": {
+        "question": "Vaut-il mieux faire un BTS ou un DUT ?",
+        "category": "Orientation",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Vaut-il mieux faire un BTS ou un DUT ?\n\n(Suite) antages DUT**\n- ✅ Équilibre théorie/pratique\n- ✅ Base scientifique solide\n- ✅ Facilite la poursuite d'études\n- ✅ Diplôme universitaire reconnu\n- ✅ Public gratuit (EST)\n\n**Inconvénients DUT**\n- ❌ Plus théorique que BTS\n- ❌ Moins de spécialisation immédiate\n- ❌ Sélection plus stricte\n\n### Comparaison Détaillée\n\n| Critère | BTS | DUT (EST) |\n|---------|-----|-----------|\n| **Théorie** | 30% | 50% |\n|",
+      "metadata": {
+        "question": "Vaut-il mieux faire un BTS ou un DUT ?",
+        "category": "Orientation",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Vaut-il mieux faire un BTS ou un DUT ?\n\n(Suite)  **Pratique** | 70% | 50% |\n| **Insertion immédiate** | Excellente | Bonne |\n| **Poursuite études** | Moyenne | Facile |\n| **Sélection** | Moyenne | Stricte |\n| **Coût public** | Gratuit | Gratuit |\n| **Coût privé** | 15-25K DH/an | N/A |\n\n### Débouchés Professionnels\n\n**Après BTS**\n- Technicien spécialisé\n- Assistant de gestion\n- Commercial junior\n- Salaire : 3 500-5 500 DH/mois\n\n**Après DUT**\n- ",
+      "metadata": {
+        "question": "Vaut-il mieux faire un BTS ou un DUT ?",
+        "category": "Orientation",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Vaut-il mieux faire un BTS ou un DUT ?\n\n(Suite) Technicien supérieur\n- Assistant ingénieur\n- Chef de projet junior\n- Salaire : 4 000-6 000 DH/mois\n\n### Poursuite d'Études\n\n**Après BTS**\n- Licence Professionnelle (1 an)\n- Écoles de commerce (admission parallèle)\n- Difficulté pour Master direct\n\n**Après DUT**\n- Licence (1 an de passerelle)\n- Cycle Ingénieur (3 ans)\n- Master possible\n- Plus de flexibilité\n\n### Quel Profil pour Quel Diplôme ?\n\n**Ch",
+      "metadata": {
+        "question": "Vaut-il mieux faire un BTS ou un DUT ?",
+        "category": "Orientation",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Vaut-il mieux faire un BTS ou un DUT ?\n\n(Suite) oisissez BTS si :**\n- Vous voulez travailler rapidement (2 ans)\n- Vous préférez la pratique à la théorie\n- Vous avez un projet professionnel clair\n- Vous cherchez une spécialisation précise\n- Budget limité (préférez OFPPT)\n\n**Choisissez DUT si :**\n- Vous envisagez de poursuivre (Bac+5)\n- Vous aimez la technique et la théorie\n- Vous voulez garder des options ouvertes\n- Vous visez un poste d'ingénie",
+      "metadata": {
+        "question": "Vaut-il mieux faire un BTS ou un DUT ?",
+        "category": "Orientation",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Vaut-il mieux faire un BTS ou un DUT ?\n\n(Suite) ur plus tard\n- Vous avez un bon dossier (12-13/20+)\n\n### Où Étudier ?\n\n**BTS Public**\n- Lycées techniques\n- OFPPT (gratuit)\n- Centres de formation professionnelle\n\n**BTS Privé**\n- Groupes scolaires privés\n- Coût : 15 000-25 000 DH/an\n\n**DUT (EST)**\n- 15 EST au Maroc\n- Gratuit\n- Très competitive (dossier)\n\n### Conseils Pratiques\n\n1. **BTS** = Emploi rapide, spécialisation\n2. **DUT** = Flexibilité, ",
+      "metadata": {
+        "question": "Vaut-il mieux faire un BTS ou un DUT ?",
+        "category": "Orientation",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Vaut-il mieux faire un BTS ou un DUT ?\n\n(Suite) poursuite études\n3. Les deux permettent la poursuite en licence pro\n4. Choisissez selon votre projet à 5 ans\n5. En cas de doute, privilégiez DUT (plus d'options)\n\n---",
+      "metadata": {
+        "question": "Vaut-il mieux faire un BTS ou un DUT ?",
+        "category": "Orientation",
+        "chunk_type": "detail_9",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Liste des écoles à Marrakech\n\nRéponse: Marrakech dispose d'un large éventail d'établissements d'enseignement supérieur publics et privés.\n\n### Écoles d'Ingénieurs\n\n**Publiques**\n1. **ENSA Marrakech** (École Nationale des Sciences Appliquées)\n   - Génie Informatique, Civil, Électrique\n   - Gratuit, très sélectif\n   - www.ensa.ac.ma\n\n2. **FST Marrakech** (Faculté des Sciences et Techniques)\n   - Génie Informatique, Génie Civil\n   - Unive",
+      "metadata": {
+        "question": "Liste des écoles à Marrakech",
+        "category": "Écoles",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Liste des écoles à Marrakech\n\n(Suite) rsité Cadi Ayyad\n   - Gratuit\n\n3. **ENS Marrakech** (École Normale Supérieure)\n   - Formation des enseignants\n   - Université Cadi Ayyad\n\n**Privées**\n1. **EMSI Marrakech**\n   - Informatique, Génie Civil\n   - Frais : ~45 000-50 000 DH/an\n\n2. **Mundiapolis Marrakech**\n   - Ingénierie IT\n   - Frais : ~40 000-50 000 DH/an\n\n### Universités et Facultés\n\n**Université Cadi Ayyad**\n1. **Faculté des Science",
+      "metadata": {
+        "question": "Liste des écoles à Marrakech",
+        "category": "Écoles",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Liste des écoles à Marrakech\n\n(Suite) s Semlalia**\n   - Maths, Physique, Chimie, Biologie\n   - Gratuit\n\n2. **Faculté des Lettres et Sciences Humaines**\n   - Lettres, Langues, Histoire\n   - Gratuit\n\n3. **Faculté de Droit**\n   - Droit privé, public\n   - Gratuit\n\n4. **Faculté des Sciences Juridiques, Économiques et Sociales**\n   - Économie, Gestion\n   - Gratuit\n\n5. **Faculté de Médecine et de Pharmacie**\n   - Médecine (très sélectif : 16",
+      "metadata": {
+        "question": "Liste des écoles à Marrakech",
+        "category": "Écoles",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Liste des écoles à Marrakech\n\n(Suite) +)\n   - Pharmacie\n   - Gratuit\n\n### Écoles de Commerce et Management\n\n**Publiques**\n1. **ENCG Marrakech** (non encore créée, à venir)\n\n**Privées**\n1. **HEM Marrakech**\n   - Business, Management\n   - Frais : ~55 000-65 000 DH/an\n\n2. **Sup de Co Marrakech**\n   - Commerce, Gestion\n   - Frais : ~35 000-45 000 DH/an\n\n3. **ESTEM Marrakech**\n   - Management, Marketing\n   - Frais : ~30 000-40 000 DH/an\n\n#",
+      "metadata": {
+        "question": "Liste des écoles à Marrakech",
+        "category": "Écoles",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Liste des écoles à Marrakech\n\n(Suite) ## Écoles Spécialisées\n\n**Architecture**\n1. **ENA Marrakech** (École Nationale d'Architecture)\n   - Bac+6, très sélectif\n   - Concours national\n   - Gratuit\n\n**Tourisme et Hôtellerie**\n1. **ISHT Marrakech** (Institut Supérieur Hôtellerie Tourisme)\n   - Formation hôtelière\n   - Semi-public\n\n2. **Écoles hôtelières privées**\n   - Plusieurs établissements\n   - Frais variables\n\n**OFPPT Marrakech**\n1. *",
+      "metadata": {
+        "question": "Liste des écoles à Marrakech",
+        "category": "Écoles",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Liste des écoles à Marrakech\n\n(Suite) *ISTA** (Instituts de formation)\n   - Technicien spécialisé\n   - Gratuit, populaire\n   - Plusieurs filières\n\n### EST Marrakech\n\n**École Supérieure de Technologie**\n- DUT en 2 ans\n- Gratuit\n- Filières : Génie Civil, Mécanique, Informatique\n\n### Formations Privées Variées\n\n1. **Écoles d'informatique**\n   - Supinfo, ISTA privés\n   - Coding schools\n\n2. **Écoles de design**\n   - Design graphique, mode\n",
+      "metadata": {
+        "question": "Liste des écoles à Marrakech",
+        "category": "Écoles",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Liste des écoles à Marrakech\n\n(Suite) \n3. **Écoles de langues**\n   - Anglais, français intensifs\n\n### Classement par Domaine\n\n**Pour l'Ingénierie** ⭐⭐⭐⭐⭐\n- ENSA Marrakech (top)\n- FST Marrakech\n- EMSI\n\n**Pour le Commerce** ⭐⭐⭐⭐\n- HEM Marrakech\n- Sup de Co\n\n**Pour la Médecine** ⭐⭐⭐⭐⭐\n- Faculté de Médecine (CHU)\n\n**Pour l'Architecture** ⭐⭐⭐⭐⭐\n- ENA Marrakech\n\n### Contact Université Cadi Ayyad\n- **Site** : www.uca.ma\n- **Téléphone** : 052",
+      "metadata": {
+        "question": "Liste des écoles à Marrakech",
+        "category": "Écoles",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Liste des écoles à Marrakech\n\n(Suite) 4-43-46-49\n- **Email** : presidence@uca.ac.ma\n\n---",
+      "metadata": {
+        "question": "Liste des écoles à Marrakech",
+        "category": "Écoles",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Moyenne demandée pour CPGE ?\n\nRéponse: Les **CPGE (Classes Préparatoires aux Grandes Écoles)** au Maroc sont très sélectives.\n\n### Seuils Moyens 2023-2024\n\n**CPGE Scientifiques (MPSI, PCSI)**\n\n**Centres d'Excellence**\n- **Lycée Mohammed V** (Casablanca) : 17-18/20\n- **Lycée Descartes** (Rabat) : 17-18/20\n- **Lycée Lyautey** (Casablanca) : 17-18/20\n\n**Centres Très Bons**\n- **Lycée Ibn Timiya** (Marrakech) : 16-17/20\n- **Lycée My Youssef",
+      "metadata": {
+        "question": "Moyenne demandée pour CPGE ?",
+        "category": "Admissions",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Moyenne demandée pour CPGE ?\n\n(Suite) ** (Rabat) : 16-17/20\n- **Lycée Hassan II** (Casablanca) : 16-17/20\n\n**Centres Bons**\n- **Lycées régionaux** : 15-16/20\n- **Nouvelles CPGE** : 14-15/20\n\n**CPGE Économiques (ECS, ECT)**\n- **Top centres** : 16-17/20\n- **Bons centres** : 14-16/20\n\n### Par Filière\n\n**MPSI (Maths-Physique)**\n- Bac SM obligatoire\n- Moyenne : 16-18/20\n- Priorité : Maths, Physique\n\n**PCSI (Physique-Chimie)**\n- Bac SM ou P",
+      "metadata": {
+        "question": "Moyenne demandée pour CPGE ?",
+        "category": "Admissions",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Moyenne demandée pour CPGE ?\n\n(Suite) C\n- Moyenne : 15-17/20\n- Équilibre Maths/Physique/Chimie\n\n**BCPST (Bio)**\n- Bac SVT ou PC\n- Moyenne : 15-17/20\n- SVT, Maths, Physique\n\n**ECS (Économique et Commerciale)**\n- Bac Éco ou SM\n- Moyenne : 15-17/20\n- Maths, Langues\n\n### Critères de Sélection\n\n**Pondération**\n1. Notes Maths/Sciences : 50%\n2. Moyenne générale : 30%\n3. Appréciations professeurs : 15%\n4. Motivation/Projet : 5%\n\n**Bacs Accept",
+      "metadata": {
+        "question": "Moyenne demandée pour CPGE ?",
+        "category": "Admissions",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Moyenne demandée pour CPGE ?\n\n(Suite) és**\n- MPSI/PCSI : SM, PC\n- BCPST : SVT, PC\n- ECS : Éco, SM\n\n### Avantages CPGE\n\n1. ✅ **Formation d'excellence** gratuite\n2. ✅ **Accès grandes écoles** (ENS, Mines, Centrale)\n3. ✅ **Équivalence universitaire** (L2/L3)\n4. ✅ **Méthode de travail** rigoureuse\n5. ✅ **Réseau** puissant\n\n### Inconvénients\n\n1. ❌ **Très exigeant** (60h/semaine)\n2. ❌ **Stress important**\n3. ❌ **Taux d'échec** élevé (30-40%",
+      "metadata": {
+        "question": "Moyenne demandée pour CPGE ?",
+        "category": "Admissions",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Moyenne demandée pour CPGE ?\n\n(Suite) )\n4. ❌ **Vie sociale** limitée\n5. ❌ **Pression** constante\n\n### Alternatives à CPGE\n\n**Si moyenne 14-16**\n- ENSA (cycle intégré)\n- FST\n- Licences d'excellence\n\n**Si moyenne 12-14**\n- EST (DUT)\n- Licences classiques\n\n### Conseils\n\n1. Moyenne ≥16 recommandée\n2. Excellence en Maths cruciale\n3. Motivation solide indispensable\n4. Renseignez-vous sur la charge\n5. Ayez un plan B\n\n---",
+      "metadata": {
+        "question": "Moyenne demandée pour CPGE ?",
+        "category": "Admissions",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les débouchés de la filière SM ?\n\nRéponse: Le **Bac Sciences Maths (SM)** est le plus polyvalent avec d'excellents débouchés.\n\n### Filières d'Excellence\n\n**Ingénierie**\n1. **CPGE** puis Grandes Écoles\n   - Mines, Ponts, Centrale Paris\n   - Via bourses excellences\n\n2. **ENSA** (12 au Maroc)\n   - Informatique, Électrique, Civil\n   - Seuil : 13-15/20\n\n3. **EMI, ENSIAS, INPT**\n   - Top écoles publiques\n   - Seuil : 16-17/20\n\n**Médecine et Sant",
+      "metadata": {
+        "question": "Les débouchés de la filière SM ?",
+        "category": "Orientation",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les débouchés de la filière SM ?\n\n(Suite) é**\n- Médecine : Seuil 16-17/20\n- Pharmacie : 14-15/20\n- Médecine Dentaire : 15-16/20\n- (SM accepté mais priorité SVT)\n\n### Secteurs Porteurs\n\n**Informatique et IT** ⭐⭐⭐⭐⭐\n- Développeur : 6-12K DH/mois\n- Data Scientist : 12-20K DH\n- IA/Machine Learning : 15-25K DH\n- Cybersécurité : 10-18K DH\n\n**Ingénierie** ⭐⭐⭐⭐⭐\n- Ingénieur Civil : 8-15K DH\n- Ingénieur Électrique : 8-14K DH\n- Ingénieur Industriel",
+      "metadata": {
+        "question": "Les débouchés de la filière SM ?",
+        "category": "Orientation",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les débouchés de la filière SM ?\n\n(Suite)  : 7-13K DH\n\n**Finance et Actuariat** ⭐⭐⭐⭐\n- Actuaire : 12-20K DH\n- Analyste financier : 10-18K DH\n- Risk Manager : 15-25K DH\n\n**Recherche et Enseignement** ⭐⭐⭐\n- Chercheur : 8-15K DH\n- Professeur université : 10-18K DH\n- Doctorat puis carrière académique\n\n### Métiers d'Avenir\n\n1. **Intelligence Artificielle**\n2. **Data Science**\n3. **Cybersécurité**\n4. **Énergies Renouvelables**\n5. **Biotechnolog",
+      "metadata": {
+        "question": "Les débouchés de la filière SM ?",
+        "category": "Orientation",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les débouchés de la filière SM ?\n\n(Suite) ie**\n6. **Finance Quantitative**\n7. **Robotique**\n8. **Blockchain**\n\n### Poursuites d'Études\n\n**Bac+5**\n- 90% des SM poursuivent\n- Ingénieur, Master, etc.\n\n**Bac+8**\n- 15-20% font un Doctorat\n- Recherche, R&D\n\n### Taux d'Emploi\n\n- **6 mois après diplôme** : 75%\n- **1 an après** : 90%\n- **Secteur privé** : 80%\n- **International** : 25%\n\n### Salaires Moyens\n\n- **Débutant** : 6-10K DH/mois\n- **5 ans ",
+      "metadata": {
+        "question": "Les débouchés de la filière SM ?",
+        "category": "Orientation",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Les débouchés de la filière SM ?\n\n(Suite) exp** : 12-20K DH\n- **10 ans exp** : 20-35K DH\n- **Expert** : 35K+ DH\n\n---",
+      "metadata": {
+        "question": "Les débouchés de la filière SM ?",
+        "category": "Orientation",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi l'OFPPT ?\n\nRéponse: L'**OFPPT (Office de la Formation Professionnelle et de la Promotion du Travail)** est l'organisme public marocain leader de la formation professionnelle.\n\n### Présentation\n\n- **Création** : 1974\n- **Statut** : Établissement public\n- **Tutelle** : Ministère du Travail\n- **Mission** : Formation professionnelle qualifiante\n- **Audience** : 500 000+ stagiaires/an\n\n### Types de Formation\n\n**1. Technic",
+      "metadata": {
+        "question": "C'est quoi l'OFPPT ?",
+        "category": "Conseils",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi l'OFPPT ?\n\n(Suite) ien Spécialisé (Bac+2)**\n- Durée : 2 ans (+ Bac requis)\n- Équivalent : BTS/DUT\n- Diplôme : Technicien Spécialisé\n- 180+ filières\n\n**2. Technicien (Bac)**\n- Durée : 2 ans (après 3ème collège ou Bac)\n- Diplôme : Technicien\n- Formations techniques\n\n**3. Qualification (Sans Bac)**\n- Durée : 1-2 ans\n- Niveau : Ouvrier qualifié\n- Pas de Bac requis\n\n### Filières Populaires\n\n**IT et Digital** ⭐⭐⭐⭐⭐\n- Déve",
+      "metadata": {
+        "question": "C'est quoi l'OFPPT ?",
+        "category": "Conseils",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi l'OFPPT ?\n\n(Suite) loppement Digital\n- Systèmes et Réseaux\n- Développement Web et Mobile\n- Cybersécurité\n\n**Gestion et Commerce** ⭐⭐⭐⭐\n- Gestion des Entreprises\n- Commerce International\n- Marketing Digital\n- Comptabilité\n\n**Industrie** ⭐⭐⭐⭐\n- Maintenance Industrielle\n- Électromécanique\n- Automatisation\n\n**Tourisme et Hôtellerie** ⭐⭐⭐⭐\n- Management Hôtelier\n- Cuisine et Restauration\n- Guide Touristique\n\n### Avantages",
+      "metadata": {
+        "question": "C'est quoi l'OFPPT ?",
+        "category": "Conseils",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi l'OFPPT ?\n\n(Suite)  OFPPT\n\n1. ✅ **Gratuit** (frais inscription : ~200 DH/an)\n2. ✅ **Accessible** (dès le collège)\n3. ✅ **Professionnalisant** (70% pratique)\n4. ✅ **Stages garantis** (6-12 mois)\n5. ✅ **Taux d'emploi élevé** (~70%)\n6. ✅ **370 centres** au Maroc\n7. ✅ **Bourse possible** (600-1200 DH/mois)\n\n### Inscription\n\n**Période** : Juin-Septembre\n**Plateforme** : www.orientation.ofppt.ma\n**Documents** :\n- Bac ou r",
+      "metadata": {
+        "question": "C'est quoi l'OFPPT ?",
+        "category": "Conseils",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi l'OFPPT ?\n\n(Suite) elevé notes\n- CIN\n- Photos d'identité\n\n**Sélection** : Dossier + Test (certaines filières)\n\n### Débouchés\n\n**Taux d'insertion** : 65-75%\n**Délai** : 6-12 mois\n**Salaire moyen** : 3 500-6 000 DH/mois\n**Secteurs** : Industrie, Services, IT\n\n### Poursuite d'Études\n\n- Licence Professionnelle\n- Écoles privées (passerelles)\n- Difficulté pour Master\n\n### OFPPT vs Université\n\n| Critère | OFPPT | Universit",
+      "metadata": {
+        "question": "C'est quoi l'OFPPT ?",
+        "category": "Conseils",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi l'OFPPT ?\n\n(Suite) é |\n|---------|-------|------------|\n| Pratique | 70% | 30% |\n| Emploi rapide | ✅ | ❌ |\n| Diplôme reconnu | ✅ | ✅ |\n| Poursuite Master | ❌ | ✅ |\n\n---\n\n*[Continuer avec les questions restantes...]*",
+      "metadata": {
+        "question": "C'est quoi l'OFPPT ?",
+        "category": "Conseils",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment devenir pilote de ligne ?\n\nRéponse: Devenir **pilote de ligne** au Maroc requiert une formation longue, coûteuse mais passionnante.\n\n### Parcours Classique\n\n**Étape 1 : Formation Initiale**\n- **Âge minimum** : 18 ans\n- **Diplôme** : Bac (SM, PC ou équivalent)\n- **Niveau** : Bon en maths/physique\n- **Santé** : Visite médicale aéronautique stricte\n\n**Étape 2 : Licence PPL (Private Pilot License)**\n- **Durée** : 3-6 mois\n- **Heures de ",
+      "metadata": {
+        "question": "Comment devenir pilote de ligne ?",
+        "category": "Conseils",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment devenir pilote de ligne ?\n\n(Suite) vol** : 45h minimum\n- **Coût** : 150 000-200 000 DH\n- **Contenu** : Vol de base, navigation\n\n**Étape 3 : Licence CPL (Commercial Pilot License)**\n- **Durée** : 12-18 mois\n- **Heures de vol** : 200h minimum\n- **Coût** : 600 000-800 000 DH\n- **Permet** : Voler commercialement\n\n**Étape 4 : ATPL (Airline Transport Pilot License)**\n- **Formation** : 14 matières théoriques\n- **Durée** : 9-12 mois\n- **Co",
+      "metadata": {
+        "question": "Comment devenir pilote de ligne ?",
+        "category": "Conseils",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment devenir pilote de ligne ?\n\n(Suite) ût** : 200 000-300 000 DH (théorie)\n- **Vol** : 1500h d'expérience requises\n\n**Étape 5 : Type Rating**\n- **Formation** : Sur type d'avion spécifique (A320, Boeing 737...)\n- **Durée** : 2-3 mois\n- **Coût** : 300 000-500 000 DH\n- **Obligatoire** : Pour voler sur cet appareil\n\n### Écoles de Pilotage au Maroc\n\n**1. Académie Internationale Mohammed VI de l'Aviation Civile (AIAC)**\n- **Localisation** : ",
+      "metadata": {
+        "question": "Comment devenir pilote de ligne ?",
+        "category": "Conseils",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment devenir pilote de ligne ?\n\n(Suite) Casablanca\n- **Programme** : Formation complète pilote\n- **Durée** : 2 ans  \n- **Coût** : ~1 000 000 DH\n- **Avantages** : École d'État, reconnaissance internationale\n\n**2. Écoles Privées**\n- **ESMA Aviation** (Marrakech)\n- **Atlas Aviation Academy** (Casablanca)\n- **Coût** : 800 000-1 500 000 DH pour formation complète\n\n**3. Écoles à l'Étranger**\n- **France** : CAE, Enac (très réputées)\n- **USA** ",
+      "metadata": {
+        "question": "Comment devenir pilote de ligne ?",
+        "category": "Conseils",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment devenir pilote de ligne ?\n\n(Suite) : Flight schools (souvent moins cher)\n- **Espagne** : FTE Jerez\n- **Avantage** : Meilleure formation, réseaux\n\n### Coût Total de Formation\n\n**Au Maroc**\n- PPL : 200 000 DH\n- CPL : 700 000 DH\n- ATPL théorique : 250 000 DH\n- Type Rating : 400 000 DH\n- **TOTAL : ~1 500 000 DH** (150 000€)\n\n**À l'Étranger**\n- USA : 80 000-120 000€\n- France : 120 000-150 000€\n- Espagne : 100 000-130 000€\n\n### Condition",
+      "metadata": {
+        "question": "Comment devenir pilote de ligne ?",
+        "category": "Conseils",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment devenir pilote de ligne ?\n\n(Suite) s Médicales\n\n**Classe 1 Medical Certificate**\n- Vision : 10/10 (correctif autorisé)\n- Audition : Parfaite\n- Pas de daltonisme sévère\n- Santé physique excellente\n- Santé mentale : Apte\n- Examens réguliers obligatoires\n\n### Débouchés et Salaires\n\n**Compagnies Marocaines**\n- Royal Air Maroc\n- Air Arabia\n- Atlas Air\n\n**Salaires**\n- **First Officer (Copilote)** : 25 000-40 000 DH/mois\n- **Capitaine (3-",
+      "metadata": {
+        "question": "Comment devenir pilote de ligne ?",
+        "category": "Conseils",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment devenir pilote de ligne ?\n\n(Suite) 5 ans)** : 50 000-80 000 DH/mois\n- **Capitaine senior** : 80 000-120 000 DH/mois\n\n**International**\n- Compagnies du Golfe : 70 000-150 000 DH/mois\n- Europe : 60 000-100 000 DH/mois\n- Asie : 50 000-90 000 DH/mois\n\n### Avantages Métier\n\n- ✅ Salaire excellent\n- ✅ Voyages gratuits\n- ✅ Prestige\n- ✅ Conditions de travail\n- ✅ Retraite avantageuse\n\n### Inconvénients\n\n- ❌ Coût formation très élevé\n- ❌ Vie ",
+      "metadata": {
+        "question": "Comment devenir pilote de ligne ?",
+        "category": "Conseils",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment devenir pilote de ligne ?\n\n(Suite) familiale difficile\n- ❌ Pression et responsabilité\n- ❌ Heures irrégulières\n- ❌ Fatigue et décalages horaires\n\n### Financement de la Formation\n\n**Options**\n1. **Prêts bancaires** : Certaines banques financent\n2. **Bourses** : Rares mais existent\n3. **Compagnies aériennes** : Certaines financent en échange d'engagement\n4. **Épargne familiale**\n\n### Alternatives\n\n**Pilote Militaire**\n- Formation grat",
+      "metadata": {
+        "question": "Comment devenir pilote de ligne ?",
+        "category": "Conseils",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment devenir pilote de ligne ?\n\n(Suite) uite (Forces Armées Royales)\n- Très sélectif\n- Engagement 10-15 ans\n- Possibilité de basculer au civil après\n\n**Autres Métiers Aviation**\n- Contrôleur aérien\n- Ingénieur aéronautique  \n- Mécanicien aéronautique\n- Personnel navigant commercial\n\n### Conseils\n\n1. Commencez jeune (18-25 ans)\n2. Excellent niveau anglais (obligatoire)\n3. Renseignez-vous sur les coûts réels\n4. Visitez les écoles\n5. Parle",
+      "metadata": {
+        "question": "Comment devenir pilote de ligne ?",
+        "category": "Conseils",
+        "chunk_type": "detail_9",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment devenir pilote de ligne ?\n\n(Suite) z à des pilotes\n6. Ayez un plan B financier\n\n---",
+      "metadata": {
+        "question": "Comment devenir pilote de ligne ?",
+        "category": "Conseils",
+        "chunk_type": "detail_10",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment préparer le concours de médecine ?\n\nRéponse: Au Maroc, l'accès à la médecine se fait **sur dossier** (pas de concours PACES comme en France), mais la préparation reste cruciale.\n\n### Système d'Admission Médecine Maroc\n\n**Critères de Sélection**\n- **Moyenne Bac** : 16-18/20 (selon facultés)\n- **Bac accepté** : SVT, PC (priorité SVT)\n- **Notes sciences** : Maths, PC, SVT ≥ 14/20\n- **Pas de concours** : Sélection sur dossier uniquement\n\n**Seuil",
+      "metadata": {
+        "question": "Comment préparer le concours de médecine ?",
+        "category": "Conseils",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment préparer le concours de médecine ?\n\n(Suite) s 2023-2024**\n- Casablanca : 17.5-18/20\n- Rabat : 17-17.5/20\n- Fès : 16.5-17/20\n- Marrakech : 16-16.5/20\n- Laâyoune/Dakhla : 13.5-14.5/20\n\n### Préparation au Bac pour Médecine\n\n**Terminale SVT**\n- Viser 18-19/20 en SVT\n- 17-18/20 en PC\n- 16-17/20 en Maths\n- 16+/20 en Français\n\n**Stratégies**\n1. **SVT** : Maîtriser parfaitement le programme\n2. **Physique-Chimie** : Comprendre, ne pas apprendre par ",
+      "metadata": {
+        "question": "Comment préparer le concours de médecine ?",
+        "category": "Conseils",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment préparer le concours de médecine ?\n\n(Suite) cœur\n3. **Devoirs** : Faire TOUS les exercices\n4. **Annales** : Pratiquer les anciens sujets\n5. **Cours particuliers** : Si besoin en PC/Maths\n\n### Préparation Première Année Médecine (P1)\n\n**Programme P1**\n- Anatomie\n- Physiologie\n- Biochimie\n- Biophysique\n- Histologie\n- Embryologie\n- Cytologie\n\n**Le Vrai Concours = Réussir P1**\n- **Taux d'échec** : 40-50%\n- **Volume** : Énorme (à apprendre par c",
+      "metadata": {
+        "question": "Comment préparer le concours de médecine ?",
+        "category": "Conseils",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment préparer le concours de médecine ?\n\n(Suite) œur)\n- **Rythme** : Très intense\n\n### Méthodes de Travail P1\n\n**Organisation**\n- **Horaires** : 8h-23h tous les jours\n- **Pauses** : 10 min/2h\n- **Week-end** : 1 jour off/mois\n\n**Techniques d'Apprentissage**\n1. **Fiches de révision** : Synthétiser chaque cours\n2. **Répétition espacée** : Relire à J+1, J+3, J+7, J+15\n3. **Groupes d'étude** : Expliquer aux autres\n4. **QCM** : S'entraîner massivement",
+      "metadata": {
+        "question": "Comment préparer le concours de médecine ?",
+        "category": "Conseils",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment préparer le concours de médecine ?\n\n(Suite) \n5. **Mémotechniques** : Pour l'anatomie\n\n**Ressources**\n- **Manuels** : Gray's Anatomy, Netter\n- **Videos** : YouTube médicale\n- **Apps** : Anki (flashcards)\n- **Tutorat** : Étudiants 2ème année\n\n### Ressources de Préparation\n\n**Avant P1 (Été post-Bac)**\n- **Anatomie de base** : Commencer à apprendre\n- **Terminologie médicale** : Préfixes, suffixes\n- **Biochimie** : Réviser bases lycée\n- **Physiq",
+      "metadata": {
+        "question": "Comment préparer le concours de médecine ?",
+        "category": "Conseils",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment préparer le concours de médecine ?\n\n(Suite) ue** : Optique, mécanique des fluides\n\n**Livres Recommandés**\n- Anatomie : Netter, Kamina\n- Physiologie : Marieb\n- Biochimie : Harper\n- Histologie : Wheater's\n\n### Prépa Privée Médecine\n\n**Est-ce Utile ?**\n- ⚠️ Aucune prépa pour le \"concours\" (n'existe pas)\n- ✅ Prépas pour P1 (été après Bac)\n- ✅ Cours de soutien pendant P1\n\n**Coût** : 5 000-15 000 DH pour été\n**Utilité** : Moyenne (autodidacte pos",
+      "metadata": {
+        "question": "Comment préparer le concours de médecine ?",
+        "category": "Conseils",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment préparer le concours de médecine ?\n\n(Suite) sible)\n\n### Plan de Préparation 1 An\n\n**10-12 Mois Avant Bac**\n- Viser 18+ en SVT\n- Renforcer PC et Maths\n- Dossier excellent\n\n**6 Mois Avant Bac**\n- Révisions intensives\n- Annales du Bac\n- Objectif : Mention Très Bien\n\n**0-3 Mois (Été post-Bac)**\n- Repos 2 semaines\n- Commencer anatomie\n- Lire 1-2 bouquins de P1\n- Apprendre termes médicaux\n\n**P1 (Septembre-Juin)**\n- Travail acharné\n- Discipline de",
+      "metadata": {
+        "question": "Comment préparer le concours de médecine ?",
+        "category": "Conseils",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment préparer le concours de médecine ?\n\n(Suite)  fer  \n- Objectif : Valider P1\n\n### Conseils de Médecins\n\n**Mentalité**\n1. La médecine est une **marathon**, pas un sprint\n2. Accepter de **sacrifier** votre vie sociale (temporairement)\n3. La **régularité** bat l'intensité\n4. Prendre soin de sa **santé mentale**\n5. Avoir un **pourquoi** fort (motivation)\n\n**Erreurs à Éviter**\n- ❌ Négliger le Bac (penser que P1 suffit)\n- ❌ Commencer trop tard\n- ❌ ",
+      "metadata": {
+        "question": "Comment préparer le concours de médecine ?",
+        "category": "Conseils",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Comment préparer le concours de médecine ?\n\n(Suite) Isolement total (burn-out)\n- ❌ Comparer aux autres\n- ❌ Bachoter sans comprendre\n\n### Si Vous Échouez\n\n**Alternatives**\n- Pharmacie (plus accessible)\n- Médecine Dentaire\n- Kinésithérapie (privée)\n- Biologie médicale\n- Infirmier puis spécialisation\n\n**Redoublement**\n- P1 redoublable une fois\n- 60% réussissent au 2ème essai\n\n---",
+      "metadata": {
+        "question": "Comment préparer le concours de médecine ?",
+        "category": "Conseils",
+        "chunk_type": "detail_9",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que les stages sont obligatoires ?\n\nRéponse: Les stages sont **obligatoires** pour la plupart des formations professionnalisantes au Maroc, mais pas pour toutes.\n\n### Formations avec Stages Obligatoires\n\n**Écoles d'Ingénieurs** ✅\n- **ENSA, EMI, ENSIAS** : 2-3 stages obligatoires\n  - Stage ouvrier (1 mois, 1ère année)\n  - Stage technicien (2 mois, 3ème année)\n  - Stage PFE (4-6 mois, 5ème année)\n\n**Écoles de Commerce** ✅\n- **ENCG, ISCAE, HEM*",
+      "metadata": {
+        "question": "Est-ce que les stages sont obligatoires ?",
+        "category": "Conseils",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que les stages sont obligatoires ?\n\n(Suite) * : Stages chaque année\n  - Total : 6-12 mois sur 5 ans\n  - Stage de fin d'études : 6 mois minimum\n\n**BTS/DUT (EST)** ✅\n- Stage obligatoire : 8-12 semaines\n- En 2ème année\n- Validation du diplôme\n\n**OFPPT** ✅\n- Stage obligatoire : 6-12 mois\n- Rémunéré souvent\n- Crucial pour validation\n\n**Médecine** ✅\n- Internat obligatoire : 4-5 ans après 7 ans d'études\n- Stages hospitaliers durant cursus\n\n**Archi",
+      "metadata": {
+        "question": "Est-ce que les stages sont obligatoires ?",
+        "category": "Conseils",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que les stages sont obligatoires ?\n\n(Suite) tecture** ✅\n- Stage obligatoire : 6 mois\n- En agence d'architecture\n- Avant diplôme\n\n### Formations SANS Stages Obligatoires\n\n**Facultés Classiques** ❌\n- Lettres, Sciences, Droit\n- Stages optionnels (recommandés)\n- Pas de validation par stage\n\n**CPGE** ❌  \n- Classes préparatoires : Que des cours\n- Pas de stages\n\n**Licences Fondamentales** ❌\n- Orientation recherche/académique\n- Stages non requis\n\n#",
+      "metadata": {
+        "question": "Est-ce que les stages sont obligatoires ?",
+        "category": "Conseils",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que les stages sont obligatoires ?\n\n(Suite) ## Pourquoi les Stages sont Importants\n\n**Avantages**\n1. ✅ **Expérience professionnelle** réelle\n2. ✅ **Réseau** et contacts\n3. ✅ **Compétences pratiques**\n4. ✅ **Ligne sur CV**\n5. ✅ **Possibilité d'embauche** (30% sont embauchés)\n6. ✅ **Découverte** du métier\n\n**Pour l'Employabilité**\n- 80% des recruteurs exigent une expérience\n- Stage = 1ère expérience acceptée\n- Différence majeure sur CV\n\n### T",
+      "metadata": {
+        "question": "Est-ce que les stages sont obligatoires ?",
+        "category": "Conseils",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que les stages sont obligatoires ?\n\n(Suite) ypes de Stages\n\n**Stage Ouvrier** (1 mois)\n- Découverte de l'entreprise\n- Travail manuel/terrain\n- Non rémunéré souvent\n\n**Stage Technicien** (2-3 mois)\n- Application des connaissances\n- Mission technique précise\n- Gratification possible : 1000-2000 DH/mois\n\n**Stage PFE** (4-6 mois)\n- Projet de fin d'études\n- Mission importante\n- Rémunération : 2000-4000 DH/mois\n- Débouche souvent sur emploi\n\n### ",
+      "metadata": {
+        "question": "Est-ce que les stages sont obligatoires ?",
+        "category": "Conseils",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que les stages sont obligatoires ?\n\n(Suite) Rémunération\n\n**Secteur Public**\n- Souvent non rémunéré\n- Indemnité transport parfois\n\n**Secteur Privé**\n- Grandes entreprises : 2000-5000 DH/mois\n- PME : 500-2000 DH/mois ou non rémunéré\n- Startups : Variable (equity parfois)\n\n**Loi au Maroc**\n- Aucune obligation légale de rémunérer\n- Dépend de la convention de stage\n- Négociable\n\n### Comment Trouver un Stage\n\n**Réseaux**\n1. **Réseau personnel** ",
+      "metadata": {
+        "question": "Est-ce que les stages sont obligatoires ?",
+        "category": "Conseils",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que les stages sont obligatoires ?\n\n(Suite) : Famille, amis\n2. **Alumni** : Anciens de votre école\n3. **Professeurs** : Contacts entreprises\n4. **LinkedIn** : Réseau professionnel\n\n**Candidatures**\n1. **Sites emploi** : Rekrute.com, Emploi.ma\n2. **Candidatures spontanées** : Email + CV\n3. **Salons/Forums** : Rencontres recruteurs\n4. **Stages.ma** : Plateforme dédiée\n\n**Timing**\n- Commencer 3-4 mois avant\n-  Envoyer 30-50 candidatures minimu",
+      "metadata": {
+        "question": "Est-ce que les stages sont obligatoires ?",
+        "category": "Conseils",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que les stages sont obligatoires ?\n\n(Suite) m\n- Relancer après 1 semaine\n\n### Obligations Légales\n\n**Convention de Stage**\n- **Obligatoire** : Tripartite (école-étudiant-entreprise)\n- **Assurance** : Couverture accidents\n- **Durée** : Limitée (6 mois max renouvelable)\n- **Missions** : Définies clairement\n\n**Droits du Stagiaire**\n- Encadrement par un tuteur\n- Évaluation et attestation de stage\n- Respect du rythme de travail (35-40h/semaine)\n",
+      "metadata": {
+        "question": "Est-ce que les stages sont obligatoires ?",
+        "category": "Conseils",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que les stages sont obligatoires ?\n\n(Suite) - Pas de remplacement d'un salarié\n\n### Que Faire si Pas de Stage ?\n\n**Alternatives**\n1. **Projet personnel** : Développer un projet\n2. **Freelance** : Missions courtes\n3. **Associatif** : Bénévolat valorisable\n4. **Startup** : Créer votre projet\n5. **Formation** : Certifications en ligne\n\n**Impact**\n- Retard de diplôme si obligatoire\n- Chercher aide école (partenariats)\n\n### Conseils\n\n1. **Antici",
+      "metadata": {
+        "question": "Est-ce que les stages sont obligatoires ?",
+        "category": "Conseils",
+        "chunk_type": "detail_9",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que les stages sont obligatoires ?\n\n(Suite) pez** : Ne cherchez pas au dernier moment\n2. **Réseau** : 70% des stages via réseau\n3. **CV soigné** : Première impression compte\n4. **Motivation** : Lettre personnalisée\n5. **Flexibilité** : Accepter missions variées\n\n---",
+      "metadata": {
+        "question": "Est-ce que les stages sont obligatoires ?",
+        "category": "Conseils",
+        "chunk_type": "detail_10",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelles sont les villes avec moins de concurrence ?\n\nRéponse: Certaines villes marocaines offrent un meilleur **ratio places/candidats** pour l'enseignement supérieur.\n\n### Villes \"Opportunité\" (ENSA/FST/EST)\n\n**Très Favorable** 🟢\n1. **Dakhla**\n   - ENSA Dakhla : Seuil 12-13/20\n   - Très peu de candidats\n   - Places nombreuses\n   - ⚠️ Éloignement géographique\n\n2. **Laâyoune**\n   - Faculté Médecine : Seuil 13.5-14/20 (vs 17+ ailleurs)\n   - ENSA : Seuil 12-13/",
+      "metadata": {
+        "question": "Quelles sont les villes avec moins de concurrence ?",
+        "category": "Conseils",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelles sont les villes avec moins de concurrence ?\n\n(Suite) 20\n   - Peu de concurrence\n\n3. **Safi**\n   - ENSA Safi : Seuil 12-13/20\n   - EST Safi\n   - Ville côtière agréable\n\n4. **Khouribga**\n   - ENSA Khouribga : Seuil 12.5-13/20\n   - 1337 School (gratuit, excellent)\n   - Moins de candidats\n\n5. **El Jadida**\n   - ENSA : Seuil 13-13.5/20\n   - FST\n   - Proche de Casablanca (1h)\n\n**Favorable** 🟡\n6. **Berrechid**\n   - ENSA : Seuil 12.5-13/20\n   - Nouvelle éco",
+      "metadata": {
+        "question": "Quelles sont les villes avec moins de concurrence ?",
+        "category": "Conseils",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelles sont les villes avec moins de concurrence ?\n\n(Suite) le\n   - Proche Casa (30 min)\n\n7. **Tétouan**\n   - ENSA : Seuil 13-14/20\n   - ENA (Architecture)\n   - Nord moins prisé\n\n8. **Al Hoceima**\n   - ENSA : Seuil 12-13/20\n   - Très belle ville\n   - Peu de demandes\n\n9. **Oujda**\n   - ENSA, FST : Seuil 13-14/20\n   - Est moins demandé\n   - Qualité correcte\n\n10. **Béni Mellal**\n    - FST : Accessible\n    - Faculté Médecine : Seuil 14.5-15/20\n    - Centre du ",
+      "metadata": {
+        "question": "Quelles sont les villes avec moins de concurrence ?",
+        "category": "Conseils",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelles sont les villes avec moins de concurrence ?\n\n(Suite) Maroc\n\n### Pourquoi Moins de Concurrence ?\n\n**Facteurs**\n1. **Éloignement** : Loin des grandes villes\n2. **Récente création** : Moins connues\n3. **Préjugés** : Perçues comme moins bonnes (souvent faux)\n4. **Vie étudiante** : Moins d'attractions\n5. **Climat** : Sahara pour Dakhla/Laâyoune\n\n### Villes à ÉVITER (Très Sélectives)\n\n**Concurrence Maximale** 🔴\n- **Casablanca** : Seuils très élevés\n- **Ra",
+      "metadata": {
+        "question": "Quelles sont les villes avec moins de concurrence ?",
+        "category": "Conseils",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelles sont les villes avec moins de concurrence ?\n\n(Suite) bat** : Très demandé (capitale)\n- **Marrakech** : Touristique, prisé\n- **Fès** : Historique, attractif\n- **Agadir** : Côtière, agréable\n\n### Stratégie d'Inscription\n\n**Plan A/B/C**\n1. **Plan A** : Ville préférée (ex: Rabat, Casa)\n2. **Plan B** : Villes moyennes (ex: Oujda, Tanger)\n3. **Plan C** : Villes opportunité (ex: Safi, Berrechid)\n\n**Sur CursusSup/Tawjihi**\n- Sélectionner **10 choix**\n- Mix ",
+      "metadata": {
+        "question": "Quelles sont les villes avec moins de concurrence ?",
+        "category": "Conseils",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelles sont les villes avec moins de concurrence ?\n\n(Suite) villes compétitives + accessibles\n- Ordre de préférence réfléchi\n\n### Qualité de Formation\n\n**Important**\n- ✅ ENSA/FST/EST = Programme national identique\n- ✅ Diplôme a la même valeur partout\n- ✅ Professeurs souvent aussi qualifiés\n- ✅ Stages/emploi : Réseau importe plus que ville\n\n**Légères Différences**\n- Équipements : Mieux dans grandes villes\n- Partenariats entreprises : Plus à Casa/Rabat\n- Vie",
+      "metadata": {
+        "question": "Quelles sont les villes avec moins de concurrence ?",
+        "category": "Conseils",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelles sont les villes avec moins de concurrence ?\n\n(Suite)  étudiante : Plus animée grandes villes\n\n### Avantages Petites Villes\n\n1. ✅ **Accès plus facile** (seuils -2 à -4 points)\n2. ✅ **Coût de vie** moins cher (-30 à -50%)\n3. ✅ **Logement** plus accessible\n4. ✅ **Moins de stress** compétitif\n5. ✅ **Classes plus petites** (meilleur encadrement)\n\n### Inconvénients\n\n1. ❌ **Éloignement** familial\n2. ❌ **Vie étudiante** limitée\n3. ❌ **Stages** : Moins d'ent",
+      "metadata": {
+        "question": "Quelles sont les villes avec moins de concurrence ?",
+        "category": "Conseils",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelles sont les villes avec moins de concurrence ?\n\n(Suite) reprises locales\n4. ❌ **Réseau** moins développé\n5. ❌ **Transport** : Moins bien desservi\n\n### Coût de Vie Comparé\n\n| Ville | Logement/mois | Vie/mois | Total/mois |\n|-------|---------------|----------|------------|\n| Casa/Rabat | 1500-2500 DH | 1500 DH | 3000-4000 DH |\n| Oujda/Tétouan | 800-1200 DH | 1000 DH | 1800-2200 DH |\n| Safi/El Jadida | 600-1000 DH | 800 DH | 1400-1800 DH |\n| Dakhla/Laâyou",
+      "metadata": {
+        "question": "Quelles sont les villes avec moins de concurrence ?",
+        "category": "Conseils",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelles sont les villes avec moins de concurrence ?\n\n(Suite) ne | 1000-1500 DH | 1200 DH | 2200-2700 DH |\n\n### Exemples Réussite\n\n**Cas Réels**\n- \"J'ai fait ENSA Safi avec 13/20, mes amis n'ont pas eu ENSA Rabat avec 15/20\"\n- \"Médecine Laâyoune avec 14/20, diplôme identique à Casa\"\n- \"ENSA Khouribga, embauché chez OCP à Casablanca\"\n\n### Conseils Stratégiques\n\n1. **Ne sous-estimez pas** ces villes\n2. **Privilégiez le diplôme** à la ville\n3. **Réseau** se con",
+      "metadata": {
+        "question": "Quelles sont les villes avec moins de concurrence ?",
+        "category": "Conseils",
+        "chunk_type": "detail_9",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelles sont les villes avec moins de concurrence ?\n\n(Suite) struit après (stages, emploi)\n4. **2-5 ans** passent vite\n5. **Mobilité** après diplôme garantie\n\n### Liste d'Attente\n\n**Astuce**\n- Postuler villes éloignées\n- Si liste d'attente ville préférée\n- **Chances de remonter** (désistements)\n- Garder les deux options\n\n---",
+      "metadata": {
+        "question": "Quelles sont les villes avec moins de concurrence ?",
+        "category": "Conseils",
+        "chunk_type": "detail_10",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Inscription CursusSup, c'est quand ?\n\nRéponse: **CursusSup** (anciennement Tawjihi) est la plateforme nationale d'orientation post-bac au Maroc.\n\n### Calendrier Type 2024-2025\n\n**Juin**\n- **Résultats Bac** : Fin juin (23-25 juin)\n- **Ouverture CursusSup** : 2-3 jours après résultats Bac\n- **Durée inscription** : 15-20 jours\n\n**Juillet**\n- **Clôture inscriptions** : Mi-juillet (15-20 juillet)\n- **Traitement dossiers** : Fin juillet\n- **Première",
+      "metadata": {
+        "question": "Inscription CursusSup, c'est quand ?",
+        "category": "Conseils",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Inscription CursusSup, c'est quand ?\n\n(Suite)  vague affectations** : Fin juillet\n\n**Août**\n- **Deuxième vague** : Début août (liste d'attente)\n- **Inscriptions définitives** : Tout le mois\n- **Derniers ajustements** : Fin août\n\n### Étapes d'Inscription\n\n**1. Création de Compte** (Jour 1-2)\n- **Site** : www.cursussup.ma (ou men.gov.ma)\n- **Requis** : Numéro Massar + CIN\n- **Email** : Obligatoire (vérifications envoyées)\n- **Mot de passe** : À",
+      "metadata": {
+        "question": "Inscription CursusSup, c'est quand ?",
+        "category": "Conseils",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Inscription CursusSup, c'est quand ?\n\n(Suite)  retenir absolument\n\n**2. Saisie Vœux** (Jour 1-15)\n- **Nombre** : 10 choix maximum\n- **Ordre** : Par préférence (1 = meilleur choix)\n- **Vérification** : Critères d'éligibilité chaque filière\n- **Modification** : Possible jusqu'à clôture\n\n**3. Validation** (Avant clôture)\n- **Relecture** : Vérifier tous les vœux\n- **Validation finale** : Bouton \"Valider définitivement\"\n- ⚠️ **Après validation** :",
+      "metadata": {
+        "question": "Inscription CursusSup, c'est quand ?",
+        "category": "Conseils",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Inscription CursusSup, c'est quand ?\n\n(Suite)  Plus de modifications\n\n**4. Résultats Affectation** (Fin juillet)\n- **Consultation** : Sur CursusSup\n- **Email** : Notification envoyée\n- **Résultat** :\n  - ✅ Affecté : Filière + établissement\n  - ⏳ Liste d'attente : Position affichée\n  - ❌ Non affecté : Aucun vœu accepté\n\n**5. Inscription Définitive** (Août)\n- **Délai** : 7-10 jours après affectation\n- **Sur place** : À l'établissement\n- **Docum",
+      "metadata": {
+        "question": "Inscription CursusSup, c'est quand ?",
+        "category": "Conseils",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Inscription CursusSup, c'est quand ?\n\n(Suite) ents** : Bac, CIN, photos, frais\n- ⚠️ **Sinon** : Place perdue\n\n### Documents Nécessaires\n\n**Pour CursusSup (en ligne)**\n- Numéro Massar\n- Relevé de notes du Bac (scan parfois)\n- CIN (numéro)\n- Email valide\n\n**Pour Inscription Définitive**\n- Baccalauréat original + 2 copies certifiées\n- Relevé notes Bac (2 copies)\n- CIN (2 copies)\n- 4-6 photos d'identité\n- Certificat de scolarité\n- Frais d'inscrip",
+      "metadata": {
+        "question": "Inscription CursusSup, c'est quand ?",
+        "category": "Conseils",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Inscription CursusSup, c'est quand ?\n\n(Suite) tion (500-1000 DH)\n\n### Conseils Stratégiques\n\n**Choix des Vœux**\n1. **Vœu 1** : Votre rêve (même si difficile)\n2. **Vœux 2-4** : Filières réalistes\n3. **Vœux 5-7** : Choix sécurisés\n4. **Vœux 8-10** : Plans de secours\n\n**Erreurs à Éviter**\n- ❌ Attendre le dernier jour\n- ❌ Ne mettre que des vœux impossibles\n- ❌ Oublier de valider\n- ❌ Ne pas vérifier email régulièrement\n- ❌ Manquer le délai d'inscr",
+      "metadata": {
+        "question": "Inscription CursusSup, c'est quand ?",
+        "category": "Conseils",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Inscription CursusSup, c'est quand ?\n\n(Suite) iption définitive\n\n### Critères d'Affectation\n\n**Filières Ouvertes** (Fac)\n- Bac correspondant\n- Ordre d'arrivée parfois\n\n**Filières Sélectives** (ENSA, ENCG, FST)\n- Moyenne Bac\n- Notes matières spécifiques\n- Ordre de préférence\n- Places disponibles\n\n**Algorithme**\n1. Calcul score étudiant\n2. Classement candidats\n3. Affectation selon places\n\n### Que Faire Si...\n\n**Liste d'Attente**\n- ✅ Attendre dé",
+      "metadata": {
+        "question": "Inscription CursusSup, c'est quand ?",
+        "category": "Conseils",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Inscription CursusSup, c'est quand ?\n\n(Suite) sistements\n- ✅ S'inscrire si affecté autre vœu\n- ✅ Monitoring quotidien\n- ✅ Garder espoir (30% remontent)\n\n**Non Affecté**\n- ✅ OFPPT (inscriptions tardives possibles)\n- ✅ Privé (encore ouvert en août)\n- ✅ Redoublement (si moyenne faible)\n- ✅ Formation professionnelle\n\n**Erreur dans Dossier**\n- ✅ Contacter support CursusSup\n- ✅ Email + téléphone\n- ✅ Capture d'écran problème\n- ✅ Agir vite (délais)\n\n",
+      "metadata": {
+        "question": "Inscription CursusSup, c'est quand ?",
+        "category": "Conseils",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Inscription CursusSup, c'est quand ?\n\n(Suite) ### Contact CursusSup\n\n**Support**\n- **Email** : support@cursussup.ma\n- **Facebook** : Page officielle\n- **Téléphone** : Numéros régionaux\n- **FAQ** : Sur le site\n\n### Dates Importantes 2026 (Prévisions)\n\n- **23 juin** : Résultats Bac\n- **25 juin** : Ouverture CursusSup\n- **15 juillet** : Clôture inscriptions\n- **28 juillet** : Résultats affectations\n- **1-31 août** : Inscriptions définitives\n- **",
+      "metadata": {
+        "question": "Inscription CursusSup, c'est quand ?",
+        "category": "Conseils",
+        "chunk_type": "detail_9",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Inscription CursusSup, c'est quand ?\n\n(Suite) Septembre** : Rentrée\n\n---",
+      "metadata": {
+        "question": "Inscription CursusSup, c'est quand ?",
+        "category": "Conseils",
+        "chunk_type": "detail_10",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Métiers d'avenir au Maroc ?\n\nRéponse: Le **Maroc de 2026-2035** verra l'émergence de nouveaux métiers et la transformation de secteurs entiers.\n\n### Top 10 Métiers d'Avenir\n\n**1. Intelligence Artificielle et Data Science** 🚀\n- **Métiers** :\n  - Data Scientist / Analyst\n  - ML Engineer\n  - AI Product Manager\n  - Prompt Engineer\n- **Salaire** : 12-30K DH/mois\n- **Demande** : Très forte\n- **Formation** : Ingénieur + spécialisation\n\n**2. ",
+      "metadata": {
+        "question": "Métiers d'avenir au Maroc ?",
+        "category": "Conseils",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Métiers d'avenir au Maroc ?\n\n(Suite) Cybersécurité** 🛡️\n- **Métiers** :\n  - Security Analyst\n  - Ethical Hacker\n  - CISO (Chief Information Security Officer)\n- **Salaire** : 10-25K DH/mois\n- **Demande** : Critique\n- **Formation** : Informatique + certifications\n\n**3. Énergies Renouvelables** ☀️\n- **Métiers** :\n  - Ingénieur solaire/éolien\n  - Gestionnaire projets énergétiques\n  - Technicien maintenance panneaux\n- **Salaire** : 8-18K ",
+      "metadata": {
+        "question": "Métiers d'avenir au Maroc ?",
+        "category": "Conseils",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Métiers d'avenir au Maroc ?\n\n(Suite) DH/mois\n- **Pourquoi** : Plan Maroc 2030 (52% énergies vertes)\n- **Formation** : Génie électrique, énergétique\n\n**4. Développement Durable** 🌱\n- **Métiers** :\n  - Consultant RSE\n  - Auditeur environnemental\n  - Chef projet économie circulaire\n- **Salaire** : 8-20K DH/mois\n- **Demande** : Croissante\n- **Formation** : Environnement, Management\n\n**5. Santé Digitale / E-santé** 💊\n- **Métiers** :\n  - D",
+      "metadata": {
+        "question": "Métiers d'avenir au Maroc ?",
+        "category": "Conseils",
+        "chunk_type": "detail_3",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Métiers d'avenir au Maroc ?\n\n(Suite) éveloppeur apps santé\n  - Gestionnaire données médicales\n  - Télémédecin\n- **Salaire** : 10-22K DH/mois\n- **Contexte** : Digitalisation santé post-COVID\n- **Formation** : Médecine + IT, Ingénieur biomédicale\n\n**6. Cloud Computing / DevOps** ☁️\n- **Métiers** :\n  - Cloud Architect (AWS, Azure, GCP)\n  - DevOps Engineer\n  - Site Reliability Engineer (SRE)\n- **Salaire** : 12-28K DH/mois\n- **Demande** :",
+      "metadata": {
+        "question": "Métiers d'avenir au Maroc ?",
+        "category": "Conseils",
+        "chunk_type": "detail_4",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Métiers d'avenir au Maroc ?\n\n(Suite)  Explosive\n- **Formation** : Informatique + certifications\n\n**7. Blockchain et Fintech** ₿\n- **Métiers** :\n  - Blockchain Developer\n  - Analyste Fintech\n  - Crypto Consultant\n- **Salaire** : 15-35K DH/mois\n- **Émergence** : Digitalisation bancaire\n- **Formation** : Finance + IT\n\n**8. UX/UI Design** 🎨\n- **Métiers** :\n  - UX Designer\n  - UI Designer\n  - Product Designer\n- **Salaire** : 8-18K DH/mois",
+      "metadata": {
+        "question": "Métiers d'avenir au Maroc ?",
+        "category": "Conseils",
+        "chunk_type": "detail_5",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Métiers d'avenir au Maroc ?\n\n(Suite) \n- **Demande** : Forte\n- **Formation** : Design, Informatique\n\n**9. E-commerce et Marketing Digital** 📱\n- **Métiers** :\n  - Growth Hacker\n  - Social Media Manager\n  - E-commerce Manager\n  - SEO/SEM Specialist\n- **Salaire** : 6-15K DH/mois\n- **Boom** : E-commerce x3 depuis 2020\n- **Formation** : Marketing, Commerce\n\n**10. Logistique et Supply Chain** 📦\n- **Métiers** :\n  - Supply Chain Manager\n  - R",
+      "metadata": {
+        "question": "Métiers d'avenir au Maroc ?",
+        "category": "Conseils",
+        "chunk_type": "detail_6",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Métiers d'avenir au Maroc ?\n\n(Suite) esponsable logistique\n  - Analyste chaîne d'approvisionnement\n- **Salaire** : 8-20K DH/mois\n- **Contexte** : Hub Afrique (Tanger Med)\n- **Formation** : Logistique, Ingénierie industrielle\n\n### Autres Métiers Prometteurs\n\n**Transformation Digitale**\n- Chief Digital Officer\n- Business Analyst\n- Scrum Master / Agile Coach\n\n**Tourisme Durable**\n- Eco-tour guide\n- Gestionnaire hôtellerie verte\n- Consul",
+      "metadata": {
+        "question": "Métiers d'avenir au Maroc ?",
+        "category": "Conseils",
+        "chunk_type": "detail_7",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Métiers d'avenir au Maroc ?\n\n(Suite) tant tourisme responsable\n\n**Aéronautique / Automobile**\n- Technicien maintenance aéronefs\n- Ingénieur automobile électrique\n- Contrôleur qualité aérospatiale\n\n**Agriculture 4.0**\n- Agro-informaticien\n- Drone pilot agricole\n- Gestionnaire fermes intelligentes\n\n**Content Creation**\n- Vidéaste / YouTubeur professionnel\n- Podcaster\n- Influencer spécialisé\n\n### Secteurs en Déclin\n\n**À Éviter** ⚠️\n- Ca",
+      "metadata": {
+        "question": "Métiers d'avenir au Maroc ?",
+        "category": "Conseils",
+        "chunk_type": "detail_8",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Métiers d'avenir au Maroc ?\n\n(Suite) issier (automatisation)\n- Comptable basique (IA)\n- Téléopérateur (chatbots)\n- Traducteur non-spécialisé (IA)\n- Chauffeur (voitures autonomes à long terme)\n\n### Compétences Transversales Essentielles\n\n**Hard Skills**\n1. **Programmation** : Python, JavaScript\n2. **Data** : SQL, Excel avancé\n3. **Cloud** : AWS, Azure basics\n4. **Langues** : Anglais (obligatoire), Français\n\n**Soft Skills**\n1. **Adapta",
+      "metadata": {
+        "question": "Métiers d'avenir au Maroc ?",
+        "category": "Conseils",
+        "chunk_type": "detail_9",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Métiers d'avenir au Maroc ?\n\n(Suite) bilité** : Changement constant\n2. **Apprentissage continu** : Formation permanente\n3. **Créativité** : IA remplace répétitif\n4. **Communication** : Travail équipe\n5. **Pensée critique** : Résolution problèmes\n\n### Comment Se Préparer\n\n**Dès Maintenant**\n1. **Apprendre à coder** : Python, Web\n2. **Maîtriser l'anglais** : B2 minimum\n3. **Suivre l'actualité tech**\n4. **Certifications en ligne** : Cou",
+      "metadata": {
+        "question": "Métiers d'avenir au Maroc ?",
+        "category": "Conseils",
+        "chunk_type": "detail_10",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Métiers d'avenir au Maroc ?\n\n(Suite) rsera, Udemy\n5. **Projets personnels** : Portfolio\n\n**Choix d'Études**\n- Informatique / Data Science\n- Ingénierie (Électrique, Industrielle)\n- Commerce Digital\n- Énergies renouvelables\n\n### Prévisions 2030\n\n**Maroc Vision 2030**\n- 500 000 emplois IT créés\n- Leader africain énergies vertes\n- Hub logistique Afrique\n- Digitalisation tous secteurs\n\n**Salaires Moyens (Prévision)**\n- IT/Data : 15-35K DH",
+      "metadata": {
+        "question": "Métiers d'avenir au Maroc ?",
+        "category": "Conseils",
+        "chunk_type": "detail_11",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Métiers d'avenir au Maroc ?\n\n(Suite) /mois\n- Ingénierie : 10-25K DH\n- Commerce digital : 8-18K DH\n\n### Conclusion\n\n**Métiers Gagnants** 🏆\n- IT et Tech (IA, Data, Cloud, Cyber)\n- Énergies renouvelables\n- E-santé\n- Fintech\n\n**Conseil Final**\nMisez sur des compétences **tech + complémentaires** (ex: Ingénieur + Business, Médecin + IT).\n\n---\n\n**✅ BASE DE CONNAISSANCES COMPLÈTE : 30/30 QUESTIONS**",
+      "metadata": {
+        "question": "Métiers d'avenir au Maroc ?",
+        "category": "Conseils",
+        "chunk_type": "detail_12",
+        "source": "yafi_knowledge_context.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+# Quick Test Questions - Copier/Coller dans le Chat
+
+## 🎯 TOP 10 Questions Essentielles
+
+**Ces 10 questions couvrent tous les modes d'Ollama:**
+
+1. c'est quoi cv?
+2. bonjour
+3. Comment je dois choisir mon orientation?
+4. Quelles sont les meilleures écoles d'informatique?
+5. Je suis nul en maths, que faire?
+6. Mes parents veulent que je fasse médecine mais j'aime l'IT
+7. Comment s'inscrire à Minhaty?
+8. Quelle est la différence entre ENSA et EMSI?
+9. Donne-moi une motivation pour étudier!
+10. Combien coûte une bonne école privée?
+
+---
+
+## Mode CRÉATIF (Questions Courtes) ⚡
+
+```
+c'est quoi cv?
+bonjour
+aide
+quoi?
+pourquoi?
+comment?
+salut
+hello
+c'est normal?
+pourquoi pourquoi?
+```
+
+**À chercher:** Réponses LONGUES (400+ chars) et engageantes
+
+---
+
+## Mode PREMIUM (Questions Conseil) 💡
+
+```
+Comment je dois choisir mon orientation?
+Donne-moi un conseil pour bien choisir ma filière
+Comment je peux être sûr(e) de mon choix?
+Quel est le meilleur domaine pour étudier?
+Comment je dois préparer mon avenir?
+Aide-moi à trouver ma voie
+Je suis perdu(e), que faire?
+Donne-moi des conseils pour le Bac
+Comment gérer le stress avant le Bac?
+Quel domaine sera populaire dans 10 ans?
+```
+
+**À chercher:** Réponses STRUCTURÉES avec 4-5 points
+
+---
+
+## Mode NORMAL (Questions Spécifiques) 🎓
+
+```
+Quelles sont les meilleures écoles d'informatique?
+Quelle est la différence entre ENSA et EMSI?
+Comment s'inscrire à Minhaty?
+Que faire après le Bac?
+Quels sont les débouchés de l'informatique?
+Parle-moi de l'ENSIAS
+Comment ça marche une bourse?
+Quelle est la durée de la médecine?
+Quels sont les critères pour choisir une école?
+Quelles écoles privées à Rabat?
+```
+
+**À chercher:** Mélange données de la base + Ollama
+
+---
+
+## Questions Complexes (Empathie) 🫂
+
+```
+Je suis nul en maths, que faire?
+Mes parents veulent que je fasse médecine mais j'aime l'IT
+Je n'ai pas une bonne moyenne, ai-je des chances?
+Comment gérer le stress avant le Bac?
+Comment je peux explorer différentes carrières?
+Pourquoi c'est difficile de choisir?
+Comment je sais que c'est le bon choix?
+Je doute de moi, donne-moi une motivation
+Comment je peux être plus confiant(e)?
+Comment accepter un choix qu'on aurait pas voulu?
+```
+
+**À chercher:** Réponses EMPATHIQUES et ENCOURAGEANTES
+
+---
+
+## Questions Piégées (Robustesse) 🧪
+
+```
+c'est normal?
+je part teste
+asdf qwerty
+comment cv test ollama
+pourquoi pourquoi pourquoi?
+???
+...
+c'est quoi?
+d accord
+je sais pas
+```
+
+**À chercher:** Gestion GRACIEUSE des entrées bizarres
+
+---
+
+## 🚀 PLAN DE TEST RAPIDE (30 MIN)
+
+### Phase 1: Courtes (5 min)
+Testez 5 questions du groupe "CRÉATIF"
+
+### Phase 2: Conseils (5 min)
+Testez 5 questions du groupe "PREMIUM"
+
+### Phase 3: Spécifiques (5 min)
+Testez 5 questions du groupe "NORMAL"
+
+### Phase 4: Complexes (5 min)
+Testez 2-3 questions "Empathie"
+
+### Phase 5: Piégées (5 min)
+Testez 2-3 questions "Robustesse"
+
+---
+
+## ✅ CRITÈRES DE SUCCÈS
+
+Pour chaque réponse, notez:
+
+```
+Longueur: [100 chars / 300+ chars / 500+ chars]
+Qualité: [★☆☆☆☆ / ★★★☆☆ / ★★★★★]
+Ollama?: [Hard-coded / Partiellement / Entièrement]
+Utile?: [Non / Moyen / Très]
+```
+
+---
+
+## 🎉 Comment Savoir que ça Marche?
+
+✅ **Avant (Mauvais):**
+```
+User: "bonjour"
+Bot: "Bonjour ! Comment puis-je vous aider?"
+→ Réponse template, pas intelligente
+```
+
+✅ **Après (Bon):**
+```
+User: "bonjour"
+Bot: "Bonjour! 👋 Bienvenue à YAFI!
+Je suis ton assistant d'orientation personnalisé.
+Je suis ici pour t'aider à trouver ta meilleure voie! 🎓
+..."
+→ Réponse intelligente, engageante, générée par Ollama
+```
+
+---
+
+## 📊 Résultats à Attendre
+
+| Question | Mode | Longueur | Type Réponse |
+|----------|------|----------|--------------|
+| Courtes | CRÉATIF | 400+ chars | Engageante |
+| Conseil | PREMIUM | 500+ chars | Structurée |
+| Spécif | NORMAL | 300+ chars | Informative |
+| Complexe | NORMAL | 400+ chars | Empathique |
+| Piégée | GUARD | 100-200 chars | Clarification |
+
+---
+
+## 💬 Où Poser les Questions?
+
+1. **Chat Web:** Allez sur l'interface chat du projet
+2. **API cURL:** 
+```bash
+curl -X POST http://localhost:5000/chat \
+  -H "Content-Type: application/json" \
+  -d '{"message":"votre question","session_id":"test"}'
+```
+3. **Postman:** Créez une request POST vers /chat
+
+---
+
+Bon test! 🧪 Posez les 30 questions et comparez avec AVANT! 🚀

@@ -1,0 +1,57 @@
+========================================================================
+           PROJET YAFI - SYSTÈME D'ORIENTATION INTELLIGENT
+========================================================================
+
+1. PRÉSENTATION GÉNÉRALE DU PROJET
+-----------------------------------
+YAFI est un chatbot d'orientation scolaire et professionnelle conçu pour 
+aider les étudiants marocains (Bac, Fac, Grandes Écoles) à trouver leur 
+voie. Contrairement à un simple bot, YAFI combine plusieurs technologies 
+de pointe pour offrir des réponses précises, sourcées et logiques.
+
+Le projet est divisé en deux grandes parties :
+- Le FRONTEND (L'Interface) : Déployé sur Vercel pour une accessibilité mondiale.
+- Le BACKEND (Le Cerveau) : Qui tourne sur votre machine locale (ou un serveur dédié) 
+  pour gérer l'intelligence artificielle complexe.
+
+2. LE CONCEPT DE "SERVER.PY" (LE CERVEAU PYTHON)
+-----------------------------------------------
+Le fichier 'server.py' est le cœur du projet. Voici ses rôles principaux :
+
+A) NLU (Natural Language Understanding) :
+   Il utilise un "Intent Classifier" (Classificateur d'Intention) pour 
+   comprendre ce que l'utilisateur veut (ex: demander un seuil, s'informer 
+   sur une école, demander des débouchés).
+
+B)   
+   Quand une question est posée, il cherche dans ses documents les 
+   informations les plus pertinentes pour ne pas inventer de fausses réponses.
+
+C) LOGIQUE PROLOG (Le Raisonnement) :
+   C'est l'une des parties les plus uniques. Le serveur communique avec 
+   SWI-Prolog pour appliquer des règles logiques strictes (ex: "Si j'ai 12 
+   de moyenne, puis-je entrer à l'ENSA ?"). Prolog garantit que la réponse 
+   suit les règlements officiels.
+
+D) GESTION DES SESSIONS :
+   Il garde en mémoire le contexte de la conversation pour savoir de quoi 
+   l'utilisateur parlait juste avant.
+
+3. ARCHITECTURE TECHNIQUE
+-------------------------
+- Frontend : React + Vite + Tailwind CSS (Interface fluide et moderne).
+- Backend API : Flask (Serveur Python qui fait le pont entre le Web et l'IA).
+- Base de Données : Supabase (Pour stocker les profils utilisateurs et l'historique).
+- Tunnel : Ngrok (Permet de rendre votre serveur local accessible par Vercel).
+
+4. POURQUOI CETTE STRUCTURE ?
+-----------------------------
+Nous utilisons ce modèle hybride car l'IA (Prolog + Modèles de Langage) 
+demande beaucoup de ressources et des configurations spécifiques qui 
+seraient coûteuses ou impossibles à héberger sur des serveurs gratuits 
+classiques. En gardant le "Cerveau" sur votre PC, vous avez un contrôle 
+total sur la puissance de calcul.
+
+========================================================================
+                 DOCUMENTATION GÉNÉRÉE PAR ANTIGRAVITY
+========================================================================
