@@ -1,0 +1,64 @@
+{
+  "benchmark_questions": [
+    {
+      "id": 1,
+      "question": "J'ai un Bac PC avec 13 de moyenne et j'habite à Safi. Quelles sont mes chances pour l'ENSA ?",
+      "expert_truth": "Profil BON. Stratégie de 'Contournement' conseillée. Safi est une ville 'Opportunité' (moins de concurrence). L'ENSA Safi est accessible à partir de 13 pour les locaux.",
+      "logic_key": "strategie_profil(13, 'PC', ...), ville_chance('Safi')"
+    },
+    {
+      "id": 2,
+      "question": "Puis-je faire médecine avec un Bac SVT et 11.5 de moyenne ?",
+      "expert_truth": "❌ Non. Moyenne insuffisante (<12) ou Bac inadapté pour le public. Visez le privé si budget disponible.",
+      "logic_key": "peut_faire_medecine('SVT', 11.5, ...)"
+    },
+    {
+      "id": 3,
+      "question": "Quel est le salaire moyen d'un ingénieur débutant au Maroc ?",
+      "expert_truth": "8 000 - 12 000 DH/mois.",
+      "logic_key": "stat('Salaires', 'Ingenieur Debutant', ...)"
+    },
+    {
+      "id": 4,
+      "question": "Quelle est la différence entre un BTS et un DUT ?",
+      "expert_truth": "BTS (2 ans) est plus technique/pratique. DUT (2 ans, souvent en EST) est plus académique et facilite la poursuite d'études.",
+      "logic_key": "definition('BTS', ...), definition('DUT', ...)"
+    },
+    {
+      "id": 5,
+      "question": "J'ai un budget de 30 000 DH par an. Puis-je m'inscrire à l'UIR ?",
+      "expert_truth": "Non, l'UIR coûte entre 65 000 et 95 000 DH/an. L'EMSI (28 000 - 38 000 DH) serait plus adaptée à votre budget.",
+      "logic_key": "detail_ecole('UIR', ...), detail_ecole('EMSI', ...)"
+    },
+    {
+      "id": 6,
+      "question": "Je suis en Bac SM avec 17 de moyenne à Rabat. Que me conseilles-tu ?",
+      "expert_truth": "Profil EXCELLENT. Visez l'Excellence : EMI, ENSIAS ou UM6P. Rabat est très concurrentielle mais votre note est suffisante.",
+      "logic_key": "strategie_profil(17, 'SM', ...), debouche('SM', 'Top Ingenierie', ...)"
+    },
+    {
+      "id": 7,
+      "question": "C'est quoi le système LMD ?",
+      "expert_truth": "Licence (3 ans) -> Master (2 ans) -> Doctorat (3 ans). C'est le standard mondial adopté au Maroc.",
+      "logic_key": "definition('LMD', ...)"
+    },
+    {
+      "id": 8,
+      "question": "Dans quelles villes peut-on trouver une ENSA ?",
+      "expert_truth": "Agadir, Fès, Marrakech, Tanger, Tétouan, Khouribga, Safi, El Jadida, Berrechid, Béni Mellal, Oujda, Al Hoceima (Liste partielle de 12 villes).",
+      "logic_key": "localisation('ENSA', ...)"
+    },
+    {
+      "id": 9,
+      "question": "Est-ce que l'ENCG est gratuite ?",
+      "expert_truth": "Oui, c'est une école publique. Seuls les frais d'inscription administratifs annuels sont à prévoir (~500-1000 DH).",
+      "logic_key": "definition('ENCG', ...), info_type(public_regule, ...)"
+    },
+    {
+      "id": 10,
+      "question": "J'ai un Bac Eco, puis-je devenir ingénieur ?",
+      "expert_truth": "Oui mais parcours indirect recommandé : via DUT/BTS Génie Industriel puis concours, ou certaines ENSA (Génie Industriel) avec très bon niveau en maths.",
+      "logic_key": "debouche('ECO', ...)"
+    }
+  ]
+}

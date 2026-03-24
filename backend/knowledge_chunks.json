@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "total_chunks": 231,
   "source_file": "C:\\Users\\user\\Documents\\chat\\YAFI-main\\backend\\yafi_knowledge_context.json",
+=======
+  "total_chunks": 255,
+  "source_file": "C:\\Users\\PC\\Downloads\\YAFI\\yafi2-main\\backend\\yafi_knowledge_context.json",
+>>>>>>> 3257fc1 (final)
   "chunk_size": 400,
   "chunks": [
     {
@@ -2081,6 +2086,225 @@
         "chunk_type": "detail_12",
         "source": "yafi_knowledge_context.json"
       }
+<<<<<<< HEAD
+=======
+    },
+    {
+      "text": "Question: Quelle formation courte après le Bac ?\n\nRéponse: Les formations courtes (Bac+2) au Maroc sont idéales pour une insertion professionnelle rapide. Les options principales sont :\n\n- **BTS** (Brevet de Technicien Supérieur) : 2 ans dans les lycées techniques.\n- **EST** (École Supérieure de Technologie) : Prépare au DUT (Bac+2) avec possibilité de licence pro.\n- **OFPPT (ISTA)** : Des centaines de filières techniques et commerciales.\n- **Classes Prép",
+      "metadata": {
+        "question": "Quelle formation courte après le Bac ?",
+        "category": "Orientation",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelle formation courte après le Bac ?\n\n(Suite) aratoires (CPGE)** : Formation courte de 2 ans mais très intensive pour les grandes écoles.\n\n✅ Ces diplômes permettent souvent de continuer en Licence Professionnelle (Bac+3) ou en École d'Ingénieurs.",
+      "metadata": {
+        "question": "Quelle formation courte après le Bac ?",
+        "category": "Orientation",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelles sont les options Bac plus 2 ?\n\nRéponse: Après un Bac au Maroc, les options Bac+2 (formations courtes) incluent :\n\n1. **EST (École Supérieure de Technologie)** : Diplôme Universitaire de Technologie (DUT).\n2. **BTS (Brevet de Technicien Supérieur)** : Formation technique de haut niveau.\n3. **OFPPT / ISTA** : Diplôme de Technicien Spécialisé (DTS).\n4. **Faculté** : DEUG (Diplôme d'Études Universitaires Générales).\n\n💡 **Le saviez-vous ?** ",
+      "metadata": {
+        "question": "Quelles sont les options Bac plus 2 ?",
+        "category": "Orientation",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelles sont les options Bac plus 2 ?\n\n(Suite) Ces formations sont très prisées par les entreprises pour leur aspect pratique (70% de TP/Stages).",
+      "metadata": {
+        "question": "Quelles sont les options Bac plus 2 ?",
+        "category": "Orientation",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: ENSA Safi chances avec un Bac PC ?\n\nRéponse: Avec un Bac PC et environ 13 de moyenne, l'ENSA Safi est un excellent choix. En tant que ville 'Opportunité', la concurrence y est souvent moins forte qu'à Casablanca ou Rabat. C'est une stratégie de contournement intelligente pour garantir une place en école d'ingénieur publique.",
+      "metadata": {
+        "question": "ENSA Safi chances avec un Bac PC ?",
+        "category": "Orientation",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Puis-je faire médecine avec 11.5 de moyenne ?\n\nRéponse: Malheureusement non. Pour les facultés de médecine publiques au Maroc, le seuil de présélection est généralement fixé à 12/20 au minimum, mais en pratique il faut souvent plus de 13 ou 14 selon l'année. Avec 11.5, il faut envisager le secteur privé (comme l'UM6SS ou l'UIASS) ou d'autres filières de santé comme l'ISPITS.",
+      "metadata": {
+        "question": "Puis-je faire médecine avec 11.5 de moyenne ?",
+        "category": "Médecine",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quel est le salaire d'un ingénieur débutant au Maroc ?\n\nRéponse: Le salaire d'un ingénieur débutant au Maroc varie généralement entre 8 000 DH et 12 000 DH par mois dans le secteur privé, selon l'école et la spécialité. Les profils IT (Informatique/Data) sont souvent dans la fourchette haute.",
+      "metadata": {
+        "question": "Quel est le salaire d'un ingénieur débutant au Maroc ?",
+        "category": "Carrière",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Budget annuel pour l'UIR ?\n\nRéponse: L'Université Internationale de Rabat (UIR) est une université d'excellence semi-publique avec des frais de scolarité allant de 65 000 à 95 000 DH par an selon la filière. Si votre budget est autour de 30 000 DH, des écoles comme l'EMSI (environ 30 000 DH/an) sont plus adaptées.",
+      "metadata": {
+        "question": "Budget annuel pour l'UIR ?",
+        "category": "Finances",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quel est le salaire après l'EMSI ?\n\nRéponse: Les diplômés de l'EMSI, particulièrement en Informatique et Réseaux, bénéficient d'un excellent taux d'insertion (94%). Le salaire moyen à l'embauche varie entre 8 000 DH et 12 000 DH, pouvant atteindre 15 000 DH pour les profils très qualifiés en Data ou Développement.",
+      "metadata": {
+        "question": "Quel est le salaire après l'EMSI ?",
+        "category": "Carrière",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Détails sur l'ENSAM (Arts et Métiers) ?\n\nRéponse: L'ENSAM est une grande école d'ingénieurs publique (Meknès, Casablanca, Rabat). Elle forme des ingénieurs d'État en 5 ans (Cycle Préparatoire + Cycle Ingénieur). Spécialités : Génie Mécanique, Industriel, Électrique. Admission via CursusSup (Moyenne > 15-16 recommandée).",
+      "metadata": {
+        "question": "Détails sur l'ENSAM (Arts et Métiers) ?",
+        "category": "Écoles",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Frais et bourses à l'UIR ?\n\nRéponse: L'UIR (Rabat) propose des frais entre 65 000 et 95 000 DH/an. Cependant, l'université offre de nombreuses bourses d'investissement (Excellence/Sociale) couvrant jusqu'à 100% des frais pour les meilleurs bacheliers (Top 10% du concours).",
+      "metadata": {
+        "question": "Frais et bourses à l'UIR ?",
+        "category": "Finances",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Restauration et vie sur le campus ?\n\nRéponse: Les grandes écoles comme l'EMSI ou l'UIR disposent de cantines et cafétérias. À l'EMSI, les menus incluent des plats marocains traditionnels (Tagine, Couscous) et des options végétariennes. Le coût moyen de la vie (logement + repas) est estimé à 3000-4000 DH/mois hors frais de scolarité.",
+      "metadata": {
+        "question": "Restauration et vie sur le campus ?",
+        "category": "Conseils",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Nouveautés 2026 : Médecine et Santé ?\n\nRéponse: Le réseau FMP/FMD (Public) reste très sélectif avec des seuils entre 14 et 18 selon la ville. Pour 2026, l'ISSS Settat et l'ISPITS proposent des formations paramédicales d'excellence (Infirmier, Sage-Femme, Labo) accessibles avec une moyenne > 13-14.",
+      "metadata": {
+        "question": "Nouveautés 2026 : Médecine et Santé ?",
+        "category": "Admissions",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi l'ISCAE et quels sont les frais ?\n\nRéponse: L'ISCAE (Institut Supérieur de Commerce et d'Administration des Entreprises) est un établissement public d'excellence situé à Casablanca et Rabat. Étant public, les frais de scolarité sont quasi gratuits (environ 500 DH/an pour l'inscription). L'accès y est extrêmement sélectif via un concours national nécessitant généralement d'avoir fait les classes préparatoires (CPGE) ou d'avoir d'excellents r",
+      "metadata": {
+        "question": "C'est quoi l'ISCAE et quels sont les frais ?",
+        "category": "Écoles",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: C'est quoi l'ISCAE et quels sont les frais ?\n\n(Suite) ésultats en licence.",
+      "metadata": {
+        "question": "C'est quoi l'ISCAE et quels sont les frais ?",
+        "category": "Écoles",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelle est la différence entre ENAM et ENSAM ?\n\nRéponse: Il ne faut pas confondre l'ENAM et l'ENSAM !\n\n- **ENAM** (École Nationale d'Agriculture de Meknès) : Forme des ingénieurs agronomes. C'est une école spécialisée dans l'agriculture, le développement rural et l'agroalimentaire.\n- **ENSAM** (École Nationale Supérieure d'Arts et Métiers) : Présente à Meknès, Casablanca et Rabat. Forme des ingénieurs d'État dans les domaines de la mécanique, l'industri",
+      "metadata": {
+        "question": "Quelle est la différence entre ENAM et ENSAM ?",
+        "category": "Écoles",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelle est la différence entre ENAM et ENSAM ?\n\n(Suite) e et l'électromécanique.\n\nLes deux sont publiques et très sélectives.",
+      "metadata": {
+        "question": "Quelle est la différence entre ENAM et ENSAM ?",
+        "category": "Écoles",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Parle-moi de l'UIK (Université Internationale d'Agadir) : prix et campus\n\nRéponse: L'Université Internationale d'Agadir (UIK - Universiapolis) est un campus privé intégré.\n\n- **Frais de scolarité** : Environ 65 000 à 75 000 DH/an selon les filières (Ingénierie, Management, Tourisme).\n- **Vie de campus** : Le campus est très dynamique et dispose d'une cantine universitaire, de terrains de sport, et de plusieurs clubs étudiants.\n- **Internat** : Oui, l'UIK propose des résidences é",
+      "metadata": {
+        "question": "Parle-moi de l'UIK (Université Internationale d'Agadir) : prix et campus",
+        "category": "Écoles",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Parle-moi de l'UIK (Université Internationale d'Agadir) : prix et campus\n\n(Suite) tudiantes directement sur le campus.",
+      "metadata": {
+        "question": "Parle-moi de l'UIK (Université Internationale d'Agadir) : prix et campus",
+        "category": "Écoles",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelles sont les informations sur l'ESTS (EST Safi) ?\n\nRéponse: L'ESTS (École Supérieure de Technologie de Safi) est un établissement public rattaché à l'Université Cadi Ayyad.\n\n- **Filières principales** : Génie Informatique (GI), Techniques de Management (TM), Maintenance Industrielle, et Mécatronique.\n- **Admission** : La sélection se fait sur dossier (Notes du Bac). Le seuil d'admission tourne souvent autour de 14.20/20 pour les filières techniques, mais c",
+      "metadata": {
+        "question": "Quelles sont les informations sur l'ESTS (EST Safi) ?",
+        "category": "Écoles",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quelles sont les informations sur l'ESTS (EST Safi) ?\n\n(Suite) ela varie chaque année.\n- **Débouchés** : Permet une excellente insertion technique (DUT en 2 ans) ou la poursuite d'études en Licence Professionnelle ou en École d'Ingénieurs (ENSA, FST).",
+      "metadata": {
+        "question": "Quelles sont les informations sur l'ESTS (EST Safi) ?",
+        "category": "Écoles",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Quels sont les détails sur l'Université Privée de Fès (UPF) ?\n\nRéponse: L'Université Privée de Fès (UPF) propose des formations en Ingénierie, Architecture, et Management.\n\n- **Frais de scolarité** : Varient entre 50 000 DH et 70 000 DH par an selon la faculté (l'Architecture étant souvent la plus chère).\n- **Campus** : Infrastructure moderne, disposant de laboratoires équipés et de partenariats internationaux pour les échanges étudiants.",
+      "metadata": {
+        "question": "Quels sont les détails sur l'Université Privée de Fès (UPF) ?",
+        "category": "Écoles",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que l'UIR et l'UM6P ont des internats ou offrent des bourses ?\n\nRéponse: Oui, ces deux grandes universités marocaines brillent par leurs infrastructures et leurs aides financières :\n\n- **UIR (Rabat)** : Dispose de 6 résidences modernes sur le campus, de nombreux clubs (Aéro, Débat) et de bourses allant jusqu'à 100% pour les excellents dossiers scolaires.\n- **UM6P (Benguerir)** : L'Université Mohammed VI Polytechnique offre des conditions d'études exceptionnelles (chamb",
+      "metadata": {
+        "question": "Est-ce que l'UIR et l'UM6P ont des internats ou offrent des bourses ?",
+        "category": "Boursses",
+        "chunk_type": "overview",
+        "source": "yafi_knowledge_context.json"
+      }
+    },
+    {
+      "text": "Question: Est-ce que l'UIR et l'UM6P ont des internats ou offrent des bourses ?\n\n(Suite) res individuelles, installations sportives olympiques) et délivre de généreuses bourses (Bourse Excellence OCP) pour les étudiants brillants issus de milieux modestes.",
+      "metadata": {
+        "question": "Est-ce que l'UIR et l'UM6P ont des internats ou offrent des bourses ?",
+        "category": "Boursses",
+        "chunk_type": "detail_2",
+        "source": "yafi_knowledge_context.json"
+      }
+>>>>>>> 3257fc1 (final)
     }
   ]
 }

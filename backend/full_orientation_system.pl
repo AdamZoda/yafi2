@@ -1,6 +1,7 @@
 :- encoding(utf8).
 
 :- discontiguous etablissement/5.
+<<<<<<< HEAD
 
 :- discontiguous filiere/6.
 
@@ -14,10 +15,27 @@
 
 :- discontiguous debouche_associe/2.
 
+=======
+:- discontiguous filiere/6.
+:- discontiguous serie_bac/1.
+:- discontiguous secteur_formation/1.
+:- discontiguous plateforme/2.
+:- discontiguous specialite/2.
+:- discontiguous debouche_associe/2.
+>>>>>>> 3257fc1 (final)
 :- discontiguous institution/9.
 :- discontiguous institution/10.
 :- discontiguous specialisation/4.
 :- discontiguous specialisation/5.
+<<<<<<< HEAD
+=======
+:- discontiguous get_definition/3.
+:- discontiguous internat/2.
+:- discontiguous clubs/2.
+:- discontiguous cantine/2.
+:- discontiguous localisation/2.
+:- discontiguous detail_ecole/4.
+>>>>>>> 3257fc1 (final)
 :- discontiguous document_requis/3.
 :- discontiguous document_requis/4.
 
@@ -29,6 +47,13 @@
 
 :- discontiguous detail_ecole/4.
 
+<<<<<<< HEAD
+=======
+:- discontiguous definition/3.
+:- discontiguous get_lien/2.
+:- discontiguous get_seuil/3.
+
+>>>>>>> 3257fc1 (final)
 :- discontiguous localisation/2.
 
 :- discontiguous definition/2.
@@ -164,6 +189,7 @@ ville_chance('Taza').
 ville_chance('Errachidia').
 
 ville_chance('Al Hoceima').
+<<<<<<< HEAD
 
 
 
@@ -252,6 +278,77 @@ localisation('ESCA', 'Casablanca').
 localisation('UIASS', 'Rabat').
 
 localisation('UPSAT', 'Casablanca').
+=======
+% Localisation des Etablissements Publics
+localisation('universite hassan ii', 'Casablanca').
+localisation('universite hassan ii', 'Mohammedia').
+localisation('universite mohammed v', 'Rabat').
+localisation('universite cadi ayyad', 'Marrakech').
+localisation('universite ibn zohr', 'Agadir').
+localisation('universite abdelmalek essaadi', 'Tetouan').
+localisation('ensa', 'Agadir').
+localisation('ensa', 'Fes').
+localisation('ensa', 'Marrakech').
+localisation('ensa', 'Tanger').
+localisation('ensa', 'Tetouan').
+localisation('ensa', 'Khouribga').
+localisation('ensa', 'Safi').
+localisation('ensa', 'El Jadida').
+localisation('ensa', 'Berrechid').
+localisation('ensa', 'Beni Mellal').
+localisation('ensa', 'Oujda').
+localisation('ensa', 'Al Hoceima').
+
+% --- RESEAU ENCG ---
+localisation('encg', 'Agadir').
+localisation('encg', 'Casablanca').
+localisation('encg', 'El Jadida').
+localisation('encg', 'Fes').
+localisation('encg', 'Kenitra').
+localisation('encg', 'Marrakech').
+localisation('encg', 'Oujda').
+localisation('encg', 'Settat').
+localisation('encg', 'Tanger').
+localisation('encg', 'Dakhla').
+localisation('encg', 'Beni Mellal').
+
+localisation('est', 'Safi').
+localisation('ests', 'Safi').
+localisation('est', 'Casablanca').
+localisation('est', 'Fes').
+localisation('est', 'Agadir').
+
+localisation('ensam', 'Meknes').
+localisation('ensam', 'Casablanca').
+localisation('ensam', 'Rabat').
+
+localisation('ensias', 'Rabat').
+localisation('emi', 'Rabat').
+
+localisation('fst', 'Fes').
+localisation('fst', 'Settat').
+localisation('fst', 'Mohammedia').
+localisation('fst', 'Beni Mellal').
+localisation('fst', 'Errachidia').
+
+localisation('um6p', 'Benguerir').
+localisation('al_akhawayn', 'Ifrane').
+
+% Localisation du Prive
+localisation('emsi', 'Casablanca').
+localisation('emsi', 'Rabat').
+localisation('emsi', 'Marrakech').
+localisation('emsi', 'Fes').
+
+localisation('uir', 'Rabat').
+localisation('uik', 'Agadir'). % Added from definition('UIK')
+
+localisation('supinfo', 'Casablanca').
+localisation('hem', 'Casablanca').
+localisation('esca', 'Casablanca').
+localisation('uiass', 'Rabat').
+localisation('upsat', 'Casablanca').
+>>>>>>> 3257fc1 (final)
 
 
 
@@ -407,7 +504,20 @@ definition('ENSA', 'Ecole Nationale des Sciences Appliquees (5 ans). Formation d
 
 definition('ENCG', 'Ecole Nationale de Commerce et de Gestion (5 ans). Formation management/commerce. Acces par concours TAFEM.').
 
+<<<<<<< HEAD
 definition('EST', 'Ecole Superieure de Technologie (2 ans). Delivre le DUT. Formation technique courte.').
+=======
+definition('EST', 'Ecole Superieure de Technologie', 'Ecole Superieure de Technologie (2 ans). Delivre le DUT. Formation technique courte.').
+definition('ESTS', 'Ecole Superieure de Technologie de Safi', 'Le campus de Safi propose des DUT et Licences Pro en Genie Informatique (GI), GIM, GESA, TM et EDHV.').
+definition('EMSI', 'Ecole Marocaine des Sciences de l\'Ingenieur', 'Plus grande ecole d\'ingenierie privee au Maroc, avec des clubs dynamiques (Robotique, Sports, Innovation).').
+definition('UIR', 'Universite Internationale de Rabat', 'Universite pluridisciplinaire d\'excellence avec internat moderne et partenariats mondiaux.').
+definition('UM6P', 'Universite Mohammed VI Polytechnique', 'Universite de recherche axee sur l\'innovation, offrant de nombreuses bourses d\'excellence.').
+definition('ISCAE', 'Institut Superieur de Commerce et d\'Administration des Entreprises', 'Grande ecole de management publique marocaine. Acces tres selectif post-bac+2 ou post-bac.').
+definition('ENAM', 'Ecole Nationale d\'Agriculture de Meknes', 'Ecole d\'ingenieurs agronomes de reference au Maroc situee a Meknes.').
+definition('UIK', 'Universite Internationale de Kenitra', 'Etablissement prive offrant des formations en management et ingenierie avec services de restauration.').
+definition('CursusSup', 'Plateforme nationale d\'orientation', 'Plateforme pour s\'inscrire aux ecoles publiques marocaines (ENSA, ENCG, etc.).').
+definition('Minhaty', 'Portail national des bourses', 'Systeme de demande de bourse publique pour les bacheliers marocains.').
+>>>>>>> 3257fc1 (final)
 
 definition('FST', 'Faculte des Sciences et Techniques. Systeme LMD hybride (Tronc commun + Specialite). Acces sur dossier.').
 
@@ -839,7 +949,11 @@ date_concours('Concours ENCG (TAFEM)', 'Juillet').
 
 
 
+<<<<<<< HEAD
 get_date_concours(E, D) :- date_concours(E, D).
+=======
+
+>>>>>>> 3257fc1 (final)
 
 
 
@@ -1057,6 +1171,12 @@ etablissement('FLSH', 'Multi-villes', 'Licence Lettres', 3, 'direct').
 % --- Prépas & Autres ---
 etablissement('CPGE', 'Multi-villes', 'CPGE', 2, 'selection').
 etablissement('EST', 'Multi-villes', 'DUT', 2, 'selection').
+<<<<<<< HEAD
+=======
+etablissement('ESTS', 'Safi', 'DUT/Bachelor/LP', 2, 'selection').
+etablissement('EST', 'Casablanca', 'DUT', 2, 'selection').
+etablissement('EST', 'Fes', 'DUT', 2, 'selection').
+>>>>>>> 3257fc1 (final)
 etablissement('BTS', 'Multi-villes', 'BTS', 2, 'selection').
 etablissement('OFPPT', 'Multi-villes', 'Technicien Spécialisé', 2, 'selection').
 
@@ -1097,6 +1217,16 @@ filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Intelligenc
 filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Classes Prépas PCSI', 'CPGE', '2 ans', 'CPGE').
 filiere('Sciences physiques', 'Secteur médical et paramédical', 'Soins Infirmiers', 'ISPITS', '3 ans', 'Licence Infirmier').
 filiere('Sciences physiques', 'Secteur médical et paramédical', 'Kinésithérapie', 'ISPITS', '3 ans', 'Licence Kiné').
+<<<<<<< HEAD
+=======
+filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Génie Informatique (GI)', 'ESTS', '2 ans', 'DUT').
+filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Techniques de Management (TM)', 'ESTS', '2 ans', 'DUT').
+filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Génie Industriel & Maintenance (GIM)', 'ESTS', '2 ans', 'DUT').
+filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Génie Électrique et Systèmes Automatisés (GESA)', 'ESTS', '2 ans', 'DUT').
+filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Énergie Durable et Hydrogène Vert (EDHV)', 'ESTS', '2 ans', 'DUT').
+filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Mécatronique et Intelligence Artificielle', 'ESTS', '3 ans', 'Bachelor').
+filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Ingénierie des Systèmes d\'Information (ISIR/ISI)', 'ESTS', '3 ans', 'Bachelor/LP').
+>>>>>>> 3257fc1 (final)
 filiere('Sciences physiques', 'Secteur militaire et paramilitaire', 'Officier Marine', 'ERN', '5 ans', 'Officier Marine').
 
 % === Pour Bac SVT ===
@@ -1110,7 +1240,11 @@ filiere('Sciences de la Vie et de la Terre', 'Sciences, technologie et industrie
 filiere('Sciences économiques', 'Économie, gestion et logistique', 'Commerce International', 'ENCG', '5 ans', 'Diplôme ENCG').
 filiere('Sciences économiques', 'Économie, gestion et logistique', 'Management', 'ENCG', '5 ans', 'Diplôme ENCG').
 filiere('Sciences économiques', 'Économie, gestion et logistique', 'Licence Économie', 'FSJES', '3 ans', 'Licence').
+<<<<<<< HEAD
 filiere('Sciences économiques', 'Classes Prépas ECT', 'CPGE', '2 ans', 'CPGE').
+=======
+filiere('Sciences economiques', 'Economie, gestion et logistique', 'CPGE ECT', 'CPGE', '2 ans', 'CPGE').
+>>>>>>> 3257fc1 (final)
 filiere('Sciences de gestion comptable', 'Économie, gestion et logistique', 'Audit et Contrôle', 'ENCG', '5 ans', 'Diplôme ENCG').
 filiere('Sciences de gestion comptable', 'Économie, gestion et logistique', 'Expertise Comptable', 'ISCAE', '3 ans', 'Diplôme Grande École').
 
@@ -1266,8 +1400,16 @@ get_metier_avenir(Domaine, Metier, Demande, Conseils) :- metier_avenir(Domaine, 
 % 16. BOURSES DE MÉRITE (Privé)
 % ------------------------------------------------------------------------------
 bourse_merite('UIR', 'Excellence (100%)', 'Moyenne Bac >= 16/20').
+<<<<<<< HEAD
 bourse_merite('UIR', 'Partielle (50%)', 'Moyenne Bac >= 14/20 ou sur étude dossier social').
 bourse_merite('UM6P', 'Bourse Fondation OCP', 'Excellence académique + Dossier social').
+=======
+bourse_merite('uir', 'Excellence (100%)', 'Moyenne Bac >= 16/20').
+bourse_merite('UIR', 'Partielle (50%)', 'Moyenne Bac >= 14/20 ou sur étude dossier social').
+bourse_merite('uir', 'Partielle (50%)', 'Moyenne Bac >= 14/20 ou sur étude dossier social').
+bourse_merite('UM6P', 'Bourse Fondation OCP', 'Excellence académique + Dossier social').
+bourse_merite('um6p', 'Bourse Fondation OCP', 'Excellence académique + Dossier social').
+>>>>>>> 3257fc1 (final)
 bourse_merite('EMSI', 'Bourse d''Encouragement', 'Pour les majors de promotion').
 bourse_merite('EFA', 'Bourse d''excellence (Filles)', 'Très bonnes notes + Milieu rural').
 
@@ -1371,6 +1513,43 @@ definition('FMP', 'Faculte de Medecine et de Pharmacie', 'La faculte pour deveni
 
 get_definition(Acronyme, Nom, Detail) :- definition(Acronyme, Nom, Detail).
 
+<<<<<<< HEAD
+=======
+% --- CAMPUS LIFE & FINANCIALS ---
+% frais_scolarite(Ecole, MoutantAnnuel)
+frais_scolarite(emsi, 35000).
+frais_scolarite(uir, 85000).
+frais_scolarite(um6p, 75000).
+frais_scolarite(iscae, 500).
+frais_scolarite(uik, 40000).
+frais_scolarite(ensa, 0).
+frais_scolarite(encg, 0).
+
+% internat(Ecole, Disponibilite)
+internat(uir, 'Oui, 6 residences modernes sur campus.').
+internat(um6p, 'Oui, obligatoire pour la plupart des etudiants.').
+internat(emsi, 'Non, mais partenariats avec residences privee.').
+internat(ensa, 'Souvent oui, selon la ville (ex: ENSA Safi oui).').
+internat(ests, 'Oui, capacite limitee.').
+
+% clubs(Ecole, Description)
+clubs(emsi, 'Clubs de Robotique, Junior Entreprise, Musique et Sports.').
+clubs(uir, 'Plus de 30 clubs (Aero, Theatre, Debate Club, Solidaire).').
+clubs(um6p, 'Clubs d\'innovation, Entrepreneuriat, Agriculture urbaine.').
+
+% cantine(Ecole, Detail)
+cantine(uik, 'Disponible, menus varies pour etudiants.').
+cantine(uir, 'Food court et restaurants universitaires sur place.').
+cantine(ests, 'Restauration universitaire disponible.').
+
+% procedure_inscription(Ecole, Detail)
+procedure_inscription(cursussup, 'S\'inscrire sur le portail www.cursussup.gov.ma avant fin juin.').
+procedure_inscription(minhaty, 'Faire la demande sur www.minhaty.ma apres les resultats du Bac.').
+procedure_inscription(emsi, 'Passer le test d\'admission sur rendez-vous au campus choisi.').
+
+% ------------------------------------------------------------------------------
+
+>>>>>>> 3257fc1 (final)
 % ------------------------------------------------------------------------------
 % 10. SEUILS HISTORIQUES ET AUTRES (Edge cases)
 % ------------------------------------------------------------------------------
@@ -1406,6 +1585,10 @@ get_avis_ecole(Ecole, Note, Positif, Negatif) :- avis_ecole(Ecole, Note, Positif
 
 
 % ============================================================================
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3257fc1 (final)
 % Base de Connaissances Prolog - Guide d'Orientation Post-Baccalauréat
 % Région de l'Est - Maroc 2025/2026
 % Conversion du PDF en Prolog structuré avec traduction FR
@@ -2439,7 +2622,11 @@ obtenez_infos_contexte(contexte(Donnees), Profil) :-
 %query_yafi_orientation(Question, Réponse) :-
 %    reponse_faq(Question, Réponse), !.
 %
+<<<<<<< HEAD
 %query_yafi_orientation(_, 'Je ne dispose pas d\'information spécifique à ce sujet. Consultez www.cursussup.gov.ma ou contactez directement l\'institution.').
+=======
+%query_yafi_orientation(_, 'Je ne dispose pas d\'information spécifique à ce sujet. Consultez https://www.ests.uca.ma ou contactez directement l\'institution.').
+>>>>>>> 3257fc1 (final)
 
 % ============================================================================
 % SECTION 9: EXEMPLES DE REQUÊTES
@@ -4072,6 +4259,7 @@ trouver_ecole_par_mot_cle(Message, Resultat) :-
     ).
 
 % ---------------------------------------------------------
+<<<<<<< HEAD
 % 3. CHATBOT INTERACTIF EN LIGNE DE COMMANDE (Le "Start")
 % ---------------------------------------------------------
 % Lance le système de recommandation via la commande : start.
@@ -4104,10 +4292,251 @@ afficher_ecoles_domaine(_).
 % Exemple : lister_categories('ARM').
 lister_categories(Ecole) :-
     writeln('Catégories d''informations disponibles pour cette école :'),
+=======
+
+% ---------------------------------------------------------
+% 3. CHATBOT INTERACTIF (RESTAURE & HARMONISE)
+% ---------------------------------------------------------
+start :-
+    writeln('==============================================================='),
+    writeln('--- BIENVENUE DANS YAFI : Le Conseiller d Orientation IA ---'),
+    writeln('==============================================================='),
+    writeln('Quel est ton domaine favori ?'),
+    writeln('1. MILITAIRE ET SECURITE'),
+    writeln('2. INGENIERIE, SCIENCES ET TECHNOLOGIE'),
+    writeln('Tapez le nom exact entre quotes (ex: ''MILITAIRE ET SECURITE''.).'),
+    read(Domaine),
+    writeln(''),
+    writeln('--- Voici les grandes ecoles dans ce domaine : ---'),
+    afficher_ecoles_domaine(Domaine),
+    writeln('==============================================================='),
+    writeln('Pour voir les details d une ecole, utilise la requete :'),
+    writeln('?- info_etablissement(''NomEcole'', Categorie, Info).').
+
+% Regle d affichage
+afficher_ecoles_domaine(Domaine) :-
+    nouvel_etablissement(Ecole, Domaine),
+    write(' [ ] - '), writeln(Ecole),
+    fail.
+afficher_ecoles_domaine(_).
+
+lister_categories(Ecole) :-
+    writeln('Categories d informations disponibles pour cette ecole :'),
+>>>>>>> 3257fc1 (final)
     setof(Cat, Info^(info_etablissement(Ecole, Cat, Info)), ListeCats),
     afficher_liste(ListeCats).
 
 afficher_liste([]).
 afficher_liste([H|T]) :-
+<<<<<<< HEAD
     write(' 📌 '), writeln(H),
     afficher_liste(T).
+=======
+    write(' * '), writeln(H),
+    afficher_liste(T).
+
+% =======================================================
+% DATA MERGE & HARMONIZATION 2026
+% =======================================================
+
+% --- FILIERES SUPPLEMENTAIRES ---
+filiere('Tous Bacs', sports, 'Licence Professionnelle: Administration des affaires et gestion des organisations sportives', imsk_kenitra, '3 ans', 'Diplome National').
+filiere('Tous Bacs', sports, 'Licence Professionnelle: Animation et journalisme du sport', imsk_kenitra, '3 ans', 'Diplome National').
+filiere('Tous Bacs', sports, 'Licence Professionnelle: Digital sport entrepreneurship', imsk_kenitra, '3 ans', 'Diplome National').
+filiere('Tous Bacs', sports, 'Licence Professionnelle: Metiers du parasport', imsk_kenitra, '3 ans', 'Diplome National').
+filiere('Tous Bacs', sports, 'Management du sport', iss_settat, '3 ans', 'Diplome National').
+filiere('Tous Bacs', sports, 'Entrainement sportif', iss_settat, '3 ans', 'Diplome National').
+filiere('Tous Bacs', sports, 'Technologie du sport', iss_settat, '3 ans', 'Diplome National').
+filiere('Tous Bacs', sports, 'Education physique', issf_fes, '3 ans', 'Diplome National').
+filiere('Tous Bacs', sports, 'Management', issf_fes, '3 ans', 'Diplome National').
+filiere('Tous Bacs', sports, 'Entrainement', issf_fes, '3 ans', 'Diplome National').
+filiere('Tous Bacs', sports, 'Entrainement Sportif', irfcjs_rabat, '3 ans', 'Diplome National').
+filiere('Tous Bacs', sports, 'Protection de l Enfance et Soutien de la Famille', irfcjs_rabat, '3 ans', 'Diplome National').
+filiere('Tous Bacs', sports, 'Education de la Petite Enfance', irfcjs_rabat, '3 ans', 'Diplome National').
+
+% --- SALARIES & RATES ---
+average_salary(emsi_informatique, 32000).
+average_salary(emsi, 28000).
+average_salary(emsi_electricite, 30000).
+average_salary(uir_engineering, 35000).
+average_salary(uir, 34000).
+average_salary(uir_business, 38000).
+average_salary(um6p, 42000).
+
+employment_rate(emsi, 0.92).
+employment_rate(uir, 0.94).
+employment_rate(um6p, 0.98).
+employment_rate(ensa, 0.88).
+
+% --- REGISTRATION LINKS ---
+registration_link(ensam_network, 'www.cursussup.gov.ma').
+registration_link(ensa_network_maroc, 'www.cursussup.gov.ma').
+registration_link(ensck_kenitra, 'https://ensck.uit.ac.ma/preinscription/').
+registration_link(est_network, 'www.cursussup.gov.ma').
+registration_link(fst_network, 'www.cursussup.gov.ma').
+registration_link(ensias_rabat, 'www.ensias.um5.ac.ma').
+registration_link(imm_marrakech, 'www.emm.ac.ma').
+registration_link(encg_network, 'www.cursussup.gov.ma').
+registration_link(fmp_fmd_network, 'www.cursussup.gov.ma').
+registration_link(isss_settat, 'http://www.isss.uh1.ac.ma/preinscript/Bacheliers').
+registration_link(ispits_network, 'http://ispits.sante.gov.ma').
+registration_link(enam_meknes, 'https://concours.enameknes.net/').
+registration_link(iav_rabat, 'https://apesa.iav.ac.ma').
+registration_link(ispm_agadir, 'concours.fpa-agriculture.ma').
+registration_link(itsat_tetouan, 'concours.fpa-agriculture.ma').
+registration_link(isic_rabat, 'https://preinscription.isic.ma/').
+registration_link(inau_rabat, 'https://inau.ac.ma/concours-de-linau-2025-2026/').
+registration_link(isadac_rabat, 'https://isadac.com/login').
+registration_link(inba_tetouan, 'www.inbatetouan.com').
+registration_link(insap_rabat, 'www.insap.ac.ma').
+registration_link(aat_casablanca, 'www.aat.ac.ma').
+registration_link(isitt_tanger, 'https://concours.isitt.ma/').
+registration_link(imsk_kenitra, 'https://ims.uit.ac.ma/pre-inscrip').
+registration_link(irfcjs_rabat, 'http://irfc.ma').
+registration_link(ena_architecture_network, 'www.concoursena.ma').
+
+% --- INSTITUTION DETAILS (Public) ---
+institution_detail(ensam_network, objectifs, 'Former des ingenieurs d Etat polyvalents, d esprit entrepreneurial, capables de concevoir, realiser et gerer des systemes industriels complexes.').
+institution_detail(ensam_network, specialites, 'Genie Mecanique, Genie Industriel, Genie Electrique, Management des Systemes Industriels.').
+institution_detail(ensa_network_maroc, objectifs, 'Former des ingenieurs d Etat hautement qualifies, capables de s adapter aux evolutions technologiques et economiques.').
+institution_detail(ensck_kenitra, specialites, 'Formulation, Genie des Procedes, Genie des Materiaux, Technologies de l Eau et de l Energie.').
+institution_detail(est_network, objectifs, 'Preparer des techniciens superieurs hautement qualifies a travers une formation theorique et pratique.').
+institution_detail(fst_network, objectifs, 'Permettre aux bacheliers scientifiques et techniques de poursuivre des etudes superieures dans les sciences appliquees, technologie et ingenierie.').
+institution_detail(fst_network, passerelles, 'Acces au Cycle Ingenieur pour les titulaires de DEUG, DEUST, DUT ou BTS avec de bonnes notes.').
+institution_detail(ensias_rabat, specialites, 'Genie Logiciel, IA, Cybersecurite, Data Science, IoT, E-Logistique.').
+institution_detail(ensias_rabat, contact, 'Avenue Mohammed Ben Abdellah Regragui, B.P. 713, Rabat.').
+institution_detail(imm_marrakech, specialites, 'Geologie appliquee, Mines et Carrieres, Chimie Industrielle, Electromecanique.').
+institution_detail(imm_marrakech, conditions_age, 'Moins de 30 ans au 31 juillet de l annee du concours.').
+institution_detail(encg_network, objectifs, 'Former des cadres de haut niveau dans les domaines du commerce et de la gestion (Management, Marketing, Finance, Commerce International).').
+institution_detail(fmp_fmd_network, objectifs, 'Former des cadres spécialisés en médecine générale, pharmacie et médecine dentaire.').
+institution_detail(fmp_fmd_network, secteur_geographique, 'Respect de la sectorisation géographique lors de l\'inscription.').
+institution_detail(isss_settat, mission, 'Formation de cadres spécialisés dans les domaines infirmiers, techniques de santé et technologies biomédicales.').
+institution_detail(ispits_network, mission, 'Etablissements ne relevant pas des universités, chargés de la formation dans les domaines infirmiers et techniques de santé.').
+institution_detail(enam_meknes, specialites, 'Arboriculture, Agro-Économie, Développement, Productions Animales, Protection des Plantes, etc.').
+institution_detail(enam_meknes, frais, '100 dirhams de frais de dossier.').
+institution_detail(iav_rabat, specialites, 'Agronomie, Génie Rural, Topographie, Industries Agro-alimentaires, Horticulture, Paysage.').
+institution_detail(iav_rabat, frais, '150 dirhams de frais de dossier.').
+institution_detail(itsat_tetouan, specialites, 'Plantes Aromatiques et Médicinales, Techniques de Laboratoire.').
+institution_detail(isic_rabat, sections, 'Section Arabe et Section Française.').
+institution_detail(inau_rabat, conditions_age, 'Moins de 21 ans à la date du concours. Nationalité marocaine.').
+institution_detail(isadac_rabat, specialites, 'Animation culturelle, Scénographie, Interprétation.').
+institution_detail(esba_casablanca, specialites, 'Arts/Espace, Design Graphique/Digital, Design d\'Intérieur.').
+institution_detail(inba_tetouan, specialites, 'Design, Arts Plastiques, Bande Dessinée.').
+institution_detail(insap_rabat, specialites, 'Archéologie Préhistorique, Méditerranéenne, Islamique, Anthropologie, Muséologie.').
+institution_detail(aat_casablanca, bourse, 'Tous les étudiants admis bénéficient d\'une bourse mensuelle de 3000 DH.').
+institution_detail(aat_casablanca, specialites, 'Arts du bois, métaux, Architecture traditionnelle, Maroquinerie, Calligraphie.').
+institution_detail(isitt_tanger, conditions, 'Moins de 25 ans. Bac de l\'année ou 2 ans précédents.').
+institution_detail(ena_architecture_network, frais, '100 DH de frais de dossier.').
+institution_detail(ena_architecture_network, conditions_age, 'Moins de 25 ans à la date du concours. Nationalité marocaine.').
+
+% --- CRITERIA ---
+admission_criteria(institution, 'BAC Score', 30).
+admission_criteria(institution, 'Interview', 20).
+admission_criteria(institution, 'Motivation Letter', 15).
+admission_criteria(institution, 'Previous Grades', 20).
+admission_criteria(institution, 'Extracurricular', 15).
+admission_criteria(ensck_kenitra, 'Notes du Baccalauréat', 100).
+admission_criteria(imm_marrakech, 'Présélection basée sur les notes du Baccalauréat', 100).
+admission_criteria(enam_meknes, 'Présélection sur moyenne du Baccalauréat National', 100).
+admission_criteria(iav_rabat, 'Présélection sur notes du Baccalauréat National', 100).
+admission_criteria(itsat_tetouan, 'Entretien oral', 100).
+admission_criteria(isic_rabat, 'Entretien oral', 100).
+admission_criteria(inau_rabat, 'Entretien oral', 100).
+admission_criteria(isadac_rabat, 'Entretien de motivation', 100).
+admission_criteria(esba_casablanca, 'Entretien oral', 100).
+admission_criteria(inba_tetouan, 'Épreuves écrites, pratiques et Entretien oral', 100).
+admission_criteria(insap_rabat, 'Présélection, Concours écrit et Entretien oral', 100).
+admission_criteria(aat_casablanca, 'Présélection, Concours écrit and Entretien oral', 100).
+admission_criteria(imsk_kenitra, 'Inscription en ligne, sélection par dossier', 100).
+admission_criteria(issf_fes, 'Dossier, examen écrit et tests physiques', 100).
+
+% --- MEALS ---
+meal(emsi_casablanca, monday, breakfast, 'Cafe, Pain, Beurre, Fromage, Jus').
+meal(emsi_casablanca, monday, lunch, 'Tagine Poulet, Riz, Salade, Eau').
+meal(emsi_casablanca, monday, dinner, 'Harira, Pain, Olive, Thé').
+meal(emsi_casablanca, tuesday, breakfast, 'Verre Lait, Croissant, Miel, Jus Orange').
+meal(emsi_casablanca, tuesday, lunch, 'Couscous Veggies, Ragoût, Salade Tomate').
+meal(emsi_casablanca, tuesday, dinner, 'Soupe Lentilles, Œufs brouillés, Pain').
+
+% --- SMART SEARCH ---
+find_best_school(Domain, MaxB, MinS, Ecole) :-
+    filiere(_, SchoolID, _, Domain, _),
+    institution(SchoolID, Ecole, _, _, _, _),
+    get_cost(SchoolID, Price),
+    Price =< MaxB,
+    get_salary(SchoolID, Domain, Sal),
+    Sal >= MinS.
+
+get_cost(ID, P) :- cost_tuition(ID, _, P), !. 
+get_cost(_, 0).
+
+get_salary(ID, _, S) :- average_salary(ID, S), !. 
+get_salary(_, Dom, S) :- filiere(_, Fid, _, Dom, _), average_salary(Fid, S), !. 
+get_salary(_, _, 5000).
+
+% --- CONSOLIDATED CALENDAR ---
+get_date_concours(N, D) :- date_concours(N, D).
+get_date_concours(N, D) :- institution_detail(ID, date_concours, D), institution(ID, N, _, _, _, _).
+
+% --- DEFINITIONS ---
+get_definition('LMD', 'Licence Master Doctorat', 'Le système LMD est le cadre européen et marocain de l''enseignement supérieur : Licence (3 ans), Master (2 ans), Doctorat (3 ans). Il facilite l''équivalence des diplômes.').
+get_definition('licence', 'Premier cycle universitaire', 'Diplôme national de niveau Bac+3 permettant une spécialisation académique ou une insertion professionnelle.').
+get_definition('LSTM', 'Long Short-Term Memory', 'Une architecture de réseau de neurones en Intelligence Artificielle (souvent confondue avec LMD). Utilise en IA, pas en orientation scolaire.').
+
+% --- CAMPUS HARMONIZATION (UIK, UIR, EMSI, PUBLICS) ---
+
+% UIK (Universiapolis Agadir)
+detail_ecole('uik', 'Universiapolis - Universite Internationale d Agadir', 'Polytechnique, ISIAM, Sante, Tourisme', '65 000 - 75 000 DH/an').
+internat('uik', 'Oui, Residences etudiantes modernes et securisees directement sur le campus Agadir.').
+clubs('uik', 'Plus de 15 clubs actifs (Robotique, Arts, Sport, Humanitaire).').
+cantine('uik', 'Restaurant universitaire et Food Court proposant divers menus equilibres sur le campus.').
+
+% UIR (Universite Internationale de Rabat)
+detail_ecole('uir', 'Universite Internationale de Rabat', 'Ingenierie, Business, Droit, Architecture, Medecine', '65 000 - 95 000 DH/an').
+internat('uir', 'Disponible (Cite Universitaire de haut standing a Rabat Technopolis).').
+clubs('uir', 'Plus de 50 clubs actifs (Art, Tech, Sport, Social).').
+cantine('uir', 'Food Court with several brands and university restaurant.').
+
+% EMSI
+detail_ecole('emsi', 'Ecole Marocaine des Sciences de l Ingenieur', 'Genie Informatique, Industriel, Civil, Automatismes', '28 000 - 38 000 DH/an').
+internat('emsi', 'Non disponible (Ecoles urbaines sans internat propre, aide au logement externe).').
+clubs('emsi', 'Clubs Robotique (SmartiLab), Divers clubs sportifs et culturels (BDE dynamique).').
+cantine('emsi', 'Cafeterias disponibles dans la plupart des centres (Casablanca, Rabat, Marrakech, Fes).').
+
+% PUBLIC NETWORKS (Details & Fees)
+detail_ecole('iscae', 'Institut Superieur de Commerce et d Administration des Entreprises', 'Management, Commerce, Finance', 'Gratuit (Etablissement Public)').
+detail_ecole('ensam', 'Ecole Nationale Superieure d Arts et Metiers', 'Genie Industriel, Mecanique, Electrique', 'Gratuit (Etablissement Public)').
+detail_ecole('emi', 'Ecole Mohammadia d Ingenieurs', 'Genie Civil, Electrique, Mecanique, Info', 'Gratuit (Ecole Publique / Regime Militaire)').
+detail_ecole('ensa', 'Ecole Nationale des Sciences Appliquees', 'Ingenierie multi-disciplinaire', 'Gratuit (Etablissement Public)').
+detail_ecole('encg', 'Ecole Nationale de Commerce et de Gestion', 'Management, Commerce, Marketing', 'Gratuit (Etablissement Public)').
+detail_ecole('est', 'Ecole Superieure de Technologie', 'Formations techniques courtes (DUT)', 'Gratuit (Etablissement Public)').
+detail_ecole('fst', 'Faculte des Sciences et Techniques', 'Tronc Commun, Sciences Appliquees', 'Gratuit (Etablissement Public)').
+detail_ecole('ensias', 'Ecole Nationale Superieure d''Informatique et d\'Analyse des Systemes', 'Informatique, Intelligence Artificielle', 'Gratuit (Etablissement Public)').
+
+% --- DEFINITIONS COMPLEMENTAIRES ---
+get_definition('BTS', 'Brevet de Technicien Superieur', 'Diplome de niveau Bac+2 a vocation professionnelle, prepare en 2 ans dans les lycees ou centres specialises.').
+get_definition('DUT', 'Diplome Universitaire de Technologie', 'Diplome de niveau Bac+2 delivre par les EST (Ecoles Superieures de Technologie). Plus theorique que le BTS.').
+get_definition('ENSA', 'Ecole Nationale des Sciences Appliquees', 'Reseau de 12 ecoles d ingenieurs publiques au Maroc, accessible apres le Bac via concours.').
+get_definition('ENCG', 'Ecole Nationale de Commerce et de Gestion', 'Reseau de 12 ecoles de management publiques au Maroc, accessible via le test TAFEM.').
+get_definition('UM6P', 'Universite Mohammed VI Polytechnique', 'Universite d excellence situee principalement a Benguerir, focalisee sur la recherche et l innovation.').
+get_definition('EST', 'Ecole Superieure de Technologie', 'Etablissements universitaires dispensant des formations techniques courtes de type DUT.').
+get_definition('Prive', 'Enseignement Superieur Prive', 'Ecoles payantes offrant souvent des partenariats internationaux, mais a des frais de scolarite eleves.').
+
+% --- INFOS VILLES & OPPORTUNITES ---
+ville_opportunite(benguerir, 'Forte croissance via l''UM6P et l''ecosysteme OCP.').
+ville_opportunite(ifrane, 'Cadre d''exception et prestige via l''Universite Al Akhawayn.').
+ville_opportunite(agadir, 'Pole majeur du Sud with Universiapolis (uik) and l''UIZ.').
+villes_concurrence(['Casablanca', 'Rabat', 'Marrakech'], 'Dossiers tres selectifs et cout de la vie eleve.').
+
+% --- FIN DE FICHIER ---
+
+
+% --- ESTS (Safi) Specifics ---
+detail_ecole('ests', 'Ecole Superieure de Technologie de Safi', 'Technologie, Genie Industriel, Informatique, Gestion', 'Gratuit (Etablissement Public)').
+localisation('ests', 'Safi').
+get_definition('ESTS', 'Ecole Superieure de Technologie de Safi', 'Etablissement public rattache a l''Universite Cadi Ayyad de Marrakech, mais situe a Safi. Propose des formations courtes et professionnalisantes (DUT).').
+get_definition('ests', 'Ecole Superieure de Technologie de Safi', 'Etablissement public rattache a l''Universite Cadi Ayyad de Marrakech, mais situe a Safi. Propose des formations courtes et professionnalisantes (DUT).').
+internat('ests', 'Non disponible (Etablissement de proximite sans internat propre, mais solutions locales disponibles).').
+clubs('ests', 'BDE, Clubs techniques, Sport universitaire.').
+cantine('ests', 'Cafeteria disponible sur le site de Safi.').
+>>>>>>> 3257fc1 (final)

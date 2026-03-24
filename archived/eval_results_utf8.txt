@@ -1,0 +1,128 @@
+============================================================
+🚀 EVALUATION DES 31 SUGGESTIONS
+============================================================
+
+[1/31] QUESTION : Comparer EMSI et UIR (Salaires & Débouchés)
+  SOURCE : prolog_expert
+  REPONSE: ⚖️ **Comparaison : EMSI vs UIR**  | Critère | EMSI | UIR | | :--- | :---: | :---: | | **💰 Salaire moyen** | N/A | N/A | | **📈 Taux d'insertion** | N/A | N/A | | **📍  Ville / Campus** | N/A | N/A |  💡 ...
+  STATUT : ✅ SUCCES 
+
+[2/31] QUESTION : Écoles d'ingénierie budget < 45000 DH
+  SOURCE : prolog_expert
+  REPONSE: 🎓 **Bourses de Mérite & Financements :**  - **UIR** (Excellence (100%)) : Moyenne Bac >= 16/20 - **UIR** (Partielle (50%)) : Moyenne Bac >= 14/20 ou sur étude dossier social - **UM6P** (Bourse Fondati...
+  STATUT : ✅ SUCCES 
+
+[3/31] QUESTION : Quel est le salaire moyen après l'EMSI ?
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)
+
+[4/31] QUESTION : Menu de la cantine à l'UIK aujourd'hui
+  SOURCE : prolog_expert
+  REPONSE: 🏫 **Vie Campus EMSI** : • Club de Robotique ultra actif (EMSI SmartiLab) • Club de sport avec tournois inter-ecoles • Bureau des Etudiants (BDE) tres dynamique....
+  STATUT : ✅ SUCCES 
+
+[5/31] QUESTION : Calendrier des concours 2026 au Maroc
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)
+
+[6/31] QUESTION : Meilleure école d'info avec un Bac PC
+  SOURCE : prolog_expert
+  REPONSE: 🏆 **Meilleures recommandations (informatique)** :  Les meilleures ecoles sont l'ENSIAS, INPT, ENSA et l'UM6P. Dans le prive, l'UIR et l'EMSI se demarquent....
+  STATUT : ✅ SUCCES 
+
+[7/31] QUESTION : Différence entre ENSA et ENAM ?
+  SOURCE : prolog_expert
+  REPONSE: ⚖️ **Comparaison : ENSA vs ENAM**  | Critère | ENSA | ENAM | | :--- | :---: | :---: | | **💰 Salaire moyen** | N/A | N/A | | **📈 Taux d'insertion** | N/A | N/A | | **📍  Ville / Campus** | N/A | N/A |  ...
+  STATUT : ✅ SUCCES 
+
+[8/31] QUESTION : Bourses d'excellence à l'UM6P
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)
+
+[9/31] QUESTION : Frais de scolarité de l'ISCAE
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)
+
+[10/31] QUESTION : Est-ce que l'UIR a un internat ?
+  SOURCE : prolog_expert
+  REPONSE: 🏫 **Vie Campus EMSI** : • Club de Robotique ultra actif (EMSI SmartiLab) • Club de sport avec tournois inter-ecoles • Bureau des Etudiants (BDE) tres dynamique....
+  STATUT : ✅ SUCCES 
+
+[11/31] QUESTION : Métiers d'avenir dans l'IA au Maroc
+  SOURCE : prolog_expert
+  REPONSE: 🚀 **Métiers d'Avenir au Maroc :**  🔹 **Intelligence Artificielle** (Data Scientist, Ingénieur ML)    Demande : Très Forte    Conseil : Formation: ENSIAS, INPT, ENIAD, FST (Master Data). Salaires attra...
+  STATUT : ✅ SUCCES 
+
+[12/31] QUESTION : Comment s'inscrire sur CursusSup ?
+  SOURCE : prolog_expert
+  REPONSE: Je n'ai pas d'information sur [ville/école demandée] dans ma base.  📚 **Sources** : Admissions, Orientation, Conseils 🟡 Confiance moyenne (75%)...
+  STATUT : ❌ ECHEC / INFO MANQUANTE (Info absente de la base Prolog, ou entité non détectée)
+
+[13/31] QUESTION : Seuils médecine 2025 (Estimations)
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)
+
+[14/31] QUESTION : Filières possibles avec un Bac SM
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)
+
+[15/31] QUESTION : Calculer mon score pour l'ENSA
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)
+
+[16/31] QUESTION : Quiz : Quelle école me correspond ?
+  SOURCE : prolog_expert
+  REPONSE: Pas de panique ! 🧭 Je vais t'aider. Dis-moi ta série de Bac (PC, SVT, Eco, Lettres) et je te guide vers les meilleures options !...
+  STATUT : ✅ SUCCES 
+
+[17/31] QUESTION : Conseils pour réussir le concours ENCG
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)
+
+[18/31] QUESTION : Liste des écoles d'architecture privées
+  SOURCE : prolog_expert
+  REPONSE: 📍 L'**Architecture** s'étudie à l'ENA (publique) ou dans des écoles privées comme l'UIR et l'EAC....
+  STATUT : ✅ SUCCES 
+
+[19/31] QUESTION : Différence entre Licence Pro et Fondamentale
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)
+
+[20/31] QUESTION : Débouchés après un Bac Eco-Gestion
+  SOURCE : prolog_expert
+  REPONSE: 🚀 **Métiers d'Avenir au Maroc :**  🔹 **Intelligence Artificielle** (Data Scientist, Ingénieur ML)    Demande : Très Forte    Conseil : Formation: ENSIAS, INPT, ENIAD, FST (Master Data). Salaires attra...
+  STATUT : ✅ SUCCES 
+
+[21/31] QUESTION : Comment avoir la bourse Minhaty ?
+  SOURCE : prolog_expert
+  REPONSE: 🎓 **Bourses de Mérite & Financements :**  - **UIR** (Excellence (100%)) : Moyenne Bac >= 16/20 - **UIR** (Partielle (50%)) : Moyenne Bac >= 14/20 ou sur étude dossier social - **UM6P** (Bourse Fondati...
+  STATUT : ✅ SUCCES 
+
+[22/31] QUESTION : Écoles avec prépa intégrée à Casablanca
+  SOURCE : prolog_expert
+  REPONSE: 📍 **Établissements à Casablanca** :  - 🏛️ **EMSI** - 🏛️ **ENSAM** - 🏛️ **ESCA** - 🏛️ **HEM** - 🏛️ **SUPINFO** - 🏛️ **UPSAT** - 🏛️ **Universite Hassan II** ...
+  STATUT : ✅ SUCCES 
+
+[23/31] QUESTION : Avantages du système LMD au Maroc
+  SOURCE : prolog_expert
+  REPONSE: 🚀 **Métiers d'Avenir au Maroc :**  🔹 **Intelligence Artificielle** (Data Scientist, Ingénieur ML)    Demande : Très Forte    Conseil : Formation: ENSIAS, INPT, ENIAD, FST (Master Data). Salaires attra...
+  STATUT : ✅ SUCCES 
+
+[24/31] QUESTION : Puis-je faire médecine avec 14 de moyenne ?
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)
+
+[25/31] QUESTION : Le diplôme de l'OFPPT est-il reconnu ?
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)
+
+[26/31] QUESTION : Meilleure méthode pour réviser le Bac
+  SOURCE : prolog_expert
+  REPONSE: 🏆 **Meilleures recommandations (informatique)** :  Les meilleures ecoles sont l'ENSIAS, INPT, ENSA et l'UM6P. Dans le prive, l'UIR et l'EMSI se demarquent....
+  STATUT : ✅ SUCCES 
+
+[27/31] QUESTION : Vaut-il mieux faire un BTS ou un DUT ?
+  SOURCE : prolog_expert
+  REPONSE: ⚖️ **Comparaison : BTS vs DUT**  | Critère | BTS | DUT | | :--- | :---: | :---: | | **💰 Salaire moyen** | N/A | N/A | | **📈 Taux d'insertion** | N/A | N/A | | **📍  Ville / Campus** | N/A | N/A |  💡 *L...
+  STATUT : ✅ SUCCES 
+
+[28/31] QUESTION : Frais d'inscription à l'Université Privée de Fès
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)
+
+[29/31] QUESTION : Comment devenir ingénieur en cybersécurité ?
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)
+
+[30/31] QUESTION : Les clubs étudiants à l'EMSI
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)
+
+[31/31] QUESTION : Prochaines dates d'inscription OFPPT
+  ❌ ERREUR DE REQUETE : HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=30)

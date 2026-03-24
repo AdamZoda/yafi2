@@ -10,6 +10,14 @@ export const themes: Record<ThemeColor, {
     border: string;
     text: string;
     bg_soft: string;
+<<<<<<< HEAD
+=======
+    // Dark Mode
+    bg_dark: string;
+    bg_dark_soft: string;
+    border_dark: string;
+    text_dark: string;
+>>>>>>> 3257fc1 (final)
 }> = {
     emerald: {
         name: 'Émeraude',
@@ -20,7 +28,16 @@ export const themes: Record<ThemeColor, {
         shadow: 'shadow-emerald-200',
         border: 'border-emerald-200',
         text: 'text-emerald-800',
+<<<<<<< HEAD
         bg_soft: 'bg-emerald-50/50'
+=======
+        bg_soft: 'bg-emerald-50/50',
+        // Dark Mode
+        bg_dark: 'bg-black',
+        bg_dark_soft: 'bg-zinc-900/80',
+        border_dark: 'border-zinc-800',
+        text_dark: 'text-emerald-400'
+>>>>>>> 3257fc1 (final)
     },
     blue: {
         name: 'Océan',
@@ -31,7 +48,16 @@ export const themes: Record<ThemeColor, {
         shadow: 'shadow-blue-200',
         border: 'border-blue-200',
         text: 'text-blue-800',
+<<<<<<< HEAD
         bg_soft: 'bg-blue-50/50'
+=======
+        bg_soft: 'bg-blue-50/50',
+        // Dark Mode
+        bg_dark: 'bg-black',
+        bg_dark_soft: 'bg-zinc-900/80',
+        border_dark: 'border-zinc-800',
+        text_dark: 'text-blue-400'
+>>>>>>> 3257fc1 (final)
     },
     purple: {
         name: 'Améthyste',
@@ -42,7 +68,16 @@ export const themes: Record<ThemeColor, {
         shadow: 'shadow-purple-200',
         border: 'border-purple-200',
         text: 'text-purple-800',
+<<<<<<< HEAD
         bg_soft: 'bg-purple-50/50'
+=======
+        bg_soft: 'bg-purple-50/50',
+        // Dark Mode
+        bg_dark: 'bg-black',
+        bg_dark_soft: 'bg-zinc-900/80',
+        border_dark: 'border-zinc-800',
+        text_dark: 'text-purple-400'
+>>>>>>> 3257fc1 (final)
     },
     orange: {
         name: 'Sunset',
@@ -53,7 +88,16 @@ export const themes: Record<ThemeColor, {
         shadow: 'shadow-orange-200',
         border: 'border-orange-200',
         text: 'text-orange-800',
+<<<<<<< HEAD
         bg_soft: 'bg-orange-50/50'
+=======
+        bg_soft: 'bg-orange-50/50',
+        // Dark Mode
+        bg_dark: 'bg-black',
+        bg_dark_soft: 'bg-zinc-900/80',
+        border_dark: 'border-zinc-800',
+        text_dark: 'text-orange-400'
+>>>>>>> 3257fc1 (final)
     },
     rose: {
         name: 'Rose',
@@ -64,6 +108,15 @@ export const themes: Record<ThemeColor, {
         shadow: 'shadow-rose-200',
         border: 'border-rose-200',
         text: 'text-rose-800',
+<<<<<<< HEAD
         bg_soft: 'bg-rose-50/50'
+=======
+        bg_soft: 'bg-rose-50/50',
+        // Dark Mode
+        bg_dark: 'bg-black',
+        bg_dark_soft: 'bg-zinc-900/80',
+        border_dark: 'border-zinc-800',
+        text_dark: 'text-rose-400'
+>>>>>>> 3257fc1 (final)
     }
 };

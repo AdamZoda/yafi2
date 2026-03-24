@@ -1,6 +1,7 @@
 import sys
 import os
 import re
+<<<<<<< HEAD
 
 # Ensure the models are loaded once
 try:
@@ -12,6 +13,26 @@ try:
     intent_model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
 except ImportError:
     intent_model = None
+=======
+import numpy as np
+
+# Ensure the models are loaded once
+# Global cache for the embedding model to avoid reloading it
+_shared_model = None
+
+def get_shared_model(model_name='paraphrase-multilingual-MiniLM-L12-v2'):
+    global _shared_model
+    if _shared_model is None:
+        try:
+            from sentence_transformers import SentenceTransformer
+            print(f"Loading shared embedding model: {model_name}...")
+            _shared_model = SentenceTransformer(model_name)
+        except Exception as e:
+            print(f"Error loading model: {e}")
+    return _shared_model
+
+intent_model = get_shared_model()
+>>>>>>> 3257fc1 (final)
 
 
 class IntentClassifier:
@@ -28,7 +49,15 @@ class IntentClassifier:
             "Calcul de seuil",
             "J'ai eu 14 au régional et 15 au national",
             "Calcule moi mon score pour la médecine",
+<<<<<<< HEAD
             "Quel est mon score avec ces notes ?"
+=======
+            "Quel est mon score avec ces notes ?",
+            "Calculer mon score pour l'ENSA",
+            "Puis-je faire médecine avec ma moyenne ?",
+            "Seuils de présélection",
+            "Estimation de mes chances d'admission"
+>>>>>>> 3257fc1 (final)
         ],
         "COMPARE_SCHOOLS": [
             "Quelle est la différence entre ENSA et FST ?",
@@ -80,11 +109,24 @@ class IntentClassifier:
             "Bonjour, au revoir"
         ],
         "GENERAL_INFO": [
+<<<<<<< HEAD
             "C'est quoi l'ENCG ?",
             "Définition de la FST",
             "Parle-moi de l'UM6P",
             "Qu'est-ce qu'un BTS ?",
             "Je veux des informations sur cette école"
+=======
+            "C'est quoi l'ENSA?", "Parle moi de l'UIR", "Infos sur l'EMSI", "Qu'est-ce que le DUT?", 
+            "ESTS", "EMSI", "UIR", "UM6P", "ENSA", "ENCG", "FST", "EST", "ISCAE", "ENAM", "UIK"
+        ],
+        "FINANCIALS": [
+            "Frais de scolarité", "Combien ça coûte ?", "Prix de l'école", "Budget annuel", "Frais d'inscription"
+        ],
+        "CAMPUS_LIFE": [
+            "Est-ce qu'il y a un internat ?", "Les clubs étudiants", "Menu de la cantine", "Vie de campus", 
+            "Dormir à l'école", "C'est quoi le menu de la cantine ?", "Y a-t-il un internat ?",
+            "Quels sont les clubs et activités ?", "Comment est le campus ?", "Logement sur place"
+>>>>>>> 3257fc1 (final)
         ],
         "RECOMMENDATION": [
             "Les meilleures écoles d'informatique",
@@ -92,17 +134,40 @@ class IntentClassifier:
             "Quelle est la meilleure option pour moi ?",
             "Classement des écoles d'ingénierie"
         ],
+<<<<<<< HEAD
+=======
+        "SCHOOL_MAJORS": [
+            "Quelles sont les filières de cette école ?",
+            "Liste des spécialités à l'ENSA",
+            "Qu'est-ce qu'on étudie à l'ESTS ?",
+            "Quelles options pour le cycle ingénieur ?",
+            "Est-ce qu'il y a du génie civil ici ?",
+            "Filières disponibles",
+            "Les branches d'études"
+        ],
+>>>>>>> 3257fc1 (final)
         "SOFT_SKILLS": [
             "Conseils pour gérer le stress",
             "Comment s'organiser pour le bac",
             "Méthode de révision",
             "Je stresse trop pour mes examens"
+<<<<<<< HEAD
+=======
+        ],
+        "SALARY_INFO": [
+            "Quel est le salaire après l'EMSI ?",
+            "Combien gagne un ingénieur ?",
+            "Est-ce que l'informatique paye bien ?",
+            "Salaire moyen à la sortie de l'école",
+            "Quel est le taux d'insertion professionnelle ?"
+>>>>>>> 3257fc1 (final)
         ]
     }
 
     # Keyword Weights for Hierarchical Scoring to resolve semantic overlap
     KEYWORD_WEIGHTS = {
         "COMPARE_SCHOOLS": [r"\bcompar(er|aison)\b", r"\bdifference\b", r"\bvs\b", r"\bentre\b"],
+<<<<<<< HEAD
         "WHERE_TO_STUDY": [r"\boù\b", r"\bville\b", r"\blocalisation\b", r"\btrouve\b", r"\barchitecture\b", r"\betudi(er|ant)\b"],
         "SCHOLARSHIPS": [r"\bbourse\b", r"\bminhaty\b", r"\baide\b", r"\bgratuit(e|es)?\b", r"\bfinancement\b"],
         "SCHOOL_FEES": [r"\bprix\b", r"\bcout\b", r"\bfrais\b", r"\btarif\b", r"\bpay(er|ant|antes)?\b", r"\bcheres?\b", r"\bcombien\b", r"\bmoins\s+cheres?\b"],
@@ -113,11 +178,30 @@ class IntentClassifier:
         "RECOMMENDATION": [r"\bmeilleur(e|s|es)?\b", r"\btop\b", r"\bclassement\b", r"\bbien\b"],
         "SOFT_SKILLS": [r"\bstress\b", r"\borganisation\b", r"\brevision(s)?\b", r"\bsommeil\b"],
         "GENERAL_ADVICE": [r"\bbonjour\b", r"\bsalut\b", r"\bcherche\b", r"\baide\b"]
+=======
+        "WHERE_TO_STUDY": [r"\boù\b", r"\bville\b", r"\blocalisation\b", r"\btrouve\b", r"\barchitecture\b", r"\betudi(er|ant)\b", r"\b(casablanca|rabat|marrakech|tanger|agadir|fes|fès|meknes|meknès|tetouan|settat|el jadida|beni mellal|safi|nador|oujda|kenitra|khouribga|berrechid|taza|errachidia|al hoceima|ifrane|benguerir)\b"],
+        "SCHOLARSHIPS": [r"\bbourse(s)?\b", r"\bminhaty\b", r"\baide\b", r"\bgratuit(e|es)?\b", r"\bfinancement\b"],
+        "SCHOOL_FEES": [r"\bprix\b", r"\bcout\b", r"\bfrais\b", r"\btarif\b", r"\bpay(er|ant|antes)?\b", r"\bcher(e|es|s)?\b", r"\bcombien\b", r"\bmoins\s+cher(e|es|s)?\b"],
+        "ADMISSION_PROCEDURE": [r"\bprocedure\b", r"\binscription(s)?\b", r"\bdossier\b", r"\betape(s)?\b", r"\bpostuler\b", r"\bcomment\s+(m'inscrire|s'inscrire|postuler|acceder|integrer)\b", r"\bconcours\b", r"\bquand\b"],
+        "FUTURE_JOBS": [r"\bavenir\b", r"\bmetier(s)?\b", r"\bemploi(s)?\b", r"\btravail\b", r"\bsalaire\b", r"\b(ia|ai)\b", r"\bintelligence\b", r"\bdebou(che|ches)\b", r"\bremplacer\b", r"\bdevenir\b", r"\bingenieur\b"],
+        "CALCULATE_SCORE": [r"\bcalcul(er)?\b", r"\bnote\b", r"\bscore\b", r"\bseuil\b", r"\bmoyenne\b", r"\b1[0-9](\.[0-9]+)?\b"],
+        "GENERAL_INFO": [r"\bc'est quoi\b", r"\bdefinition\b", r"\bqu'est-ce\b"],
+        "RECOMMENDATION": [r"\bmeilleur(e|s|es)?\b", r"\btop\b", r"\bclassement\b", r"\bbien\b"],
+        "SOFT_SKILLS": [r"\bstress\b", r"\borganisation\b", r"\brevision(s)?\b", r"\bsommeil\b"],
+        "GENERAL_ADVICE": [r"\bbonjour\b", r"\bsalut\b", r"\bcherche\b", r"\baide\b"],
+        "SALARY_INFO": [r"\bsalaire\b", r"\bgagne(r)?\b", r"\bisertion\b", r"\bpaye\b", r"\bremune(ration)?\b", r"\bembauche\b"],
+        "CAMPUS_LIFE": [r"\bmenu\b", r"\bcantine\b", r"\bmanger\b", r"\brepas\b", r"\bclub(s)?\b", r"\bevent(s)?\b", r"\bsport\b", r"\baccessible\b", r"\btransport\b", r"\binternat\b", r"\blogement\b", r"\bdortoir(s)?\b", r"\bresidence(s)?\b"],
+        "SCHOOL_MAJORS": [r"\bfiliere(s)?\b", r"\bspecialite(s)?\b", r"\bbranche(s)?\b", r"\boption(s)?\b"]
+>>>>>>> 3257fc1 (final)
     }
 
     def __init__(self):
         if not intent_model:
+<<<<<<< HEAD
             print("⚠️ IntentClassifier: sentence-transformers not installed. Intent classification disabled.")
+=======
+            print("IntentClassifier: sentence-transformers not installed. Intent classification disabled.")
+>>>>>>> 3257fc1 (final)
             self.enabled = False
             return
             
@@ -125,7 +209,11 @@ class IntentClassifier:
         self.intent_embeddings = {}
         
         # Precompute embeddings for all anchors for fast comparison
+<<<<<<< HEAD
         print("💡 Pre-computing intent embeddings...")
+=======
+        print("Pre-computing intent embeddings...")
+>>>>>>> 3257fc1 (final)
         for intent, anchors in self.INTENT_ANCHORS.items():
             self.intent_embeddings[intent] = intent_model.encode(anchors)
             
@@ -169,7 +257,11 @@ class IntentClassifier:
             if intent in self.KEYWORD_WEIGHTS:
                 for pattern in self.KEYWORD_WEIGHTS[intent]:
                     if re.search(pattern, user_message_lower, re.IGNORECASE):
+<<<<<<< HEAD
                         bonus += 0.4 # Overwhelming boost to ensure explicit keywords win
+=======
+                        bonus += 0.8 # Overwhelming boost to ensure explicit keywords win
+>>>>>>> 3257fc1 (final)
             
             final_scores[intent] = score + bonus
             
@@ -178,10 +270,17 @@ class IntentClassifier:
                 best_intent = intent
                 
         if best_score >= threshold:
+<<<<<<< HEAD
             print(f"🎯 INTENT DETECTED: {best_intent} (Score: {best_score:.2f}, Semantic: {semantic_scores[best_intent]:.2f})")
             return best_intent
         
         print(f"🤷 INTENT UNCERTAIN (Best was {best_intent} with {best_score:.2f})")
+=======
+            print(f"INTENT DETECTED: {best_intent} (Score: {best_score:.2f}, Semantic: {semantic_scores[best_intent]:.2f})")
+            return best_intent
+        
+        print(f"INTENT UNCERTAIN (Best was {best_intent} with {best_score:.2f})")
+>>>>>>> 3257fc1 (final)
         return None
 
     def extract_entities(self, text: str) -> dict:
@@ -222,11 +321,29 @@ class IntentClassifier:
             entities["budget"] = int(budget_match.group(1))
 
         # 4. Schools (Main Sigles)
+<<<<<<< HEAD
         school_patterns = ["ENSA", "ENCG", "FST", "FMP", "EST", "UM6P", "UIR", "ISCAE", "ENA"]
+=======
+        # Avoid matching 'est' (verb) for 'EST' (school) unless it's likely a school context
+        school_patterns = [
+            "ENSA", "ENCG", "FST", "FMP", "UM6P", "UIR", "ISCAE", "ENA", 
+            "EMSI", "ENSAM", "ENSIAS", "IAV", "ISIC", "INAU", "ISADAC", "ESBA", "INBA"
+        ]
+        
+        # Check specific schools first
+>>>>>>> 3257fc1 (final)
         for school in school_patterns:
             if re.search(r"\b" + re.escape(school) + r"\b", text, re.IGNORECASE):
                 entities["ecole"] = school
                 break
+<<<<<<< HEAD
+=======
+        
+        # Special case for EST to avoid 'c'est' or 'est' verb match
+        if not entities["ecole"]:
+            if re.search(r"\bEST\b", text) or (re.search(r"\b(à|et|école)\s+est\b", text_lower)):
+                entities["ecole"] = "EST"
+>>>>>>> 3257fc1 (final)
 
         # 5. Cities
         cities = ["Casablanca", "Rabat", "Marrakech", "Agadir", "Fes", "Tanger", "Oujda", "Meknes", "Safi"]

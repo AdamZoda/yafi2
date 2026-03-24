@@ -1,7 +1,11 @@
 {
   "knowledge_base": "YAFI - Orientation Post-Bac Maroc",
   "version": "2024.1",
+<<<<<<< HEAD
   "total_questions": 30,
+=======
+  "total_questions": 47,
+>>>>>>> 3257fc1 (final)
   "categories": {
     "Admissions": [
       "J'ai une moyenne de 12, que faire ?",
@@ -41,7 +45,19 @@
       "Est-ce que les stages sont obligatoires ?",
       "Quelles sont les villes avec moins de concurrence ?",
       "Inscription CursusSup, c'est quand ?",
+<<<<<<< HEAD
       "Métiers d'avenir au Maroc ?"
+=======
+      "Métiers d'avenir au Maroc ?",
+      "Quelle formation courte après le Bac ?",
+      "Quelles sont les options Bac plus 2 ?",
+      "ENSA Safi chances ?",
+      "Médecine avec 11.5 ?",
+      "Salaire ingénieur débutant ?",
+      "Différence BTS vs DUT ?",
+      "Budget UIR vs EMSI ?",
+      "Villes avec ENSA ?"
+>>>>>>> 3257fc1 (final)
     ]
   },
   "qa_database": [
@@ -194,6 +210,94 @@
       "q": "Métiers d'avenir au Maroc ?",
       "full_answer": "Le **Maroc de 2026-2035** verra l'émergence de nouveaux métiers et la transformation de secteurs entiers.\n\n### Top 10 Métiers d'Avenir\n\n**1. Intelligence Artificielle et Data Science** 🚀\n- **Métiers** :\n  - Data Scientist / Analyst\n  - ML Engineer\n  - AI Product Manager\n  - Prompt Engineer\n- **Salaire** : 12-30K DH/mois\n- **Demande** : Très forte\n- **Formation** : Ingénieur + spécialisation\n\n**2. Cybersécurité** 🛡️\n- **Métiers** :\n  - Security Analyst\n  - Ethical Hacker\n  - CISO (Chief Information Security Officer)\n- **Salaire** : 10-25K DH/mois\n- **Demande** : Critique\n- **Formation** : Informatique + certifications\n\n**3. Énergies Renouvelables** ☀️\n- **Métiers** :\n  - Ingénieur solaire/éolien\n  - Gestionnaire projets énergétiques\n  - Technicien maintenance panneaux\n- **Salaire** : 8-18K DH/mois\n- **Pourquoi** : Plan Maroc 2030 (52% énergies vertes)\n- **Formation** : Génie électrique, énergétique\n\n**4. Développement Durable** 🌱\n- **Métiers** :\n  - Consultant RSE\n  - Auditeur environnemental\n  - Chef projet économie circulaire\n- **Salaire** : 8-20K DH/mois\n- **Demande** : Croissante\n- **Formation** : Environnement, Management\n\n**5. Santé Digitale / E-santé** 💊\n- **Métiers** :\n  - Développeur apps santé\n  - Gestionnaire données médicales\n  - Télémédecin\n- **Salaire** : 10-22K DH/mois\n- **Contexte** : Digitalisation santé post-COVID\n- **Formation** : Médecine + IT, Ingénieur biomédicale\n\n**6. Cloud Computing / DevOps** ☁️\n- **Métiers** :\n  - Cloud Architect (AWS, Azure, GCP)\n  - DevOps Engineer\n  - Site Reliability Engineer (SRE)\n- **Salaire** : 12-28K DH/mois\n- **Demande** : Explosive\n- **Formation** : Informatique + certifications\n\n**7. Blockchain et Fintech** ₿\n- **Métiers** :\n  - Blockchain Developer\n  - Analyste Fintech\n  - Crypto Consultant\n- **Salaire** : 15-35K DH/mois\n- **Émergence** : Digitalisation bancaire\n- **Formation** : Finance + IT\n\n**8. UX/UI Design** 🎨\n- **Métiers** :\n  - UX Designer\n  - UI Designer\n  - Product Designer\n- **Salaire** : 8-18K DH/mois\n- **Demande** : Forte\n- **Formation** : Design, Informatique\n\n**9. E-commerce et Marketing Digital** 📱\n- **Métiers** :\n  - Growth Hacker\n  - Social Media Manager\n  - E-commerce Manager\n  - SEO/SEM Specialist\n- **Salaire** : 6-15K DH/mois\n- **Boom** : E-commerce x3 depuis 2020\n- **Formation** : Marketing, Commerce\n\n**10. Logistique et Supply Chain** 📦\n- **Métiers** :\n  - Supply Chain Manager\n  - Responsable logistique\n  - Analyste chaîne d'approvisionnement\n- **Salaire** : 8-20K DH/mois\n- **Contexte** : Hub Afrique (Tanger Med)\n- **Formation** : Logistique, Ingénierie industrielle\n\n### Autres Métiers Prometteurs\n\n**Transformation Digitale**\n- Chief Digital Officer\n- Business Analyst\n- Scrum Master / Agile Coach\n\n**Tourisme Durable**\n- Eco-tour guide\n- Gestionnaire hôtellerie verte\n- Consultant tourisme responsable\n\n**Aéronautique / Automobile**\n- Technicien maintenance aéronefs\n- Ingénieur automobile électrique\n- Contrôleur qualité aérospatiale\n\n**Agriculture 4.0**\n- Agro-informaticien\n- Drone pilot agricole\n- Gestionnaire fermes intelligentes\n\n**Content Creation**\n- Vidéaste / YouTubeur professionnel\n- Podcaster\n- Influencer spécialisé\n\n### Secteurs en Déclin\n\n**À Éviter** ⚠️\n- Caissier (automatisation)\n- Comptable basique (IA)\n- Téléopérateur (chatbots)\n- Traducteur non-spécialisé (IA)\n- Chauffeur (voitures autonomes à long terme)\n\n### Compétences Transversales Essentielles\n\n**Hard Skills**\n1. **Programmation** : Python, JavaScript\n2. **Data** : SQL, Excel avancé\n3. **Cloud** : AWS, Azure basics\n4. **Langues** : Anglais (obligatoire), Français\n\n**Soft Skills**\n1. **Adaptabilité** : Changement constant\n2. **Apprentissage continu** : Formation permanente\n3. **Créativité** : IA remplace répétitif\n4. **Communication** : Travail équipe\n5. **Pensée critique** : Résolution problèmes\n\n### Comment Se Préparer\n\n**Dès Maintenant**\n1. **Apprendre à coder** : Python, Web\n2. **Maîtriser l'anglais** : B2 minimum\n3. **Suivre l'actualité tech**\n4. **Certifications en ligne** : Coursera, Udemy\n5. **Projets personnels** : Portfolio\n\n**Choix d'Études**\n- Informatique / Data Science\n- Ingénierie (Électrique, Industrielle)\n- Commerce Digital\n- Énergies renouvelables\n\n### Prévisions 2030\n\n**Maroc Vision 2030**\n- 500 000 emplois IT créés\n- Leader africain énergies vertes\n- Hub logistique Afrique\n- Digitalisation tous secteurs\n\n**Salaires Moyens (Prévision)**\n- IT/Data : 15-35K DH/mois\n- Ingénierie : 10-25K DH\n- Commerce digital : 8-18K DH\n\n### Conclusion\n\n**Métiers Gagnants** 🏆\n- IT et Tech (IA, Data, Cloud, Cyber)\n- Énergies renouvelables\n- E-santé\n- Fintech\n\n**Conseil Final**\nMisez sur des compétences **tech + complémentaires** (ex: Ingénieur + Business, Médecin + IT).\n\n---\n\n**✅ BASE DE CONNAISSANCES COMPLÈTE : 30/30 QUESTIONS**",
       "category": "Conseils"
+<<<<<<< HEAD
+=======
+    },
+    {
+      "q": "Quelle formation courte après le Bac ?",
+      "full_answer": "Les formations courtes (Bac+2) au Maroc sont idéales pour une insertion professionnelle rapide. Les options principales sont :\n\n- **BTS** (Brevet de Technicien Supérieur) : 2 ans dans les lycées techniques.\n- **EST** (École Supérieure de Technologie) : Prépare au DUT (Bac+2) avec possibilité de licence pro.\n- **OFPPT (ISTA)** : Des centaines de filières techniques et commerciales.\n- **Classes Préparatoires (CPGE)** : Formation courte de 2 ans mais très intensive pour les grandes écoles.\n\n✅ Ces diplômes permettent souvent de continuer en Licence Professionnelle (Bac+3) ou en École d'Ingénieurs.",
+      "category": "Orientation"
+    },
+    {
+      "q": "Quelles sont les options Bac plus 2 ?",
+      "full_answer": "Après un Bac au Maroc, les options Bac+2 (formations courtes) incluent :\n\n1. **EST (École Supérieure de Technologie)** : Diplôme Universitaire de Technologie (DUT).\n2. **BTS (Brevet de Technicien Supérieur)** : Formation technique de haut niveau.\n3. **OFPPT / ISTA** : Diplôme de Technicien Spécialisé (DTS).\n4. **Faculté** : DEUG (Diplôme d'Études Universitaires Générales).\n\n💡 **Le saviez-vous ?** Ces formations sont très prisées par les entreprises pour leur aspect pratique (70% de TP/Stages).",
+      "category": "Orientation"
+    },
+    {
+      "q": "ENSA Safi chances avec un Bac PC ?",
+      "full_answer": "Avec un Bac PC et environ 13 de moyenne, l'ENSA Safi est un excellent choix. En tant que ville 'Opportunité', la concurrence y est souvent moins forte qu'à Casablanca ou Rabat. C'est une stratégie de contournement intelligente pour garantir une place en école d'ingénieur publique.",
+      "category": "Orientation"
+    },
+    {
+      "q": "Puis-je faire médecine avec 11.5 de moyenne ?",
+      "full_answer": "Malheureusement non. Pour les facultés de médecine publiques au Maroc, le seuil de présélection est généralement fixé à 12/20 au minimum, mais en pratique il faut souvent plus de 13 ou 14 selon l'année. Avec 11.5, il faut envisager le secteur privé (comme l'UM6SS ou l'UIASS) ou d'autres filières de santé comme l'ISPITS.",
+      "category": "Médecine"
+    },
+    {
+      "q": "Quel est le salaire d'un ingénieur débutant au Maroc ?",
+      "full_answer": "Le salaire d'un ingénieur débutant au Maroc varie généralement entre 8 000 DH et 12 000 DH par mois dans le secteur privé, selon l'école et la spécialité. Les profils IT (Informatique/Data) sont souvent dans la fourchette haute.",
+      "category": "Carrière"
+    },
+    {
+      "q": "Budget annuel pour l'UIR ?",
+      "full_answer": "L'Université Internationale de Rabat (UIR) est une université d'excellence semi-publique avec des frais de scolarité allant de 65 000 à 95 000 DH par an selon la filière. Si votre budget est autour de 30 000 DH, des écoles comme l'EMSI (environ 30 000 DH/an) sont plus adaptées.",
+      "category": "Finances"
+    },
+    {
+      "q": "Quel est le salaire après l'EMSI ?",
+      "full_answer": "Les diplômés de l'EMSI, particulièrement en Informatique et Réseaux, bénéficient d'un excellent taux d'insertion (94%). Le salaire moyen à l'embauche varie entre 8 000 DH et 12 000 DH, pouvant atteindre 15 000 DH pour les profils très qualifiés en Data ou Développement.",
+      "category": "Carrière"
+    },
+    {
+      "q": "Détails sur l'ENSAM (Arts et Métiers) ?",
+      "full_answer": "L'ENSAM est une grande école d'ingénieurs publique (Meknès, Casablanca, Rabat). Elle forme des ingénieurs d'État en 5 ans (Cycle Préparatoire + Cycle Ingénieur). Spécialités : Génie Mécanique, Industriel, Électrique. Admission via CursusSup (Moyenne > 15-16 recommandée).",
+      "category": "Écoles"
+    },
+    {
+      "q": "Frais et bourses à l'UIR ?",
+      "full_answer": "L'UIR (Rabat) propose des frais entre 65 000 et 95 000 DH/an. Cependant, l'université offre de nombreuses bourses d'investissement (Excellence/Sociale) couvrant jusqu'à 100% des frais pour les meilleurs bacheliers (Top 10% du concours).",
+      "category": "Finances"
+    },
+    {
+      "q": "Restauration et vie sur le campus ?",
+      "full_answer": "Les grandes écoles comme l'EMSI ou l'UIR disposent de cantines et cafétérias. À l'EMSI, les menus incluent des plats marocains traditionnels (Tagine, Couscous) et des options végétariennes. Le coût moyen de la vie (logement + repas) est estimé à 3000-4000 DH/mois hors frais de scolarité.",
+      "category": "Conseils"
+    },
+    {
+      "q": "Nouveautés 2026 : Médecine et Santé ?",
+      "full_answer": "Le réseau FMP/FMD (Public) reste très sélectif avec des seuils entre 14 et 18 selon la ville. Pour 2026, l'ISSS Settat et l'ISPITS proposent des formations paramédicales d'excellence (Infirmier, Sage-Femme, Labo) accessibles avec une moyenne > 13-14.",
+      "category": "Admissions"
+    },
+    {
+      "q": "C'est quoi l'ISCAE et quels sont les frais ?",
+      "full_answer": "L'ISCAE (Institut Supérieur de Commerce et d'Administration des Entreprises) est un établissement public d'excellence situé à Casablanca et Rabat. Étant public, les frais de scolarité sont quasi gratuits (environ 500 DH/an pour l'inscription). L'accès y est extrêmement sélectif via un concours national nécessitant généralement d'avoir fait les classes préparatoires (CPGE) ou d'avoir d'excellents résultats en licence.",
+      "category": "Écoles"
+    },
+    {
+      "q": "Quelle est la différence entre ENAM et ENSAM ?",
+      "full_answer": "Il ne faut pas confondre l'ENAM et l'ENSAM !\n\n- **ENAM** (École Nationale d'Agriculture de Meknès) : Forme des ingénieurs agronomes. C'est une école spécialisée dans l'agriculture, le développement rural et l'agroalimentaire.\n- **ENSAM** (École Nationale Supérieure d'Arts et Métiers) : Présente à Meknès, Casablanca et Rabat. Forme des ingénieurs d'État dans les domaines de la mécanique, l'industrie et l'électromécanique.\n\nLes deux sont publiques et très sélectives.",
+      "category": "Écoles"
+    },
+    {
+      "q": "Parle-moi de l'UIK (Université Internationale d'Agadir) : prix et campus",
+      "full_answer": "L'Université Internationale d'Agadir (UIK - Universiapolis) est un campus privé intégré.\n\n- **Frais de scolarité** : Environ 65 000 à 75 000 DH/an selon les filières (Ingénierie, Management, Tourisme).\n- **Vie de campus** : Le campus est très dynamique et dispose d'une cantine universitaire, de terrains de sport, et de plusieurs clubs étudiants.\n- **Internat** : Oui, l'UIK propose des résidences étudiantes directement sur le campus.",
+      "category": "Écoles"
+    },
+    {
+      "q": "Quelles sont les informations sur l'ESTS (EST Safi) ?",
+      "full_answer": "L'ESTS (École Supérieure de Technologie de Safi) est un établissement public rattaché à l'Université Cadi Ayyad.\n\n- **Filières principales** : Génie Informatique (GI), Techniques de Management (TM), Maintenance Industrielle, et Mécatronique.\n- **Admission** : La sélection se fait sur dossier (Notes du Bac). Le seuil d'admission tourne souvent autour de 14.20/20 pour les filières techniques, mais cela varie chaque année.\n- **Débouchés** : Permet une excellente insertion technique (DUT en 2 ans) ou la poursuite d'études en Licence Professionnelle ou en École d'Ingénieurs (ENSA, FST).",
+      "category": "Écoles"
+    },
+    {
+      "q": "Quels sont les détails sur l'Université Privée de Fès (UPF) ?",
+      "full_answer": "L'Université Privée de Fès (UPF) propose des formations en Ingénierie, Architecture, et Management.\n\n- **Frais de scolarité** : Varient entre 50 000 DH et 70 000 DH par an selon la faculté (l'Architecture étant souvent la plus chère).\n- **Campus** : Infrastructure moderne, disposant de laboratoires équipés et de partenariats internationaux pour les échanges étudiants.",
+      "category": "Écoles"
+    },
+    {
+      "q": "Est-ce que l'UIR et l'UM6P ont des internats ou offrent des bourses ?",
+      "full_answer": "Oui, ces deux grandes universités marocaines brillent par leurs infrastructures et leurs aides financières :\n\n- **UIR (Rabat)** : Dispose de 6 résidences modernes sur le campus, de nombreux clubs (Aéro, Débat) et de bourses allant jusqu'à 100% pour les excellents dossiers scolaires.\n- **UM6P (Benguerir)** : L'Université Mohammed VI Polytechnique offre des conditions d'études exceptionnelles (chambres individuelles, installations sportives olympiques) et délivre de généreuses bourses (Bourse Excellence OCP) pour les étudiants brillants issus de milieux modestes.",
+      "category": "Boursses"
+>>>>>>> 3257fc1 (final)
     }
   ]
 }

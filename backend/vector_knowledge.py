@@ -29,11 +29,19 @@ class VectorKnowledgeBase:
         
         # Load index if exists
         if os.path.exists(self.index_file) and os.path.exists(self.chunks_file):
+<<<<<<< HEAD
             print(f"📂 Loading vector index from: {self.index_file}")
             self.service.load_index(self.index_file, self.chunks_file)
             print(f"✅ Vector knowledge base ready ({self.service.index.ntotal} vectors)")
         else:
             print(f"⚠️ Vector index not found. Run build_vector_index.py first.")
+=======
+            print(f"Loading vector index from: {self.index_file}")
+            self.service.load_index(self.index_file, self.chunks_file)
+            print(f"Vector knowledge base ready ({self.service.index.ntotal} vectors)")
+        else:
+            print(f"Vector index not found. Run build_vector_index.py first.")
+>>>>>>> 3257fc1 (final)
             self.service = None
     
     def search(self, query: str, top_k: int = 5, threshold: float = 0.6) -> Optional[List[Dict]]:
@@ -49,14 +57,22 @@ class VectorKnowledgeBase:
             List of results with chunks and scores, or None
         """
         if not self.service:
+<<<<<<< HEAD
             print("⚠️ Vector search not available")
+=======
+            print("Vector search not available")
+>>>>>>> 3257fc1 (final)
             return None
         
         try:
             results = self.service.search(query, top_k=top_k, threshold=threshold)
             return results
         except Exception as e:
+<<<<<<< HEAD
             print(f"❌ Error during vector search: {e}")
+=======
+            print(f"Error during vector search: {e}")
+>>>>>>> 3257fc1 (final)
             return None
     
     def find_best_match(self, user_query: str, threshold: float = 0.6) -> Optional[Dict]:
@@ -119,7 +135,11 @@ class LegacyRAGKnowledge:
     """Legacy TF-IDF based knowledge (fallback)"""
     
     def __init__(self):
+<<<<<<< HEAD
         print("⚠️ Using legacy TF-IDF knowledge base (fallback)")
+=======
+        print("Using legacy TF-IDF knowledge base (fallback)")
+>>>>>>> 3257fc1 (final)
         # Import old implementation if needed
         from rag_knowledge import YAFIKnowledgeBase
         self.kb = YAFIKnowledgeBase()

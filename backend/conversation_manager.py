@@ -10,7 +10,11 @@ from datetime import datetime
 class ConversationManager:
     """Manages conversation sessions and history"""
     
+<<<<<<< HEAD
     def __init__(self, max_history: int = 10):
+=======
+    def __init__(self, max_history: int = 15):
+>>>>>>> 3257fc1 (final)
         """
         Initialize conversation manager
         
@@ -74,7 +78,11 @@ class ConversationManager:
         
         return history
     
+<<<<<<< HEAD
     def get_context_summary(self, session_id: str, max_messages: int = 4) -> str:
+=======
+    def get_context_summary(self, session_id: str, max_messages: int = 8) -> str:
+>>>>>>> 3257fc1 (final)
         """
         Get a formatted summary of recent conversation
         
@@ -93,7 +101,11 @@ class ConversationManager:
         context_lines = []
         for msg in history:
             role = "Utilisateur" if msg['role'] == 'user' else "Assistant"
+<<<<<<< HEAD
             content = msg['content'][:150]  # Truncate long messages
+=======
+            content = msg['content'][:300]  # Increased from 150
+>>>>>>> 3257fc1 (final)
             context_lines.append(f"{role}: {content}")
         
         return "\n".join(context_lines)
@@ -160,7 +172,11 @@ class ConversationManager:
 
 
 # Global instance
+<<<<<<< HEAD
 conversation_manager = ConversationManager(max_history=10)
+=======
+conversation_manager = ConversationManager(max_history=15)
+>>>>>>> 3257fc1 (final)
 
 
 if __name__ == "__main__":

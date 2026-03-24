@@ -56,6 +56,10 @@ echo   ✅ Ngrok OK
 
 REM Check Python
 echo   Checking Python...
+<<<<<<< HEAD
+=======
+set "PATH=%USERPROFILE%\AppData\Local\Programs\Python\Python312;%PATH%"
+>>>>>>> 3257fc1 (final)
 python --version >nul 2>&1
 if %errorlevel% neq 0 (
     echo ❌ Python n'est pas installé!

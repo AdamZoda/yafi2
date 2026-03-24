@@ -27,7 +27,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
     onClose,
     extractedProfile
 }) => {
+<<<<<<< HEAD
     const { theme } = useTheme();
+=======
+    const { theme, isDarkMode } = useTheme();
+>>>>>>> 3257fc1 (final)
     const [sessions, setSessions] = useState<Session[]>([]);
 
     useEffect(() => {
@@ -58,7 +62,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
             )}
 
             <aside className={clsx(
+<<<<<<< HEAD
                 "fixed md:static inset-y-0 left-0 z-30 w-72 md:w-64 bg-slate-50 border-r border-slate-200 h-full md:h-[calc(100vh-4rem)] flex flex-col transition-transform duration-300 ease-in-out md:translate-x-0",
+=======
+                "fixed md:static inset-y-0 left-0 z-30 w-72 md:w-64 bg-slate-50 dark:bg-black border-r border-slate-200 dark:border-slate-800 h-full md:h-[calc(100vh-4rem)] flex flex-col transition-all duration-300 ease-in-out md:translate-x-0",
+>>>>>>> 3257fc1 (final)
                 isOpen ? "translate-x-0" : "-translate-x-full"
             )}>
                 <div className="p-4 flex items-center gap-3">
@@ -76,7 +84,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
                     <button
                         onClick={onClose}
+<<<<<<< HEAD
                         className="p-3 hover:bg-slate-200 rounded-xl text-slate-500 md:hidden"
+=======
+                        className="p-3 hover:bg-slate-200 dark:hover:bg-slate-800 rounded-xl text-slate-500 dark:text-slate-400 md:hidden"
+>>>>>>> 3257fc1 (final)
                         title="Fermer"
                     >
                         <X size={20} />
@@ -90,7 +102,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     </div>
 
                     {sessions.length === 0 ? (
+<<<<<<< HEAD
                         <div className="text-center py-10 text-slate-400">
+=======
+                        <div className="text-center py-10 text-slate-400 dark:text-slate-600">
+>>>>>>> 3257fc1 (final)
                             <Ghost className="mx-auto mb-2 opacity-50" size={32} />
                             <p className="text-sm">Aucune conversation</p>
                         </div>
@@ -101,9 +117,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                 onClick={() => { onSelectSession(session.id); onClose(); }}
                                 className={clsx(
                                     "w-full text-left px-4 py-3 rounded-xl text-sm transition-all flex items-start gap-3",
+<<<<<<< HEAD
                                     currentSessionId === session.id
                                         ? clsx("bg-white shadow-sm border font-medium", theme.border, theme.text)
                                         : "text-slate-600 hover:bg-slate-100/50 hover:text-slate-900"
+=======
+                                        currentSessionId === session.id
+                                            ? clsx("shadow-sm border font-medium", isDarkMode ? "bg-slate-800" : "bg-white", isDarkMode ? theme.border_dark : theme.border, isDarkMode ? theme.text_dark : theme.text)
+                                            : "text-slate-600 dark:text-slate-400 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 hover:text-slate-900 dark:hover:text-slate-200"
+>>>>>>> 3257fc1 (final)
                                 )}
                             >
                                 <MessageSquare size={16} className={currentSessionId === session.id ? clsx("mt-0.5", theme.accent) : "text-slate-400 mt-0.5"} />
@@ -115,7 +137,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
                 {/* --- ÉTAPE 5 : PROFIL ÉTUDIANT (DASHBOARD) --- */}
                 {extractedProfile && (
+<<<<<<< HEAD
                     <div className="mx-4 mb-4 p-4 bg-white border border-slate-200 rounded-2xl shadow-sm animate-fade-in">
+=======
+                    <div className="mx-4 mb-4 p-4 bg-white dark:bg-zinc-900 border border-slate-200 dark:border-slate-700 rounded-2xl shadow-sm animate-fade-in">
+>>>>>>> 3257fc1 (final)
                         <div className="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-3 flex items-center gap-2">
                             <div className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></div>
                             Profil Étudiant Détecté
@@ -123,26 +149,46 @@ export const Sidebar: React.FC<SidebarProps> = ({
                         <div className="space-y-3">
                             {extractedProfile.bac && (
                                 <div className="flex justify-between items-center text-xs">
+<<<<<<< HEAD
                                     <span className="text-slate-500">Série Bac</span>
                                     <span className="font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded-md">{extractedProfile.bac}</span>
+=======
+                                    <span className="text-slate-500 dark:text-slate-400">Série Bac</span>
+                                    <span className="font-bold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded-md">{extractedProfile.bac}</span>
+>>>>>>> 3257fc1 (final)
                                 </div>
                             )}
                             {extractedProfile.moyenne && (
                                 <div className="flex justify-between items-center text-xs">
+<<<<<<< HEAD
                                     <span className="text-slate-500">Moyenne</span>
                                     <span className="font-bold text-slate-700 bg-blue-50 text-blue-700 px-2 py-0.5 rounded-md">{extractedProfile.moyenne}/20</span>
+=======
+                                    <span className="text-slate-500 dark:text-slate-400">Moyenne</span>
+                                    <span className="font-bold text-slate-700 dark:text-blue-300 bg-blue-50 dark:bg-blue-900/30 text-blue-700 px-2 py-0.5 rounded-md">{extractedProfile.moyenne}/20</span>
+>>>>>>> 3257fc1 (final)
                                 </div>
                             )}
                             {extractedProfile.ville && (
                                 <div className="flex justify-between items-center text-xs">
+<<<<<<< HEAD
                                     <span className="text-slate-500">Ville</span>
                                     <span className="font-bold text-slate-700 capitalize">{extractedProfile.ville}</span>
+=======
+                                    <span className="text-slate-500 dark:text-slate-400">Ville</span>
+                                    <span className="font-bold text-slate-700 dark:text-slate-300 capitalize">{extractedProfile.ville}</span>
+>>>>>>> 3257fc1 (final)
                                 </div>
                             )}
                             {extractedProfile.budget && (
                                 <div className="flex justify-between items-center text-xs">
+<<<<<<< HEAD
                                     <span className="text-slate-500">Budget Max</span>
                                     <span className="font-bold text-emerald-600">{extractedProfile.budget} DH</span>
+=======
+                                    <span className="text-slate-500 dark:text-slate-400">Budget Max</span>
+                                    <span className="font-bold text-emerald-600 dark:text-emerald-400">{extractedProfile.budget} DH</span>
+>>>>>>> 3257fc1 (final)
                                 </div>
                             )}
                         </div>
@@ -150,8 +196,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 )}
 
                 {profile.role === 'admin' && (
+<<<<<<< HEAD
                     <div className={clsx("p-4 border-t border-slate-200", theme.bg_soft)}>
                         <Link to="/admin" className={clsx("flex items-center gap-3 px-4 py-3 font-bold bg-white border rounded-xl hover:shadow-md transition-all text-sm", theme.text, theme.border)}>
+=======
+                    <div className={clsx("p-4 border-t border-slate-200 dark:border-slate-700 transition-colors", isDarkMode ? theme.bg_dark_soft : theme.bg_soft)}>
+                        <Link to="/admin" className={clsx("flex items-center gap-3 px-4 py-3 font-bold bg-white dark:bg-zinc-900 border rounded-xl hover:shadow-md transition-all text-sm", isDarkMode ? theme.text_dark : theme.text, isDarkMode ? theme.border_dark : theme.border)}>
+>>>>>>> 3257fc1 (final)
                             <UserCog size={18} />
                             Panel Admin
                         </Link>
@@ -159,9 +210,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 )}
 
                 {profile.is_premium && (
+<<<<<<< HEAD
                     <div className="p-4 border-t border-slate-100 bg-emerald-50/30">
                         <Link to="/support" onClick={onClose} className="flex items-center gap-3 px-4 py-3 font-bold bg-white border border-emerald-100 rounded-xl hover:shadow-md transition-all text-sm text-emerald-800">
                             <LifeBuoy size={18} className="text-emerald-500" />
+=======
+                    <div className="p-4 border-t border-slate-100 dark:border-slate-800 bg-emerald-50/30 dark:bg-emerald-900/10 transition-colors">
+                        <Link to="/support" onClick={onClose} className="flex items-center gap-3 px-4 py-3 font-bold bg-white dark:bg-zinc-900 border border-emerald-100 dark:border-emerald-800/50 rounded-xl hover:shadow-md transition-all text-sm text-emerald-800 dark:text-emerald-400">
+                            <LifeBuoy size={18} className="text-emerald-500 dark:text-emerald-400" />
+>>>>>>> 3257fc1 (final)
                             Support Premium
                         </Link>
                     </div>

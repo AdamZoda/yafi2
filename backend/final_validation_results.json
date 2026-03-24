@@ -1,0 +1,360 @@
+[
+    {
+        "id": 1,
+        "question": "J'ai un Bac SVT avec 14.5 de moyenne, est-ce que je peux faire médecine selon tes règles ?",
+        "response": "Bonjour ! Comment puis-je vous orienter aujourd'hui ?",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": "SVT",
+            "budget": null,
+            "ecole": null,
+            "moyenne": 14.5,
+            "ville": "Rabat"
+        }
+    },
+    {
+        "id": 2,
+        "question": "Quelle est la stratégie conseillée pour un élève qui a 12.5 de moyenne au Bac ?",
+        "response": "Bonjour, monsieur le 12.5 % de moyenne au Bac, c'est une note très faible.\n\nIl est important de noter que la moyenne du Bac au Maroc peut varier d'une année à l'autre en fonction des indicateurs, mais 13.5/20 est effectivement une note réduite.\n\nVoici quelques suggestions pour améliorer cette note :\n\n1. Améliorez vos compétences en français culturellement et intellectuellement.\n2. Continuez à travailler dur sur vos études, vous pouvez prendre des cours complémentaires ou bénéficier d'un mentorat pour accroître votre niveau de connaissance.\n\nN'oubliez pas que la réussite dans le Bac dépend du travail qu'il y a effectué, donc continuez à vous concentrer sur vos objectifs et prenez les bonnes décisions.",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": "SM",
+            "budget": 30000,
+            "ecole": null,
+            "moyenne": 15.5,
+            "ville": "Casablanca"
+        }
+    },
+    {
+        "id": 3,
+        "question": "Je suis en Bac PC, quelles sont les filières 'Idéales' pour mon profil ?",
+        "response": "Bienvenue dans le sein du centre d'orientation scolaire et universitaire au Maroc ! Pour votre profil Bac PC, voici quelques filières qui correspondent à vos intérêts :\n\n* **Ingenierie** : L'informatique et l'ingénierie sont des filières très récentes et en constante évolution. Si vous êtes motivé par les sciences exactes et que vous souhaitez approfondir votre connaissance de la programmation, de la robotique ou de la conception de systèmes, l'Ingenierie est une excellentille option.\n* **CPGE (Prepas)** : Le CPGE est une formation qui permet à des jeunes de développer leurs compétences en informatique, en programmation et en autres disciplines liées aux technologies numériques. Si vous êtes motivé par la technologie et que vous souhaitez acquérir les compétences nécessaires pour un carrière dans ce domaine, le CPGE est une excellente option.\n\nCependant, il est important de noter que l'orientation n'est pas définitive et peut varier en fonction des critères spécifiques du centre d'orientation. Il est également recommandé de consulter les diplômes et les certificats que vous avez obtenus pour prendre une décision éclairée.\n\nQu'en pensez-vous ? Voulez-vous poursuivre l'informatique ou le CPGE ?",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": null,
+            "moyenne": null,
+            "ville": "Rabat"
+        }
+    },
+    {
+        "id": 4,
+        "question": "Est-ce qu'un Bac Éco peut faire une école d'ingénierie publique ?",
+        "response": "Un questionnaire sur les écoles d'ingénierie, pas un sujet pertinent au Maroc. Je n'ai pas cette information précise dans ma base.",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": "ENCG",
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 5,
+        "question": "Quelle est la différence de conseil entre un profil avec 16 de moyenne et un profil avec 10 ?",
+        "response": "Bonjour ! \n\nEn général, les profils à 16 et à 10 ont des niveaux d'admission très différents. Cela se traduit par des différences significatives dans la recommandation du candidat.\n\n- Un profil avec 16 de moyenne est considéré comme un fait acquis, cela signifie que la base de données contient une information fiable qui indique le niveau d'admission réel. Vous avez probablement déjà connu vos niveaux d'admission dans votre parcours scolaire ou universitaire.\n- Un profil avec 10 de moyenne est moins précis et peut ne pas avoir été consulté par vous, donc il est difficile de savoir exactement à quoi s'attendre.\n\nEn fonction de ces informations, je recommanderais de passer du temps à essayer les deux profils. Vous pourriez découvrir que votre niveau d'admission réel est inférieur à ce qui le montre dans la base de données.",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": 30000,
+            "ecole": null,
+            "moyenne": 15.5,
+            "ville": null
+        }
+    },
+    {
+        "id": 6,
+        "question": "Recommande-moi une orientation pour un Bac SM intéressé par l'Informatique & Data.",
+        "response": "Bonjour, professeur. Dans ce cas, je recommande la spécialité Informatique et Data Science. C'est une excellente formation qui vous permettra de combiner vos intérêts en informatique avec les compétences nécessaires pour réussir dans votre parcours universitaire. Vous aurez accès à des écoles prestigieuses comme l'ENSIAS, l'EPI et la MISEP (Maison d'Études Internationale pour le Pauvre).",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": "SM",
+            "moyenne": null,
+            "ville": "Rabat"
+        }
+    },
+    {
+        "id": 7,
+        "question": "Un Bac Lettres peut-il faire de l'informatique selon ta base ?",
+        "response": "Je n'ai pas cette information précise dans ma base. Merci d'avoir posé la question, c'est parfait pour vérifier et poursuivre la recherche auprès d'autres sources. Je vais continuer à explorer les options disponibles pour vous aider à atteindre vos objectifs académiques.",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": 0,
+            "ecole": "ENSA",
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 8,
+        "question": "Quels sont les avantages et les limites d'un Bac PC ?",
+        "response": "Bonjour,Je suis heureux de vous aider à comprendre les avantages et les limites d'un bac PC au Maroc. \n\nUn bac PC (Baccalauréat en Programmation et Compétences Logicielles) est un diplôme qui permet aux étudiants de se former dans les domaines de l'informatique, de la programmation, des technologies de l'information et des communications (TIC). Ce diplôme offre plusieurs avantages :\n\n1.  **Concours internationaux** : Les candidats à un bac PC peuvent concourir aux concours internationaux tels que les Olympiades internationales d'informatique, le World Computer Games ou les concours de programmation.\n2.  **Avantages professionnels** : Le bac PC est considéré comme l'un des diplômes les plus réputés et demandés dans les secteurs de l'information et de la technologie. Les entreprises les plus prestigieuses de la région sont souvent à la recherche de candidats avec ce diplôme.\n3.  **Pays d'accueil** : Le Maroc est un pays en développement qui offre une réduction de tarifs pour les étudiants français établis dans le pays, ce qui peut être bénéfique pour les étudiants avec un bac PC.\n4.  **Études supérieures** : La majorité des universités marocaines offrent des cours en anglais, ce qui permet aux étudiants d'échanger de cultures et de connaissances. Le bac PC est également considéré comme une condition nécessaire pour les études supérieures au Maroc.\n\nCependant, il est important de noter que le bac PC n'est pas toujours nécessaire ou souhaité par tous les étudiants. Les opportunités d'accès aux concours internationaux peuvent être limitées et nécessiter des compétences spécifiques.\n\nEn résumé, un bac PC peut offrir une excellente formation en informatique et des opportunités professionnels, mais il est également important de considérer les facteurs tels que l'échange universitaire, les concours internationaux et le pays d'accueil.",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": null,
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 9,
+        "question": "Quelles sont les filières recommandées pour un Bac Éco ?",
+        "response": "Bonjour, je suis YAFI. \n\nConcernant votre question sur les filières recommandées pour un Bac Économie dans le Maroc, j'ai une liste à votre disposition : \n\n- Ecole Supérieure des Sciences Economiques et Sociales (ESSE)\n- Université Lamine Boualou\n- ENSAM\n- Université Ibn Khaldoun - Rabat\n\nEn outre, vous pouvez également envisager de suivre un programme universitaire d'option économie avec l'université RAS ou l'Université Mohammed V.\n\nJe vous souhaite bonne chance dans votre recherche.",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": "ENSA",
+            "moyenne": null,
+            "ville": "Casablanca"
+        }
+    },
+    {
+        "id": 10,
+        "question": "J'ai un Bac SVT, est-ce que l'ingénierie est 'Possible' ou 'Excellente' pour moi ?",
+        "response": "Bonjour ! Comment puis-je vous orienter aujourd'hui ?",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": null,
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 11,
+        "question": "Où se trouve l'UM6P ?",
+        "response": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": null,
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 12,
+        "question": "Donne-moi la liste des villes où on trouve une ENSA.",
+        "response": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": "ENSA",
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 13,
+        "question": "Quelles sont les écoles situées à Benguerir ?",
+        "response": "Benguerir, une ville connue pour son aire urbaine et ses infrastructures. Il existe plusieurs écoles de Benguerir qui pourraient vous intéresser :\n\n- L'école d'ingénierie technique des Mines d'Ajbat\n- La faculté d'informatique et de communication des Sciences techniques\n- Le centre universitaire des technologies de l'eau",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": null,
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 14,
+        "question": "Est-ce qu'il y a une EST à Safi ?",
+        "response": "Bonjour. Je suis YAFI. Est à Safi ?",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": null,
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 15,
+        "question": "Quelles sont les villes considérées comme des villes 'Opportunité' ?",
+        "response": "ERROR: Status 500"
+    },
+    {
+        "id": 16,
+        "question": "Cite-moi trois villes à forte concurrence pour les études.",
+        "response": "ERROR: Status 500"
+    },
+    {
+        "id": 17,
+        "question": "L'ENSAM est-elle présente à Casablanca ?",
+        "response": "L'ENSAM est effectivement présent à Casablanca.",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": null,
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 18,
+        "question": "Où peut-on étudier le management hôtelier en privé ?",
+        "response": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": "MÉDICINE",
+            "moyenne": null,
+            "ville": "Rabat"
+        }
+    },
+    {
+        "id": 19,
+        "question": "Quelles sont les écoles d'ingénierie présentes à Rabat ?",
+        "response": "EXCEPTION: HTTPConnectionPool(host='localhost', port=5000): Read timed out. (read timeout=60)"
+    },
+    {
+        "id": 20,
+        "question": "Dans quelle ville se trouve l'Université Al Akhawayn ?",
+        "response": "L'Université Al Akhawayn, située à Meknès.",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": "UNIVERSITÉ AL AKHAWAYN",
+            "moyenne": null,
+            "ville": "Casa"
+        }
+    },
+    {
+        "id": 21,
+        "question": "Combien coûtent les frais de scolarité à l'EMSI ?",
+        "response": "L'école EMI, située dans le quartier Laâyoune à Casablanca. Les frais de scolarité sont fixés à 8 000 MAD par mois pour les étudiants de première année et 6 500 MAD pour les élèves supérieurs.",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": null,
+            "moyenne": null,
+            "ville": "Casablanca"
+        }
+    },
+    {
+        "id": 22,
+        "question": "Quelle est la définition du système LMD ?",
+        "response": "Bonjour ! \n\nLe système LMD, ou Licence Master Doctorat, est un cadre européen et marocain de l'enseignement supérieur qui facilite l'équivalence des diplômes. Il existe deux versions principales :\n\n- La version LMD Européenne (LE) : Elle compte six étapes : \n  - Diplôme d'études supérieures agrégés\n  - Master en trois ans\n  - Doctorat en trois ans\n  - Détachement de l'université ou d'une école dans le domaine où il a réalisé son stage de fin de carrière (D.Sc.)\n\n- La version LMD Marocaine : Elle est une adaptation du système Européen et se différencie par la durée des études et les exigences spécifiques pour accéder à chaque niveau.\n\nLorsqu'on demande, il est recommandé de bien vérifier les informations auprès d'une source fiable afin de garantir l'exactitude des renseignements.",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": null,
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 23,
+        "question": "Quel est le seuil de l'ENSA en 2023 ?",
+        "response": "EXCEPTION: ('Connection aborted.', ConnectionResetError(10054, 'Une connexion existante a dû être fermée par l’hôte distant', None, 10054, None))"
+    },
+    {
+        "id": 24,
+        "question": "Quelles sont les spécialités proposées par l'UIR ?",
+        "response": "L'UIR Rabat propose des spécialités telles que :\n\n*   BAC 3\n*   BAC 2\n*   BAC 1\n*   Diplôme d'études supérieures\n*   Brevet de fin de formation (BFF)\n*   Diplôme d'études en administration (DEA)",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": null,
+            "moyenne": null,
+            "ville": "Casablanca"
+        }
+    },
+    {
+        "id": 25,
+        "question": "Quels sont les 'Pros' et 'Cons' d'une école privée ?",
+        "response": "Bonjour ! Comment puis-je vous orienter aujourd'hui ?",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": null,
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 26,
+        "question": "Quelle est la différence entre un BTS et un DUT selon tes définitions ?",
+        "response": "Bonjour ! \n\nJe ne suis pas sûr de ce que tu veux demander. Dans le contexte des connaissances en science politique, on peut dire que ces deux termes sont souvent confondus, mais selon mes définitions, un BTS (Brevet d'Études Supérieure) est un diplôme de niveau Bac+2 qui vise à développer les compétences techniques et scientifiques dans une domaine spécifique.\n\nEn revanche, un DUT (Diplôme d'Université Technique) est un diplôme de niveau Bac + 3 qui propose des programmes spécifiques dans diverses disciplines. Cependant, il convient de noter que les BTS et les DUT sont souvent étudiés simultanément pendant les années du BTS ou de la formation à l'université. \n\nJe n'ai pas d'information précise sur la différence entre un BTS et un DUT, mais je tiens à souligner que ces deux diplômes ne sont pas autant formels que des diplômes universitaires tels qu'ils sont mentionnés dans les profiles de ce service.",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": null,
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 27,
+        "question": "Comment se déroule le concours de médecine (épreuves et coefficients) ?",
+        "response": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": null,
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 28,
+        "question": "Quel est le salaire moyen d'un ingénieur débutant au Maroc ?",
+        "response": "Bonjour ! Je n'ai pas cette information précise dans ma base. Si vous souhaitez en savoir plus sur les salaires moyens pour un ingénieur débutant au Maroc, je vous recommande de consulter le site officiel du Ministère des Finances ou de la Planification Économique et Sociale, ainsi que les sites des grandes entreprises marocaines dans l'industrie de l'ingénierie.",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": 0,
+            "ecole": null,
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 29,
+        "question": "Quels sont les documents ou procédures pour le dossier Minhaty ?",
+        "response": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": null,
+            "ecole": null,
+            "moyenne": null,
+            "ville": null
+        }
+    },
+    {
+        "id": 30,
+        "question": "Quelle est la plateforme pour s'inscrire aux écoles publiques ?",
+        "response": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "source": "hybrid_expert_llm",
+        "entities": {
+            "bac": null,
+            "budget": 24000,
+            "ecole": "ENSA",
+            "moyenne": 16.0,
+            "ville": "Rabat"
+        }
+    }
+]

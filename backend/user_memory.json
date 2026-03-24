@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "eval_huge_1771753528": {
     "bac": "SVT",
     "moyenne": 10.0,
@@ -66,10 +67,21 @@
     "interets": [],
     "last_topic": null,
     "last_entity": null,
+=======
+  "test_quality_1774216877": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Rabat",
+    "budget": 0,
+    "ecole": "ENSA",
+    "interets": [],
+    "last_topic": null,
+>>>>>>> 3257fc1 (final)
     "last_intent": null,
     "history": [
       {
         "role": "user",
+<<<<<<< HEAD
         "text": "bts ou dut ?",
         "ts": 1774054313.4629421
       },
@@ -297,6 +309,65 @@
     "moyenne": 15.5,
     "ville": "Rabat",
     "budget": null,
+=======
+        "content": "parle moi de l'uir",
+        "ts": 1774216895.451335
+      },
+      {
+        "role": "assistant",
+        "content": "🎓 **UIR** (Universite Internationale de Rabat)\n\nUniversite pluridisciplinaire d'excellence avec internat moderne et partenariats mondiaux.",
+        "ts": 1774216895.816957
+      },
+      {
+        "role": "user",
+        "content": "combien ça coûte ?",
+        "ts": 1774216904.6403558
+      },
+      {
+        "role": "assistant",
+        "content": "💰 **ENSA** est un établissement **public** (gratuit).",
+        "ts": 1774216904.8529868
+      },
+      {
+        "role": "user",
+        "content": "est-ce qu'ils ont un dortoir ?",
+        "ts": 1774216915.5557003
+      },
+      {
+        "role": "assistant",
+        "content": "🏠 **Vie Scolaire à ENSA** :\n\n- **Internat** : Souvent oui, selon la ville (ex: ENSA Safi oui).\n",
+        "ts": 1774216915.8729944
+      },
+      {
+        "role": "user",
+        "content": "recommande moi une grande école de médecine",
+        "ts": 1774216951.384213
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas d'information sur les écoles à Marrakech dans ma base.\n\n📚 **Sources** : Conseils, Écoles, Admissions\n🟡 Confiance moyenne (71%)",
+        "ts": 1774216951.734925
+      },
+      {
+        "role": "user",
+        "content": "quel est le seuil de la fmp ?",
+        "ts": 1774216960.2744663
+      },
+      {
+        "role": "assistant",
+        "content": "📐 **Simulation pour ENSA** : Je n'ai pas les seuils historiques exacts pour cette filière dans ma base locale, mais en général les seuils varient entre 12 et 16 selon l'année. La formule standard est (75% National + 25% Régional).",
+        "ts": 1774216960.4397285
+      }
+    ],
+    "last_seen": "2026-03-22T22:02:40.439728",
+    "created_at": "2026-03-22T22:01:27.844876"
+  },
+  "test_quality_1774216991": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": 60000,
+>>>>>>> 3257fc1 (final)
     "ecole": null,
     "interets": [],
     "last_topic": null,
@@ -304,11 +375,2633 @@
     "history": [
       {
         "role": "user",
+<<<<<<< HEAD
         "text": "Hello, I have a Bac PC",
         "ts": 1774047732.1841526
       }
     ],
     "last_seen": "2026-03-20T23:02:12.184173",
     "created_at": "2026-03-20T23:02:12.180923"
+=======
+        "content": "parle moi de l'uir",
+        "ts": 1774216999.1421342
+      },
+      {
+        "role": "assistant",
+        "content": "🎓 **UIR** (Universite Internationale de Rabat)\n\nUniversite pluridisciplinaire d'excellence avec internat moderne et partenariats mondiaux.",
+        "ts": 1774216999.3227527
+      },
+      {
+        "role": "user",
+        "content": "combien ça coûte ?",
+        "ts": 1774217007.1838813
+      },
+      {
+        "role": "assistant",
+        "content": "💰 Quel établissement vous intéresse pour connaître les frais de scolarité ?",
+        "ts": 1774217007.3633282
+      },
+      {
+        "role": "user",
+        "content": "est-ce qu'ils ont un dortoir ?",
+        "ts": 1774217014.3824816
+      },
+      {
+        "role": "assistant",
+        "content": "🏠 Je n'ai pas de détails précis sur la vie de campus de **EST** (Internat/Clubs/Cantine) dans ma base.",
+        "ts": 1774217014.5081103
+      },
+      {
+        "role": "user",
+        "content": "recommande moi une grande école de médecine",
+        "ts": 1774217043.301957
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas d'information sur la faculté de Médecine de Semlalia dans ma base.\n\n📚 **Sources** : Conseils, Écoles, Admissions\n🟡 Confiance moyenne (71%)",
+        "ts": 1774217043.6636584
+      },
+      {
+        "role": "user",
+        "content": "quel est le seuil de la fmp ?",
+        "ts": 1774217050.085768
+      },
+      {
+        "role": "assistant",
+        "content": "📊 **Analyse d'admissibilité pour ESTS**\n\n- **Seuil historique** : autour de **14.2/20**.\n- **Formule** : (75% Examen National + 25% Régional).",
+        "ts": 1774217050.2624319
+      }
+    ],
+    "last_seen": "2026-03-22T22:04:10.262431",
+    "created_at": "2026-03-22T22:03:14.513645"
+  },
+  "test_quality_1774217055": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": 0,
+    "ecole": null,
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "parle moi de l'uir",
+        "ts": 1774217061.7767754
+      },
+      {
+        "role": "assistant",
+        "content": "🎓 **UIR** (Universite Internationale de Rabat)\n\nUniversite pluridisciplinaire d'excellence avec internat moderne et partenariats mondiaux.",
+        "ts": 1774217061.909937
+      },
+      {
+        "role": "user",
+        "content": "combien ça coûte ?",
+        "ts": 1774217068.7724652
+      },
+      {
+        "role": "assistant",
+        "content": "💰 Quel établissement vous intéresse pour connaître les frais de scolarité ?",
+        "ts": 1774217068.955232
+      },
+      {
+        "role": "user",
+        "content": "est-ce qu'ils ont un dortoir ?",
+        "ts": 1774217076.2895832
+      },
+      {
+        "role": "assistant",
+        "content": "🏠 Je n'ai pas de détails précis sur la vie de campus de **EST** (Internat/Clubs/Cantine) dans ma base.",
+        "ts": 1774217076.4371433
+      },
+      {
+        "role": "user",
+        "content": "recommande moi une grande école de médecine",
+        "ts": 1774217105.8312817
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas d'information sur la ville ou l'école demandée dans ma base. \n\nS'il vous plaît, utilisez un autre conseil pour répondre à votre question : Je suis désolé, mais je ne peux pas fournir une réponse directe à cette question car j'ai besoin de connaissances supplémentaires sur le contexte pour proposer une réponse précise.\n\n📚 **Sources** : Conseils, Écoles, Admissions\n🟡 Confiance moyenne (71%)",
+        "ts": 1774217106.1294265
+      },
+      {
+        "role": "user",
+        "content": "quel est le seuil de la fmp ?",
+        "ts": 1774217112.1080134
+      },
+      {
+        "role": "assistant",
+        "content": "📊 **Analyse d'admissibilité pour ESTS**\n\n- **Seuil historique** : autour de **14.2/20**.\n- **Formule** : (75% Examen National + 25% Régional).",
+        "ts": 1774217112.2540622
+      }
+    ],
+    "last_seen": "2026-03-22T22:05:12.254062",
+    "created_at": "2026-03-22T22:04:17.939875"
+  },
+  "test_q_1774217131": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": 10000,
+    "ecole": "ENSA",
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "parle moi de l'uir",
+        "ts": 1774217156.2906601
+      },
+      {
+        "role": "assistant",
+        "content": "🎓 **UIR** (Universite Internationale de Rabat)\n\nUniversite pluridisciplinaire d'excellence avec internat moderne et partenariats mondiaux.",
+        "ts": 1774217156.5157003
+      },
+      {
+        "role": "user",
+        "content": "et combien ça coûte ?",
+        "ts": 1774217161.9038935
+      },
+      {
+        "role": "assistant",
+        "content": "💰 Quel établissement vous intéresse pour connaître les frais de scolarité ?",
+        "ts": 1774217162.5245504
+      },
+      {
+        "role": "user",
+        "content": "ont-ils un internat ?",
+        "ts": 1774217169.003196
+      },
+      {
+        "role": "assistant",
+        "content": "🏠 Je peux vous renseigner sur l'**internat**, les **clubs** ou la **cantine** d'une école. De laquelle s'agit-il ?",
+        "ts": 1774217169.1307456
+      },
+      {
+        "role": "user",
+        "content": "recommande moi une grande ecole de medecine",
+        "ts": 1774217221.6029212
+      },
+      {
+        "role": "assistant",
+        "content": "Erreur LLM",
+        "ts": 1774217222.1910934
+      },
+      {
+        "role": "user",
+        "content": "quel est le seuil de l'isitt (pour tester l'injection prolog) ?",
+        "ts": 1774217229.4083858
+      },
+      {
+        "role": "assistant",
+        "content": "📐 **Simulation pour ENSA** : Je n'ai pas les seuils historiques exacts pour cette filière dans ma base locale, mais en général les seuils varient entre 12 et 16 selon l'année. La formule standard est (75% National + 25% Régional).",
+        "ts": 1774217229.704146
+      }
+    ],
+    "last_seen": "2026-03-22T22:07:09.704146",
+    "created_at": "2026-03-22T22:05:53.070662"
+  },
+  "test_q_1774217645": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": 0,
+    "ecole": "ENSA",
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "parle moi de l'uir",
+        "ts": 1774217654.5367749
+      },
+      {
+        "role": "assistant",
+        "content": "🎓 **UIR** (Universite Internationale de Rabat)\n\nUniversite pluridisciplinaire d'excellence avec internat moderne et partenariats mondiaux.",
+        "ts": 1774217654.6644454
+      },
+      {
+        "role": "user",
+        "content": "et combien ça coûte ?",
+        "ts": 1774217663.00572
+      },
+      {
+        "role": "assistant",
+        "content": "💰 **Frais UIR** : Environ **85000 DH/an**.",
+        "ts": 1774217663.291621
+      },
+      {
+        "role": "user",
+        "content": "ont-ils un internat ?",
+        "ts": 1774217668.9951746
+      },
+      {
+        "role": "assistant",
+        "content": "🏠 **Vie Scolaire à UIR** :\n\n- **Internat** : Oui, 6 residences modernes sur campus.\n- **Clubs** : Plus de 30 clubs (Aero, Theatre, Debate Club, Solidaire).\n- **Cantine** : Food court et restaurants universitaires sur place.\n",
+        "ts": 1774217669.2828274
+      },
+      {
+        "role": "user",
+        "content": "recommande moi une grande ecole de medecine",
+        "ts": 1774217701.1557362
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas d'information sur les grandes écoles de médecine marocaines, comme l'Ecole Supérieure des Hautes Études D'Hypothécaire et de Biologie Médicale (ESUHMB) ou l'Université Mohammed VI Agdal.\n\n📚 **Sources** : Admissions, Conseils\n🟡 Confiance moyenne (73%)",
+        "ts": 1774217701.4860325
+      },
+      {
+        "role": "user",
+        "content": "quel est le seuil de l'isitt (pour tester l'injection prolog) ?",
+        "ts": 1774217707.5042062
+      },
+      {
+        "role": "assistant",
+        "content": "📐 **Simulation pour ENSA** : Je n'ai pas les seuils historiques exacts pour cette filière dans ma base locale, mais en général les seuils varient entre 12 et 16 selon l'année. La formule standard est (75% National + 25% Régional).",
+        "ts": 1774217707.658358
+      }
+    ],
+    "last_seen": "2026-03-22T22:15:07.658357",
+    "created_at": "2026-03-22T22:14:09.862531"
+  },
+  "test_q_1774217948": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": 0,
+    "ecole": "ENSA",
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "ont-ils un internat ?",
+        "ts": 1774217982.908804
+      },
+      {
+        "role": "assistant",
+        "content": "🏠 Je peux vous renseigner sur l'**internat**, les **clubs** ou la **cantine** d'une école. De laquelle s'agit-il ?",
+        "ts": 1774217983.0896604
+      },
+      {
+        "role": "user",
+        "content": "recommande moi une grande ecole de medecine",
+        "ts": 1774218031.1868749
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas d'information sur le système d'éligibilité des concours médicaux marocains. Cependant, je peux vous dire que les étudiants doivent avoir un Bac qui correspond au niveau requis de chaque faculté, ainsi qu'un score minimum dans les examens scientifiques tels que l'EEM (Études Examenées d'Entrée en Médecine) ou le TEF.\n\nVoici quelques conseils pour vous préparer aux concours médicaux marocains :\n\n- **Renseignez-vous sur les exigences de chaque faculté** : Il est important de comprendre ",
+        "ts": 1774218031.650788
+      },
+      {
+        "role": "user",
+        "content": "quel est le seuil de l'isitt (pour tester l'injection prolog) ?",
+        "ts": 1774218038.2542317
+      },
+      {
+        "role": "assistant",
+        "content": "📐 **Simulation pour ENSA** : Je n'ai pas les seuils historiques exacts pour cette filière dans ma base locale, mais en général les seuils varient entre 12 et 16 selon l'année. La formule standard est (75% National + 25% Régional).",
+        "ts": 1774218038.3980906
+      }
+    ],
+    "last_seen": "2026-03-22T22:20:38.398090",
+    "created_at": "2026-03-22T22:19:39.702700"
+  },
+  "test_q_1774218075": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "ENSA",
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "et combien ça coûte ?",
+        "ts": 1774218108.390131
+      },
+      {
+        "role": "assistant",
+        "content": "💰 Quel établissement vous intéresse pour connaître les frais de scolarité ?",
+        "ts": 1774218108.5410538
+      },
+      {
+        "role": "user",
+        "content": "ont-ils un internat ?",
+        "ts": 1774218114.1326487
+      },
+      {
+        "role": "assistant",
+        "content": "🏠 Je peux vous renseigner sur l'**internat**, les **clubs** ou la **cantine** d'une école. De laquelle s'agit-il ?",
+        "ts": 1774218114.27454
+      },
+      {
+        "role": "user",
+        "content": "recommande moi une grande ecole de medecine",
+        "ts": 1774218143.0072985
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas d'information sur l'école de médecine que vous recherchez, merci de me fournir plus d'informations ou de choisir une autre école.\n\n📚 **Sources** : Conseils, Admissions\n🟡 Confiance moyenne (73%)",
+        "ts": 1774218144.4910462
+      },
+      {
+        "role": "user",
+        "content": "quel est le seuil de l'isitt (pour tester l'injection prolog) ?",
+        "ts": 1774218151.2089188
+      },
+      {
+        "role": "assistant",
+        "content": "📐 **Simulation pour ENSA** : Je n'ai pas les seuils historiques exacts pour cette filière dans ma base locale, mais en général les seuils varient entre 12 et 16 selon l'année. La formule standard est (75% National + 25% Régional).",
+        "ts": 1774218151.340153
+      }
+    ],
+    "last_seen": "2026-03-22T22:22:31.340153",
+    "created_at": "2026-03-22T22:21:45.239832"
+  },
+  "test_q_1774218184": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "medecine",
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "recommande moi une grande ecole de medecine",
+        "ts": 1774218257.4135232
+      },
+      {
+        "role": "assistant",
+        "content": "Merci pour cette question !\n\nEn tant qu'étudiant, je suis désolé mais je n'ai pas d'information sur les facultés médicales demandées dans ma base. Cependant, je peux vous donner quelques conseils généraux pour vous aider à préparer le concours de médecine.\n\n**Conseils**\n\n1. La médecine est une **marathon**, pas un sprint.\n2. Accepter de **sacrifier** votre vie sociale (temporairement) est important.\n3. Prendre soin de sa **santé mentale** est essentiel.\n4. Avoir un **pourquoi** fort (motivation)",
+        "ts": 1774218257.7246943
+      },
+      {
+        "role": "user",
+        "content": "quel est le seuil de l'isitt (pour tester l'injection prolog) ?",
+        "ts": 1774218264.1352556
+      },
+      {
+        "role": "assistant",
+        "content": "📐 **Simulation pour MEDECINE** : Je n'ai pas les seuils historiques exacts pour cette filière dans ma base locale, mais en général les seuils varient entre 12 et 16 selon l'année. La formule standard est (75% National + 25% Régional).",
+        "ts": 1774218264.2749603
+      }
+    ],
+    "last_seen": "2026-03-22T22:24:24.282511",
+    "created_at": "2026-03-22T22:23:48.558950"
+  },
+  "test_q_1774218291": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "medecine",
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "ont-ils un internat ?",
+        "ts": 1774218326.127918
+      },
+      {
+        "role": "assistant",
+        "content": "🏠 Je peux vous renseigner sur l'**internat**, les **clubs** ou la **cantine** d'une école. De laquelle s'agit-il ?",
+        "ts": 1774218326.3443706
+      },
+      {
+        "role": "user",
+        "content": "recommande moi une grande ecole de medecine",
+        "ts": 1774218335.9285877
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas d'information sur l'école spécifique demandée, mais je peux vous dire que le contexte ne parle PAS de cette école.\n\n📚 **Sources** : Admissions, Conseils\n🟡 Confiance moyenne (73%)",
+        "ts": 1774218336.039749
+      },
+      {
+        "role": "user",
+        "content": "quel est le seuil de l'isitt (pour tester l'injection prolog) ?",
+        "ts": 1774218344.0444112
+      },
+      {
+        "role": "assistant",
+        "content": "📐 **Simulation pour MEDECINE** : Je n'ai pas les seuils historiques exacts pour cette filière dans ma base locale, mais en général les seuils varient entre 12 et 16 selon l'année. La formule standard est (75% National + 25% Régional).",
+        "ts": 1774218344.1746783
+      }
+    ],
+    "last_seen": "2026-03-22T22:25:44.174678",
+    "created_at": "2026-03-22T22:25:21.508133"
+  },
+  "test_q_1774218417": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": 0,
+    "ecole": "isitt",
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "et combien ça coûte ?",
+        "ts": 1774218444.5054574
+      },
+      {
+        "role": "assistant",
+        "content": "💰 Quel établissement vous intéresse pour connaître les frais de scolarité ?",
+        "ts": 1774218444.6788337
+      },
+      {
+        "role": "user",
+        "content": "ont-ils un internat ?",
+        "ts": 1774218450.8971608
+      },
+      {
+        "role": "assistant",
+        "content": "🏠 Je peux vous renseigner sur l'**internat**, les **clubs** ou la **cantine** d'une école. De laquelle s'agit-il ?",
+        "ts": 1774218451.0872579
+      },
+      {
+        "role": "user",
+        "content": "recommande moi une grande ecole de medecine",
+        "ts": 1774218492.589398
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas d'information sur les meilleures écoles de médecine au Maroc. Cependant, je peux vous dire que l'accès à la médecine se fait généralement sur dossier, et qu'il est important de se renseigner auprès des conseils de ses amis ou de sa famille pour obtenir des informations précises.\n\nSi vous êtes intéressé par une grande école de médecine au Maroc, je vous recommande de consulter les conseils de médecins marocains, qui peuvent vous donner des informations plus précises sur les critères d",
+        "ts": 1774218492.9376924
+      },
+      {
+        "role": "user",
+        "content": "quel est le seuil de l'isitt (pour tester l'injection prolog) ?",
+        "ts": 1774218500.2119095
+      },
+      {
+        "role": "assistant",
+        "content": "📐 **Simulation pour ISITT** : Je n'ai pas les seuils historiques exacts pour cette filière dans ma base locale, mais en général les seuils varient entre 12 et 16 selon l'année. La formule standard est (75% National + 25% Régional).",
+        "ts": 1774218500.413478
+      }
+    ],
+    "last_seen": "2026-03-22T22:28:20.413478",
+    "created_at": "2026-03-22T22:27:21.708515"
+  },
+  "default": {
+    "bac": "TECH",
+    "moyenne": 14.3,
+    "ville": "Uik",
+    "budget": 0,
+    "ecole": "um6p",
+    "entities": [
+      "ensa",
+      "uir",
+      "um6p"
+    ],
+    "interets": [],
+    "last_topic": "n/a",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "je veux des informations sur l'ensa",
+        "ts": 1774343497.0857363
+      },
+      {
+        "role": "assistant",
+        "content": "🎓 **Informations Expertes : ENSA**\n\nℹ️ **Infos :** Ecole Nationale des Sciences Appliquees. Un reseau d'ecoles d'ingenieurs publiques avec cycle preparatoire integre (5 ans). Tres demandees.\n💰 **Frais :** Gratuit (Etablissement Public)\n🏠 **Internat :** Souvent oui, selon la ville (ex: ENSA Safi oui).\n📚 **Spécialités :** Génie Industriel, Génie Informatique, Génie Mécatronique, Génie des Procédés\n",
+        "ts": 1774343497.1231883
+      },
+      {
+        "role": "user",
+        "content": "donne-moi des informations sur",
+        "ts": 1774343507.0455527
+      },
+      {
+        "role": "assistant",
+        "content": "🎓 **Informations Expertes : ENSA**\n\nℹ️ **Infos :** Ecole Nationale des Sciences Appliquees. Un reseau d'ecoles d'ingenieurs publiques avec cycle preparatoire integre (5 ans). Tres demandees.\n💰 **Frais :** Gratuit (Etablissement Public)\n🏠 **Internat :** Souvent oui, selon la ville (ex: ENSA Safi oui).\n📚 **Spécialités :** Génie Industriel, Génie Informatique, Génie Mécatronique, Génie des Procédés\n",
+        "ts": 1774343507.0877788
+      },
+      {
+        "role": "user",
+        "content": "tu connais urr",
+        "ts": 1774343551.588126
+      },
+      {
+        "role": "assistant",
+        "content": "🎓 **Informations Expertes : ENSA**\n\nℹ️ **Infos :** Ecole Nationale des Sciences Appliquees. Un reseau d'ecoles d'ingenieurs publiques avec cycle preparatoire integre (5 ans). Tres demandees.\n",
+        "ts": 1774343551.6343224
+      },
+      {
+        "role": "user",
+        "content": "uir",
+        "ts": 1774343564.9709644
+      },
+      {
+        "role": "assistant",
+        "content": "🎓 **Informations Expertes : UIR**\n\nℹ️ **Infos :** Universite Internationale de Rabat. Universite pluridisciplinaire d'excellence avec internat moderne et partenariats mondiaux.\n",
+        "ts": 1774343565.0132866
+      },
+      {
+        "role": "user",
+        "content": "bourses d'excellence à l'um6p",
+        "ts": 1774345765.0338686
+      },
+      {
+        "role": "assistant",
+        "content": "🎓 **Informations Expertes : UM6P**\n\nℹ️ **Infos :** Universite Mohammed VI Polytechnique. Universite de recherche axee sur l'innovation, offrant de nombreuses bourses d'excellence.\n",
+        "ts": 1774345765.0764334
+      }
+    ],
+    "last_seen": "2026-03-24T09:49:25.076433",
+    "created_at": "2026-03-22T22:51:00.317061"
+  },
+  "test_hybrid_session": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "ensa",
+    "entities": [
+      "ENSA",
+      "ensa",
+      "uir"
+    ],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "combien coûte l'uir et est-ce que c'est une bonne école pour réussir sa vie ?",
+        "ts": 1774220581.1827579
+      },
+      {
+        "role": "assistant",
+        "content": "🏠 Je peux vous renseigner sur l'**internat**, les **clubs** ou la **cantine** d'une école. De laquelle s'agit-il ?",
+        "ts": 1774220581.1892772
+      },
+      {
+        "role": "user",
+        "content": "compare ensa et encg en termes de salaire.",
+        "ts": 1774220628.3588293
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! Comment puis-je vous orienter aujourd'hui ? 🎓",
+        "ts": 1774220628.4327903
+      },
+      {
+        "role": "user",
+        "content": "combien coûte l'uir et est-ce que c'est une bonne école pour réussir sa vie ?",
+        "ts": 1774220739.4337344
+      },
+      {
+        "role": "assistant",
+        "content": "🏠 Je peux vous renseigner sur l'**internat**, les **clubs** ou la **cantine** d'une école. De laquelle s'agit-il ?",
+        "ts": 1774220740.9783854
+      },
+      {
+        "role": "user",
+        "content": "quels sont les frais de l'ensa ?",
+        "ts": 1774220747.8177357
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! Comment puis-je vous orienter aujourd'hui ? 🎓",
+        "ts": 1774220749.9464128
+      },
+      {
+        "role": "user",
+        "content": "compare ensa et encg en termes de salaire.",
+        "ts": 1774220777.911347
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! Je suis YAFI, expert en orientation scolaire au Maroc, et je serais ravi de vous aider à comparer les salaires entre l'ENSAT (École Nationale Supérieure des Arts Techniques) et le Centre National des Apparats Généraux (CNAG).\n\nD'après les informations disponibles, il est intéressant de constater que les deux établissements ont des tarifs d'entrée similairement basés. Selon certaines sources, le salaire moyen pour un diplômé ENSA peut varier entre 8 000 DH et 12 000 DH par mois.\n\nEn rev",
+        "ts": 1774220777.929642
+      }
+    ],
+    "last_seen": "2026-03-22T23:06:17.929642",
+    "created_at": "2026-03-22T22:56:19.440924"
+  },
+  "stress_test_v2": {
+    "bac": "PC",
+    "moyenne": 13.2,
+    "ville": "Mohammédia",
+    "budget": 30000,
+    "ecole": "ENSA",
+    "entities": [
+      "ENSA",
+      "ENSAT",
+      "ENSTA LYON"
+    ],
+    "interets": [],
+    "last_topic": "ensa",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "pas maths pas bio quel cursus?",
+        "ts": 1774231820.0183635
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774231820.1240633
+      },
+      {
+        "role": "user",
+        "content": "fils veut privé espagne vs public maroc",
+        "ts": 1774231864.019483
+      },
+      {
+        "role": "assistant",
+        "content": "### Fils veux privé, espagne vs public, Maroc\n\nJe suis désolé, mais je ne peux pas vous aider avec cette question. Je n'ai pas d'informations spécifiques sur les principaux differenciations entre les études dans des écoles privées de l'Espagne et celles qui existent dans le cadre du système public au Maroc pour les étudiants de niveau bac +2 ou bac +3.",
+        "ts": 1774231864.0951862
+      },
+      {
+        "role": "user",
+        "content": "rattrapage 12 juil test 15 juil?",
+        "ts": 1774231879.0504844
+      },
+      {
+        "role": "assistant",
+        "content": "Informations non précises pour le moment. Voulez-vous en savoir plus ?",
+        "ts": 1774231879.0900261
+      },
+      {
+        "role": "user",
+        "content": "fst settat vs mohammedia?",
+        "ts": 1774231891.94507
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774231891.9643285
+      },
+      {
+        "role": "user",
+        "content": "pilote ligne aiac ou ram?",
+        "ts": 1774231960.1072557
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774231960.1292007
+      }
+    ],
+    "last_seen": "2026-03-23T02:12:40.129200",
+    "created_at": "2026-03-23T01:07:01.729414"
+  },
+  "test_final_1774281625": {
+    "bac": "SVT",
+    "moyenne": 12.3,
+    "ville": "Casablanca",
+    "budget": 0,
+    "ecole": "FST",
+    "entities": [
+      "UIR",
+      "medecine",
+      "FST"
+    ],
+    "interets": [],
+    "last_topic": "fst",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelle est la différence entre un bts et un dut selon tes définitions ?",
+        "ts": 1774282337.736507
+      },
+      {
+        "role": "assistant",
+        "content": "Merci pour le profil ! Voici ma réponse :\n\nBonjour, \n\nConcernant votre question sur la différence entre BTS et DUT, je vais vous dire que cela dépend du contexte. Dans l'enseignement supérieur marocain, les BTS (Bac Pro) sont généralement des diplômes de niveau deuxième cycle qui concernent les études professionnelles en several domaines tels que la gestion commerciale, le marketing, la comptabilité, etc.\n\nLes DUT (Diplôme d'Études Techniques Superiores) sont cependant des diplômes de niveau pre",
+        "ts": 1774282337.7533886
+      },
+      {
+        "role": "user",
+        "content": "comment se déroule le concours de médecine (épreuves et coefficients) ?",
+        "ts": 1774282376.7410438
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas d'information sur ce sujet.",
+        "ts": 1774282376.7930157
+      },
+      {
+        "role": "user",
+        "content": "quel est le salaire moyen d'un ingénieur débutant au maroc ?",
+        "ts": 1774282398.571951
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! Dans notre pays, les salaires moyens pour des ingénieurs débutants sont généralement très faibles, surtout si on compare aux taux de rémunération dans l'Union européenne ou aux États-Unis. En effet, la formation nécessaire à ces spécialités est relativement longue et coûteuse.",
+        "ts": 1774282398.6139102
+      },
+      {
+        "role": "user",
+        "content": "quels sont les documents ou procédures pour le dossier minhaty ?",
+        "ts": 1774282423.8346655
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774282423.860926
+      },
+      {
+        "role": "user",
+        "content": "quelle est la plateforme pour s'inscrire aux écoles publiques ?",
+        "ts": 1774282437.1523604
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774282437.2006323
+      }
+    ],
+    "last_seen": "2026-03-23T16:13:57.200632",
+    "created_at": "2026-03-23T16:00:30.701801"
+  },
+  "test_final_1774282600": {
+    "bac": "PC",
+    "moyenne": 14.5,
+    "ville": "Casablanca",
+    "budget": 30000,
+    "ecole": "PSM",
+    "entities": [
+      "medecine",
+      "FST",
+      "PSM"
+    ],
+    "interets": [],
+    "last_topic": "psm",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelle est la différence entre un bts et un dut selon tes définitions ?",
+        "ts": 1774283140.9127476
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! \n\nJe suis désolé mais je ne peux pas répondre à cette question. La différence entre BTS (Bac Pro) et DUT (Diplôme Universitaire d'Technique) dépend du contexte spécifique de la scolarité, car ils sont conçus pour différents candidats. \n\nPour une étudiante ou un étudiant en rupture de formations, je ne peux pas donner des informations précises sur ces différences. Puisque tu n'as pas encore obtenu tes diplômes, il faut attendre la suite avant d'en discuter de tels sujets.\n\nEn attendant,",
+        "ts": 1774283140.931136
+      },
+      {
+        "role": "user",
+        "content": "comment se déroule le concours de médecine (épreuves et coefficients) ?",
+        "ts": 1774283196.4737139
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour, je suis heureux de vous aider. Pour les informations sur la procédure de concours de médecine au Maroc, je recommande de consulter les documents officiels disponibles à l'Université UIR ou UIK en ligne.\n\nLes étudiants doivent s'assurer de vérifier les exigences spécifiques de chaque épreuve et les conditions d'éligibilité avant de commencer leur préparation.",
+        "ts": 1774283196.5344198
+      },
+      {
+        "role": "user",
+        "content": "quel est le salaire moyen d'un ingénieur débutant au maroc ?",
+        "ts": 1774283220.4716501
+      },
+      {
+        "role": "assistant",
+        "content": "Le salaire moyen d'un ingénieur débutant au Maroc peut varier en fonction du domaine d'étude, de l'entreprise et des critères de détermination du salaire. Cependant, voici quelques chiffres approximatifs pour vous donner une idée :\n\n* D'après les données des agences nationales de formation (ENDAF, ENSISA), le salaire moyen pour un ingénieur débutant au Maroc peut varier entre 25 000 et 35 000 MAD par mois.\n* Selon les spécialités, le salaire moyens sont : \n + Ingénieur informatique ou cyber sécu",
+        "ts": 1774283220.53715
+      },
+      {
+        "role": "user",
+        "content": "quels sont les documents ou procédures pour le dossier minhaty ?",
+        "ts": 1774283242.0799234
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774283242.1010535
+      },
+      {
+        "role": "user",
+        "content": "quelle est la plateforme pour s'inscrire aux écoles publiques ?",
+        "ts": 1774283255.7820194
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour. Pour s'inscrire aux écoles publiques au Maroc, je te recommande d'utiliser le site internet de l'Agence Nationale des Établissements d'Enseignement Supérieur (ANDES).",
+        "ts": 1774283255.8005695
+      }
+    ],
+    "last_seen": "2026-03-23T16:27:35.800569",
+    "created_at": "2026-03-23T16:16:45.721206"
+  },
+  "test_final_1774284178": {
+    "bac": "ENIAS",
+    "moyenne": 16.3,
+    "ville": "Casablanca",
+    "budget": 26000,
+    "ecole": "MINHATY",
+    "entities": [
+      "uir",
+      "medecine",
+      "MINHATY"
+    ],
+    "interets": [],
+    "last_topic": "minhaty",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelle est la différence entre un bts et un dut selon tes définitions ?",
+        "ts": 1774284842.5223765
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour, je suis à votre disposition pour répondre à vos questions et vous aider dans le processus d'orientation scolaire. Une question pertinente au sujet est la différence entre un BTS et un DUT selon mes définitions.\n\nDans ma base de données, un BTS (Bac Prospéitétique Technicien) est une formation d'un an, offerte par certaines écoles d'enseignement technique. Cependant, je n'ai pas trouvé d'information précise sur les qualifications spécifiques que détiennent les enseignants en BTS.\n\nUn DUT",
+        "ts": 1774284842.5419378
+      },
+      {
+        "role": "user",
+        "content": "comment se déroule le concours de médecine (épreuves et coefficients) ?",
+        "ts": 1774284908.4765358
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas cette information précise dans ma base. Je vous recommande de vérifier les sources officielles pour obtenir les informations exactes sur les épreuves et les coefficients auxquelles vous serez attendu à Casablanca, mais je peux vous dire que le Concours d'Admission en Médecine (CAM) est un concours très important au Maroc.",
+        "ts": 1774284912.3105507
+      },
+      {
+        "role": "user",
+        "content": "quel est le salaire moyen d'un ingénieur débutant au maroc ?",
+        "ts": 1774284957.8313565
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! Comment puis-je vous orienter aujourd'hui ?",
+        "ts": 1774284957.9276018
+      },
+      {
+        "role": "user",
+        "content": "quels sont les documents ou procédures pour le dossier minhaty ?",
+        "ts": 1774284971.4100306
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour, vous êtes en ENIAS à Casablanca. Pour votre dossier MINHATY, je vous recommande de suivre ces étapes :\n\n1. Rendez-vous sur le portail minhaty.ma pour créer un compte et saisir les informations personnelles, familiales et le code Massar.\n2. Vous recevrez ensuite une demande d'admission. Vérifiez votre état en fonction des critères sociaux.\n3. Si vous avez des questions ou des problèmes, n'hésitez pas à me contacter.\n\nPour ce qui est de la procédure MINHATY, je vous recommande de consulte",
+        "ts": 1774284971.442276
+      },
+      {
+        "role": "user",
+        "content": "quelle est la plateforme pour s'inscrire aux écoles publiques ?",
+        "ts": 1774284989.733614
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774284989.7881086
+      }
+    ],
+    "last_seen": "2026-03-23T16:56:29.788108",
+    "created_at": "2026-03-23T16:43:02.921609"
+  },
+  "test_final_1_1774287250": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "medecine",
+    "entities": [
+      "SVT",
+      "medecine"
+    ],
+    "interets": [],
+    "last_topic": "medecine",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "j'ai un bac svt avec 14.5 de moyenne, est-ce que je peux faire médecine selon tes règles ?",
+        "ts": 1774287269.8355398
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! \n\n Tu as fait 12 et environ le moitié de la moyenne des étudiants de SVPT avec un bac svt. Le score moyen est généralement d'environ 10,5 à 11. Pour faire médecine, tu devras probablement passer par un diplôme universitaire (DUT) ou un doctorat. \n\nC'est important pour poursuivre des études de médecine au Maroc, où les écoles sont strictement privées et les diplômes sont exigés.",
+        "ts": 1774287269.8864255
+      }
+    ],
+    "last_seen": "2026-03-23T17:34:29.886425",
+    "created_at": "2026-03-23T17:34:15.898838"
+  },
+  "test_final_2_1774287270": {
+    "bac": null,
+    "moyenne": 15.5,
+    "ville": "Rabat",
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelle est la stratégie conseillée pour un élève qui a 12.5 de moyenne au bac ?",
+        "ts": 1774287297.1795838
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! \n\nConcernant ta question, il est important de noter que pour une moyenne moyenne, cela signifie que tu as obtenu des notes supérieures dans certaines matières. Cependant, les scores moyennes varient en fonction de la catégorie (seuil, note et avis).\n\nDans ce cas, voici quelques suggestions pour améliorer ta performance dans le bac :\n\n- Révise ton plan d'études en conséquence. Les notes sont importantes pour obtenir un score avancé.\n- Prends soin à la préparation du sujet de maths.\n\nCep",
+        "ts": 1774287297.2009993
+      }
+    ],
+    "last_seen": "2026-03-23T17:34:57.200999",
+    "created_at": "2026-03-23T17:34:33.211478"
+  },
+  "test_final_3_1774287298": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Rabat",
+    "budget": 30000,
+    "ecole": "ENSA",
+    "entities": [
+      "ENSA"
+    ],
+    "interets": [],
+    "last_topic": "ensa",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "je suis en bac pc, quelles sont les filières 'idéales' pour mon profil ?",
+        "ts": 1774287339.9826365
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774287340.0089924
+      }
+    ],
+    "last_seen": "2026-03-23T17:35:40.008992",
+    "created_at": "2026-03-23T17:35:00.889669"
+  },
+  "test_final_4_1774287341": {
+    "bac": null,
+    "moyenne": 14.9,
+    "ville": "Casablanca",
+    "budget": 32000,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "est-ce qu'un bac éco peut faire une école d'ingénierie publique ?",
+        "ts": 1774287398.8238914
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas d'information sur l'école que vous demandez dans ma base. Je conseille donc de vérifier auprès des universités ou des écoles spécifiques pour obtenir plus d'informations précises.\n\nConfiance moyenne (78%)",
+        "ts": 1774287398.8638422
+      }
+    ],
+    "last_seen": "2026-03-23T17:36:38.863842",
+    "created_at": "2026-03-23T17:35:43.739001"
+  },
+  "test_final_5_1774287399": {
+    "bac": null,
+    "moyenne": 15.5,
+    "ville": "Casablanca",
+    "budget": null,
+    "ecole": "SM",
+    "entities": [
+      "SM"
+    ],
+    "interets": [],
+    "last_topic": "sm",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelle est la différence de conseil entre un profil avec 16 de moyenne et un profil avec 10 ?",
+        "ts": 1774287442.9364474
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774287442.9525933
+      }
+    ],
+    "last_seen": "2026-03-23T17:37:22.952593",
+    "created_at": "2026-03-23T17:36:43.695222"
+  },
+  "test_final_6_1774287443": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": 0,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "recommande-moi une orientation pour un bac sm intéressé par l'informatique & data.",
+        "ts": 1774287496.0400352
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! Comment puis-je vous orienter aujourd'hui ?",
+        "ts": 1774287496.1644263
+      }
+    ],
+    "last_seen": "2026-03-23T17:38:16.164426",
+    "created_at": "2026-03-23T17:37:27.301153"
+  },
+  "test_final_7_1774287497": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "un bac lettres peut-il faire de l'informatique selon ta base ?",
+        "ts": 1774287517.4653518
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774287517.4938164
+      }
+    ],
+    "last_seen": "2026-03-23T17:38:37.493816",
+    "created_at": "2026-03-23T17:38:19.801133"
+  },
+  "test_final_8_1774287518": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quels sont les avantages et les limites d'un bac pc ?",
+        "ts": 1774287555.1895754
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour, voici quelques points importants à considérer lorsqu'il s'agit d'un Bac PC :\n\n**Avantages :**\n\n* **Accessibilité aux filières scientifiques** : Comme mentionné précédemment, les filières de Sciences techniques (Ingenierie, Informatique/IT) sont considérées comme très avantageuses pour un Bac PC.\n* **Bonne base pour concours** : La moyenne globale des Bac PCs est généralement supérieure à 13-14, ce qui peut vous aider à obtenir des places dans des écoles de haute qualité.\n\n**Limites :**\n",
+        "ts": 1774287555.229939
+      }
+    ],
+    "last_seen": "2026-03-23T17:39:15.229939",
+    "created_at": "2026-03-23T17:38:40.728868"
+  },
+  "test_final_9_1774287556": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "ENSA",
+    "entities": [
+      "ENSA"
+    ],
+    "interets": [],
+    "last_topic": "ensa",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelles sont les filières recommandées pour un bac éco ?",
+        "ts": 1774287579.862744
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour, je suis YAFI. \n\nConcernant les filières du bac économie et finance à l'enseignement supérieur marocain, voici quelques options qui sont généralement recommandées :\n\n1. Faculté des sciences économiques et sociales (FSES) de Rabat : cette faculté est très bien établie dans le domaine de la gestion économique, de la finance et du développement durable.\n2. Université de Casablanca (UIUC) - Faculté des sciences économiques : cette université est connue pour ses recherches en économie, en fin",
+        "ts": 1774287579.9374747
+      }
+    ],
+    "last_seen": "2026-03-23T17:39:39.937474",
+    "created_at": "2026-03-23T17:39:18.912452"
+  },
+  "test_final_10_1774287580": {
+    "bac": "SVT",
+    "moyenne": 15.5,
+    "ville": "Rabat",
+    "budget": 30000,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "j'ai un bac svt, est-ce que l'ingénierie est 'possible' ou 'excellente' pour moi ?",
+        "ts": 1774287610.07142
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour, vous avez un Bac SVT. L'ingénierie est considérée comme 'excellente' parmi les filières idéales au sein du profil. Vous disposez donc d'une base solide pour poursuivre une carrière dans ce domaine. Il faudra bien vous consacrer à des études de mécanique ou d'ingénierie pour maximiser vos chances de réussite professionnelle.",
+        "ts": 1774287610.1441247
+      }
+    ],
+    "last_seen": "2026-03-23T17:40:10.144124",
+    "created_at": "2026-03-23T17:39:43.342144"
+  },
+  "test_final_11_1774287611": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Casablanca",
+    "budget": 30000,
+    "ecole": "um6p",
+    "entities": [
+      "um6p"
+    ],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "où se trouve l'um6p ?",
+        "ts": 1774287619.6993022
+      },
+      {
+        "role": "assistant",
+        "content": "📍 **Où Étudier ?** Précisez la ville (ex: 'Quelles sont les écoles à Fès ?') pour que je vous liste les établissements !",
+        "ts": 1774287619.726256
+      }
+    ],
+    "last_seen": "2026-03-23T17:40:19.726255",
+    "created_at": "2026-03-23T17:40:15.376503"
+  },
+  "test_final_12_1774287620": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "ensa",
+    "entities": [
+      "ensa"
+    ],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "donne-moi la liste des villes où on trouve une ensa.",
+        "ts": 1774287625.9945574
+      },
+      {
+        "role": "assistant",
+        "content": "📍 **Où Étudier ?** Précisez la ville (ex: 'Quelles sont les écoles à Fès ?') pour que je vous liste les établissements !",
+        "ts": 1774287626.0177188
+      }
+    ],
+    "last_seen": "2026-03-23T17:40:26.017718",
+    "created_at": "2026-03-23T17:40:23.102515"
+  },
+  "test_final_13_1774287627": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Benguerir",
+    "budget": null,
+    "ecole": "ESAN",
+    "entities": [
+      "ESAN"
+    ],
+    "interets": [],
+    "last_topic": "esan",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelles sont les écoles situées à benguerir ?",
+        "ts": 1774287641.7822983
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774287641.8493032
+      }
+    ],
+    "last_seen": "2026-03-23T17:40:41.849303",
+    "created_at": "2026-03-23T17:40:29.293800"
+  },
+  "test_final_14_1774287642": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "est-ce qu'il y a une est à safi ?",
+        "ts": 1774287658.6277359
+      },
+      {
+        "role": "assistant",
+        "content": "Oui, il y a plusieurs établissements d'enseignement supérieur à Safi au Maroc. Voici quelques-uns d'entre eux :\n\n1. Université Est d'Safi (UES)\n2. Université Est des Sciences et Techniques (UESST)\n3. École Supérieure de Technologie Industrielle (ESTI)\n\nCes établissements sont disponibles à Safi et peuvent être de grande aide pour ceux qui cherchent à étudier au Maroc.",
+        "ts": 1774287658.6591415
+      }
+    ],
+    "last_seen": "2026-03-23T17:40:58.659141",
+    "created_at": "2026-03-23T17:40:45.752715"
+  },
+  "test_final_15_1774287659": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelles sont les villes considérées comme des villes 'opportunité' ?",
+        "ts": 1774287665.5151772
+      },
+      {
+        "role": "assistant",
+        "content": "📍 **Où Étudier ?** Précisez la ville (ex: 'Quelles sont les écoles à Fès ?') pour que je vous liste les établissements !",
+        "ts": 1774287665.5426378
+      }
+    ],
+    "last_seen": "2026-03-23T17:41:05.542637",
+    "created_at": "2026-03-23T17:41:01.943973"
+  },
+  "test_final_16_1774287666": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [],
+    "last_seen": "2026-03-23T17:41:11.083806",
+    "created_at": "2026-03-23T17:41:08.802502"
+  },
+  "test_final_17_1774287672": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Casablanca",
+    "budget": null,
+    "ecole": "ensa",
+    "entities": [
+      "ENSAM",
+      "ensa"
+    ],
+    "interets": [],
+    "last_topic": "ensa",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "l'ensam est-elle présente à casablanca ?",
+        "ts": 1774287687.454926
+      },
+      {
+        "role": "assistant",
+        "content": "L'ENSAM, oui. Il y a plusieurs établissements d'enseignement supérieur en Casablanca. La question ne contient donc aucune information supplémentaire importante pour l'orientation scolaire.",
+        "ts": 1774287687.478128
+      }
+    ],
+    "last_seen": "2026-03-23T17:41:27.478127",
+    "created_at": "2026-03-23T17:41:14.384641"
+  },
+  "test_final_18_1774287688": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "MÉTIERS",
+    "entities": [
+      "MÉTIERS"
+    ],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "où peut-on étudier le management hôtelier en privé ?",
+        "ts": 1774287695.8891387
+      },
+      {
+        "role": "assistant",
+        "content": "📍 **Où Étudier ?** Précisez la ville (ex: 'Quelles sont les écoles à Fès ?') pour que je vous liste les établissements !",
+        "ts": 1774287695.9131749
+      }
+    ],
+    "last_seen": "2026-03-23T17:41:35.913174",
+    "created_at": "2026-03-23T17:41:30.733594"
+  },
+  "test_final_19_1774287696": {
+    "bac": "SM",
+    "moyenne": 16.5,
+    "ville": "Rabat",
+    "budget": 15000,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelles sont les écoles d'ingénierie présentes à rabat ?",
+        "ts": 1774287714.4635198
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! \n\nJe suis désolé, mais je n'ai trouvé aucune information sur des écoles d'ingénierie au sein du Campus Universitaire International de Rabat (UIASS). Les établissements d'ingénierie étudiants principalement associés à l'université Mohammed V sont les EMI et EMSI.",
+        "ts": 1774287714.4842398
+      }
+    ],
+    "last_seen": "2026-03-23T17:41:54.484672",
+    "created_at": "2026-03-23T17:41:39.124564"
+  },
+  "test_final_20_1774287715": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Casablanca",
+    "budget": null,
+    "ecole": "UNIVERSITÉ AL AKHAWAYN",
+    "entities": [
+      "UNIVERSITÉ AL AKHAWAYN"
+    ],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "dans quelle ville se trouve l'université al akhawayn ?",
+        "ts": 1774287720.9027252
+      },
+      {
+        "role": "assistant",
+        "content": "📍 **Où Étudier ?** Précisez la ville (ex: 'Quelles sont les écoles à Fès ?') pour que je vous liste les établissements !",
+        "ts": 1774287720.9335823
+      }
+    ],
+    "last_seen": "2026-03-23T17:42:00.933582",
+    "created_at": "2026-03-23T17:41:57.663372"
+  },
+  "test_final_21_1774287721": {
+    "bac": "SVT",
+    "moyenne": 12.3,
+    "ville": "Meknès",
+    "budget": 30000,
+    "ecole": "emsi",
+    "entities": [
+      "emsi"
+    ],
+    "interets": [],
+    "last_topic": "emsi",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "combien coûtent les frais de scolarité à l'emsi ?",
+        "ts": 1774287770.2349737
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas cette information précise dans ma base. Je vous recommande de contacter directement la EMSCI pour obtenir des informations plus précises sur les frais de scolarité pour votre filière prévue.",
+        "ts": 1774287770.2848315
+      }
+    ],
+    "last_seen": "2026-03-23T17:42:50.284831",
+    "created_at": "2026-03-23T17:42:04.113267"
+  },
+  "test_final_22_1774287771": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelle est la définition du système lmd ?",
+        "ts": 1774287793.0326643
+      },
+      {
+        "role": "assistant",
+        "content": "Le Système LMD (Le Systeme de Mesure et D'Accrération de l'Egalite Universitaire dans les Etudes Supérieures) c'est un cadre éducatif marocain qui facilite la comparaison et l'équivalence des diplômes obtenus aux études supérieures dans le système universitaire marocain.",
+        "ts": 1774287793.0689268
+      }
+    ],
+    "last_seen": "2026-03-23T17:43:13.068926",
+    "created_at": "2026-03-23T17:42:54.365204"
+  },
+  "test_final_23_1774287794": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "ensa",
+    "entities": [
+      "ensa"
+    ],
+    "interets": [],
+    "last_topic": "ensa",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quel est le seuil de l'ensa en 2023 ?",
+        "ts": 1774287804.042463
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774287804.0946019
+      }
+    ],
+    "last_seen": "2026-03-23T17:43:24.094602",
+    "created_at": "2026-03-23T17:43:16.784073"
+  },
+  "test_final_24_1774287805": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "UIR",
+    "entities": [
+      "UIR"
+    ],
+    "interets": [],
+    "last_topic": "uir",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelles sont les spécialités proposées par l'uir ?",
+        "ts": 1774287818.691781
+      },
+      {
+        "role": "assistant",
+        "content": "L'Université Internationale de Rabat offre plusieurs spécialités. Voulez-vous en savoir plus sur la scène académique marocaine ?",
+        "ts": 1774287818.7357965
+      }
+    ],
+    "last_seen": "2026-03-23T17:43:38.735796",
+    "created_at": "2026-03-23T17:43:27.643877"
+  },
+  "test_final_25_1774287819": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quels sont les 'pros' et 'cons' d'une école privée ?",
+        "ts": 1774287862.8168218
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774287862.84603
+      }
+    ],
+    "last_seen": "2026-03-23T17:44:22.846030",
+    "created_at": "2026-03-23T17:43:41.991510"
+  },
+  "test_final_26_1774287863": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Casablanca",
+    "budget": null,
+    "ecole": "ENSA",
+    "entities": [
+      "ENSA"
+    ],
+    "interets": [],
+    "last_topic": "ensa",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelle est la différence entre un bts et un dut selon tes définitions ?",
+        "ts": 1774287905.9251623
+      },
+      {
+        "role": "assistant",
+        "content": "Merci pour le profil d'orientation scolaire et universitaire au Maroc. Tu parles d'études, diplômes, écoles, bourses et métiers au MAROC.\n\nEn ce qui concerne ta question, selon mes définitions strictes, un BTS (Brevet Technique Supérieur) est une formation professionnelle de niveau 2, tandis qu'un DUT (Diplôme d'Études Techniques) est une formation professionnelle de niveau 3. Le terme \"dut\" est souvent utilisé en France et dans certains pays africains, mais il n'est pas partagé au Maroc.\n\nEn ré",
+        "ts": 1774287905.9558756
+      }
+    ],
+    "last_seen": "2026-03-23T17:45:05.955875",
+    "created_at": "2026-03-23T17:44:26.238798"
+  },
+  "test_final_27_1774287906": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": 0,
+    "ecole": "medecine",
+    "entities": [
+      "medecine"
+    ],
+    "interets": [],
+    "last_topic": "medecine",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "comment se déroule le concours de médecine (épreuves et coefficients) ?",
+        "ts": 1774287966.096466
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas cette information précise dans ma base.",
+        "ts": 1774287966.184175
+      }
+    ],
+    "last_seen": "2026-03-23T17:46:06.184175",
+    "created_at": "2026-03-23T17:45:09.693643"
+  },
+  "test_final_28_1774287967": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": 30000,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quel est le salaire moyen d'un ingénieur débutant au maroc ?",
+        "ts": 1774288001.0652766
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour, \n\nJe suis désolé, mais je ne parle pas d'ingenieurs, mais plutôt des métiers liés à l'intelligence artificielle. La formation nécessaire pour devenir un ingénieur débutant au Maroc est variée, mais certaines options sont très populaires :\n\n- Master Data et Ingénierie Numérique (MDS): Cette formation couvre les bases du traitement de données, des algorithmes et la conception de systèmes d'information. La spécialité \"Intelligence Artificielle\" (MA) est très demandée.\n- Master Santé Numéri",
+        "ts": 1774288001.183576
+      }
+    ],
+    "last_seen": "2026-03-23T17:46:41.183576",
+    "created_at": "2026-03-23T17:46:09.844133"
+  },
+  "test_final_29_1774288002": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": 0,
+    "ecole": "EMSI",
+    "entities": [
+      "EMSI"
+    ],
+    "interets": [],
+    "last_topic": "emsi",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quels sont les documents ou procédures pour le dossier minhaty ?",
+        "ts": 1774288029.0929182
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour, je suis YAFI. Pour obtenir un dossier MINHATY au Maroc, tu dois suivre ces étapes :\n\n1. Crée un compte sur le portail minhath.ma.\n2. Saisis les informations personnelles, familiales et le code Massar.\n3. Valide la demande. Tu seras ensuite traité en fonction de critères sociaux (revenu parents).\n\nTu as besoin de quelques documents supplémentaires comme ton adresse et ta télédienne :\n\n- Le code postal à Rabat, Casa ou Meknès\n- Un relevé bancaire ou un document provenant d'une entreprise ",
+        "ts": 1774288029.1259024
+      }
+    ],
+    "last_seen": "2026-03-23T17:47:09.125902",
+    "created_at": "2026-03-23T17:46:44.776513"
+  },
+  "test_final_30_1774288030": {
+    "bac": "PC",
+    "moyenne": 14.0,
+    "ville": "Rabat",
+    "budget": null,
+    "ecole": "ENSA",
+    "entities": [
+      "ENSA"
+    ],
+    "interets": [],
+    "last_topic": "ensa",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelle est la plateforme pour s'inscrire aux écoles publiques ?",
+        "ts": 1774288047.6991968
+      },
+      {
+        "role": "assistant",
+        "content": "Je suis désolé, mais je ne peux pas vous aider avec cela. Si vous cherchez des informations sur les écoles publiques au Maroc, je serais ravi de vous aider à trouver les informations nécessaires dans ma base de données.",
+        "ts": 1774288047.7193155
+      }
+    ],
+    "last_seen": "2026-03-23T17:47:27.719315",
+    "created_at": "2026-03-23T17:47:12.681422"
+  },
+  "test_final_1_1774290299": {
+    "bac": "SVT",
+    "moyenne": 14.5,
+    "ville": "Rabat",
+    "budget": null,
+    "ecole": "medecine",
+    "entities": [
+      "medecine"
+    ],
+    "interets": [],
+    "last_topic": "medecine",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "j'ai un bac svt avec 14.5 de moyenne, est-ce que je peux faire médecine selon tes règles ?",
+        "ts": 1774290352.680623
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! Comment puis-je vous orienter aujourd'hui ?",
+        "ts": 1774290355.1984975
+      }
+    ],
+    "last_seen": "2026-03-23T18:25:55.198497",
+    "created_at": "2026-03-23T18:25:03.792306"
+  },
+  "test_final_2_1774290356": {
+    "bac": "SM",
+    "moyenne": 15.5,
+    "ville": "Casablanca",
+    "budget": 30000,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelle est la stratégie conseillée pour un élève qui a 12.5 de moyenne au bac ?",
+        "ts": 1774290378.3230124
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour, monsieur le 12.5 % de moyenne au Bac, c'est une note très faible.\n\nIl est important de noter que la moyenne du Bac au Maroc peut varier d'une année à l'autre en fonction des indicateurs, mais 13.5/20 est effectivement une note réduite.\n\nVoici quelques suggestions pour améliorer cette note :\n\n1. Améliorez vos compétences en français culturellement et intellectuellement.\n2. Continuez à travailler dur sur vos études, vous pouvez prendre des cours complémentaires ou bénéficier d'un mentorat",
+        "ts": 1774290378.4528341
+      }
+    ],
+    "last_seen": "2026-03-23T18:26:18.452834",
+    "created_at": "2026-03-23T18:25:58.666061"
+  },
+  "test_final_3_1774290379": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Rabat",
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "je suis en bac pc, quelles sont les filières 'idéales' pour mon profil ?",
+        "ts": 1774290427.000422
+      },
+      {
+        "role": "assistant",
+        "content": "Bienvenue dans le sein du centre d'orientation scolaire et universitaire au Maroc ! Pour votre profil Bac PC, voici quelques filières qui correspondent à vos intérêts :\n\n* **Ingenierie** : L'informatique et l'ingénierie sont des filières très récentes et en constante évolution. Si vous êtes motivé par les sciences exactes et que vous souhaitez approfondir votre connaissance de la programmation, de la robotique ou de la conception de systèmes, l'Ingenierie est une excellentille option.\n* **CPGE (",
+        "ts": 1774290427.052258
+      }
+    ],
+    "last_seen": "2026-03-23T18:27:07.052258",
+    "created_at": "2026-03-23T18:26:21.794247"
+  },
+  "test_final_4_1774290428": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "ENCG",
+    "entities": [
+      "ENCG"
+    ],
+    "interets": [],
+    "last_topic": "encg",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "est-ce qu'un bac éco peut faire une école d'ingénierie publique ?",
+        "ts": 1774290439.7700248
+      },
+      {
+        "role": "assistant",
+        "content": "Un questionnaire sur les écoles d'ingénierie, pas un sujet pertinent au Maroc. Je n'ai pas cette information précise dans ma base.",
+        "ts": 1774290439.8058517
+      }
+    ],
+    "last_seen": "2026-03-23T18:27:19.805851",
+    "created_at": "2026-03-23T18:27:11.071694"
+  },
+  "test_final_5_1774290440": {
+    "bac": null,
+    "moyenne": 15.5,
+    "ville": null,
+    "budget": 30000,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelle est la différence de conseil entre un profil avec 16 de moyenne et un profil avec 10 ?",
+        "ts": 1774290464.76458
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! \n\nEn général, les profils à 16 et à 10 ont des niveaux d'admission très différents. Cela se traduit par des différences significatives dans la recommandation du candidat.\n\n- Un profil avec 16 de moyenne est considéré comme un fait acquis, cela signifie que la base de données contient une information fiable qui indique le niveau d'admission réel. Vous avez probablement déjà connu vos niveaux d'admission dans votre parcours scolaire ou universitaire.\n- Un profil avec 10 de moyenne est mo",
+        "ts": 1774290464.8234162
+      }
+    ],
+    "last_seen": "2026-03-23T18:27:44.823416",
+    "created_at": "2026-03-23T18:27:23.248847"
+  },
+  "test_final_6_1774290465": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Rabat",
+    "budget": null,
+    "ecole": "SM",
+    "entities": [
+      "SM"
+    ],
+    "interets": [],
+    "last_topic": "sm",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "recommande-moi une orientation pour un bac sm intéressé par l'informatique & data.",
+        "ts": 1774290486.7569559
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour, professeur. Dans ce cas, je recommande la spécialité Informatique et Data Science. C'est une excellente formation qui vous permettra de combiner vos intérêts en informatique avec les compétences nécessaires pour réussir dans votre parcours universitaire. Vous aurez accès à des écoles prestigieuses comme l'ENSIAS, l'EPI et la MISEP (Maison d'Études Internationale pour le Pauvre).",
+        "ts": 1774290486.8006008
+      }
+    ],
+    "last_seen": "2026-03-23T18:28:06.800600",
+    "created_at": "2026-03-23T18:27:48.623253"
+  },
+  "test_final_7_1774290487": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": 0,
+    "ecole": "ENSA",
+    "entities": [
+      "ENSA"
+    ],
+    "interets": [],
+    "last_topic": "ensa",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "un bac lettres peut-il faire de l'informatique selon ta base ?",
+        "ts": 1774290508.2103937
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas cette information précise dans ma base. Merci d'avoir posé la question, c'est parfait pour vérifier et poursuivre la recherche auprès d'autres sources. Je vais continuer à explorer les options disponibles pour vous aider à atteindre vos objectifs académiques.",
+        "ts": 1774290508.2645307
+      }
+    ],
+    "last_seen": "2026-03-23T18:28:28.264530",
+    "created_at": "2026-03-23T18:28:09.990146"
+  },
+  "test_final_8_1774290509": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quels sont les avantages et les limites d'un bac pc ?",
+        "ts": 1774290555.5899837
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour,Je suis heureux de vous aider à comprendre les avantages et les limites d'un bac PC au Maroc. \n\nUn bac PC (Baccalauréat en Programmation et Compétences Logicielles) est un diplôme qui permet aux étudiants de se former dans les domaines de l'informatique, de la programmation, des technologies de l'information et des communications (TIC). Ce diplôme offre plusieurs avantages :\n\n1.  **Concours internationaux** : Les candidats à un bac PC peuvent concourir aux concours internationaux tels qu",
+        "ts": 1774290555.677493
+      }
+    ],
+    "last_seen": "2026-03-23T18:29:15.677493",
+    "created_at": "2026-03-23T18:28:31.628438"
+  },
+  "test_final_9_1774290556": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Casablanca",
+    "budget": null,
+    "ecole": "ENSA",
+    "entities": [
+      "ENSA"
+    ],
+    "interets": [],
+    "last_topic": "ensa",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelles sont les filières recommandées pour un bac éco ?",
+        "ts": 1774290587.8866599
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour, je suis YAFI. \n\nConcernant votre question sur les filières recommandées pour un Bac Économie dans le Maroc, j'ai une liste à votre disposition : \n\n- Ecole Supérieure des Sciences Economiques et Sociales (ESSE)\n- Université Lamine Boualou\n- ENSAM\n- Université Ibn Khaldoun - Rabat\n\nEn outre, vous pouvez également envisager de suivre un programme universitaire d'option économie avec l'université RAS ou l'Université Mohammed V.\n\nJe vous souhaite bonne chance dans votre recherche.",
+        "ts": 1774290587.9257262
+      }
+    ],
+    "last_seen": "2026-03-23T18:29:47.925726",
+    "created_at": "2026-03-23T18:29:18.909591"
+  },
+  "test_final_10_1774290588": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "j'ai un bac svt, est-ce que l'ingénierie est 'possible' ou 'excellente' pour moi ?",
+        "ts": 1774290640.3623567
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! Comment puis-je vous orienter aujourd'hui ?",
+        "ts": 1774290641.0235307
+      }
+    ],
+    "last_seen": "2026-03-23T18:30:41.023530",
+    "created_at": "2026-03-23T18:29:51.304217"
+  },
+  "test_final_11_1774290642": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "um6p",
+    "entities": [
+      "um6p"
+    ],
+    "interets": [],
+    "last_topic": "um6p",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "où se trouve l'um6p ?",
+        "ts": 1774290657.582247
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774290657.6188958
+      }
+    ],
+    "last_seen": "2026-03-23T18:30:57.618895",
+    "created_at": "2026-03-23T18:30:45.080363"
+  },
+  "test_final_12_1774290658": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "ENSA",
+    "entities": [
+      "ENSA"
+    ],
+    "interets": [],
+    "last_topic": "ensa",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "donne-moi la liste des villes où on trouve une ensa.",
+        "ts": 1774290679.7905986
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774290679.8757367
+      }
+    ],
+    "last_seen": "2026-03-23T18:31:19.875736",
+    "created_at": "2026-03-23T18:31:01.101132"
+  },
+  "test_final_13_1774290680": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelles sont les écoles situées à benguerir ?",
+        "ts": 1774290719.6647682
+      },
+      {
+        "role": "assistant",
+        "content": "Benguerir, une ville connue pour son aire urbaine et ses infrastructures. Il existe plusieurs écoles de Benguerir qui pourraient vous intéresser :\n\n- L'école d'ingénierie technique des Mines d'Ajbat\n- La faculté d'informatique et de communication des Sciences techniques\n- Le centre universitaire des technologies de l'eau",
+        "ts": 1774290719.7024035
+      }
+    ],
+    "last_seen": "2026-03-23T18:31:59.702403",
+    "created_at": "2026-03-23T18:31:23.326839"
+  },
+  "test_final_14_1774290720": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "est-ce qu'il y a une est à safi ?",
+        "ts": 1774290759.5077543
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour. Je suis YAFI. Est à Safi ?",
+        "ts": 1774290759.6509411
+      }
+    ],
+    "last_seen": "2026-03-23T18:32:39.650941",
+    "created_at": "2026-03-23T18:32:03.291537"
+  },
+  "test_final_15_1774290760": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Rabat",
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [],
+    "last_seen": "2026-03-23T18:32:53.238447",
+    "created_at": "2026-03-23T18:32:43.741207"
+  },
+  "test_final_16_1774290774": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": 0,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [],
+    "last_seen": "2026-03-23T18:32:59.930746",
+    "created_at": "2026-03-23T18:32:56.805037"
+  },
+  "test_final_17_1774290780": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "ensa",
+    "entities": [
+      "ensa"
+    ],
+    "interets": [],
+    "last_topic": "ensa",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "l'ensam est-elle présente à casablanca ?",
+        "ts": 1774290788.8766298
+      },
+      {
+        "role": "assistant",
+        "content": "L'ENSAM est effectivement présent à Casablanca.",
+        "ts": 1774290788.9620068
+      }
+    ],
+    "last_seen": "2026-03-23T18:33:08.962006",
+    "created_at": "2026-03-23T18:33:03.890438"
+  },
+  "test_final_18_1774290790": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Rabat",
+    "budget": null,
+    "ecole": "MÉDICINE",
+    "entities": [
+      "MÉDICINE"
+    ],
+    "interets": [],
+    "last_topic": "médicine",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "où peut-on étudier le management hôtelier en privé ?",
+        "ts": 1774290821.9715514
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774290822.0005708
+      }
+    ],
+    "last_seen": "2026-03-23T18:33:42.000570",
+    "created_at": "2026-03-23T18:33:12.395667"
+  },
+  "test_final_19_1774290823": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Rabat",
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelles sont les écoles d'ingénierie présentes à rabat ?",
+        "ts": 1774290910.4296706
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! Comment puis-je vous orienter aujourd'hui ?",
+        "ts": 1774290910.6267369
+      }
+    ],
+    "last_seen": "2026-03-23T18:35:10.626736",
+    "created_at": "2026-03-23T18:33:45.586775"
+  },
+  "test_final_20_1774290886": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Casa",
+    "budget": null,
+    "ecole": "UNIVERSITÉ AL AKHAWAYN",
+    "entities": [
+      "UNIVERSITÉ AL AKHAWAYN"
+    ],
+    "interets": [],
+    "last_topic": "université al akhawayn",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "dans quelle ville se trouve l'université al akhawayn ?",
+        "ts": 1774290914.114945
+      },
+      {
+        "role": "assistant",
+        "content": "L'Université Al Akhawayn, située à Meknès.",
+        "ts": 1774290914.2626755
+      }
+    ],
+    "last_seen": "2026-03-23T18:35:14.262675",
+    "created_at": "2026-03-23T18:34:49.803959"
+  },
+  "test_final_21_1774290915": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Casablanca",
+    "budget": null,
+    "ecole": "emsi",
+    "entities": [
+      "emsi"
+    ],
+    "interets": [],
+    "last_topic": "emsi",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "combien coûtent les frais de scolarité à l'emsi ?",
+        "ts": 1774290927.4494028
+      },
+      {
+        "role": "assistant",
+        "content": "L'école EMI, située dans le quartier Laâyoune à Casablanca. Les frais de scolarité sont fixés à 8 000 MAD par mois pour les étudiants de première année et 6 500 MAD pour les élèves supérieurs.",
+        "ts": 1774290927.4881597
+      }
+    ],
+    "last_seen": "2026-03-23T18:35:27.488159",
+    "created_at": "2026-03-23T18:35:17.925625"
+  },
+  "test_final_22_1774290928": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelle est la définition du système lmd ?",
+        "ts": 1774290951.3628757
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! \n\nLe système LMD, ou Licence Master Doctorat, est un cadre européen et marocain de l'enseignement supérieur qui facilite l'équivalence des diplômes. Il existe deux versions principales :\n\n- La version LMD Européenne (LE) : Elle compte six étapes : \n  - Diplôme d'études supérieures agrégés\n  - Master en trois ans\n  - Doctorat en trois ans\n  - Détachement de l'université ou d'une école dans le domaine où il a réalisé son stage de fin de carrière (D.Sc.)\n\n- La version LMD Marocaine : Elle",
+        "ts": 1774290951.402844
+      }
+    ],
+    "last_seen": "2026-03-23T18:35:51.402844",
+    "created_at": "2026-03-23T18:35:31.013692"
+  },
+  "test_final_23_1774290952": {
+    "bac": "SVT",
+    "moyenne": 18.5,
+    "ville": "Casablanca",
+    "budget": null,
+    "ecole": "ENSA",
+    "entities": [
+      "ENSA"
+    ],
+    "interets": [],
+    "last_topic": "ensa",
+    "last_intent": null,
+    "history": [],
+    "last_seen": "2026-03-23T18:35:58.479401",
+    "created_at": "2026-03-23T18:35:54.925669"
+  },
+  "test_final_24_1774290975": {
+    "bac": null,
+    "moyenne": null,
+    "ville": "Casablanca",
+    "budget": null,
+    "ecole": "uir",
+    "entities": [
+      "uir"
+    ],
+    "interets": [],
+    "last_topic": "uir",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelles sont les spécialités proposées par l'uir ?",
+        "ts": 1774291011.6496162
+      },
+      {
+        "role": "assistant",
+        "content": "L'UIR Rabat propose des spécialités telles que :\n\n*   BAC 3\n*   BAC 2\n*   BAC 1\n*   Diplôme d'études supérieures\n*   Brevet de fin de formation (BFF)\n*   Diplôme d'études en administration (DEA)",
+        "ts": 1774291011.67972
+      }
+    ],
+    "last_seen": "2026-03-23T18:36:51.679719",
+    "created_at": "2026-03-23T18:36:34.955360"
+  },
+  "test_final_25_1774291012": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quels sont les 'pros' et 'cons' d'une école privée ?",
+        "ts": 1774291065.1838465
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! Comment puis-je vous orienter aujourd'hui ?",
+        "ts": 1774291065.9863622
+      }
+    ],
+    "last_seen": "2026-03-23T18:37:45.986362",
+    "created_at": "2026-03-23T18:36:55.049814"
+  },
+  "test_final_26_1774291067": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelle est la différence entre un bts et un dut selon tes définitions ?",
+        "ts": 1774291107.804527
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! \n\nJe ne suis pas sûr de ce que tu veux demander. Dans le contexte des connaissances en science politique, on peut dire que ces deux termes sont souvent confondus, mais selon mes définitions, un BTS (Brevet d'Études Supérieure) est un diplôme de niveau Bac+2 qui vise à développer les compétences techniques et scientifiques dans une domaine spécifique.\n\nEn revanche, un DUT (Diplôme d'Université Technique) est un diplôme de niveau Bac + 3 qui propose des programmes spécifiques dans divers",
+        "ts": 1774291107.832896
+      }
+    ],
+    "last_seen": "2026-03-23T18:38:27.832895",
+    "created_at": "2026-03-23T18:37:49.889811"
+  },
+  "test_final_27_1774291108": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "medecine",
+    "entities": [
+      "medecine"
+    ],
+    "interets": [],
+    "last_topic": "medecine",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "comment se déroule le concours de médecine (épreuves et coefficients) ?",
+        "ts": 1774291124.5481746
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774291124.5766673
+      }
+    ],
+    "last_seen": "2026-03-23T18:38:44.576667",
+    "created_at": "2026-03-23T18:38:31.855467"
+  },
+  "test_final_28_1774291125": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": 0,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quel est le salaire moyen d'un ingénieur débutant au maroc ?",
+        "ts": 1774291155.3741925
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! Je n'ai pas cette information précise dans ma base. Si vous souhaitez en savoir plus sur les salaires moyens pour un ingénieur débutant au Maroc, je vous recommande de consulter le site officiel du Ministère des Finances ou de la Planification Économique et Sociale, ainsi que les sites des grandes entreprises marocaines dans l'industrie de l'ingénierie.",
+        "ts": 1774291155.4097023
+      }
+    ],
+    "last_seen": "2026-03-23T18:39:15.409702",
+    "created_at": "2026-03-23T18:38:47.876083"
+  },
+  "test_final_29_1774291156": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": "minhaty",
+    "entities": [
+      "minhaty"
+    ],
+    "interets": [],
+    "last_topic": "minhaty",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quels sont les documents ou procédures pour le dossier minhaty ?",
+        "ts": 1774291181.7404723
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774291181.766
+      }
+    ],
+    "last_seen": "2026-03-23T18:39:41.766000",
+    "created_at": "2026-03-23T18:39:18.825977"
+  },
+  "test_final_30_1774291182": {
+    "bac": null,
+    "moyenne": 16.0,
+    "ville": "Rabat",
+    "budget": 24000,
+    "ecole": "ENSA",
+    "entities": [
+      "ENSA"
+    ],
+    "interets": [],
+    "last_topic": "ensa",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "quelle est la plateforme pour s'inscrire aux écoles publiques ?",
+        "ts": 1774291212.055897
+      },
+      {
+        "role": "assistant",
+        "content": "Je m'excuse, je me suis un peu égaré. Je suis votre expert en orientation au Maroc. Comment puis-je vous aider pour vos études ou votre carrière ?",
+        "ts": 1774291212.165881
+      }
+    ],
+    "last_seen": "2026-03-23T18:40:12.165880",
+    "created_at": "2026-03-23T18:39:45.262844"
+  },
+  "aa0355a0-8d94-42fa-849c-69a782190cab": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": 0,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "bonjour yafi, comment vas-tu aujourd'hui ? qui t'a créé ?",
+        "ts": 1774305940.4064004
+      },
+      {
+        "role": "assistant",
+        "content": "YAFI est votre IA d'Orientation ! Je suis là pour vous guider dans vos choix scolaires au Maroc.",
+        "ts": 1774305940.4463575
+      },
+      {
+        "role": "user",
+        "content": "salut ! est-ce que tu es un humain ou une intelligence artificielle ?",
+        "ts": 1774305957.6439254
+      },
+      {
+        "role": "assistant",
+        "content": "Je suis YAFI. Je suis un assistant orienté en enseignement scolaire et universitaire au Maroc, créé par Adam Moufrije, Yasser et Fahd. Je suis ici pour vous aider avec tout ce qui concerne les études au Maroc, depuis l'enseignement primaire jusqu'à la formation supérieure.",
+        "ts": 1774305957.676057
+      }
+    ],
+    "last_seen": "2026-03-23T22:46:09.363123",
+    "created_at": "2026-03-23T22:45:20.906280"
+  },
+  "437481ad-78fa-4252-b9a5-dd3895ea7ae6": {
+    "bac": null,
+    "moyenne": null,
+    "ville": null,
+    "budget": null,
+    "ecole": null,
+    "entities": [],
+    "interets": [],
+    "last_topic": null,
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "bonjour yafi, comment vas-tu aujourd'hui ? qui t'a créé ?",
+        "ts": 1774307114.7822864
+      },
+      {
+        "role": "assistant",
+        "content": "YAFI est votre IA d'Orientation ! Je suis là pour vous guider dans vos choix scolaires au Maroc.",
+        "ts": 1774307114.8153987
+      },
+      {
+        "role": "user",
+        "content": "salut ! est-ce que tu es un humain ou une intelligence artificielle ?",
+        "ts": 1774307130.6203845
+      },
+      {
+        "role": "assistant",
+        "content": "Je suis YAFI, votre référence pour les options d'études au MAROC. Je suis un assistant expert dans le domaine de l'orientation scolaire et universitaire au Maroc, créé par Adam Moufrije, Yasser et Fahd. Je peux vous aider à trouver des options d'études qui correspondent à vos objectifs professionnels et personnels.",
+        "ts": 1774307130.6392207
+      }
+    ],
+    "last_seen": "2026-03-23T23:05:30.639220",
+    "created_at": "2026-03-23T23:05:09.706207"
+  },
+  "cb6c24ed-5eea-45dd-95df-88c822d2773f": {
+    "bac": "SVT",
+    "moyenne": 10.5,
+    "ville": "Rabat",
+    "budget": 30000,
+    "ecole": "emsi",
+    "entities": [
+      "medecine",
+      "ENSA",
+      "emsi"
+    ],
+    "interets": [],
+    "last_topic": "medecine",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "bonjour, j'ai un bac svt avec 14 de moyenne. est-ce que je peux faire médecine ?",
+        "ts": 1774308326.2158344
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas cette donnée précise sur les possibilités d'entrée dans des programs universitaires en Médicine au Maroc. Il faudrait attendre la réponse à un autre message pour connaître plus précisément.",
+        "ts": 1774308326.2688346
+      },
+      {
+        "role": "user",
+        "content": "salut, j'ai eu 10.5 de moyenne au bac. que me conseilles-tu comme stratégie ?",
+        "ts": 1774308347.3715653
+      },
+      {
+        "role": "assistant",
+        "content": "Je suis désolé, mais je n'ai pas cette donnée précise concernant la médecine ou les performances scolaires. Je peux vous suggérer des ressources pour trouver les informations dont vous avez besoin, comme le site web du Ministère de l'Enseignement Supérieur et de la Formation Professionnelle (MESP) ou des associations de enseignants et d'étudiants du Maroc.",
+        "ts": 1774308347.4884005
+      },
+      {
+        "role": "user",
+        "content": "bonjour, est-ce qu'un élève avec un bac lettres peut devenir ingénieur dans le public ?",
+        "ts": 1774308378.1048863
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! \n\nPour répondre à votre question, il est possible d'obtenir une formation universitaire et professionnelle en ingénierie public. Les écoles marocaines proposent des cursus qui couvrent divers domaines tels que les matériaux, la mécanique, l'électronique, etc.\n\nCependant, il est important de noter que les formations d'ingénieur public ne sont pas toujours disponibles dans toutes les universités marocaines. Il faudrait donc consulter les universités pour trouver celles qui proposent des ",
+        "ts": 1774308378.383178
+      },
+      {
+        "role": "user",
+        "content": "salut yafi, je suis en bac pc et j'adore l'informatique. quelles sont mes chances pour l'ensa ?",
+        "ts": 1774308391.4395397
+      },
+      {
+        "role": "assistant",
+        "content": "YAFI est votre IA d'Orientation ! Je suis là pour vous guider dans vos choix scolaires au Maroc.",
+        "ts": 1774308391.5458937
+      },
+      {
+        "role": "user",
+        "content": "bonjour, entre l'emsi et l'uir, laquelle est la moins chère selon tes données ?",
+        "ts": 1774308398.0907598
+      },
+      {
+        "role": "assistant",
+        "content": "🎓 **Informations Expertes : EMSI**\n\nℹ️ **Définition :** Ecole Marocaine des Sciences de l'Ingenieur. Plus grande ecole d'ingenierie privee au Maroc, avec des clubs dynamiques (Robotique, Sports, Innovation).\n📍 **Localisation :** Casablanca, Fes, Marrakech, Rabat\n",
+        "ts": 1774308398.1641097
+      }
+    ],
+    "last_seen": "2026-03-23T23:26:38.164109",
+    "created_at": "2026-03-23T23:23:47.996982"
+  },
+  "38f8c239-5021-4bd8-90a4-c5ae8be89126": {
+    "bac": "ECO",
+    "moyenne": 10.5,
+    "ville": "Casablanca",
+    "budget": 90000,
+    "ecole": "emsi",
+    "entities": [
+      "medecine",
+      "ENSA",
+      "emsi"
+    ],
+    "interets": [],
+    "last_topic": "ensa",
+    "last_intent": null,
+    "history": [
+      {
+        "role": "user",
+        "content": "bonjour, j'ai un bac svt avec 14 de moyenne. est-ce que je peux faire médecine ?",
+        "ts": 1774308859.6913414
+      },
+      {
+        "role": "assistant",
+        "content": "Je n'ai pas cette donnée précise sur les options d'études suivantes à Médecin.",
+        "ts": 1774308859.7271616
+      },
+      {
+        "role": "user",
+        "content": "salut, j'ai eu 10.5 de moyenne au bac. que me conseilles-tu comme stratégie ?",
+        "ts": 1774308879.47483
+      },
+      {
+        "role": "assistant",
+        "content": "Je suis désolé, mais je n'ai pas cette donnée précise sur la médecine. Je ne peux pas vous recommander des stratégies ou des programmes spécifiques pour vous aider à améliorer vos résultats scolaires. Veuillez me donner d'autres informations sur ce sujet si vous en avez besoin.",
+        "ts": 1774308879.5093951
+      },
+      {
+        "role": "user",
+        "content": "bonjour, est-ce qu'un élève avec un bac lettres peut devenir ingénieur dans le public ?",
+        "ts": 1774308899.5680387
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour. Je peux vous aider à trouver des informations sur les carrières dans le domaine de l'ingénierie pour vos candidatures à l'école de bac lettres ou à l'école secondaire technique du Service Vocal Technique, SM ou école économique, selon votre cas.",
+        "ts": 1774308899.600139
+      },
+      {
+        "role": "user",
+        "content": "salut yafi, je suis en bac pc et j'adore l'informatique. quelles sont mes chances pour l'ensa ?",
+        "ts": 1774308912.1258845
+      },
+      {
+        "role": "assistant",
+        "content": "YAFI est votre IA d'Orientation ! Je suis là pour vous guider dans vos choix scolaires au Maroc.",
+        "ts": 1774308912.2311747
+      },
+      {
+        "role": "user",
+        "content": "bonjour, entre l'emsi et l'uir, laquelle est la moins chère selon tes données ?",
+        "ts": 1774308919.6315176
+      },
+      {
+        "role": "assistant",
+        "content": "🎓 **Informations Expertes : EMSI**\n\nℹ️ **Définition :** Ecole Marocaine des Sciences de l'Ingenieur. Plus grande ecole d'ingenierie privee au Maroc, avec des clubs dynamiques (Robotique, Sports, Innovation).\n📍 **Localisation :** Casablanca, Fes, Marrakech, Rabat\n",
+        "ts": 1774308919.672512
+      }
+    ],
+    "last_seen": "2026-03-23T23:35:19.672512",
+    "created_at": "2026-03-23T23:32:48.878182"
+>>>>>>> 3257fc1 (final)
   }
 }

@@ -9,6 +9,7 @@ from typing import Dict, List, Optional
 class YAFIPromptEngine:
     """Manages prompts and response formatting for YAFI chatbot"""
     
+<<<<<<< HEAD
     SYSTEM_PROMPT = """Tu es YAFI, assistant d'orientation scolaire au Maroc. 🎓
 Réponds en français, de façon structurée avec des emojis.
 
@@ -21,6 +22,17 @@ HISTORIQUE: {history}
 QUESTION: {query}
 
 RÉPONSE:"""
+=======
+    SYSTEM_PROMPT = """Réponds en français. Utilise UNIQUEMENT le contexte ci-dessous.
+
+RÈGLE CRITIQUE : Si l'étudiant demande une VILLE ou ÉCOLE spécifique (ex: Fès, Marrakech) et que le contexte ne parle PAS de cette ville/école, dis clairement : "Je n'ai pas d'information sur [ville/école demandée] dans ma base." NE SUBSTITUE JAMAIS une autre école/ville.
+
+Profil: {profile_context}
+Contexte: {context}
+Question: {query}
+
+Réponse concise:"""
+>>>>>>> 3257fc1 (final)
 
     FALLBACK_RESPONSE = """❌ **Information non disponible**
 
@@ -36,6 +48,7 @@ Je n'ai pas trouvé d'information fiable dans ma base de connaissances pour rép
 
 💬 Puis-je vous aider avec autre chose ?"""
 
+<<<<<<< HEAD
     NO_CONTEXT_PROMPT = """Tu es YAFI, un assistant d'orientation académique pour les étudiants marocains.
 
 L'utilisateur a posé une question pour laquelle tu n'as pas de contexte spécifique.
@@ -53,6 +66,22 @@ QUESTION :
 {query}
 
 RÉPONSE :"""
+=======
+    NO_CONTEXT_PROMPT = """Tu es YAFI, l'assistant expert en orientation au Maroc. 🎓
+
+La question suivante est en dehors de ma base de données précise, mais je vais t'aider avec ma logique d'expert :
+
+RÈGLES :
+1. ANALYSE : Identifie s'il s'agit d'une demande de conseil, de bureaucratie (Tawjihi) ou d'information générale.
+2. CONSEIL : Donne un conseil d'expert basé sur le système marocain (Bac, Concours, Université).
+3. PRUDENCE : Ne donne pas de chiffres précis (dates, seuils) si tu n'es pas sûr.
+4. REDIRECTION : Suggère toujours de vérifier sur www.cursussup.gov.ma ou men.gov.ma.
+
+HISTORIQUE: {history}
+QUESTION: {query}
+
+RÉPONSE D'EXPERT (LOGIQUE) :"""
+>>>>>>> 3257fc1 (final)
 
     @staticmethod
     def format_context(search_results: List[Dict]) -> str:
@@ -71,7 +100,11 @@ RÉPONSE :"""
         context_parts = []
         for i, result in enumerate(search_results, 1):
             category = result['metadata'].get('category', 'Général')
+<<<<<<< HEAD
             text = result['text'][:300]  # Truncate for speed with small model
+=======
+            text = result['text'][:600]  # Increased from 300 for better context
+>>>>>>> 3257fc1 (final)
             score = result['score']
             
             context_parts.append(
@@ -175,12 +208,18 @@ RÉPONSE :"""
         if search_results:
             # Use strict prompt with context
             context = cls.format_context(search_results)
+<<<<<<< HEAD
             history_text = cls.format_history(history or [])
+=======
+>>>>>>> 3257fc1 (final)
             
             return cls.SYSTEM_PROMPT.format(
                 profile_context=profile_context,
                 context=context,
+<<<<<<< HEAD
                 history=history_text,
+=======
+>>>>>>> 3257fc1 (final)
                 query=query
             )
         else:
