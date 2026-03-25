@@ -63,15 +63,12 @@ La base est actuellement bonne, mais elle peut être étendue avec des données 
 *   **Amélioration (`vector_knowledge.py`)** : Combiner FAISS avec un algorithme BM25 (recherche par mots-clés exacts) et fusionner les scores. Cela permet d'avoir la compréhension conceptuelle des vecteurs ET la précision chirurgicale des mots-clés.
 
 ### 4.2. "Intent Classification" avant le Traitement
-<<<<<<< HEAD
 *   **Le problème** : Actuellement, `server.py` utilise une longue série de `if/elif` pour déterminer si on est dans un calcul de note, une recherche d'école, ou une salutation. Si les requêtes deviennent très complexes en langage naturel, ces `if` vont casser.
-=======
 *- [ ] **EST Integration** : Ajouter les informations sur l'École Supérieure de Technologie (Safi, Casa, GI, TM).
     - [x] Ajouter les faits Prolog (ESTS Safi: GI, TM, GIM, GESA, Mécatronique, etc.).
     - [x] Mettre à jour `KNOWN_ENTITIES` et handlers dans le backend.
     - [/] Vérifier les requêtes "EST à Safi" et "Score EST".
 nt très complexes en langage naturel, ces `if` vont casser.
->>>>>>> 3257fc1 (final)
 *   **Amélioration** : Utiliser un petit modèle d'Intelligence Artificielle de classification d'intentions rapide (ex: `scikit-learn` ou un mini modèle LLM local) directement au début de la route `/chat`. Le modèle catégorise le message entrant en une classe claire : `["CALCULATE_SCORE", "COMPARE_SCHOOLS", "QUIZ", "GENERAL_CHAT"]`. Le code python pourra ensuite router l'action avec une précision parfaite.
 
 ---

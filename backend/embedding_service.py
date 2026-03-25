@@ -16,16 +16,6 @@ class EmbeddingService:
     
     def __init__(self, model_name: str = 'paraphrase-multilingual-MiniLM-L12-v2'):
         """
-<<<<<<< HEAD
-        Initialize the embedding service
-        
-        Args:
-            model_name: Name of the sentence-transformers model to use
-                       Default: paraphrase-multilingual-MiniLM-L12-v2 (supports French/Arabic)
-        """
-        print(f"🔄 Loading embedding model: {model_name}...")
-        self.model = SentenceTransformer(model_name)
-=======
         Args:
             model_name: Name of the sentence-transformers model to use
         """
@@ -33,7 +23,6 @@ class EmbeddingService:
         from intent_classifier import get_shared_model
         self.model = get_shared_model(model_name)
         
->>>>>>> 3257fc1 (final)
         self.index = None
         self.chunks = []
         self.dimension = 384  # MiniLM-L12 embedding dimension
@@ -49,25 +38,13 @@ class EmbeddingService:
         Returns:
             numpy array of embeddings
         """
-<<<<<<< HEAD
-        return self.model.encode(texts, show_progress_bar=show_progress, convert_to_numpy=True)
-=======
         return self.model.encode(texts, show_progress_bar=show_progress, convert_to_numpy=True, normalize_embeddings=True)
->>>>>>> 3257fc1 (final)
     
     def build_index(self, chunks: List[Dict], save_path: str = None):
         """
         Build FAISS index from knowledge chunks
-        
-        Args:
-            chunks: List of chunk dictionaries with 'text' and 'metadata'
-            save_path: Optional path to save the index
         """
-<<<<<<< HEAD
-        print(f"🔨 Building FAISS index from {len(chunks)} chunks...")
-=======
         print(f"Building FAISS index from {len(chunks)} chunks...")
->>>>>>> 3257fc1 (final)
         
         self.chunks = chunks
         texts = [chunk['text'] for chunk in chunks]
@@ -79,11 +56,7 @@ class EmbeddingService:
         self.index = faiss.IndexFlatL2(self.dimension)
         self.index.add(embeddings.astype('float32'))
         
-<<<<<<< HEAD
-        print(f"✅ Index built successfully with {self.index.ntotal} vectors")
-=======
         print(f"Index built successfully with {self.index.ntotal} vectors")
->>>>>>> 3257fc1 (final)
         
         # Save if path provided
         if save_path:
@@ -92,19 +65,11 @@ class EmbeddingService:
     def save_index(self, index_path: str):
         """Save FAISS index to disk"""
         faiss.write_index(self.index, index_path)
-<<<<<<< HEAD
-        print(f"💾 Index saved to: {index_path}")
-=======
         print(f"Index saved to: {index_path}")
->>>>>>> 3257fc1 (final)
     
     def load_index(self, index_path: str, chunks_path: str):
         """
         Load FAISS index and chunks from disk
-        
-        Args:
-            index_path: Path to FAISS index file
-            chunks_path: Path to chunks JSON file
         """
         if not os.path.exists(index_path):
             raise FileNotFoundError(f"Index file not found: {index_path}")
@@ -112,38 +77,19 @@ class EmbeddingService:
         if not os.path.exists(chunks_path):
             raise FileNotFoundError(f"Chunks file not found: {chunks_path}")
         
-<<<<<<< HEAD
-        print(f"📂 Loading index from: {index_path}")
-        self.index = faiss.read_index(index_path)
-        
-        print(f"📂 Loading chunks from: {chunks_path}")
-=======
         print(f"Loading index from: {index_path}")
         self.index = faiss.read_index(index_path)
         
         print(f"Loading chunks from: {chunks_path}")
->>>>>>> 3257fc1 (final)
         with open(chunks_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             self.chunks = data['chunks']
         
-<<<<<<< HEAD
-        print(f"✅ Loaded {self.index.ntotal} vectors and {len(self.chunks)} chunks")
-=======
         print(f"Loaded {self.index.ntotal} vectors and {len(self.chunks)} chunks")
->>>>>>> 3257fc1 (final)
     
     def search(self, query: str, top_k: int = 5, threshold: float = 0.7) -> Optional[List[Dict]]:
         """
         Perform semantic search on the knowledge base
-        
-        Args:
-            query: User query string
-            top_k: Number of top results to return
-            threshold: Minimum similarity score (0-1)
-            
-        Returns:
-            List of results with chunks and scores, or None if no results above threshold
         """
         if self.index is None:
             raise ValueError("Index not built or loaded. Call build_index() or load_index() first.")
@@ -155,9 +101,8 @@ class EmbeddingService:
         distances, indices = self.index.search(query_embedding.astype('float32'), top_k)
         
         # Convert L2 distance to cosine similarity (approximate)
-        # For normalized vectors: similarity ≈ 1 - (distance² / 4)
         similarities = 1 - (distances[0] / 4)
-        similarities = np.clip(similarities, 0, 1)  # Ensure [0, 1] range
+        similarities = np.clip(similarities, 0, 1)
         
         # Filter by threshold and build results
         results = []
@@ -173,7 +118,6 @@ class EmbeddingService:
         return results if results else None
     
     def get_stats(self) -> Dict:
-        """Get statistics about the current index"""
         return {
             'total_vectors': self.index.ntotal if self.index else 0,
             'total_chunks': len(self.chunks),
@@ -183,10 +127,7 @@ class EmbeddingService:
 
 
 if __name__ == "__main__":
-    # Test the embedding service
     service = EmbeddingService()
-    
-    # Test encoding
     test_texts = ["C'est quoi l'ENSA ?", "Comment s'inscrire à la faculté ?"]
     embeddings = service.encode(test_texts)
-    print(f"✅ Generated embeddings shape: {embeddings.shape}")
+    print(f"Generated embeddings shape: {embeddings.shape}")

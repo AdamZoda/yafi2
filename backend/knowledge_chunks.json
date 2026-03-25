@@ -1,11 +1,8 @@
 {
-<<<<<<< HEAD
   "total_chunks": 231,
   "source_file": "C:\\Users\\user\\Documents\\chat\\YAFI-main\\backend\\yafi_knowledge_context.json",
-=======
   "total_chunks": 255,
   "source_file": "C:\\Users\\PC\\Downloads\\YAFI\\yafi2-main\\backend\\yafi_knowledge_context.json",
->>>>>>> 3257fc1 (final)
   "chunk_size": 400,
   "chunks": [
     {
@@ -2086,8 +2083,6 @@
         "chunk_type": "detail_12",
         "source": "yafi_knowledge_context.json"
       }
-<<<<<<< HEAD
-=======
     },
     {
       "text": "Question: Quelle formation courte après le Bac ?\n\nRéponse: Les formations courtes (Bac+2) au Maroc sont idéales pour une insertion professionnelle rapide. Les options principales sont :\n\n- **BTS** (Brevet de Technicien Supérieur) : 2 ans dans les lycées techniques.\n- **EST** (École Supérieure de Technologie) : Prépare au DUT (Bac+2) avec possibilité de licence pro.\n- **OFPPT (ISTA)** : Des centaines de filières techniques et commerciales.\n- **Classes Prép",
@@ -2304,7 +2299,6 @@
         "chunk_type": "detail_2",
         "source": "yafi_knowledge_context.json"
       }
->>>>>>> 3257fc1 (final)
     }
   ]
 }

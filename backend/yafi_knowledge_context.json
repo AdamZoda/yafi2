@@ -1,11 +1,8 @@
 {
   "knowledge_base": "YAFI - Orientation Post-Bac Maroc",
   "version": "2024.1",
-<<<<<<< HEAD
   "total_questions": 30,
-=======
   "total_questions": 47,
->>>>>>> 3257fc1 (final)
   "categories": {
     "Admissions": [
       "J'ai une moyenne de 12, que faire ?",
@@ -45,9 +42,7 @@
       "Est-ce que les stages sont obligatoires ?",
       "Quelles sont les villes avec moins de concurrence ?",
       "Inscription CursusSup, c'est quand ?",
-<<<<<<< HEAD
       "Métiers d'avenir au Maroc ?"
-=======
       "Métiers d'avenir au Maroc ?",
       "Quelle formation courte après le Bac ?",
       "Quelles sont les options Bac plus 2 ?",
@@ -57,7 +52,6 @@
       "Différence BTS vs DUT ?",
       "Budget UIR vs EMSI ?",
       "Villes avec ENSA ?"
->>>>>>> 3257fc1 (final)
     ]
   },
   "qa_database": [
@@ -210,8 +204,6 @@
       "q": "Métiers d'avenir au Maroc ?",
       "full_answer": "Le **Maroc de 2026-2035** verra l'émergence de nouveaux métiers et la transformation de secteurs entiers.\n\n### Top 10 Métiers d'Avenir\n\n**1. Intelligence Artificielle et Data Science** 🚀\n- **Métiers** :\n  - Data Scientist / Analyst\n  - ML Engineer\n  - AI Product Manager\n  - Prompt Engineer\n- **Salaire** : 12-30K DH/mois\n- **Demande** : Très forte\n- **Formation** : Ingénieur + spécialisation\n\n**2. Cybersécurité** 🛡️\n- **Métiers** :\n  - Security Analyst\n  - Ethical Hacker\n  - CISO (Chief Information Security Officer)\n- **Salaire** : 10-25K DH/mois\n- **Demande** : Critique\n- **Formation** : Informatique + certifications\n\n**3. Énergies Renouvelables** ☀️\n- **Métiers** :\n  - Ingénieur solaire/éolien\n  - Gestionnaire projets énergétiques\n  - Technicien maintenance panneaux\n- **Salaire** : 8-18K DH/mois\n- **Pourquoi** : Plan Maroc 2030 (52% énergies vertes)\n- **Formation** : Génie électrique, énergétique\n\n**4. Développement Durable** 🌱\n- **Métiers** :\n  - Consultant RSE\n  - Auditeur environnemental\n  - Chef projet économie circulaire\n- **Salaire** : 8-20K DH/mois\n- **Demande** : Croissante\n- **Formation** : Environnement, Management\n\n**5. Santé Digitale / E-santé** 💊\n- **Métiers** :\n  - Développeur apps santé\n  - Gestionnaire données médicales\n  - Télémédecin\n- **Salaire** : 10-22K DH/mois\n- **Contexte** : Digitalisation santé post-COVID\n- **Formation** : Médecine + IT, Ingénieur biomédicale\n\n**6. Cloud Computing / DevOps** ☁️\n- **Métiers** :\n  - Cloud Architect (AWS, Azure, GCP)\n  - DevOps Engineer\n  - Site Reliability Engineer (SRE)\n- **Salaire** : 12-28K DH/mois\n- **Demande** : Explosive\n- **Formation** : Informatique + certifications\n\n**7. Blockchain et Fintech** ₿\n- **Métiers** :\n  - Blockchain Developer\n  - Analyste Fintech\n  - Crypto Consultant\n- **Salaire** : 15-35K DH/mois\n- **Émergence** : Digitalisation bancaire\n- **Formation** : Finance + IT\n\n**8. UX/UI Design** 🎨\n- **Métiers** :\n  - UX Designer\n  - UI Designer\n  - Product Designer\n- **Salaire** : 8-18K DH/mois\n- **Demande** : Forte\n- **Formation** : Design, Informatique\n\n**9. E-commerce et Marketing Digital** 📱\n- **Métiers** :\n  - Growth Hacker\n  - Social Media Manager\n  - E-commerce Manager\n  - SEO/SEM Specialist\n- **Salaire** : 6-15K DH/mois\n- **Boom** : E-commerce x3 depuis 2020\n- **Formation** : Marketing, Commerce\n\n**10. Logistique et Supply Chain** 📦\n- **Métiers** :\n  - Supply Chain Manager\n  - Responsable logistique\n  - Analyste chaîne d'approvisionnement\n- **Salaire** : 8-20K DH/mois\n- **Contexte** : Hub Afrique (Tanger Med)\n- **Formation** : Logistique, Ingénierie industrielle\n\n### Autres Métiers Prometteurs\n\n**Transformation Digitale**\n- Chief Digital Officer\n- Business Analyst\n- Scrum Master / Agile Coach\n\n**Tourisme Durable**\n- Eco-tour guide\n- Gestionnaire hôtellerie verte\n- Consultant tourisme responsable\n\n**Aéronautique / Automobile**\n- Technicien maintenance aéronefs\n- Ingénieur automobile électrique\n- Contrôleur qualité aérospatiale\n\n**Agriculture 4.0**\n- Agro-informaticien\n- Drone pilot agricole\n- Gestionnaire fermes intelligentes\n\n**Content Creation**\n- Vidéaste / YouTubeur professionnel\n- Podcaster\n- Influencer spécialisé\n\n### Secteurs en Déclin\n\n**À Éviter** ⚠️\n- Caissier (automatisation)\n- Comptable basique (IA)\n- Téléopérateur (chatbots)\n- Traducteur non-spécialisé (IA)\n- Chauffeur (voitures autonomes à long terme)\n\n### Compétences Transversales Essentielles\n\n**Hard Skills**\n1. **Programmation** : Python, JavaScript\n2. **Data** : SQL, Excel avancé\n3. **Cloud** : AWS, Azure basics\n4. **Langues** : Anglais (obligatoire), Français\n\n**Soft Skills**\n1. **Adaptabilité** : Changement constant\n2. **Apprentissage continu** : Formation permanente\n3. **Créativité** : IA remplace répétitif\n4. **Communication** : Travail équipe\n5. **Pensée critique** : Résolution problèmes\n\n### Comment Se Préparer\n\n**Dès Maintenant**\n1. **Apprendre à coder** : Python, Web\n2. **Maîtriser l'anglais** : B2 minimum\n3. **Suivre l'actualité tech**\n4. **Certifications en ligne** : Coursera, Udemy\n5. **Projets personnels** : Portfolio\n\n**Choix d'Études**\n- Informatique / Data Science\n- Ingénierie (Électrique, Industrielle)\n- Commerce Digital\n- Énergies renouvelables\n\n### Prévisions 2030\n\n**Maroc Vision 2030**\n- 500 000 emplois IT créés\n- Leader africain énergies vertes\n- Hub logistique Afrique\n- Digitalisation tous secteurs\n\n**Salaires Moyens (Prévision)**\n- IT/Data : 15-35K DH/mois\n- Ingénierie : 10-25K DH\n- Commerce digital : 8-18K DH\n\n### Conclusion\n\n**Métiers Gagnants** 🏆\n- IT et Tech (IA, Data, Cloud, Cyber)\n- Énergies renouvelables\n- E-santé\n- Fintech\n\n**Conseil Final**\nMisez sur des compétences **tech + complémentaires** (ex: Ingénieur + Business, Médecin + IT).\n\n---\n\n**✅ BASE DE CONNAISSANCES COMPLÈTE : 30/30 QUESTIONS**",
       "category": "Conseils"
-<<<<<<< HEAD
-=======
     },
     {
       "q": "Quelle formation courte après le Bac ?",
@@ -297,7 +289,6 @@
       "q": "Est-ce que l'UIR et l'UM6P ont des internats ou offrent des bourses ?",
       "full_answer": "Oui, ces deux grandes universités marocaines brillent par leurs infrastructures et leurs aides financières :\n\n- **UIR (Rabat)** : Dispose de 6 résidences modernes sur le campus, de nombreux clubs (Aéro, Débat) et de bourses allant jusqu'à 100% pour les excellents dossiers scolaires.\n- **UM6P (Benguerir)** : L'Université Mohammed VI Polytechnique offre des conditions d'études exceptionnelles (chambres individuelles, installations sportives olympiques) et délivre de généreuses bourses (Bourse Excellence OCP) pour les étudiants brillants issus de milieux modestes.",
       "category": "Boursses"
->>>>>>> 3257fc1 (final)
     }
   ]
 }

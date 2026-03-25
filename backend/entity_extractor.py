@@ -55,11 +55,7 @@ class EntityExtractor:
             return sanitized
             
         except Exception as e:
-<<<<<<< HEAD
-            print(f"❌ Entity Extraction Error: {e}")
-=======
             print(f"Entity Extraction Error: {e}")
->>>>>>> 3257fc1 (final)
             return {}
 
     def _to_float(self, val):

@@ -13,12 +13,8 @@ export const apiService = {
                 body: JSON.stringify({
                     message: newMessage,
                     userId: userId,
-<<<<<<< HEAD
-                    history: history // On envoie l'historique si on veut faire du contexte en Python
-=======
                     history: history,
                     stream: false
->>>>>>> 3257fc1 (final)
                 }),
             });
 
@@ -31,10 +27,8 @@ export const apiService = {
 
         } catch (error) {
             console.error("Python API Error:", error);
-<<<<<<< HEAD
-            return "⚠️ Erreur de connexion au Cerveau (Python). Vérifiez que 'server.py' est lancé.";
-=======
-            return "⚠️ Erreur de connexion au Cerveau (Python).";
+            alert("Erreur Backend : " + error);
+            return { response: "⚠️ Erreur de connexion au Cerveau (Python). Vérifiez le port 5000." };
         }
     },
 
@@ -134,7 +128,6 @@ export const apiService = {
             }
             // Always call onComplete to save whatever we got
             onComplete({ response: totalAccumulated, done: true });
->>>>>>> 3257fc1 (final)
         }
     }
 };

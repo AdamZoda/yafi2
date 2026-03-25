@@ -1,79 +1,49 @@
 :- encoding(utf8).
 
 :- discontiguous etablissement/5.
-<<<<<<< HEAD
-
-:- discontiguous filiere/6.
-
-:- discontiguous serie_bac/1.
-
-:- discontiguous secteur_formation/1.
-
-:- discontiguous plateforme/2.
-
-:- discontiguous specialite/2.
-
-:- discontiguous debouche_associe/2.
-
-=======
 :- discontiguous filiere/6.
 :- discontiguous serie_bac/1.
 :- discontiguous secteur_formation/1.
 :- discontiguous plateforme/2.
 :- discontiguous specialite/2.
 :- discontiguous debouche_associe/2.
->>>>>>> 3257fc1 (final)
 :- discontiguous institution/9.
 :- discontiguous institution/10.
 :- discontiguous specialisation/4.
 :- discontiguous specialisation/5.
-<<<<<<< HEAD
-=======
 :- discontiguous get_definition/3.
 :- discontiguous internat/2.
 :- discontiguous clubs/2.
 :- discontiguous cantine/2.
 :- discontiguous localisation/2.
 :- discontiguous detail_ecole/4.
->>>>>>> 3257fc1 (final)
 :- discontiguous document_requis/3.
 :- discontiguous document_requis/4.
-
 :- discontiguous conseil_orientation/4.
-
 :- discontiguous recommandation_profil/4.
-
 :- discontiguous debouches_filiere/2.
-
-:- discontiguous detail_ecole/4.
-
-<<<<<<< HEAD
-=======
 :- discontiguous definition/3.
 :- discontiguous get_lien/2.
 :- discontiguous get_seuil/3.
-
->>>>>>> 3257fc1 (final)
-:- discontiguous localisation/2.
-
 :- discontiguous definition/2.
-
 :- discontiguous info/2.
-
 :- discontiguous stat/3.
-
 :- discontiguous ville_chance/1.
-
 :- discontiguous detail_bac/5.
-
 :- discontiguous detail_domaine/4.
-
 :- discontiguous info_type/4.
-
 :- discontiguous strategie_profil/3.
-
 :- discontiguous check_compatibilite/4.
-
+:- discontiguous tuition_fee/2.
+:- discontiguous find_best_school/3.
+:- discontiguous find_best_school_fuzzy/3.
+:- discontiguous admission_criteria/3.
+:- discontiguous meal/4.
+:- discontiguous get_date_concours/2.
+:- discontiguous ville_opportunite/2.
+:- discontiguous villes_concurrence/2.
+:- discontiguous average_salary/2.
+:- discontiguous cost_tuition/3.
 
 
 % =======================================================
@@ -189,96 +159,6 @@ ville_chance('Taza').
 ville_chance('Errachidia').
 
 ville_chance('Al Hoceima').
-<<<<<<< HEAD
-
-
-
-% Localisation des Etablissements Publics
-
-localisation('Universite Hassan II', 'Casablanca').
-
-localisation('Universite Hassan II', 'Mohammedia').
-
-localisation('Universite Mohammed V', 'Rabat').
-
-localisation('Universite Cadi Ayyad', 'Marrakech').
-
-localisation('Universite Ibn Zohr', 'Agadir').
-
-localisation('Universite Abdelmalek Essaadi', 'Tetouan').
-
-localisation('ENSA', 'Agadir').
-
-localisation('ENSA', 'Fes').
-
-localisation('ENSA', 'Marrakech').
-
-localisation('ENSA', 'Tanger').
-
-localisation('ENSA', 'Tetouan').
-
-localisation('ENSA', 'Khouribga').
-
-localisation('ENSA', 'Safi').
-
-localisation('ENSA', 'El Jadida').
-
-localisation('ENSA', 'Berrechid').
-
-localisation('ENSA', 'Beni Mellal').
-
-localisation('ENSA', 'Oujda').
-
-localisation('ENSA', 'Al Hoceima').
-
-localisation('ENSAM', 'Meknes').
-
-localisation('ENSAM', 'Casablanca').
-
-localisation('ENSAM', 'Rabat').
-
-localisation('ENSIAS', 'Rabat').
-
-localisation('EMI', 'Rabat').
-
-localisation('FST', 'Fes').
-
-localisation('FST', 'Settat').
-
-localisation('FST', 'Mohammedia').
-
-localisation('FST', 'Beni Mellal').
-
-localisation('FST', 'Errachidia').
-
-localisation('UM6P', 'Benguerir').
-
-localisation('Universite Al Akhawayn', 'Ifrane').
-
-
-
-% Localisation du Prive
-
-localisation('EMSI', 'Casablanca').
-
-localisation('EMSI', 'Rabat').
-
-localisation('EMSI', 'Marrakech').
-
-localisation('EMSI', 'Fes').
-
-localisation('UIR', 'Rabat').
-
-localisation('SUPINFO', 'Casablanca').
-
-localisation('HEM', 'Casablanca').
-
-localisation('ESCA', 'Casablanca').
-
-localisation('UIASS', 'Rabat').
-
-localisation('UPSAT', 'Casablanca').
-=======
 % Localisation des Etablissements Publics
 localisation('universite hassan ii', 'Casablanca').
 localisation('universite hassan ii', 'Mohammedia').
@@ -348,7 +228,6 @@ localisation('hem', 'Casablanca').
 localisation('esca', 'Casablanca').
 localisation('uiass', 'Rabat').
 localisation('upsat', 'Casablanca').
->>>>>>> 3257fc1 (final)
 
 
 
@@ -373,6 +252,7 @@ detail_ecole('UIASS', 'Sante (Semi-Prive)', 'Medecine, Dentaire', '80 000 - 130 
 detail_ecole('UPSAT', 'Sante (Prive)', 'Medecine, Pharma', '70 000 - 110 000 DH/an').
 
 detail_ecole('ISITT Prive', 'Tourisme', 'Management Hotelier', '20 000 - 30 000 DH/an').
+detail_ecole('UPM', 'Universite Privee de Marrakech', 'Sante, Business, Ingenierie, Tourisme', '60 000 - 85 000 DH/an').
 
 
 
@@ -504,9 +384,6 @@ definition('ENSA', 'Ecole Nationale des Sciences Appliquees (5 ans). Formation d
 
 definition('ENCG', 'Ecole Nationale de Commerce et de Gestion (5 ans). Formation management/commerce. Acces par concours TAFEM.').
 
-<<<<<<< HEAD
-definition('EST', 'Ecole Superieure de Technologie (2 ans). Delivre le DUT. Formation technique courte.').
-=======
 definition('EST', 'Ecole Superieure de Technologie', 'Ecole Superieure de Technologie (2 ans). Delivre le DUT. Formation technique courte.').
 definition('ESTS', 'Ecole Superieure de Technologie de Safi', 'Le campus de Safi propose des DUT et Licences Pro en Genie Informatique (GI), GIM, GESA, TM et EDHV.').
 definition('EMSI', 'Ecole Marocaine des Sciences de l\'Ingenieur', 'Plus grande ecole d\'ingenierie privee au Maroc, avec des clubs dynamiques (Robotique, Sports, Innovation).').
@@ -515,9 +392,9 @@ definition('UM6P', 'Universite Mohammed VI Polytechnique', 'Universite de recher
 definition('ISCAE', 'Institut Superieur de Commerce et d\'Administration des Entreprises', 'Grande ecole de management publique marocaine. Acces tres selectif post-bac+2 ou post-bac.').
 definition('ENAM', 'Ecole Nationale d\'Agriculture de Meknes', 'Ecole d\'ingenieurs agronomes de reference au Maroc situee a Meknes.').
 definition('UIK', 'Universite Internationale de Kenitra', 'Etablissement prive offrant des formations en management et ingenierie avec services de restauration.').
+definition('UPM', 'Universite Privee de Marrakech', 'Etablissement pluridisciplinaire reconnu par l\'Etat offrant des diplomes en Sante, Management et Digital.').
 definition('CursusSup', 'Plateforme nationale d\'orientation', 'Plateforme pour s\'inscrire aux ecoles publiques marocaines (ENSA, ENCG, etc.).').
 definition('Minhaty', 'Portail national des bourses', 'Systeme de demande de bourse publique pour les bacheliers marocains.').
->>>>>>> 3257fc1 (final)
 
 definition('FST', 'Faculte des Sciences et Techniques. Systeme LMD hybride (Tronc commun + Specialite). Acces sur dossier.').
 
@@ -949,11 +826,7 @@ date_concours('Concours ENCG (TAFEM)', 'Juillet').
 
 
 
-<<<<<<< HEAD
 get_date_concours(E, D) :- date_concours(E, D).
-=======
-
->>>>>>> 3257fc1 (final)
 
 
 
@@ -1171,12 +1044,9 @@ etablissement('FLSH', 'Multi-villes', 'Licence Lettres', 3, 'direct').
 % --- Prépas & Autres ---
 etablissement('CPGE', 'Multi-villes', 'CPGE', 2, 'selection').
 etablissement('EST', 'Multi-villes', 'DUT', 2, 'selection').
-<<<<<<< HEAD
-=======
 etablissement('ESTS', 'Safi', 'DUT/Bachelor/LP', 2, 'selection').
 etablissement('EST', 'Casablanca', 'DUT', 2, 'selection').
 etablissement('EST', 'Fes', 'DUT', 2, 'selection').
->>>>>>> 3257fc1 (final)
 etablissement('BTS', 'Multi-villes', 'BTS', 2, 'selection').
 etablissement('OFPPT', 'Multi-villes', 'Technicien Spécialisé', 2, 'selection').
 
@@ -1217,8 +1087,6 @@ filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Intelligenc
 filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Classes Prépas PCSI', 'CPGE', '2 ans', 'CPGE').
 filiere('Sciences physiques', 'Secteur médical et paramédical', 'Soins Infirmiers', 'ISPITS', '3 ans', 'Licence Infirmier').
 filiere('Sciences physiques', 'Secteur médical et paramédical', 'Kinésithérapie', 'ISPITS', '3 ans', 'Licence Kiné').
-<<<<<<< HEAD
-=======
 filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Génie Informatique (GI)', 'ESTS', '2 ans', 'DUT').
 filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Techniques de Management (TM)', 'ESTS', '2 ans', 'DUT').
 filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Génie Industriel & Maintenance (GIM)', 'ESTS', '2 ans', 'DUT').
@@ -1226,7 +1094,6 @@ filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Génie Éle
 filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Énergie Durable et Hydrogène Vert (EDHV)', 'ESTS', '2 ans', 'DUT').
 filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Mécatronique et Intelligence Artificielle', 'ESTS', '3 ans', 'Bachelor').
 filiere('Sciences physiques', 'Sciences, technologie et industrie', 'Ingénierie des Systèmes d\'Information (ISIR/ISI)', 'ESTS', '3 ans', 'Bachelor/LP').
->>>>>>> 3257fc1 (final)
 filiere('Sciences physiques', 'Secteur militaire et paramilitaire', 'Officier Marine', 'ERN', '5 ans', 'Officier Marine').
 
 % === Pour Bac SVT ===
@@ -1240,11 +1107,7 @@ filiere('Sciences de la Vie et de la Terre', 'Sciences, technologie et industrie
 filiere('Sciences économiques', 'Économie, gestion et logistique', 'Commerce International', 'ENCG', '5 ans', 'Diplôme ENCG').
 filiere('Sciences économiques', 'Économie, gestion et logistique', 'Management', 'ENCG', '5 ans', 'Diplôme ENCG').
 filiere('Sciences économiques', 'Économie, gestion et logistique', 'Licence Économie', 'FSJES', '3 ans', 'Licence').
-<<<<<<< HEAD
-filiere('Sciences économiques', 'Classes Prépas ECT', 'CPGE', '2 ans', 'CPGE').
-=======
 filiere('Sciences economiques', 'Economie, gestion et logistique', 'CPGE ECT', 'CPGE', '2 ans', 'CPGE').
->>>>>>> 3257fc1 (final)
 filiere('Sciences de gestion comptable', 'Économie, gestion et logistique', 'Audit et Contrôle', 'ENCG', '5 ans', 'Diplôme ENCG').
 filiere('Sciences de gestion comptable', 'Économie, gestion et logistique', 'Expertise Comptable', 'ISCAE', '3 ans', 'Diplôme Grande École').
 
@@ -1400,16 +1263,11 @@ get_metier_avenir(Domaine, Metier, Demande, Conseils) :- metier_avenir(Domaine, 
 % 16. BOURSES DE MÉRITE (Privé)
 % ------------------------------------------------------------------------------
 bourse_merite('UIR', 'Excellence (100%)', 'Moyenne Bac >= 16/20').
-<<<<<<< HEAD
-bourse_merite('UIR', 'Partielle (50%)', 'Moyenne Bac >= 14/20 ou sur étude dossier social').
-bourse_merite('UM6P', 'Bourse Fondation OCP', 'Excellence académique + Dossier social').
-=======
 bourse_merite('uir', 'Excellence (100%)', 'Moyenne Bac >= 16/20').
 bourse_merite('UIR', 'Partielle (50%)', 'Moyenne Bac >= 14/20 ou sur étude dossier social').
 bourse_merite('uir', 'Partielle (50%)', 'Moyenne Bac >= 14/20 ou sur étude dossier social').
 bourse_merite('UM6P', 'Bourse Fondation OCP', 'Excellence académique + Dossier social').
 bourse_merite('um6p', 'Bourse Fondation OCP', 'Excellence académique + Dossier social').
->>>>>>> 3257fc1 (final)
 bourse_merite('EMSI', 'Bourse d''Encouragement', 'Pour les majors de promotion').
 bourse_merite('EFA', 'Bourse d''excellence (Filles)', 'Très bonnes notes + Milieu rural').
 
@@ -1513,8 +1371,6 @@ definition('FMP', 'Faculte de Medecine et de Pharmacie', 'La faculte pour deveni
 
 get_definition(Acronyme, Nom, Detail) :- definition(Acronyme, Nom, Detail).
 
-<<<<<<< HEAD
-=======
 % --- CAMPUS LIFE & FINANCIALS ---
 % frais_scolarite(Ecole, MoutantAnnuel)
 frais_scolarite(emsi, 35000).
@@ -1548,8 +1404,6 @@ procedure_inscription(minhaty, 'Faire la demande sur www.minhaty.ma apres les re
 procedure_inscription(emsi, 'Passer le test d\'admission sur rendez-vous au campus choisi.').
 
 % ------------------------------------------------------------------------------
-
->>>>>>> 3257fc1 (final)
 % ------------------------------------------------------------------------------
 % 10. SEUILS HISTORIQUES ET AUTRES (Edge cases)
 % ------------------------------------------------------------------------------
@@ -1585,10 +1439,7 @@ get_avis_ecole(Ecole, Note, Positif, Negatif) :- avis_ecole(Ecole, Note, Positif
 
 
 % ============================================================================
-<<<<<<< HEAD
-=======
 
->>>>>>> 3257fc1 (final)
 % Base de Connaissances Prolog - Guide d'Orientation Post-Baccalauréat
 % Région de l'Est - Maroc 2025/2026
 % Conversion du PDF en Prolog structuré avec traduction FR
@@ -2622,11 +2473,7 @@ obtenez_infos_contexte(contexte(Donnees), Profil) :-
 %query_yafi_orientation(Question, Réponse) :-
 %    reponse_faq(Question, Réponse), !.
 %
-<<<<<<< HEAD
-%query_yafi_orientation(_, 'Je ne dispose pas d\'information spécifique à ce sujet. Consultez www.cursussup.gov.ma ou contactez directement l\'institution.').
-=======
 %query_yafi_orientation(_, 'Je ne dispose pas d\'information spécifique à ce sujet. Consultez https://www.ests.uca.ma ou contactez directement l\'institution.').
->>>>>>> 3257fc1 (final)
 
 % ============================================================================
 % SECTION 9: EXEMPLES DE REQUÊTES
@@ -4259,41 +4106,6 @@ trouver_ecole_par_mot_cle(Message, Resultat) :-
     ).
 
 % ---------------------------------------------------------
-<<<<<<< HEAD
-% 3. CHATBOT INTERACTIF EN LIGNE DE COMMANDE (Le "Start")
-% ---------------------------------------------------------
-% Lance le système de recommandation via la commande : start.
-start :-
-    writeln('==============================================================='),
-    writeln('🤖 BIENVENUE DANS YAFI : Le Conseiller d''Orientation IA'),
-    writeln('==============================================================='),
-    writeln('Quel est ton domaine favori ?'),
-    writeln('1. MILITAIRE ET SÉCURITÉ'),
-    writeln('2. INGÉNIERIE, SCIENCES ET TECHNOLOGIE'),
-    writeln('Tapez le nom exact entre quotes (ex: ''MILITAIRE ET SÉCURITÉ''.).'),
-    read(Domaine),
-    writeln(''),
-    writeln('➡️ Voici les grandes écoles dans ce domaine :'),
-    afficher_ecoles_domaine(Domaine),
-    writeln('==============================================================='),
-    writeln('Pour voir les détails d''une école, utilise la requête :'),
-    writeln('?- info_etablissement(''NomEcole'', Categorie, Info).').
-
-% Règle d'affichage (itère et échoue proprement)
-afficher_ecoles_domaine(Domaine) :-
-    nouvel_etablissement(Ecole, Domaine),
-    write(' 🏫 - '), writeln(Ecole),
-    fail.
-afficher_ecoles_domaine(_).
-
-% ---------------------------------------------------------
-% 4. FONCTION UTILITAIRE : LISTER TOUTES LES CATEGORIES D'INFO
-% ---------------------------------------------------------
-% Exemple : lister_categories('ARM').
-lister_categories(Ecole) :-
-    writeln('Catégories d''informations disponibles pour cette école :'),
-=======
-
 % ---------------------------------------------------------
 % 3. CHATBOT INTERACTIF (RESTAURE & HARMONISE)
 % ---------------------------------------------------------
@@ -4322,16 +4134,11 @@ afficher_ecoles_domaine(_).
 
 lister_categories(Ecole) :-
     writeln('Categories d informations disponibles pour cette ecole :'),
->>>>>>> 3257fc1 (final)
     setof(Cat, Info^(info_etablissement(Ecole, Cat, Info)), ListeCats),
     afficher_liste(ListeCats).
 
 afficher_liste([]).
 afficher_liste([H|T]) :-
-<<<<<<< HEAD
-    write(' 📌 '), writeln(H),
-    afficher_liste(T).
-=======
     write(' * '), writeln(H),
     afficher_liste(T).
 
@@ -4458,21 +4265,39 @@ meal(emsi_casablanca, tuesday, breakfast, 'Verre Lait, Croissant, Miel, Jus Oran
 meal(emsi_casablanca, tuesday, lunch, 'Couscous Veggies, Ragoût, Salade Tomate').
 meal(emsi_casablanca, tuesday, dinner, 'Soupe Lentilles, Œufs brouillés, Pain').
 
-% --- SMART SEARCH ---
-find_best_school(Domain, MaxB, MinS, Ecole) :-
-    filiere(_, SchoolID, _, Domain, _),
-    institution(SchoolID, Ecole, _, _, _, _),
-    get_cost(SchoolID, Price),
-    Price =< MaxB,
-    get_salary(SchoolID, Domain, Sal),
-    Sal >= MinS.
+% --- SMART SEARCH (Budget Filter) ---
+% tuition_fee(SchoolID, AverageAmountInDH)
+tuition_fee(emsi, 35000).
+tuition_fee(uir, 85000).
+tuition_fee(uik, 70000).
+tuition_fee(um6p, 75000).
+tuition_fee(uic, 60000).
+tuition_fee(supinfo, 55000).
+tuition_fee(hem, 70000).
+tuition_fee(esca, 65000).
+tuition_fee(uiass, 100000).
+tuition_fee(iscae, 0).
+tuition_fee(ensa, 0).
+tuition_fee(encg, 0).
+tuition_fee(emi, 0).
+tuition_fee(fst, 0).
+tuition_fee(ensias, 0).
+tuition_fee(ests, 0).
+tuition_fee(est, 0).
+tuition_fee(ehtp, 0).
+tuition_fee(inpt, 0).
 
-get_cost(ID, P) :- cost_tuition(ID, _, P), !. 
-get_cost(_, 0).
+find_best_school(Major, MaxB, SchoolID) :-
+    filiere(_, _, Major, SchoolID, _, _),
+    tuition_fee(SchoolID, Price),
+    Price =< MaxB.
 
-get_salary(ID, _, S) :- average_salary(ID, S), !. 
-get_salary(_, Dom, S) :- filiere(_, Fid, _, Dom, _), average_salary(Fid, S), !. 
-get_salary(_, _, 5000).
+% Fallback if major contains part of string
+find_best_school_fuzzy(MajorPart, MaxB, SchoolID) :-
+    filiere(_, _, RealMajor, SchoolID, _, _),
+    sub_string(RealMajor, _, _, _, MajorPart),
+    tuition_fee(SchoolID, Price),
+    Price =< MaxB.
 
 % --- CONSOLIDATED CALENDAR ---
 get_date_concours(N, D) :- date_concours(N, D).
@@ -4539,4 +4364,3 @@ get_definition('ests', 'Ecole Superieure de Technologie de Safi', 'Etablissement
 internat('ests', 'Non disponible (Etablissement de proximite sans internat propre, mais solutions locales disponibles).').
 clubs('ests', 'BDE, Clubs techniques, Sport universitaire.').
 cantine('ests', 'Cafeteria disponible sur le site de Safi.').
->>>>>>> 3257fc1 (final)

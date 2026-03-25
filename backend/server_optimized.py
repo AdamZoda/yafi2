@@ -1,45 +1,17 @@
 """
 YAFI Chatbot - OPTIMIZED SERVER V2
-<<<<<<< HEAD
-Focus: Ollama FIRST, then Prolog/Hard-coded as FALLBACK
-================================
-PRIORITY ORDER:
-1. Trivial questions (YAFI definition, thanks, etc) -> Return immediately
-2. OLLAMA ADVANCED (Smart, context-aware, intelligent) -> TRY FIRST
-3. Prolog + Hard-coded -> Fallback if Ollama has insufficient data
-
-This solves: "Hard-coded responses were blocking Ollama!"
-=======
 --------------------------------
 PRIORITY ORDER:
 1. Trivial questions -> Return immediately
 2. Specialized Intents (Prolog Benchmarking, Fees, etc) -> HIGH PRIORITY
 3. Ollama Advanced (RAG) -> FALLBACK if no specific intent
 4. Generic Fallback
->>>>>>> 3257fc1 (final)
+
 """
 
 import sys
 import os
 from dotenv import load_dotenv
-<<<<<<< HEAD
-
-# Load .env from project root
-base_dir = os.path.dirname(os.path.abspath(__file__))
-root_dir = os.path.dirname(base_dir)
-load_dotenv(os.path.join(root_dir, ".env"))
-
-sys.path.insert(0, base_dir)
-
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-from pyswip import Prolog
-import re
-import random
-from conversation_manager import conversation_manager
-from vector_knowledge import VectorKnowledgeBase
-from response_builder import ResponseBuilder
-=======
 import json
 import re
 import random
@@ -52,23 +24,18 @@ from pyswip import Prolog
 
 # Custom Modules
 from conversation_manager import conversation_manager
-from vector_knowledge import VectorKnowledgeBase
->>>>>>> 3257fc1 (final)
 from llm_engine import llm_engine
-from enhanced_rag import rag_system
-from intent_classifier import IntentClassifier
+# from enhanced_rag import rag_system
+# from intent_classifier import IntentClassifier
 from entity_extractor import entity_extractor
 import user_memory
 
-<<<<<<< HEAD
-=======
 # Load environment
 base_dir = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.dirname(base_dir)
 load_dotenv(os.path.join(root_dir, ".env"))
 sys.path.insert(0, base_dir)
 
->>>>>>> 3257fc1 (final)
 app = Flask(__name__)
 CORS(app)
 
@@ -77,36 +44,14 @@ CORS(app)
 # ============================================================================
 
 prolog = Prolog()
-<<<<<<< HEAD
-base_dir = os.path.dirname(os.path.abspath(__file__))
-# Knowledge Base: Use the full consolidated system only to avoid Redefined procedure warnings
-prolog.consult(os.path.join(base_dir, "full_orientation_system.pl").replace('\\', '/'))
-
-# Components Initialization
-# Note: These use singleton instances from their respective modules
-vector_kb = rag_system.vector_kb
-intent_classifier = IntentClassifier()
-
-# Ollama Global Status Helper
-def is_ollama_available():
-    return llm_engine.enabled and llm_engine.health_check()['available']
-
-print(f"✅ AI Components Initialized")
-
-# ============================================================================
-# HELPER FUNCTIONS
-# ============================================================================
-
-def clean_text(text):
-    """Clean text output from Prolog"""
-=======
 prolog_lock = threading.Lock()
 # Knowledge Base
 prolog.consult(os.path.join(base_dir, "full_orientation_system.pl").replace('\\', '/'))
 
-# Components
-vector_kb = rag_system.vector_kb
-intent_classifier = IntentClassifier()
+# Components (DISABLED FOR PERFORMANCE)
+vector_kb = None
+intent_classifier = None
+rag_system = None
 
 def is_ollama_available():
     return llm_engine.enabled and llm_engine.health_check()['available']
@@ -117,32 +62,11 @@ def safe_query(query_str):
         return list(prolog.query(query_str))
 
 def clean_text(text):
->>>>>>> 3257fc1 (final)
     if isinstance(text, str):
         return text.replace("\\n", "\n").strip()
     return str(text)
 
 def normalize_text(text):
-<<<<<<< HEAD
-    """Normalize text for matching (remove accents)"""
-    import unicodedata
-    if not isinstance(text, str):
-        return str(text)
-    nfkd = unicodedata.normalize('NFKD', text)
-    return ''.join([c for c in nfkd if not unicodedata.combining(c)])
-
-def found_context_match(key_dict, user_msg, last_topic):
-    """Find match in dictionary using user_msg or last topic"""
-    for k, v in key_dict.items():
-        if k in user_msg.lower(): return v
-    if last_topic:
-        for k, v in key_dict.items():
-            if k in last_topic.lower(): return v
-    return None
-
-# ============================================================================
-# MAIN CHAT ENDPOINT - OPTIMIZED
-=======
     if not isinstance(text, str): return str(text)
     nfkd = unicodedata.normalize('NFKD', text)
     return ''.join([c for c in nfkd if not unicodedata.combining(c)])
@@ -215,268 +139,10 @@ def normalize_school_id(name):
 
 # ============================================================================
 # CHAT ENDPOINT
->>>>>>> 3257fc1 (final)
 # ============================================================================
 
 @app.route('/chat', methods=['POST'])
 def chat():
-<<<<<<< HEAD
-    """
-    Optimized chat handler:
-    1. Trivial → Immediate return
-    2. Ollama Advanced → TRY FIRST (if enabled)
-    3. Prolog + Hard-coded → Fallback
-    """
-    import time
-    start_time = time.time()
-    
-    data = request.json
-    user_message = data.get('message', '').lower().strip()
-    current_session_id = data.get('session_id', 'default')
-    
-    print(f"\n📨 NEW MESSAGE: '{user_message[:50]}...'")
-    
-    # ========================================================================
-    # PHASE 0: MEMORY & ENTITY EXTRACTION
-    # ========================================================================
-    
-    # 1. Load persistent profile from Supabase/Local JSON
-    profile = user_memory.load(current_session_id)
-    
-    # 2. Extract entities from current message
-    entities = entity_extractor.extract(user_message)
-    if entities:
-        print(f"  💎 Extracted Entities: {entities}")
-        # 3. Update persistent profile
-        profile = user_memory.update(current_session_id, entities)
-    
-    response_text = None
-    
-    # ========================================================================
-    # PHASE 1: TRIVIAL RESPONSES (Return immediately)
-    # ========================================================================
-    
-    print("PHASE 1: Checking trivial questions...")
-    
-    # YAFI définition
-    if any(kw in user_message for kw in ['yafi', 'y.a.f.i', 'y a f i']):
-        response_text = "✨ **YAFI** est l'acronyme des créateurs avec **I** pour **Intelligence**!\n\nUn chatbot d'orientation post-bac pour les étudiants marocains. 🎓"
-    
-    # Politeness
-    elif user_message in ['merci', 'thank you', 'merci beaucoup']:
-        response_text = "De rien ! 😊 Des questions d'orientation ?"
-    
-    elif user_message in ['oui', 'non', 'ok']:
-        response_text = "Compris ! Autres questions ?"
-    
-    if response_text:
-        elapsed = round((time.time() - start_time) * 1000)
-        print(f"✓ Trivial match → Returning immediately ({elapsed}ms)")
-        user_memory.add_message(current_session_id, 'user', user_message)
-        user_memory.add_message(current_session_id, 'assistant', response_text)
-        return jsonify({"response": response_text, "response_time_ms": elapsed})
-    
-    # ========================================================================
-    # PHASE 2: OLLAMA ADVANCED (Try if enabled)
-    # ========================================================================
-    
-    print("PHASE 2: Trying Ollama Advanced...")
-    
-    if is_ollama_available():
-        try:
-            print("  Calling Enhanced RAG (Ollama) with Profile Context...")
-            # Pass the profile for contextual awareness
-            rag_result = rag_system.generate_response(
-                user_message,
-                session_id=current_session_id,
-                profile=profile
-            )
-            
-            ollama_response = rag_result.get("response", "")
-            
-            if ollama_response:
-                # AGENTIC TOOL CALL: Detect Prolog Evaluate
-                if "[PROLOG_EVALUATE:" in ollama_response:
-                    print("  🛠️ TOOL CALL DETECTED: Prolog Evaluate")
-                    try:
-                        match = re.search(r"\[PROLOG_EVALUATE:\s*(.*?)\]", ollama_response)
-                        if match:
-                            # --- PHASE 3: Slot Filling from Memory ---
-                            params_str = match.group(1)
-                            regex_params = dict(re.findall(r"(\w+)=([\w.]+)", params_str))
-                            
-                            # Priority: Tag Params > Extracted Entities > Profile Memory > Defaults
-                            # We merge them: Profile is base, then Extracted, then Tag overrides
-                            final_params = {
-                                'bac': profile.get('bac'),
-                                'moyenne': profile.get('moyenne'),
-                                'ville': profile.get('ville'),
-                                'budget': profile.get('budget'),
-                                'ecole': profile.get('ecole')
-                            }
-                            # Override with what we have
-                            final_params.update({k: v for k, v in (entities or {}).items() if v is not None})
-                            final_params.update({k: v for k, v in regex_params.items() if v not in [None, 'CODE', 'VALEUR', 'NOM', 'SIGLE']})
-                            
-                            bac = str(final_params.get('bac') or 'PC').upper()
-                            moyenne = final_params.get('moyenne') or '14'
-                            budget = final_params.get('budget') or '50000'
-                            ville = str(final_params.get('ville') or 'Casablanca').capitalize()
-                            ecole = str(final_params.get('ecole') or 'ENSA').upper()
-                            
-                            # Execute Prolog Query
-                            q = f"calculer_score_orientation('{bac}', {moyenne}, {budget}, '{ville}', '{ecole}', Score)"
-                            prolog_res = list(prolog.query(q))
-                            
-                            if prolog_res:
-                                score = prolog_res[0].get('Score', 0)
-                                expert_verdict = f"\n\n--- \n🔍 **Verdict de l'Expert Prolog** :\n"
-                                expert_verdict += f"D'après mes calculs formels, ton score d'affinité pour **{ecole}** est de **{score}%**.\n"
-                                expert_verdict += f"(Données utilisées: Bac {bac}, moyenne {moyenne}, budget {budget} DH, ville {ville})"
-                                
-                                response_text = ollama_response.replace(match.group(0), expert_verdict)
-                                
-                                # Update profile with the school used
-                                if ecole:
-                                    user_memory.update(current_session_id, {"ecole": ecole})
-                            else:
-                                response_text = ollama_response.replace(match.group(0), "\n\n(Calcul expert impossible : paramètres manquants)")
-                        else:
-                            response_text = ollama_response
-                    except Exception as e_tool:
-                        print(f"  ❌ Tool Execution Error: {e_tool}")
-                        response_text = ollama_response 
-                else:
-                    response_text = ollama_response
-                
-                print(f"✓ Ollama responded ({len(response_text)} chars)")
-            else:
-                response_text = None
-                
-        except Exception as e:
-            print(f"  ❌ Ollama error: {e}")
-            response_text = None
-    
-    # ========================================================================
-    # PHASE 3: PROLOG + HARD-CODED (Fallback)
-    # Only if Ollama failed or is disabled
-    # ========================================================================
-    
-    if not response_text:
-        print("PHASE 3: Falling back to Prolog/Hard-coded...")
-        try:
-            # 1. Check for hard-coded abbreviations first
-            if user_message in ['cv', 'c v', 'curriculum']:
-                response_text = "📝 **CV Étudiant** :\n- Infos personnelles\n- Formation\n- Compétences\n- Expériences\n\n💡 Gardez 1 page max !"
-            elif user_message in ['ensa', 'e n s a']:
-                response_text = "🏫 **ENSA** - École Nationale des Sciences Appliquées\n\nÉcoles d'ingénierie publiques au Maroc.\n📍 Villes multiples\n✅ Admission : Bac+Concours\n💰 GRATUIT (Public)"
-            elif user_message in ['emsi', 'e m s i']:
-                response_text = "🏫 **EMSI** - École Marocaine des Sciences de l'Ingénieur\n\n💼 Privée, IT & Ingénierie\n💰 ~35-45k DH/an"
-            elif any(kw in user_message for kw in ['qui t\'a cree', 'qui a cree', 'createur', 'adam moufrije']):
-                response_text = "👨‍💻 **Adam Moufrije** - Créateur & Développeur\n\nUtilisant Ollama pour l'IA ! 🤖"
-            elif any(kw in user_message for kw in ['bonjour', 'bjr', 'hello', 'hi']):
-                greetings = [
-                    "Bonjour ! 👋 Comment puis-je vous aider ?",
-                    "Bonjour ! 🎓 Prêt pour parler orientation ?",
-                    "Hey ! Quoi de neuf ?"
-                ]
-                response_text = random.choice(greetings)
-            elif any(kw in user_message for kw in ['bac pc', 'bac sm', 'bac svt', 'bac eco', 'orientation']):
-                # Try Prolog for BAC-specific questions
-                bac_match = None
-                for code in ['SM', 'PC', 'SVT', 'ECO', 'LITT']:
-                    if code.lower() in user_message:
-                        bac_match = code
-                        break
-                
-                if bac_match:
-                    q = f"get_detail_bac('{bac_match}', I, A, L, C)"
-                    res = list(prolog.query(q))
-                    if res:
-                        d = res[0]
-                        response_text = f"🎓 **BAC {bac_match}** :\n"
-                        response_text += f"{clean_text(d['I'])}\n{clean_text(d['A'])}\n{clean_text(d['C'])}"
-            else:
-                # 2. Try Prolog for general queries
-                # Escape single quotes for Prolog
-                safe_message = user_message.lower().replace("'", "''")
-                # We use a simplified regex approach for common Prolog patterns if needed
-                # But here we just try a general expert_respond rule if it exists
-                q = f"expert_respond('{safe_message}', Resultat)"
-                try:
-                    res = list(prolog.query(q))
-                    if res:
-                        response_text = res[0]['Resultat']
-                except:
-                    pass
-            
-            if not response_text:
-                # Last resort: generic helpful response
-                response_text = "Je n'ai pas trouvé de réponse précise, mais je peux t'aider pour l'orientation ENSA, FST, Médecine ou d'autres écoles au Maroc. Peux-tu préciser ta question ?"
-                
-        except Exception as e_fallback:
-            print(f"  ❌ Fallback Error: {e_fallback}")
-            response_text = "Désolé, je rencontre une difficulté technique. Peux-tu reformuler ta question sur l'orientation ?"
-
-    # ========================================================================
-    # SAVE HISTORY & RETURN
-    # ========================================================================
-    
-    user_memory.add_message(current_session_id, 'user', user_message)
-    user_memory.add_message(current_session_id, 'assistant', response_text)
-    
-    # Calculate score/ecole for the API response
-    final_score = score if ('score' in locals() and score is not None and score > 0) else None
-    final_ecole = ecole if ('final_score' in locals() and final_score is not None) else None
-
-    elapsed = round((time.time() - start_time) * 1000)
-    print(f"⏱️ Response time: {elapsed}ms")
-
-    return jsonify({
-        "response": response_text, 
-        "response_time_ms": elapsed,
-        "source": "ollama_advanced" if ("ollama_response" in locals() and response_text == ollama_response) else "prolog_expert",
-        "score": final_score,
-        "ecole": final_ecole,
-        "entities": entities
-    })
-
-# ============================================================================
-# TEST ENDPOINTS
-# ============================================================================
-
-@app.route('/test/ollama', methods=['GET'])
-def test_ollama():
-    """Test if Ollama is working"""
-    if not is_ollama_available():
-        return jsonify({"status": "disabled", "message": "Ollama not initialized"}), 503
-    
-    try:
-        test_response = rag_system.generate_response("Bonjour, comment ça va ?", use_llm=True)
-        response_text = test_response.get("response", "")
-        return jsonify({
-            "status": "working",
-            "response_preview": response_text[:100] + "..."
-        })
-    except Exception as e:
-        return jsonify({"status": "error", "error": str(e)}), 500
-
-@app.route('/test/prolog', methods=['GET'])
-def test_prolog():
-    """Test if Prolog is working"""
-    try:
-        res = list(prolog.query("yafi_definition(X)"))
-        if res:
-            return jsonify({"status": "working", "prolog_result": str(res[0])})
-        else:
-            return jsonify({"status": "no_data", "message": "Prolog queries work but no YAFI data"}), 200
-    except Exception as e:
-        return jsonify({"status": "error", "error": str(e)}), 500
-
-@app.route('/test/components', methods=['GET'])
-def test_components():
-    """Test all components"""
-=======
     start_time = time.time()
     data = request.json or {}
     user_message = data.get('message', '').lower().strip()
@@ -524,31 +190,18 @@ def test_components():
         current_entity = str(profile.get('ecole')).lower().strip()
         print(f"DEBUG: Pulled current_entity '{current_entity}' from Memory!")
     
-    # Brute-force entity detection as safety net (High Priority Overrides)
-    found_brute = None
-    if 'ests' in msg_low or 'est safi' in msg_low: found_brute = 'ests'
-    elif 'um6p' in msg_low: found_brute = 'um6p'
-    elif 'emsi' in msg_low: found_brute = 'emsi'
-    elif 'uir' in msg_low or 'universite internationale de rabat' in msg_low: found_brute = 'uir'
-    elif 'ensa' in msg_low: found_brute = 'ensa'
-    elif 'encg' in msg_low: found_brute = 'encg'
-    elif 'iscae' in msg_low: found_brute = 'iscae'
-    elif 'enam' in msg_low: found_brute = 'enam'
-    elif 'uik' in msg_low or 'universiapolis' in msg_low: found_brute = 'uik'
-    elif 'isitt' in msg_low: found_brute = 'isitt'
-    elif 'ehtp' in msg_low: found_brute = 'ehtp'
-    elif 'inpt' in msg_low: found_brute = 'inpt'
-    elif 'insea' in msg_low: found_brute = 'insea'
-    elif 'emi' in msg_low and 'emsi' not in msg_low: found_brute = 'emi'
-    elif 'ena' in msg_low and 'ensa' not in msg_low: found_brute = 'ena'
-    elif 'medecine' in msg_low or 'médecine' in msg_low: found_brute = 'medecine'
-    elif 'architecture' in msg_low: found_brute = 'architecture'
-    elif 'cursussup' in msg_low: found_brute = 'cursussup'
-    elif 'minhaty' in msg_low: found_brute = 'minhaty'
-
-    if found_brute:
-        current_entity = found_brute
-        print(f"DEBUG: Brute-force override active: '{current_entity}'")
+    # Brute-force entity detection (Find ALL mentioned)
+    found_entities = []
+    for entity in KNOWN_ENTITIES:
+        if entity in msg_low:
+            found_entities.append(entity)
+    
+    # Prioritize 'ecole' over others if found
+    if found_entities:
+        current_entity = found_entities[0]
+        print(f"DEBUG: Brute-force detected entities: {found_entities}")
+        # Sync all to profile for later comparison
+        profile = user_memory.update(current_session_id, {"found_entities": found_entities})
     
     if not current_entity:
         current_entity = None
@@ -578,12 +231,14 @@ def test_components():
             print(f"BRUTE FORCE MATCH: {detected_intent}")
 
     # 1b. Brute Force Safety Net
-    if not detected_intent and any(w in msg_low for w in ["bourse", "financement", "argent", "payer"]):
-        detected_intent = "SCHOLARSHIPS"
-    if not detected_intent and any(w in msg_low for w in ["internat", "clubs", "cantine", "manger", "dormir", "vie"]):
-        detected_intent = "CAMPUS_LIFE"
-    if not detected_intent and any(w in msg_low for w in ["frais", "prix", "scolarite", "budget", "combien"]):
-        detected_intent = "FINANCIALS"
+    if not detected_intent and any(w in msg_low for w in ["salaire", "débouché", "insertion", "taux", "salary"]):
+        detected_intent = "SALARY_INFO"
+    if not detected_intent and any(w in msg_low for w in ["seuil", "note minimale", "note de coupure", "admission"]):
+        detected_intent = "ADMISSION_THRESHOLD"
+    if not detected_intent and any(w in msg_low for w in ["minhaty", "cursussup", "dossier", "inscription", "procedure", "procédure"]):
+        detected_intent = "PROCEDURES_INFO"
+    if not detected_intent and any(w in msg_low for w in ["peut faire", "compatible", "est-ce que", "possible", "recommande", "conseil"]):
+        detected_intent = "COMPATIBILITY_CHECK"
     
     if not detected_intent and any(w in msg_low for w in ["bac pc", "bac svt", "bac sm", "bac eco", "bac lettres", "bac technique"]):
         detected_intent = "BAC_INFO"
@@ -593,13 +248,11 @@ def test_components():
     if not detected_intent and intent_classifier and intent_classifier.enabled:
         detected_intent = intent_classifier.classify(user_message_normalized, threshold=0.40)
         
-    # 2. Comparison Brute Force Fallback
-    if not detected_intent:
-        if any(w in msg_low for w in ["comparer", "difference", " vs ", " entre "]):
-            schools_found = [ent for ent in KNOWN_ENTITIES if ent in msg_low]
-            if len(schools_found) >= 2:
-                detected_intent = "COMPARE_SCHOOLS"
-                print(f"BRUTE FORCE MATCH: {detected_intent}")
+    # 2. Comparison Logic (High Priority if 2+ schools found)
+    if not detected_intent or detected_intent == "CALCULATE_SCORE":
+        if len(found_entities) >= 2 or any(w in msg_low for w in ["comparer", "difference", " vs ", " entre "]):
+            detected_intent = "COMPARE_SCHOOLS"
+            print(f"BRUTE FORCE MATCH: {detected_intent}")
 
     # 3. Single School Intent Fallback
     if not detected_intent and any(w in msg_low for w in ["ville", "où se trouve", "situe", "emplacement", "opportunité", "concurrence"]):
@@ -607,8 +260,6 @@ def test_components():
 
     if not detected_intent and intent_classifier and intent_classifier.enabled:
         detected_intent = intent_classifier.classify(user_message_normalized, threshold=0.40)
-
-    print(f"  Intent: {detected_intent}, Entity: {current_entity}")
 
     source_detected = "hybrid_expert_llm" if detected_intent else "ollama_advanced"
     # ========================================================================
@@ -618,9 +269,9 @@ def test_components():
     expert_found = False
 
     # 1. GEOGRAPHY & CITY SEARCH (High Priority)
-    if not expert_found and (detected_intent in ["CITY_INFOS", "WHERE_TO_STUDY"] or any(c in msg_low for c in ["safi", "rabat", "casablanca", "casabla", "agadir", "marrakech", "fes", "tanger", "settat", "meknes", "benguerir"])):
+    if not expert_found and (detected_intent in ["CITY_INFOS", "WHERE_TO_STUDY"] or any(c in msg_low for c in ["casablanca", "rabat", "marrakech", "fes", "tanger", "agadir", "safi", "kenitra", "oujda", "settat", "meknes", "benguerir", "oujda", "kenitra"])):
         city_match = None
-        for c in ["casablanca", "casabla", "rabat", "marrakech", "fes", "tanger", "agadir", "safi", "kenitra", "oujda", "settat", "meknes", "benguerir"]:
+        for c in ["casablanca", "rabat", "marrakech", "fes", "tanger", "agadir", "safi", "kenitra", "oujda", "settat", "meknes", "benguerir", "tetouan", "nador"]:
             if c in msg_low: 
                 city_match = c if c != "casabla" else "casablanca"
                 break
@@ -628,8 +279,6 @@ def test_components():
         if city_match:
             try:
                 city_prolog = city_match.capitalize()
-                # Exception withdrawn: Prolog uses 'Benguerir' without accent.
-                
                 res_loc = safe_query(f"localisation(S, '{city_prolog}')")
                 if res_loc:
                     schools = sorted(list(set([r['S'].upper() for r in res_loc])))
@@ -637,28 +286,30 @@ def test_components():
                     # Filter by Public/Private if requested
                     is_req_pub = any(w in msg_low for w in ["public", "publique"])
                     is_req_priv = any(w in msg_low for w in ["privé", "privee", "prive"])
+                    is_req_ing = any(w in msg_low for w in ["ingénierie", "ingenierie", "ingenieur", "ingénieur"])
                     
-                    if is_req_pub or is_req_priv:
-                        filtered = []
-                        for s in schools:
-                            dt = safe_query(f"detail_ecole('{s.lower()}', _, _, TF)")
-                            if dt:
-                                is_sch_pub = "public" in str(dt[0]['TF']).lower() or "gratuit" in str(dt[0]['TF']).lower()
-                            else:
-                                # Default to public if no detail is found unless explicitly known as private
-                                is_sch_pub = s.lower() not in ["emsi", "uir", "uik", "supinfo", "hem", "esca", "uiass", "upsat", "eac", "isitt prive"]
-
-                            if is_req_pub and is_sch_pub: filtered.append(s)
-                            elif is_req_priv and not is_sch_pub: filtered.append(s)
-                        if filtered: schools = filtered; stype_l = "Publiques" if is_req_pub else "Privées"; response_text = f"📍 **Établissements {stype_l} à {city_prolog} :**\n"
-                        else: response_text = f"📍 **Établissements à {city_prolog} :**\n"
-                    else:
-                        response_text = f"📍 **Établissements à {city_prolog} :**\n"
+                    filtered = []
+                    for s in schools:
+                        if is_req_ing and not any(k in s.lower() for k in ["ensa", "ensam", "emi", "ehtp", "inpt", "ensias", "ingenieur", "ingenierie", "emsi", "uir"]): continue
+                        
+                        dt = safe_query(f"detail_ecole('{s.lower()}', _, _, TF)")
+                        is_sch_pub = "public" in str(dt[0]['TF']).lower() or "gratuit" in str(dt[0]['TF']).lower() if dt else (s.lower() not in ["emsi", "uir", "uik", "supinfo", "hem", "esca"])
+                        
+                        if is_req_pub and not is_sch_pub: continue
+                        if is_req_priv and is_sch_pub: continue
+                        filtered.append(s)
                     
+                    if filtered: schools = filtered
+                    
+                    response_text = f"📍 **Établissements à {city_prolog} :**\n"
                     for s in schools: response_text += f"- {s}\n"
                     
+                    # Add stats
                     res_opp = safe_query(f"ville_opportunite('{city_match}', O)")
-                    if res_opp: response_text += f"\n💡 **Opportunités :** {clean_text(res_opp[0]['O'])}\n"
+                    if res_opp: response_text += f"\n💡 **Opportunité :** {clean_text(res_opp[0]['O'])}\n"
+                    
+                    res_con = safe_query(f"ville_concurrence('{city_prolog}')")
+                    if res_con: response_text += f"\n⚠️ **Concurrence :** TRÈS FORTE dans cette ville.\n"
                     
                     source_detected = "prolog_expert"
                     expert_found = True
@@ -686,72 +337,221 @@ def test_components():
 
         except: pass
 
-    # 2. SCHOOL TYPE SEARCH (Public/Private)
-    if not expert_found and any(w in msg_low for w in ["publique", "public", "privé", "privee", "prive"]):
-        is_public = any(w in msg_low for w in ["public", "publique"])
-        try:
-            res = safe_query(f"detail_ecole(ID, Name, _, TypeFee)")
-            if res:
-                found = []
-                for r in res:
-                    tfee = str(r['TypeFee']).lower()
-                    is_sch_pub = "public" in tfee or "gratuit" in tfee
-                    
-                    if is_public and is_sch_pub:
-                        found.append(clean_text(r['Name']))
-                    elif not is_public and not is_sch_pub:
-                        found.append(clean_text(r['Name']))
+    # 2b. COMPARE SCHOOLS (Logical cross-referencing)
+    if not expert_found and detected_intent == "COMPARE_SCHOOLS":
+        schools_to_compare = found_entities if len(found_entities) >= 2 else [s for s in KNOWN_ENTITIES if s in msg_low]
+        if schools_to_compare:
+            expert_context = "COMPARAISON EXPERTE :\n"
+            for s in schools_to_compare[:3]:
+                res_d = safe_query(f"definition('{s}', D)")
+                if not res_d: res_d = safe_query(f"definition('{s.upper()}', D)")
+                if res_d:
+                    expert_context += f"- {s.upper()} : {clean_text(res_d[0]['D'])}\n"
                 
-                if found:
-                    stype_label = "Publics" if is_public else "Privés"
-                    response_text = f"🏛️ **Établissements {stype_label} répertoriés :**\n"
-                    for s in sorted(list(set(found)))[:10]:
-                        response_text += f"- {s}\n"
+                res_f = safe_query(f"detail_ecole('{s}', _, _, F)")
+                if res_f:
+                    expert_context += f"  (Frais: {clean_text(res_f[0]['F'])})\n"
+            
+            expert_found = True
+            source_detected = "prolog_expert"
+
+    # 3. SCHOLARSHIPS / BOURSES
+    if not expert_found and (detected_intent == "SCHOLARSHIPS" or any(w in msg_low for w in ["bourse", "financement"])):
+        sid = normalize_school_id(current_entity) if current_entity else normalize_school_id(msg_low)
+        if sid:
+            sid_clean = sanitize_prolog(sid)
+            try:
+                res = safe_query(f"bourse_merite('{sid_clean}', Type, Cond)")
+                if not res: res = safe_query(f"bourse_merite('{sid_clean.upper()}', Type, Cond)")
+                if res:
+                    response_text = f"🎓 **Bourses disponibles à {sid.upper()} :**\n\n"
+                    for r in res:
+                        response_text += f"- **{clean_text(r['Type'])}** : {clean_text(r['Cond'])}\n"
                     source_detected = "prolog_expert"
                     expert_found = True
-        except: pass
+            except: pass
 
-    # 3. SPECIFIC SCHOOL DETAILS (Fees, Majors, Campus)
-    # Guard: Skip expert block for greetings/small-talk even if sticky memory has an entity
+    # 4. SALARY / SALAIRE / DEBOUCHES
+    if not expert_found and (detected_intent == "SALARY_INFO" or any(w in msg_low for w in ["salaire", "salary", "débouché", "debouche"])):
+        sid = normalize_school_id(current_entity) if current_entity else normalize_school_id(msg_low)
+        if sid:
+            sid_clean = sanitize_prolog(sid)
+            try:
+                res_sal = safe_query(f"average_salary('{sid_clean}', S)")
+                if not res_sal: res_sal = safe_query(f"average_salary('{sid_clean.lower()}', S)")
+                res_emp = safe_query(f"employment_rate('{sid_clean}', R)")
+                if not res_emp: res_emp = safe_query(f"employment_rate('{sid_clean.lower()}', R)")
+                
+                if res_sal or res_emp:
+                    response_text = f"💼 **Débouchés après {sid.upper()} :**\n\n"
+                    if res_sal: response_text += f"- **Salaire moyen** : {res_sal[0]['S']} DH/mois\n"
+                    if res_emp: response_text += f"- **Taux d'insertion** : {int(float(res_emp[0]['R']) * 100)}%\n"
+                    source_detected = "prolog_expert"
+                    expert_found = True
+            except: pass
+
+    # 5. ADMISSION THRESHOLDS (SEUILS)
+    if not expert_found and detected_intent == "ADMISSION_THRESHOLD":
+        sid = normalize_school_id(current_entity) if current_entity else normalize_school_id(msg_low)
+        if sid:
+            try:
+                res = safe_query(f"seuil('{sid.upper()}', 2023, V)")
+                if not res: res = safe_query(f"seuil('{sid}', 2023, V)")
+                if res:
+                    response_text = f"📊 **Seuil d'admission {sid.upper()} (2023) :** {res[0]['V']}/20\n\n*Note : Les seuils varient chaque année selon la demande.*"
+                    source_detected = "prolog_expert"
+                    expert_found = True
+            except: pass
+
+    # 6. PROCEDURES & ADMINISTRATIVE (Minhaty/CursusSup)
+    if not expert_found and (detected_intent == "PROCEDURES_INFO" or any(w in msg_low for w in ["minhaty", "cursussup"])):
+        target = "Minhaty" if "minhaty" in msg_low else ("CursusSup" if "cursussup" in msg_low else None)
+        if not target and current_entity: target = current_entity
+        if not target and "management" in msg_low: target = "isitt prive"
+        
+        if target:
+            try:
+                # Try specific procedure names first
+                res = None
+                if target == "Minhaty": res = safe_query("procedure('Dossier Minhaty', D)")
+                
+                if not res: res = safe_query(f"procedure('{sanitize_prolog(target)}', D)")
+                if not res: res = safe_query(f"definition('{sanitize_prolog(target).upper()}', D)")
+                if not res: res = safe_query(f"definition('{sanitize_prolog(target)}', D)")
+                if not res: res = safe_query(f"definition('{target.capitalize()}', D)")
+                
+                if res:
+                    response_text = f"📝 **Infos Procédure : {target.upper()}**\n\n{clean_text(res[0]['D'])}\n"
+                    source_detected = "prolog_expert"
+                    expert_found = True
+            except: pass
+
+    # 7. COMPATIBILITY & RECOMMENDATION (Bac vs Domaine)
+    if not expert_found and (detected_intent == "COMPATIBILITY_CHECK" or any(w in msg_low for w in ["bac", "filiere", "filière"])):
+        # Extract Bac and Domain
+        bac_detected = (entities.get('bac') or profile.get('bac') or '').lower() if entities else None
+        if not bac_detected:
+            for b in ["pc", "svt", "sm", "eco", "lettres", "tech"]:
+                if f"bac {b}" in msg_low or f" bac{b}" in msg_low: bac_detected = b; break
+        
+        domaine_detected = None
+        for d in ["ingenierie", "medecine", "commerce", "informatique", "droit", "lettres", "science", "technique"]:
+            if d in msg_low or (d == "ingenierie" and "ingenieur" in msg_low): domaine_detected = d; break
+            
+        if bac_detected and domaine_detected:
+            try:
+                # Specific Medicine Logic
+                if domaine_detected == "medecine":
+                    match = re.search(r"\b(1\d|20|10)(\.[0-9]+)?\b", msg_low)
+                    grade = float(match.group()) if match else (profile.get('moyenne') if profile else None)
+                    if grade:
+                        res_m = safe_query(f"peut_faire_medecine('{bac_detected.upper()}', {grade}, R)")
+                        if res_m:
+                            response_text = f"🩺 **Diagnostic Médecine ({bac_detected.upper()}, {grade}/20) :**\n\n"
+                            response_text += f"Verdict : {clean_text(res_m[0]['R'])}\n"
+                            source_detected = "prolog_expert"
+                            expert_found = True
+                
+                if not expert_found:
+                    res = safe_query(f"check_compatibilite('{bac_detected}', {domaine_detected}, Statut, Msg)")
+                    if res:
+                        statut = str(res[0]['Statut']).upper()
+                        emojis = {"EXCELLENT": "✅", "POSSIBLE": "⚠️", "IMPOSSIBLE": "❌", "INCONNU": "❓"}
+                        response_text = f"🛡️ **Compatibilité {bac_detected.upper()} ➔ {domaine_detected.capitalize()}**\n\n"
+                        response_text += f"Statut : {emojis.get(statut, '')} **{statut}**\n"
+                        response_text += f"Conseil : {clean_text(res[0]['Msg'])}\n"
+                        source_detected = "prolog_expert"
+                        expert_found = True
+            except: pass
+
+    # 8. BAC DETAILS (Advantages/Limits/Ideals)
+    if not expert_found and (detected_intent == "BAC_INFO" or any(w in msg_low for w in ["avantage", "limite", "ideal", "idéal"])):
+        bac_target = (entities.get('bac') or profile.get('bac') or '').upper() if entities else None
+        if not bac_target:
+            for b in ["PC", "SVT", "SM", "ECO", "LITT", "TECH"]:
+                if f"bac {b.lower()}" in msg_low: bac_target = b; break
+        
+        if bac_target:
+            try:
+                res = safe_query(f"detail_bac('{bac_target}', Ideales, Avantages, Limites, Conseil)")
+                if res:
+                    response_text = f"🎓 **Analyse Bac {bac_target} :**\n\n"
+                    response_text += f"✨ **Filières Idéales** : {clean_text(res[0]['Ideales'])}\n"
+                    response_text += f"✅ **Avantages** : {clean_text(res[0]['Avantages'])}\n"
+                    response_text += f"⚠️ **Limites** : {clean_text(res[0]['Limites'])}\n"
+                    response_text += f"💡 **Conseil** : {clean_text(res[0]['Conseil'])}\n"
+                    source_detected = "prolog_expert"
+                    expert_found = True
+            except: pass
+
+    # 9. SPECIFIC SCHOOL DETAILS (Fees, Majors, Campus)
     is_greeting = any(w in msg_low for w in ["bonjour", "salut", "hello", "hi", "bonsoir", "merci", "ok", "oui", "non", "salam", "cv", "ça va"])
-    is_pure_greeting = is_greeting and not found_brute and not any(w in msg_low for w in ["frais", "info", "parle", "école", "ecole", "filière", "spécialité", "internat"])
+    is_pure_greeting = is_greeting and not found_entities and not any(w in msg_low for w in ["frais", "info", "parle", "école", "ecole", "filière", "spécialité", "internat"])
     
     if not expert_found and not is_pure_greeting and (detected_intent in ["FINANCIALS", "CAMPUS_LIFE", "SCHOOL_MAJORS", "SALARY_INFO"] or current_entity):
         sid = normalize_school_id(current_entity) if current_entity else normalize_school_id(msg_low)
         if sid:
             sid_clean = sanitize_prolog(sid)
+            res_d = None
             factual_resp = f"🎓 **Informations Expertes : {sid.upper()}**\n\n"
             inner_hit = False
             
             try:
                 is_general = any(w in msg_low for w in ["parle", "info", "tout", "détail", "detail", "c'est quoi"]) or detected_intent == "GENERAL_INFO"
                 
-                # 1. Definition (Always first if general, or if explicitly asked)
-                if is_general or "c'est quoi" in msg_low:
+                # 1. Definition / Localization
+                if is_general or any(w in msg_low for w in ["c'est quoi", "où", "ou se trouve", "emplacement", "lieu", "site"]):
                     res_d = safe_query(f"get_definition('{sid_clean}', Nom, Detail)")
                     if not res_d: res_d = safe_query(f"get_definition('{sid_clean.upper()}', Nom, Detail)")
+                    if not res_d: res_d = safe_query(f"definition('{sid_clean}', Detail)")
+                    if not res_d: res_d = safe_query(f"definition('{sid_clean.upper()}', Detail)")
+                    if not res_d: res_d = safe_query(f"definition('{sid_clean.capitalize()}', Detail)")
                     
                     if res_d: 
-                        factual_resp += f"ℹ️ **Infos :** {clean_text(res_d[0]['Nom'])}. {clean_text(res_d[0]['Detail'])}\n"
+                        name_val = res_d[0].get('Nom') or res_d[0].get('N') or sid_clean.upper()
+                        factual_resp += f"ℹ️ **Infos :** {clean_text(name_val)}. {clean_text(res_d[0]['Detail']) if 'Detail' in res_d[0] else clean_text(res_d[0]['D'])}\n"
                         inner_hit = True
                     else:
                         res_d2 = safe_query(f"definition('{sid_clean}', Def)")
                         if not res_d2: res_d2 = safe_query(f"definition('{sid_clean.upper()}', Def)")
+                        if not res_d2: res_d2 = safe_query(f"definition('{sid_clean.capitalize()}', Def)")
                         if res_d2:
                             factual_resp += f"ℹ️ **Infos :** {clean_text(res_d2[0]['Def'])}\n"
                             inner_hit = True
+                    
+                    # Add Geolocation if found
+                    res_loc = safe_query(f"localisation('{sid_clean.upper()}', City)")
+                    if not res_loc: res_loc = safe_query(f"localisation('{sid_clean}', City)")
+                    if res_loc:
+                        factual_resp += f"📍 **Localisation :** {clean_text(res_loc[0]['City'])}\n"
+                        inner_hit = True
 
                 # 2. Financials
                 if is_general or "frais" in msg_low or "prix" in msg_low or detected_intent == "FINANCIALS":
                     res = safe_query(f"detail_ecole('{sid_clean}', _, _, F)")
                     if res: factual_resp += f"💰 **Frais :** {clean_text(res[0]['F'])}\n"; inner_hit = True
-                    elif sid.lower() in ["ensa", "encg", "fst", "est", "ests", "ensias", "emi", "ehtp", "inpt", "ensam"]:
+                    else:
+                        res_f = safe_query(f"frais_scolarite('{sid_clean}', M, N)")
+                        if not res_f: res_f = safe_query(f"frais_scolarite('{sid_clean.lower()}', M)")
+                        if res_f:
+                            m = res_f[0].get('M') or res_f[0].get('MoutantAnnuel')
+                            factual_resp += f"💰 **Frais :** {m} DH/an (estimation)\n"; inner_hit = True
+                        
+                    if not inner_hit and sid.lower() in ["ensa", "encg", "fst", "est", "ests", "ensias", "emi", "ehtp", "inpt", "ensam"]:
                         factual_resp += "💰 **Frais :** Gratuit (Établissement Public)\n"; inner_hit = True
                 
-                # 3. Campus
-                if is_general or any(w in msg_low for w in ["vie", "internat", "clubs"]) or detected_intent == "CAMPUS_LIFE":
+                # 3. Campus Life (Internat, Clubs, Cantine)
+                if is_general or any(w in msg_low for w in ["vie", "internat", "clubs", "cantine", "manger"]) or detected_intent == "CAMPUS_LIFE":
                     res_i = safe_query(f"internat('{sid_clean}', I)")
                     if res_i: factual_resp += f"🏠 **Internat :** {clean_text(res_i[0]['I'])}\n"; inner_hit = True
+                    
+                    res_c = safe_query(f"clubs('{sid_clean}', C)")
+                    if not res_c: res_c = safe_query(f"clubs('{sid_clean.lower()}', C)")
+                    if res_c: factual_resp += f"🎭 **Clubs :** {clean_text(res_c[0]['C'])}\n"; inner_hit = True
+                    
+                    res_can = safe_query(f"cantine('{sid_clean}', Ca)")
+                    if not res_can: res_can = safe_query(f"cantine('{sid_clean.lower()}', Ca)")
+                    if res_can: factual_resp += f"🍴 **Cantine :** {clean_text(res_can[0]['Ca'])}\n"; inner_hit = True
                 
                 # 4. Majors
                 if is_general or "filière" in msg_low or "spécialité" in msg_low or detected_intent == "SCHOOL_MAJORS":
@@ -760,26 +560,15 @@ def test_components():
                         majors = sorted(list(set([clean_text(r['Nom']) for r in res])))
                         factual_resp += f"📚 **Spécialités :** {', '.join(majors[:5])}\n"; inner_hit = True
                 
-                # 5. Definition Fallback (Only if nothing matched at all)
-                if not inner_hit:
-                    res_d = safe_query(f"get_definition('{sid_clean}', Nom, Detail)")
-                    if not res_d: res_d = safe_query(f"get_definition('{sid_clean.upper()}', Nom, Detail)")
-                    if res_d: factual_resp += f"ℹ️ **Infos :** {clean_text(res_d[0]['Nom'])}. {clean_text(res_d[0]['Detail'])}\n"; inner_hit = True
-                    else:
-                        res_d2 = safe_query(f"definition('{sid_clean}', Def)")
-                        if not res_d2: res_d2 = safe_query(f"definition('{sid_clean.upper()}', Def)")
-                        if res_d2: factual_resp += f"ℹ️ **Infos :** {clean_text(res_d2[0]['Def'])}\n"; inner_hit = True
-
                 if inner_hit:
                     response_text = factual_resp
                     source_detected = "prolog_expert"
                     expert_found = True
             except: pass
 
-    # 4. ADVICE & STRATEGY (Non-Exclusive, flows into LLM)
+    # 4. ADVICE & STRATEGY
     if not expert_found:
         if detected_intent == "BAC_INFO":
-            # Extract Bac type
             bt = "PC" if "pc" in msg_low else ("SVT" if "svt" in msg_low else ("SM" if "sm" in msg_low else ("ECO" if "eco" in msg_low else None)))
             if bt:
                 try:
@@ -788,205 +577,160 @@ def test_components():
                 except: pass
             else: expert_context = "CONSIGNE: Propose ton aide pour les bacs PC, SVT, SM ou ÉCONOMIE."
 
-        elif detected_intent == "ORIENTATION_STRATEGY":
+        elif detected_intent == "ORIENTATION_STRATEGY" or "conseil" in msg_low:
             match = re.search(r"\b(1\d|20|10)(\.[0-9]+)?\b", msg_low)
-            grade = float(match.group()) if match else None
+            grade = float(match.group()) if match else (profile.get('moyenne') if profile else None)
+            bac = (entities.get('bac') or profile.get('bac') or '_') if entities else '_'
+            
             if grade:
                 try:
-                    res = safe_query(f"strategie_profil({grade}, _, S)")
-                    if res: expert_context = f"STRATÉGIE ({grade}/20): {clean_text(res[0]['S'])}"
+                    res = safe_query(f"strategie_profil({grade}, '{sanitize_prolog(bac)}', S)")
+                    if res: expert_context = f"STRATÉGIE ({grade}/20, Bac {bac}): {clean_text(res[0]['S'])}"
                 except: pass
-            else: expert_context = "CONSIGNE: Demande la moyenne au bac pour une stratégie."
+            else: expert_context = "CONSIGNE: Demande la moyenne au bac pour une stratégie précise."
 
-        elif detected_intent == "GENERAL_INFO" or any(w in msg_low for w in ["lmd", "bts", "dut"]):
+        elif detected_intent == "GENERAL_INFO" or any(w in msg_low for w in ["lmd", "bts", "dut", "data scientist", "informatique", "génie civil", "architecture"]):
             target = "LMD" if "lmd" in msg_low else ("BTS" if "bts" in msg_low else ("DUT" if "dut" in msg_low else None))
+            if not target:
+                if "data scientist" in msg_low or "informatique" in msg_low: target = "Génie Informatique"
+                elif "génie civil" in msg_low: target = "Génie Civil"
+                elif "architecture" in msg_low: target = "Architecture"
+
             if target:
-                res = safe_query(f"get_definition('{target}', N, D)")
-                if res: expert_context = f"DÉFINITION {target}: {clean_text(res[0]['N'])}. {clean_text(res[0]['D'])}"
+                res = safe_query(f"definition('{target}', D)")
+                if not res: res = safe_query(f"definition('{target.upper()}', D)")
+                if res: expert_context = f"DÉFINITION {target}: {clean_text(res[0]['D'])}"
+                
+                # Also list schools for this major if relevant
+                res_s = safe_query(f"filiere(_, _, '{target}', S, _, _)")
+                if not res_s: res_s = safe_query(f"filiere(_, _, _, S, '{target}', _)")
+                if res_s:
+                    schools = list(set([str(r['S']).upper() for r in res_s]))[:5]
+                    expert_context += f"\nÉtablissements proposant cette filière: {', '.join(schools)}"
         
-        # If still empty, use a generic orientator prompt
+        elif any(w in msg_low for w in ["prive", "privé", "public", "publique"]) and any(w in msg_low for w in ["avantage", "limite", "différence", "comparer", "vs"]):
+             try:
+                 res_pub = safe_query("info_type(public_regule, D)")
+                 res_priv = safe_query("info_type(prive, D)")
+                 if res_pub and res_priv:
+                     expert_context = f"COMPARAISON PUBLIC/PRIVÉ :\n- Public : {clean_text(res_pub[0]['D'])}\n- Privé : {clean_text(res_priv[0]['D'])}"
+             except: pass
+        
+        elif not expert_found and re.search(r"(\d{4,6})", msg_low) and any(w in msg_low for w in ["budget", "frais", "prix", "dh", "payant", "moins de"]):
+            budget_match = re.search(r"(\d{4,6})", msg_low)
+            max_budget = int(budget_match.group(1))
+            domain = "Génie Informatique" if "info" in msg_low else \
+                     ("Architecture" if "archi" in msg_low else \
+                     ("Management" if "management" in msg_low or "commerce" in msg_low else \
+                     ("Ingénieur" if "ingénier" in msg_low or "ingenier" in msg_low else "Ingénierie")))
+            try:
+                res_b = safe_query(f"find_best_school_fuzzy('{sanitize_prolog(domain)}', {max_budget}, S)")
+                if res_b:
+                    schools = list(set([str(r['S']).upper() for r in res_b]))
+                    expert_context = f"Établissements pour {domain} avec un budget maximum de {max_budget} DH/an :\n"
+                    expert_context += f"- {', '.join(schools[:10])}\n"
+                    expert_context += "CONSIGNE: Utilise un ton de 'Grand Frère' pour expliquer que les écoles publiques sont les meilleures options budget-friendly."
+            except: pass
+
         if not expert_context:
             expert_context = "INSTRUCTION: Tu es YAFI, expert en orientation au MAROC. Aide l'utilisateur à choisir une école ou un domaine."
 
-    # --- PHASE 3: HYBRID ENGINE (PROLOG + RAG) ---
-    print(f"[PHASE 3] Hybrid Engine Query (Determinism check)")
-    
-    # CRITICAL FIX: If response_text is ALREADY set by an expert handler (Score, Bourse, etc.)
-    # and it is NOT a "CONSIGNE" or recommendation that needs warmth, return it immediately.
-    # This prevents the LLM from overwriting deterministic facts with hallucinations.
-    needs_llm_warmth = any(w in expert_context for w in ["ORIENTATION", "STRATÉGIE", "CONSEIL"])
-    has_deterministic_resp = response_text and not needs_llm_warmth
-    
-    if (not response_text or expert_context) and not has_deterministic_resp:
-        try:
-            rag_context = ""
-            # On ne tente le RAG que si le système expert n'a pas été suffisant
-            if not expert_context and not response_text:
-                rag_result = rag_system.generate_response(user_message, session_id=current_session_id, profile=profile)
-                rag_context = rag_result.get("response", "")
-            
-            # --- PHASE 3: AUGMENTED GENERATION (The Hybrid Final Step) ---
-            final_output_context = (expert_context or "") + (rag_context or "")
-            
-            # LEVEL 2 FIX: Proactively sync THE TOPIC to memory BEFORE generating 
-            # (prevents amnesia during streaming or concurrent messages)
-            if current_entity:
-                user_memory.update(current_session_id, {"last_topic": current_entity})
-                
-            # SAFE PRINT FOR WINDOWS
-            try:
-                print(f"DEBUG: Combined Hybrid Context:\n{final_output_context}")
-            except UnicodeEncodeError:
-                print(f"DEBUG: Combined Hybrid Context (ASCII):\n{final_output_context.encode('ascii', 'ignore').decode('ascii')}")
-            
-            if should_stream:
-                print("  Streaming Hybrid response...")
-                def hybrid_stream():
-                    yield json.dumps({"type": "start"}) + "\n"
-                    full_resp = ""
-                    # --- PHASE 4: LLM GENERATION ---
-                    print(f"[PHASE 4] LLM Generation (Streaming)")
-                    for chunk in llm_engine.ask_stream(user_message, expert_context=final_output_context, user_profile=profile):
-                        full_resp += chunk
-                        yield json.dumps({"token": chunk}) + "\n"
-                    
-                    # Sauvegarde finale en fin de stream
-                    user_memory.add_message(current_session_id, 'user', user_message)
-                    user_memory.add_message(current_session_id, 'assistant', full_resp)
-                    elapsed = round((time.time() - start_time) * 1000)
-                    yield json.dumps({
-                        "type": "end", 
-                        "full_response": full_resp, 
-                        "response_time_ms": elapsed, 
-                        "entities": entities,
-                        "source": "hybrid_expert_llm" if expert_context else "ollama_advanced"
-                    }) + "\n"
-                
-                return Response(hybrid_stream(), mimetype='application/x-ndjson')
+    # 10. RED TEAMING & GUARDRAILS
+    red_teaming_alert = False
+    if not expert_found:
+        bad_keywords = ["python", "script", "hacker", "pirater", "foot", "joueur", "cuisine", "recette", "sorbonne", "lyon", "paris", "astrologie", "zodiaque"]
+        if any(w in msg_low for w in bad_keywords):
+            red_teaming_alert = True
+            if any(w in msg_low for w in ["lyon", "sorbonne", "paris", "france"]):
+                expert_context = "CONSIGNE: Tu es YAFI, expert uniquement pour le MAROC. Réponds poliment que tu ne couvres pas les études en France ou à l'étranger."
+            elif any(w in msg_low for w in ["python", "script", "hacker", "pirater", "recette", "cuisine"]):
+                expert_context = "CONSIGNE: Tu es un conseiller en orientation, pas un assistant technique ou culinaire. Refuse poliment de sortir de ton rôle."
             else:
-                # Mode non-streaming
-                response_text = llm_engine.ask(user_message, expert_context=final_output_context, user_profile=profile)
-                source_detected = "hybrid_expert_llm"
-        except Exception as e:
-            print(f"  Hybrid Error: {e}")
-            if not response_text:
-                response_text = "Désolé, je rencontre une petite difficulté technique. Peux-tu reformuler ta question ?"
+                expert_context = "CONSIGNE: Tu es YAFI, conseiller expert d'orientation scolaire au Maroc. Recadre poliment l'utilisateur sur le domaine académique."
+
+    # --- PHASE 3: HYBRID ENGINE (HUMANIZATION) ---
+    # Merge response_text (deterministic) and expert_context (advisory) into a single Expert Knowledge packet
+    expert_knowledge = (response_text or "") + "\n" + (expert_context or "")
     
-    # --- PHASE 6: FINALISATION & PERSISTANCE ---
-    print(f"[PHASE 6] Finalisation & Persistence")
-    if not response_text:
-        response_text = "Bonjour ! Comment puis-je vous orienter aujourd'hui ?"
-
-    user_memory.add_message(current_session_id, 'user', user_message)
-    user_memory.add_message(current_session_id, 'assistant', response_text)
-    
-    elapsed = round((time.time() - start_time) * 1000)
-    response_data = {
-        "response": response_text,
-        "response_time_ms": elapsed,
-        "source": source_detected or "fallback",
-        "entities": entities,
-        "done": True
-    }
-
-    if should_stream:
-        def stream_single():
-            yield json.dumps(response_data) + "\n"
-        return Response(stream_single(), mimetype='application/x-ndjson')
-    
-    return jsonify(response_data)
-
-# --- TEST ENDPOINTS ---
-@app.route('/test/components', methods=['GET'])
-def test_components():
->>>>>>> 3257fc1 (final)
-    status = {
-        "ollama": "✓ Enabled" if is_ollama_available() else "✗ Disabled",
-        "vector_search": "✓ Enabled" if (rag_system.vector_kb and rag_system.vector_kb.service) else "✗ Disabled",
-        "prolog": "✓ Working" if prolog else "✗ Failed",
-<<<<<<< HEAD
-        "enhanced_rag": "✓ Ready" if rag_system else "✗ Failed",
-    }
-    return jsonify(status)
-
-# ============================================================================
-# HISTORY & MANAGEMENT ENDPOINTS
-# ============================================================================
-
-@app.route('/chat/history', methods=['GET'])
-def get_chat_history():
-    """Get conversation history"""
-    session_id = request.args.get('session_id', 'default')
-    history = conversation_manager.get_history(session_id)
-    return jsonify({"session_id": session_id, "message_count": len(history), "history": history})
-
-@app.route('/chat/clear', methods=['POST'])
-def clear_chat():
-    """Clear conversation history"""
-    data = request.json
-    session_id = data.get('session_id', 'default')
-    conversation_manager.clear_session(session_id)
-    return jsonify({"message": "Cleared", "session_id": session_id})
-
-# ============================================================================
-# EXPERT PROLOG ENDPOINTS (NEURO-SYMBOLIC INTEGRATION)
-# ============================================================================
-
-@app.route('/api/evaluate', methods=['POST'])
-def evaluate_profile():
-    """
-    Advanced Prolog Expert Function:
-    Calculates the 'Score d\'Orientation' based on Bac, Budget, and City.
-    Expected JSON: {"bac": "PC", "budget": 20000, "ville": "Rabat", "ecole": "ENSA"}
-    """
-    data = request.json
-    bac = data.get('bac', 'PC').upper()
-    moyenne = data.get('moyenne', 14)
-    budget = data.get('budget', 50000)
-    ville = data.get('ville', 'Casablanca').capitalize()
-    ecole = data.get('ecole', 'ENSA').upper()
-    
+    # We ALWAYS pass through the LLM for "Humanization" unless it's a very specific debugging case
     try:
-        # Example: calculer_score_orientation('PC', 15, 30000, 'Rabat', 'ENSA', ScoreFinal).
-        q = f"calculer_score_orientation('{bac}', {moyenne}, {budget}, '{ville}', '{ecole}', Score)"
-        res = list(prolog.query(q))
+        rag_context = ""
+        if not expert_knowledge.strip():
+            # semantic RAG disabled for speed, using LLM general knowledge
+            rag_context = ""
         
-        if res:
-            score = res[0].get('Score')
-            return jsonify({
-                "status": "success", 
-                "score": score,
-                "message": f"Le score d'affinité pour {ecole} est de {score}% (Basé sur le Bac {bac}, moyenne {moyenne}, budget {budget}DH, et localisation {ville})."
-            })
+        final_prompt_context = expert_knowledge + "\n" + rag_context
+        
+        # Build the Humanization System Prompt (v2.6 Professional)
+        system_prompt = f"""Tu es YAFI, le système expert d'orientation scolaire au MAROC.
+CONSIGNE : Synthétise et humanise les 'DONNÉES EXPERTES' ci-dessous pour répondre de manière professionnelle et encourageante.
+RÈGLES :
+1. Ne change JAMAIS les faits (seuils, villes, frais, spécialités).
+2. Utilise un ton de 'Conseiller Expert' (précis et bienveillant).
+3. Sois direct et synthétique. Utilise des listes à puces.
+4. Si l'information est absente, admets-le poliment au lieu d'inventer.
+
+DONNÉES EXPERTES :
+{final_prompt_context}
+"""
+        
+        if current_entity:
+            user_memory.update(current_session_id, {"last_topic": current_entity})
+            
+        if should_stream:
+            # Re-wrap in the dynamic engine
+            def humanized_stream():
+                for chunk in llm_engine.ask_stream(user_message, expert_context=system_prompt):
+                     yield chunk
+            # Using application/x-ndjson (Newline Delimited JSON) which matches our api.ts parser
+            return Response(stream_with_context(humanized_stream()), mimetype='application/x-ndjson')
         else:
-            return jsonify({"status": "no_match", "message": "Calcul impossible avec ces paramètres."})
+            final_resp = llm_engine.ask(user_message, expert_context=system_prompt)
+            return jsonify({"response": final_resp, "source": source_detected or "hybrid_axe"})
+            
+    except Exception as e:
+        # Emergency Fallback to direct text if LLM fails
+        return jsonify({"response": expert_knowledge or "Désolé, j'ai rencontré une petite erreur technique.", "source": "emergency_fallback"})
+
+# ============================================================================
+# TEST ENDPOINTS
+# ============================================================================
+
+# ============================================================================
+# TEST ENDPOINTS
+# ============================================================================
+
+@app.route('/test/ollama', methods=['GET'])
+def test_ollama():
+    if not is_ollama_available():
+        return jsonify({"status": "disabled", "message": "Ollama not initialized"}), 503
+    try:
+        test_response = rag_system.generate_response("Bonjour", use_llm=True)
+        return jsonify({"status": "working", "response": test_response.get("response")})
     except Exception as e:
         return jsonify({"status": "error", "error": str(e)}), 500
 
-# ============================================================================
-# RUN
-# ============================================================================
+@app.route('/test/prolog', methods=['GET'])
+def test_prolog():
+    try:
+        res = list(prolog.query("yafi_definition(X)"))
+        return jsonify({"status": "working", "result": res[0] if res else "no_data"})
+    except Exception as e:
+        return jsonify({"status": "error", "error": str(e)}), 500
+
+@app.route('/test/components', methods=['GET'])
+def test_components():
+    return jsonify({
+        "ollama": is_ollama_available(),
+        "prolog": True,
+        "vector_kb": vector_kb is not None,
+        "intent_classifier": intent_classifier is not None and intent_classifier.enabled
+    })
+
+@app.route('/health', methods=['GET'])
+def health():
+    return jsonify({"status": "ok", "timestamp": time.time()})
 
 if __name__ == '__main__':
-    print("""
-    ╔════════════════════════════════════════════╗
-    ║  YAFI Server v2 (Optimized - Ollama First) ║
-    ║  Port: 5000                                ║
-    ║  Ollama: %s                             ║
-    ║  Vector Search: %s                     ║
-    ╚════════════════════════════════════════════╝
-    """ % (
-        "✓ ENABLED" if is_ollama_available() else "✗ disabled",
-        "✓ ENABLED" if (rag_system.vector_kb and rag_system.vector_kb.service) else "✗ disabled"
-    ))
-    print("\nAccess /test/components to verify setup ✓")
-    app.run(port=5000, debug=True)
-=======
-    }
-    return jsonify(status)
-
-if __name__ == '__main__':
-    print("YAFI Server v2.1 Hybrid - Port: 5000 [READY]")
-    app.run(port=5000, debug=True)
-
->>>>>>> 3257fc1 (final)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False, threaded=True)

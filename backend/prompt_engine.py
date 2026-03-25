@@ -9,20 +9,6 @@ from typing import Dict, List, Optional
 class YAFIPromptEngine:
     """Manages prompts and response formatting for YAFI chatbot"""
     
-<<<<<<< HEAD
-    SYSTEM_PROMPT = """Tu es YAFI, assistant d'orientation scolaire au Maroc. 🎓
-Réponds en français, de façon structurée avec des emojis.
-
-PROFIL: {profile_context}
-
-CONTEXTE: {context}
-
-HISTORIQUE: {history}
-
-QUESTION: {query}
-
-RÉPONSE:"""
-=======
     SYSTEM_PROMPT = """Réponds en français. Utilise UNIQUEMENT le contexte ci-dessous.
 
 RÈGLE CRITIQUE : Si l'étudiant demande une VILLE ou ÉCOLE spécifique (ex: Fès, Marrakech) et que le contexte ne parle PAS de cette ville/école, dis clairement : "Je n'ai pas d'information sur [ville/école demandée] dans ma base." NE SUBSTITUE JAMAIS une autre école/ville.
@@ -32,7 +18,6 @@ Contexte: {context}
 Question: {query}
 
 Réponse concise:"""
->>>>>>> 3257fc1 (final)
 
     FALLBACK_RESPONSE = """❌ **Information non disponible**
 
@@ -48,25 +33,6 @@ Je n'ai pas trouvé d'information fiable dans ma base de connaissances pour rép
 
 💬 Puis-je vous aider avec autre chose ?"""
 
-<<<<<<< HEAD
-    NO_CONTEXT_PROMPT = """Tu es YAFI, un assistant d'orientation académique pour les étudiants marocains.
-
-L'utilisateur a posé une question pour laquelle tu n'as pas de contexte spécifique.
-
-RÈGLES :
-1. Réponds de manière générale et utile
-2. Suggère des ressources officielles
-3. Propose de reformuler la question
-4. Reste dans ton domaine (orientation académique Maroc)
-
-HISTORIQUE :
-{history}
-
-QUESTION :
-{query}
-
-RÉPONSE :"""
-=======
     NO_CONTEXT_PROMPT = """Tu es YAFI, l'assistant expert en orientation au Maroc. 🎓
 
 La question suivante est en dehors de ma base de données précise, mais je vais t'aider avec ma logique d'expert :
@@ -81,18 +47,11 @@ HISTORIQUE: {history}
 QUESTION: {query}
 
 RÉPONSE D'EXPERT (LOGIQUE) :"""
->>>>>>> 3257fc1 (final)
 
     @staticmethod
     def format_context(search_results: List[Dict]) -> str:
         """
         Format search results into context for LLM
-        
-        Args:
-            search_results: List of search results with chunks and scores
-            
-        Returns:
-            Formatted context string
         """
         if not search_results:
             return "Aucun contexte disponible."
@@ -100,11 +59,7 @@ RÉPONSE D'EXPERT (LOGIQUE) :"""
         context_parts = []
         for i, result in enumerate(search_results, 1):
             category = result['metadata'].get('category', 'Général')
-<<<<<<< HEAD
-            text = result['text'][:300]  # Truncate for speed with small model
-=======
-            text = result['text'][:600]  # Increased from 300 for better context
->>>>>>> 3257fc1 (final)
+            text = result['text'][:600]
             score = result['score']
             
             context_parts.append(
@@ -117,13 +72,6 @@ RÉPONSE D'EXPERT (LOGIQUE) :"""
     def format_history(history: List[Dict], max_exchanges: int = 2) -> str:
         """
         Format conversation history for context
-        
-        Args:
-            history: List of conversation messages
-            max_exchanges: Maximum number of exchanges to include
-            
-        Returns:
-            Formatted history string
         """
         if not history:
             return "Aucun historique."
@@ -145,13 +93,6 @@ RÉPONSE D'EXPERT (LOGIQUE) :"""
     def add_source_citations(response: str, search_results: List[Dict]) -> str:
         """
         Add source citations to the response
-        
-        Args:
-            response: Generated response
-            search_results: Search results used for context
-            
-        Returns:
-            Response with citations
         """
         if not search_results:
             return response
@@ -189,14 +130,6 @@ RÉPONSE D'EXPERT (LOGIQUE) :"""
     ) -> str:
         """
         Build complete prompt for LLM
-        
-        Args:
-            query: User query
-            search_results: Search results for context
-            history: Conversation history
-            
-        Returns:
-            Complete formatted prompt
         """
         # Build profile summary
         profile_context = "Aucune information de profil encore."
@@ -208,25 +141,16 @@ RÉPONSE D'EXPERT (LOGIQUE) :"""
         if search_results:
             # Use strict prompt with context
             context = cls.format_context(search_results)
-<<<<<<< HEAD
-            history_text = cls.format_history(history or [])
-=======
->>>>>>> 3257fc1 (final)
             
             return cls.SYSTEM_PROMPT.format(
                 profile_context=profile_context,
                 context=context,
-<<<<<<< HEAD
-                history=history_text,
-=======
->>>>>>> 3257fc1 (final)
                 query=query
             )
         else:
             # Use fallback prompt without context
             history_text = cls.format_history(history or [])
             
-            # For simplicity, we can reuse SYSTEM_PROMPT with empty context or fallback
             return cls.NO_CONTEXT_PROMPT.format(
                 history=history_text,
                 query=query
@@ -241,14 +165,6 @@ RÉPONSE D'EXPERT (LOGIQUE) :"""
     ) -> str:
         """
         Format final response with citations
-        
-        Args:
-            response: Raw LLM response
-            search_results: Search results used
-            add_citations: Whether to add source citations
-            
-        Returns:
-            Formatted response
         """
         if not response:
             return cls.FALLBACK_RESPONSE

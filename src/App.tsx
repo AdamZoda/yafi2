@@ -11,7 +11,7 @@ import { apiService } from './lib/api';
 import { supabase } from './lib/supabase';
 import { ThemeProvider, useTheme } from './contexts/ThemeContext';
 import type { Message, Profile } from './types';
-import { ArrowRight, User, Lock, GraduationCap, ArrowLeft, Loader2, AlertCircle, Mail } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Loader2 } from 'lucide-react';
 import { clsx } from 'clsx';
 import { PremiumModal } from './components/PremiumModal';
 import { SupportTicket } from './components/SupportTicket';
@@ -86,11 +86,8 @@ function AppContent() {
 
   return (
     <BrowserRouter>
-<<<<<<< HEAD
-      <div className="h-screen flex flex-col bg-slate-50 font-sans text-slate-900">
-=======
       <div className="h-screen flex flex-col bg-slate-50 dark:bg-black font-sans text-slate-900 dark:text-slate-100 transition-colors duration-300">
->>>>>>> 3257fc1 (final)
+
         <Header
           profile={profile}
           onOpenProfile={() => setIsProfileOpen(true)}
@@ -161,135 +158,9 @@ export default function App() {
 }
 
 // =============================================
-<<<<<<< HEAD
-// AUTHENTICATION SCREEN (EMAIL & PASSWORD)
+// AUTHENTICATION SCREEN — CHATBOT STYLE
 // =============================================
-const LoginScreen = ({ onAuthSuccess, onBack }: { onAuthSuccess: (p: Profile) => void, onBack: () => void }) => {
-  const { theme } = useTheme();
-  const [isRegistering, setIsRegistering] = useState(false);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [fullName, setFullName] = useState('');
 
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setError(null);
-
-    try {
-      if (isRegistering) {
-        // --- INSCRIPTION ---
-        const { data: existing, error: checkError } = await supabase.from('users').select('id').eq('email', email).single();
-
-        if (checkError && checkError.code !== 'PGRST116') {
-          console.error("Check Error:", checkError);
-          throw new Error("Erreur lors de la vérification de l'email.");
-        }
-
-        if (existing) throw new Error("Cet email possède déjà un compte.");
-
-        const { data, error: insertError } = await supabase.from('users').insert({
-          full_name: fullName,
-          email: email,
-          password: password,
-          role: 'user'
-        }).select().single();
-
-        if (insertError) {
-          console.error("Insert Error:", insertError);
-          throw new Error("Erreur lors de la création du compte: " + insertError.message);
-        }
-
-        if (data) {
-          onAuthSuccess({
-            id: data.id,
-            name: data.full_name,
-            email: data.email,
-            role: data.role as 'user' | 'admin',
-            joinedAt: data.created_at,
-            is_premium: false
-          });
-        }
-
-      } else {
-        // --- CONNEXION ---
-        console.log("Attempting login for:", email);
-
-        const { data, error } = await supabase
-          .from('users')
-          .select('*')
-          .eq('email', email)
-          .eq('password', password)
-          .single();
-
-        if (error) {
-          console.error("Login Error:", error);
-          if (error.code === 'PGRST116') {
-            throw new Error("Email ou mot de passe incorrect.");
-          }
-          throw new Error("Erreur de connexion base de données.");
-        }
-
-        if (!data) {
-          throw new Error("Compte introuvable.");
-        }
-
-        console.log("Login successful:", data.id);
-
-        onAuthSuccess({
-          id: data.id,
-          name: data.full_name,
-          email: data.email,
-          role: data.role as 'user' | 'admin',
-          joinedAt: data.created_at,
-          is_premium: data.is_premium
-        });
-        // We set dailyCount in the main component after auth callback usually, 
-        // but for now the useEffect refresh will handle it.
-      }
-    } catch (err: any) {
-      console.error(err);
-      setError(err.message || "Une erreur technique est survenue.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-4">
-      <button onClick={onBack} className="absolute top-8 left-8 flex items-center gap-2 text-slate-400 hover:text-slate-600 transition-colors">
-        <ArrowLeft size={20} /> Retour
-      </button>
-
-      <div className="bg-white p-8 rounded-3xl shadow-xl w-full max-w-md animate-fade-in border border-slate-100">
-        <div className="text-center mb-8">
-          <div className={clsx("w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-4 mx-auto shadow-lg", theme.primary, theme.shadow)}>
-            <GraduationCap size={40} />
-          </div>
-          <h1 className="text-2xl font-bold text-slate-800">{isRegistering ? 'Nouveau Compte' : 'Bon retour !'}</h1>
-          <p className="text-slate-500">Connectez-vous pour accéder au Chatbot YAFI.</p>
-        </div>
-
-        <form onSubmit={handleSubmit} className="space-y-4">
-
-          {isRegistering && (
-            <div>
-              <label className="block text-sm font-medium text-slate-700 mb-1">Nom Complet</label>
-              <div className="relative">
-                <User className="absolute left-3 top-3.5 text-slate-400" size={18} />
-                <input
-                  type="text"
-                  value={fullName}
-                  onChange={(e) => setFullName(e.target.value)}
-                  placeholder="Ex: Ahmed Etudiant"
-                  className={clsx("w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 outline-none", `focus:ring-${theme.primary.split('-')[1]}-500`)}
-                  style={{ '--tw-ring-color': theme.primary.replace('bg-', 'var(--tw-colors-') } as React.CSSProperties}
-                  required
-                />
-=======
 // AUTHENTICATION SCREEN — CHATBOT STYLE
 // =============================================
 const LoginScreen = ({ onAuthSuccess, onBack }: { onAuthSuccess: (p: Profile) => void, onBack: () => void }) => {
@@ -487,72 +358,12 @@ const LoginScreen = ({ onAuthSuccess, onBack }: { onAuthSuccess: (p: Profile) =>
                 <span className={clsx("w-2 h-2 rounded-full animate-bounce", isDarkMode ? "bg-zinc-500" : "bg-slate-400")} style={{ animationDelay: '0ms' }} />
                 <span className={clsx("w-2 h-2 rounded-full animate-bounce", isDarkMode ? "bg-zinc-500" : "bg-slate-400")} style={{ animationDelay: '150ms' }} />
                 <span className={clsx("w-2 h-2 rounded-full animate-bounce", isDarkMode ? "bg-zinc-500" : "bg-slate-400")} style={{ animationDelay: '300ms' }} />
->>>>>>> 3257fc1 (final)
+
               </div>
             </div>
           )}
 
-<<<<<<< HEAD
-          <div>
-            <label className="block text-sm font-medium text-slate-700 mb-1">Email</label>
-            <div className="relative">
-              <Mail className="absolute left-3 top-3.5 text-slate-400" size={18} />
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="nom@exemple.com"
-                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 outline-none"
-                style={{ '--tw-ring-color': theme.primary.replace('bg-', 'var(--tw-colors-') } as React.CSSProperties}
-                required
-              />
-            </div>
-          </div>
 
-          <div>
-            <label className="block text-sm font-medium text-slate-700 mb-1">Mot de passe</label>
-            <div className="relative">
-              <Lock className="absolute left-3 top-3.5 text-slate-400" size={18} />
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="••••••••"
-                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 focus:ring-2 outline-none"
-                style={{ '--tw-ring-color': theme.primary.replace('bg-', 'var(--tw-colors-') } as React.CSSProperties}
-                required
-              />
-            </div>
-          </div>
-
-          {error && (
-            <div className="p-3 bg-red-50 text-red-600 text-sm rounded-lg flex items-center gap-2 animate-shake">
-              <AlertCircle size={16} />
-              {error}
-            </div>
-          )}
-
-          <button
-            type="submit"
-            disabled={loading}
-            className={clsx("w-full flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed py-3 rounded-xl font-bold text-white transition-all", theme.primary, theme.shadow)}
-          >
-            {loading ? <Loader2 className="animate-spin" /> : (
-              <>
-                {isRegistering ? "S'inscrire" : "Se connecter"}
-                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </>
-            )}
-          </button>
-        </form>
-
-        <button
-          onClick={() => { setIsRegistering(!isRegistering); setError(null); }}
-          className={clsx("w-full mt-6 text-sm text-center font-medium transition-colors text-slate-500 hover:text-slate-800")}
-        >
-          {isRegistering ? "J'ai déjà un compte ? Me connecter" : "Pas encore de compte ? M'inscrire"}
-        </button>
-=======
           <div ref={scrollRef} />
         </div>
 
@@ -603,7 +414,7 @@ const LoginScreen = ({ onAuthSuccess, onBack }: { onAuthSuccess: (p: Profile) =>
             {isRegistering ? "Déjà un compte ? Se connecter" : "Pas de compte ? S'inscrire"}
           </button>
         </div>
->>>>>>> 3257fc1 (final)
+
       </div>
     </div>
   );
@@ -637,10 +448,8 @@ const ChatLayout = ({
   const [currentSessionId, setCurrentSessionId] = useState<string | null>(null);
   const [messages, setMessages] = useState<Message[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-<<<<<<< HEAD
-=======
   const [currentKeywords, setCurrentKeywords] = useState("");
->>>>>>> 3257fc1 (final)
+
   const [sidebarRefreshKey, setSidebarRefreshKey] = useState(0);
   const [isRightSidebarOpen, setIsRightSidebarOpen] = useState(true);
 
@@ -649,15 +458,13 @@ const ChatLayout = ({
       setMessages([]);
       return;
     }
-<<<<<<< HEAD
-=======
 
     // CRITICAL: If we are CURRENTLY loading/streaming, do NOT reload from DB.
     // This prevents a new session creation in handleSendMessage from triggering a 
     // fetch that would overwrite the newly added optimistic message.
     if (isLoading) return;
 
->>>>>>> 3257fc1 (final)
+
     const loadMessages = async () => {
       const { data } = await supabase
         .from('messages')
@@ -704,12 +511,6 @@ const ChatLayout = ({
       created_at: new Date().toISOString(),
     };
 
-<<<<<<< HEAD
-    setMessages(prev => [...prev, tempUserMsg]);
-    setIsLoading(true);
-
-    try {
-=======
         setMessages(prev => [...prev, tempUserMsg]);
         setIsLoading(true);
 
@@ -718,7 +519,7 @@ const ChatLayout = ({
         setCurrentKeywords(kw);
         
         try {
->>>>>>> 3257fc1 (final)
+
       let sessionId = currentSessionId;
       if (!sessionId) {
         const { data: sessionData } = await supabase
@@ -755,26 +556,11 @@ const ChatLayout = ({
           const lastReq = lastRequestTime ? new Date(lastRequestTime) : new Date(0);
           const timeDiff = now.getTime() - lastReq.getTime();
           const minutesDiff = timeDiff / (1000 * 60);
-<<<<<<< HEAD
-
-          let newCount = requestCount + 1;
-
-          if (minutesDiff >= 30) {
-            newCount = 1; // Reset to 1 (this is the first new message of the block)
-          }
-
-          const newTimestamp = now.toISOString();
-
-          // Update State
-          updateRequestState(newCount, newTimestamp);
-
-          // Update DB
-=======
           let newCount = requestCount + 1;
           if (minutesDiff >= 30) newCount = 1;
           const newTimestamp = now.toISOString();
           updateRequestState(newCount, newTimestamp);
->>>>>>> 3257fc1 (final)
+
           supabase.from('users').update({
             daily_requests_count: newCount,
             last_request_timestamp: newTimestamp
@@ -784,52 +570,6 @@ const ChatLayout = ({
         }
       }
 
-<<<<<<< HEAD
-      const responseData = await apiService.sendMessage(messages, content, profile.id);
-      
-      // Update extracted profile if backend sent it
-      if (typeof responseData === 'object' && responseData.entities) {
-        setExtractedProfile(responseData.entities);
-      }
-      
-      // Handle both old string responses and new structured objects
-      const responseText = typeof responseData === 'object' ? responseData.response : responseData;
-      const metadata = typeof responseData === 'object' ? {
-        score: responseData.score,
-        ecole: responseData.ecole,
-        source: responseData.source,
-        response_time_ms: responseData.response_time_ms
-      } : undefined;
-
-      const aiMsg: Message = {
-        id: crypto.randomUUID(),
-        session_id: sessionId!,
-        role: 'assistant',
-        content: responseText,
-        created_at: new Date().toISOString(),
-        metadata: metadata
-      };
-
-      setMessages(prev => [...prev, aiMsg]);
-
-      if (sessionId) {
-        const { error: aiSaveError } = await supabase.from('messages').insert({
-          session_id: sessionId,
-          role: 'assistant',
-          content: responseText
-        });
-        if (aiSaveError) console.error('Error saving AI message:', aiSaveError);
-      }
-
-    } catch (error: any) {
-      console.error(error);
-      let errorText = "Désolé, je ne peux pas répondre pour le moment.";
-
-      if (error.message?.includes('429') || error.status === 429) {
-        errorText = "⚠️ Limite de quota atteinte. Le modèle est surchargé, veuillez patienter une minute avant de réessayer.";
-      }
-
-=======
       // --- STREAMING INITIATION ---
       const aiMsgId = crypto.randomUUID();
       const initialAiMsg: Message = {
@@ -844,46 +584,38 @@ const ChatLayout = ({
 
       let accumulatedResponse = "";
 
-      await apiService.streamMessage(
-        [...messages, tempUserMsg], // Send full current history
-        content, 
-        profile.id,
-        (chunk: string) => {
-          accumulatedResponse += chunk;
-          // Update the specific message in state
-          setMessages(prev => prev.map(m => 
-            m.id === aiMsgId ? { ...m, content: accumulatedResponse } : m
-          ));
-        },
-        async (data: any) => {
-          // Final complete message handler
-          if (data && data.entities) {
-            setExtractedProfile(data.entities);
-          }
-          
-          if (sessionId) {
-            const { error: aiSaveError } = await supabase.from('messages').insert({
-              session_id: sessionId,
-              role: 'assistant',
-              content: accumulatedResponse
-            });
-            if (aiSaveError) console.error('Error saving AI message:', aiSaveError);
-          }
+      // --- NON-STREAMING FALLBACK FOR DIAGNOSTIC ---
+      console.log("Sending non-streaming request for diagnostic...");
+      const data = await apiService.sendMessage([...messages, tempUserMsg], content, profile.id);
+      
+      if (data && data.response) {
+        accumulatedResponse = data.response;
+        setMessages(prev => prev.map(m => 
+          m.id === aiMsgId ? { ...m, content: accumulatedResponse } : m
+        ));
+        
+        if (data.entities) setExtractedProfile(data.entities);
+        
+        if (sessionId) {
+          await supabase.from('messages').insert({
+            session_id: sessionId,
+            role: 'assistant',
+            content: accumulatedResponse
+          });
         }
-      );
+      } else {
+        throw new Error("Empty response from server");
+      }
 
     } catch (error: any) {
       console.error(error);
->>>>>>> 3257fc1 (final)
+
       const errorMsg: Message = {
         id: crypto.randomUUID(),
         session_id: currentSessionId || 'temp',
         role: 'system',
-<<<<<<< HEAD
-        content: errorText,
-=======
         content: "Désolé, je ne peux pas répondre pour le moment (Erreur de flux).",
->>>>>>> 3257fc1 (final)
+
         created_at: new Date().toISOString()
       };
       setMessages(prev => [...prev, errorMsg]);
@@ -907,10 +639,8 @@ const ChatLayout = ({
       <ChatArea
         messages={messages}
         isLoading={isLoading}
-<<<<<<< HEAD
-=======
         keywords={currentKeywords}
->>>>>>> 3257fc1 (final)
+
         onSendMessage={handleSendMessage}
         userName={profile.name}
       />
@@ -945,11 +675,8 @@ const SupportChatLayout = ({
         onClose={() => setIsSidebarOpen(false)}
         extractedProfile={extractedProfile}
       />
-<<<<<<< HEAD
-      <div className="flex-1 p-6 bg-slate-50 overflow-hidden">
-=======
       <div className="flex-1 p-6 bg-slate-50 dark:bg-black overflow-hidden transition-colors">
->>>>>>> 3257fc1 (final)
+
         <SupportTicket profile={profile} />
       </div>
     </div>

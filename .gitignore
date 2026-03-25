@@ -27,8 +27,13 @@ dist-ssr
 # Environment and Secrets
 .env
 PUSH_GITHUB_SUCCESS.md
+.env.local
 
 # Large files and binaries
 *.exe
 OllamaSetup*.exe
 *.pdf
+backend/__pycache__/
+backend/yafi_vector_index.faiss
+backend/user_memory.json
+*.pyc

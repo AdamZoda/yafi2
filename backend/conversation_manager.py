@@ -10,11 +10,7 @@ from datetime import datetime
 class ConversationManager:
     """Manages conversation sessions and history"""
     
-<<<<<<< HEAD
-    def __init__(self, max_history: int = 10):
-=======
     def __init__(self, max_history: int = 15):
->>>>>>> 3257fc1 (final)
         """
         Initialize conversation manager
         
@@ -29,12 +25,6 @@ class ConversationManager:
     def add_message(self, session_id: str, role: str, content: str, metadata: Optional[Dict] = None):
         """
         Add a message to the conversation history
-        
-        Args:
-            session_id: Unique session identifier
-            role: 'user' or 'assistant'
-            content: Message content
-            metadata: Optional metadata (sources, scores, etc.)
         """
         if session_id not in self.sessions:
             self.sessions[session_id] = []
@@ -60,13 +50,6 @@ class ConversationManager:
     def get_history(self, session_id: str, last_n: Optional[int] = None) -> List[Dict]:
         """
         Get conversation history for a session
-        
-        Args:
-            session_id: Session identifier
-            last_n: Number of last messages to return (None = all)
-            
-        Returns:
-            List of messages
         """
         if session_id not in self.sessions:
             return []
@@ -78,20 +61,9 @@ class ConversationManager:
         
         return history
     
-<<<<<<< HEAD
-    def get_context_summary(self, session_id: str, max_messages: int = 4) -> str:
-=======
     def get_context_summary(self, session_id: str, max_messages: int = 8) -> str:
->>>>>>> 3257fc1 (final)
         """
         Get a formatted summary of recent conversation
-        
-        Args:
-            session_id: Session identifier
-            max_messages: Maximum messages to include
-            
-        Returns:
-            Formatted conversation context
         """
         history = self.get_history(session_id, last_n=max_messages)
         
@@ -101,11 +73,7 @@ class ConversationManager:
         context_lines = []
         for msg in history:
             role = "Utilisateur" if msg['role'] == 'user' else "Assistant"
-<<<<<<< HEAD
-            content = msg['content'][:150]  # Truncate long messages
-=======
-            content = msg['content'][:300]  # Increased from 150
->>>>>>> 3257fc1 (final)
+            content = msg['content'][:300]
             context_lines.append(f"{role}: {content}")
         
         return "\n".join(context_lines)
@@ -113,12 +81,6 @@ class ConversationManager:
     def get_last_topic(self, session_id: str) -> Optional[str]:
         """
         Extract the last topic discussed from conversation
-        
-        Args:
-            session_id: Session identifier
-            
-        Returns:
-            Last topic or None
         """
         history = self.get_history(session_id, last_n=2)
         
@@ -172,11 +134,7 @@ class ConversationManager:
 
 
 # Global instance
-<<<<<<< HEAD
-conversation_manager = ConversationManager(max_history=10)
-=======
 conversation_manager = ConversationManager(max_history=15)
->>>>>>> 3257fc1 (final)
 
 
 if __name__ == "__main__":

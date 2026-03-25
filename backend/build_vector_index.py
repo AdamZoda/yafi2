@@ -67,38 +67,21 @@ def chunk_qa_entry(qa: Dict, max_chunk_size: int = 500) -> List[Dict]:
 def process_knowledge_base(input_file: str, output_file: str, max_chunk_size: int = 400):
     """
     Process the knowledge base JSON and create chunks
-    
-    Args:
-        input_file: Path to yafi_knowledge_context.json
-        output_file: Path to save knowledge_chunks.json
-        max_chunk_size: Maximum characters per chunk
     """
-<<<<<<< HEAD
-    print(f"📖 Loading knowledge base from: {input_file}")
-=======
     print(f"Loading knowledge base from: {input_file}")
->>>>>>> 3257fc1 (final)
     
     with open(input_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
     qa_database = data.get('qa_database', [])
-<<<<<<< HEAD
-    print(f"✅ Loaded {len(qa_database)} Q&A entries")
-=======
     print(f"Loaded {len(qa_database)} Q&A entries")
->>>>>>> 3257fc1 (final)
     
     all_chunks = []
     
     for idx, qa in enumerate(qa_database, 1):
         chunks = chunk_qa_entry(qa, max_chunk_size)
         all_chunks.extend(chunks)
-<<<<<<< HEAD
-        print(f"  [{idx}/{len(qa_database)}] Processed: {qa['q'][:50]}... → {len(chunks)} chunks")
-=======
         print(f"  [{idx}/{len(qa_database)}] Processed: {qa['q'][:50]}... -> {len(chunks)} chunks")
->>>>>>> 3257fc1 (final)
     
     # Save chunks
     output_data = {
@@ -111,27 +94,15 @@ def process_knowledge_base(input_file: str, output_file: str, max_chunk_size: in
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(output_data, f, ensure_ascii=False, indent=2)
     
-<<<<<<< HEAD
-    print(f"\n💾 Saved {len(all_chunks)} chunks to: {output_file}")
-=======
     print(f"\nSaved {len(all_chunks)} chunks to: {output_file}")
->>>>>>> 3257fc1 (final)
     return all_chunks
 
 
 def build_vector_index(chunks_file: str, index_file: str):
     """
     Build FAISS index from chunks
-    
-    Args:
-        chunks_file: Path to knowledge_chunks.json
-        index_file: Path to save FAISS index
     """
-<<<<<<< HEAD
-    print(f"\n🔨 Building vector index...")
-=======
     print("\nBuilding vector index...")
->>>>>>> 3257fc1 (final)
     
     # Initialize embedding service
     service = EmbeddingService()
@@ -145,30 +116,11 @@ def build_vector_index(chunks_file: str, index_file: str):
     # Build index
     service.build_index(chunks, save_path=index_file)
     
-<<<<<<< HEAD
-    print(f"\n✅ Vector index built successfully!")
-=======
     print("\nVector index built successfully!")
->>>>>>> 3257fc1 (final)
     print(f"   Total vectors: {service.index.ntotal}")
     print(f"   Dimension: {service.dimension}")
     
     # Test search
-<<<<<<< HEAD
-    print(f"\n🧪 Testing search...")
-    test_query = "C'est quoi l'ENSA ?"
-    results = service.search(test_query, top_k=3, threshold=0.5)
-    
-    if results:
-        print(f"\n   Query: '{test_query}'")
-        print(f"   Found {len(results)} results:")
-        for i, result in enumerate(results, 1):
-            print(f"\n   [{i}] Score: {result['score']:.3f}")
-            print(f"       Category: {result['metadata']['category']}")
-            print(f"       Text: {result['text'][:100]}...")
-    else:
-        print("   ⚠️ No results found (threshold too high?)")
-=======
     print("\nTesting search...")
     test_query = "C'est quoi l'ENSA ?"
     try:
@@ -190,7 +142,6 @@ def build_vector_index(chunks_file: str, index_file: str):
             print("   No results found (threshold too high?)")
     except Exception as e:
         print(f"   Search test failed (encoding/display): {e}")
->>>>>>> 3257fc1 (final)
 
 
 def main():
@@ -202,11 +153,7 @@ def main():
     index_file = os.path.join(backend_dir, 'yafi_vector_index.faiss')
     
     print("=" * 60)
-<<<<<<< HEAD
-    print("🚀 YAFI Knowledge Base Vectorization")
-=======
     print("YAFI Knowledge Base Vectorization")
->>>>>>> 3257fc1 (final)
     print("=" * 60)
     
     # Step 1: Chunk the knowledge base
@@ -216,16 +163,12 @@ def main():
     build_vector_index(chunks_file, index_file)
     
     print("\n" + "=" * 60)
-<<<<<<< HEAD
-    print("✅ DONE! Vector search system ready.")
-=======
     print("DONE! Vector search system ready.")
->>>>>>> 3257fc1 (final)
     print("=" * 60)
-    print(f"\n📁 Files created:")
+    print(f"\nFiles created:")
     print(f"   - {chunks_file}")
     print(f"   - {index_file}")
-    print(f"\n💡 Next: Integrate into server.py")
+    print(f"\nNext: Integrate into server.py")
 
 
 if __name__ == "__main__":

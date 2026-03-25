@@ -14,10 +14,6 @@ class VectorKnowledgeBase:
     def __init__(self, chunks_file: str = None, index_file: str = None):
         """
         Initialize the vector knowledge base
-        
-        Args:
-            chunks_file: Path to knowledge_chunks.json
-            index_file: Path to FAISS index file
         """
         # Default paths
         backend_dir = os.path.dirname(os.path.abspath(__file__))
@@ -29,62 +25,31 @@ class VectorKnowledgeBase:
         
         # Load index if exists
         if os.path.exists(self.index_file) and os.path.exists(self.chunks_file):
-<<<<<<< HEAD
-            print(f"📂 Loading vector index from: {self.index_file}")
-            self.service.load_index(self.index_file, self.chunks_file)
-            print(f"✅ Vector knowledge base ready ({self.service.index.ntotal} vectors)")
-        else:
-            print(f"⚠️ Vector index not found. Run build_vector_index.py first.")
-=======
             print(f"Loading vector index from: {self.index_file}")
             self.service.load_index(self.index_file, self.chunks_file)
             print(f"Vector knowledge base ready ({self.service.index.ntotal} vectors)")
         else:
             print(f"Vector index not found. Run build_vector_index.py first.")
->>>>>>> 3257fc1 (final)
             self.service = None
     
     def search(self, query: str, top_k: int = 5, threshold: float = 0.6) -> Optional[List[Dict]]:
         """
         Perform semantic search on the knowledge base
-        
-        Args:
-            query: User query
-            top_k: Number of results to return
-            threshold: Minimum similarity score (0-1)
-            
-        Returns:
-            List of results with chunks and scores, or None
         """
         if not self.service:
-<<<<<<< HEAD
-            print("⚠️ Vector search not available")
-=======
             print("Vector search not available")
->>>>>>> 3257fc1 (final)
             return None
         
         try:
             results = self.service.search(query, top_k=top_k, threshold=threshold)
             return results
         except Exception as e:
-<<<<<<< HEAD
-            print(f"❌ Error during vector search: {e}")
-=======
             print(f"Error during vector search: {e}")
->>>>>>> 3257fc1 (final)
             return None
     
     def find_best_match(self, user_query: str, threshold: float = 0.6) -> Optional[Dict]:
         """
         Find the best matching answer for a user query
-        
-        Args:
-            user_query: User's question
-            threshold: Minimum confidence score
-            
-        Returns:
-            Dict with 'question', 'answer', 'category', 'score' or None
         """
         results = self.search(user_query, top_k=3, threshold=threshold)
         
@@ -101,16 +66,9 @@ class VectorKnowledgeBase:
             'score': best['score']
         }
     
-    def get_context_for_llm(self, query: str, top_k: int = 3) -> str:
+    def get_context_for_llm(self, query: str, top_k: int = 6) -> str:
         """
         Get formatted context for LLM prompting
-        
-        Args:
-            query: User query
-            top_k: Number of context chunks to retrieve
-            
-        Returns:
-            Formatted context string
         """
         results = self.search(query, top_k=top_k, threshold=0.5)
         
@@ -135,11 +93,7 @@ class LegacyRAGKnowledge:
     """Legacy TF-IDF based knowledge (fallback)"""
     
     def __init__(self):
-<<<<<<< HEAD
-        print("⚠️ Using legacy TF-IDF knowledge base (fallback)")
-=======
         print("Using legacy TF-IDF knowledge base (fallback)")
->>>>>>> 3257fc1 (final)
         # Import old implementation if needed
         from rag_knowledge import YAFIKnowledgeBase
         self.kb = YAFIKnowledgeBase()

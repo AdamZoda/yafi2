@@ -1,9 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
-import { Bot, UserCircle, Menu } from 'lucide-react';
-=======
 import { Bot, UserCircle, Menu, Sun, Moon } from 'lucide-react';
->>>>>>> 3257fc1 (final)
 import type { Profile } from '../types';
 import { useTheme } from '../contexts/ThemeContext';
 import { clsx } from 'clsx';
@@ -16,17 +12,10 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ profile, onOpenProfile, onUpgrade, onToggleSidebar }) => {
-<<<<<<< HEAD
-    const { theme } = useTheme();
-
-    return (
-        <header className={clsx("h-16 flex items-center justify-between px-4 sm:px-6 sticky top-0 z-10 shadow-sm backdrop-blur-md border-b", theme.border, "bg-white/80")}>
-=======
     const { theme, isDarkMode, toggleDarkMode } = useTheme();
 
     return (
         <header className={clsx("h-16 flex items-center justify-between px-4 sm:px-6 sticky top-0 z-10 shadow-sm backdrop-blur-md border-b", theme.border, "bg-white/80 dark:bg-black/80")}>
->>>>>>> 3257fc1 (final)
             <div className="flex items-center gap-2 sm:gap-3">
                 <button
                     onClick={onToggleSidebar}
@@ -35,23 +24,14 @@ export const Header: React.FC<HeaderProps> = ({ profile, onOpenProfile, onUpgrad
                 >
                     <Menu size={24} />
                 </button>
-<<<<<<< HEAD
-                <img src="/yafi.png" alt="YAFI Logo" className={clsx("w-10 h-10 rounded-xl shadow-lg object-cover", theme.shadow)} />
-                <div>
-                    <h1 className="font-bold text-slate-800 text-lg leading-tight">YAFI Chatbot</h1>
-=======
                 <img src="/yafi.png" alt="YAFI Logo" className="w-10 h-10 object-contain" />
                 <div>
                     <h1 className="font-bold text-slate-800 dark:text-white text-lg leading-tight">YAFI Chatbot</h1>
->>>>>>> 3257fc1 (final)
                     <p className={clsx("text-xs font-medium", theme.accent)}>EST Safi Edition</p>
                 </div>
             </div>
 
             <div className="flex items-center gap-4">
-<<<<<<< HEAD
-                <button className={clsx("hidden md:flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-colors", theme.secondary, theme.accent)}>
-=======
                 <button
                     onClick={toggleDarkMode}
                     className={clsx(
@@ -64,21 +44,14 @@ export const Header: React.FC<HeaderProps> = ({ profile, onOpenProfile, onUpgrad
                 </button>
 
                 <button className={clsx("hidden md:flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-colors", isDarkMode ? theme.bg_dark_soft : theme.secondary, isDarkMode ? theme.text_dark : theme.accent)}>
->>>>>>> 3257fc1 (final)
                     <Bot size={18} />
                     <span>Assistant Actif</span>
                 </button>
 
                 {profile && (
-<<<<<<< HEAD
-                    <div className="flex items-center gap-3 pl-4 border-l border-slate-200">
-                        {profile.is_premium ? (
-                            <div className="hidden sm:flex items-center gap-1 px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold border border-amber-200 shadow-sm">
-=======
                     <div className="flex items-center gap-3 pl-4 border-l border-slate-200 dark:border-slate-700">
                         {profile.is_premium ? (
                             <div className="hidden sm:flex items-center gap-1 px-3 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 rounded-full text-xs font-bold border border-amber-200 dark:border-amber-700 shadow-sm">
->>>>>>> 3257fc1 (final)
                                 <span className="text-sm">👑</span> PLUS
                             </div>
                         ) : (
@@ -90,18 +63,6 @@ export const Header: React.FC<HeaderProps> = ({ profile, onOpenProfile, onUpgrad
                             </button>
                         )}
                         <div className="text-right hidden sm:block">
-<<<<<<< HEAD
-                            <p className="text-sm font-bold text-slate-700">{profile.name}</p>
-                            <p className="text-xs text-slate-500 uppercase">{profile.role}</p>
-                        </div>
-                        <button
-                            onClick={onOpenProfile}
-                            className="p-1 hover:bg-slate-100 rounded-full transition-colors relative group"
-                            title="Modifier Profil"
-                        >
-                            <UserCircle size={32} className="text-slate-400 group-hover:text-slate-600" />
-                            <span className="absolute top-0 right-0 w-2.5 h-2.5 bg-green-500 border-2 border-white rounded-full"></span>
-=======
                             <p className="text-sm font-bold text-slate-700 dark:text-slate-200">{profile.name}</p>
                             <p className="text-xs text-slate-500 dark:text-slate-400 uppercase">{profile.role}</p>
                         </div>
@@ -112,7 +73,6 @@ export const Header: React.FC<HeaderProps> = ({ profile, onOpenProfile, onUpgrad
                         >
                             <UserCircle size={32} className="text-slate-400 dark:text-slate-500 group-hover:text-slate-600 dark:group-hover:text-slate-300" />
                             <span className="absolute top-0 right-0 w-2.5 h-2.5 bg-green-500 border-2 border-white dark:border-slate-900 rounded-full"></span>
->>>>>>> 3257fc1 (final)
                         </button>
                     </div>
                 )}
