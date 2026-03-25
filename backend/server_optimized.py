@@ -693,7 +693,7 @@ DONNÉES EXPERTES :
                 
                 for chunk in llm_engine.ask_stream(user_message, expert_context=system_prompt):
                      print(chunk, end="", flush=True)
-                     yield json.dumps({"token": chunk}) + "\n"
+                     yield chunk
                 print("\n[DEBUG] Fin de la génération.")
             
             # Using text/event-stream for maximum compatibility
