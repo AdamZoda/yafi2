@@ -687,6 +687,9 @@ DONNÉES EXPERTES :
         if should_stream:
             # Re-wrap in the dynamic engine
             def humanized_stream():
+                # Signal immédiat pour "réveiller" Vercel et éviter le timeout de 30s
+                yield json.dumps({"token": ""}) + "\n"
+                
                 for chunk in llm_engine.ask_stream(user_message, expert_context=system_prompt):
                      yield chunk
             # Using application/x-ndjson (Newline Delimited JSON) which matches our api.ts parser
