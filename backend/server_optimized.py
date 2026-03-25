@@ -18,7 +18,7 @@ import random
 import time
 import threading
 import unicodedata
-from flask import Flask, request, jsonify, Response
+from flask import Flask, request, jsonify, Response, stream_with_context
 from flask_cors import CORS
 from pyswip import Prolog
 
@@ -689,6 +689,8 @@ DONNÉES EXPERTES :
             # Re-wrap in the dynamic engine
             def humanized_stream():
                 print("\n[DEBUG] Début de la génération IA...")
+                yield json.dumps({"token": "🧠 *(Analyse en cours...)*\n\n"}) + "\n"
+                
                 for chunk in llm_engine.ask_stream(user_message, expert_context=system_prompt):
                      print(chunk, end="", flush=True)
                      yield json.dumps({"token": chunk}) + "\n"
