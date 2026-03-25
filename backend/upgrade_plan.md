@@ -64,11 +64,12 @@ La base est actuellement bonne, mais elle peut être étendue avec des données 
 
 ### 4.2. "Intent Classification" avant le Traitement
 *   **Le problème** : Actuellement, `server.py` utilise une longue série de `if/elif` pour déterminer si on est dans un calcul de note, une recherche d'école, ou une salutation. Si les requêtes deviennent très complexes en langage naturel, ces `if` vont casser.
-*   **Amélioration** : Utiliser un petit modèle d'Intelligence Artificielle de[x] Optimization: Hybrid AI Engine (Turbo-Lite)
-[x] Reliability: Streaming Protocol Fixed (v2.6 NDJSON)
-[x] Deployment: GitHub & Vercel Sync Complete
-[x] Security: CORS & Ngrok Bypass Active
- classification d'intentions rapide (ex: `scikit-learn` ou un mini modèle LLM local) directement au début de la route `/chat`. Le modèle catégorise le message entrant en une classe claire : `["CALCULATE_SCORE", "COMPARE_SCHOOLS", "QUIZ", "GENERAL_CHAT"]`. Le code python pourra ensuite router l'action avec une précision parfaite.
+*- [ ] **EST Integration** : Ajouter les informations sur l'École Supérieure de Technologie (Safi, Casa, GI, TM).
+    - [x] Ajouter les faits Prolog (ESTS Safi: GI, TM, GIM, GESA, Mécatronique, etc.).
+    - [x] Mettre à jour `KNOWN_ENTITIES` et handlers dans le backend.
+    - [/] Vérifier les requêtes "EST à Safi" et "Score EST".
+nt très complexes en langage naturel, ces `if` vont casser.
+*   **Amélioration** : Utiliser un petit modèle d'Intelligence Artificielle de classification d'intentions rapide (ex: `scikit-learn` ou un mini modèle LLM local) directement au début de la route `/chat`. Le modèle catégorise le message entrant en une classe claire : `["CALCULATE_SCORE", "COMPARE_SCHOOLS", "QUIZ", "GENERAL_CHAT"]`. Le code python pourra ensuite router l'action avec une précision parfaite.
 
 ---
 

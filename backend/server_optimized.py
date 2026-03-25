@@ -18,7 +18,7 @@ import random
 import time
 import threading
 import unicodedata
-from flask import Flask, request, jsonify, Response, stream_with_context
+from flask import Flask, request, jsonify, Response
 from flask_cors import CORS
 from pyswip import Prolog
 
@@ -37,14 +37,7 @@ load_dotenv(os.path.join(root_dir, ".env"))
 sys.path.insert(0, base_dir)
 
 app = Flask(__name__)
-CORS(app)
-
-@app.after_request
-def add_cors_headers(response):
-    response.headers['Access-Control-Allow-Origin'] = '*'
-    response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization,ngrok-skip-browser-warning'
-    response.headers['Access-Control-Allow-Methods'] = 'GET,PUT,POST,DELETE,OPTIONS'
-    return response
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # ============================================================================
 # INITIALIZATION
@@ -687,9 +680,6 @@ DONNÉES EXPERTES :
         if should_stream:
             # Re-wrap in the dynamic engine
             def humanized_stream():
-                # Signal immédiat pour "réveiller" Vercel et éviter le timeout de 30s
-                yield json.dumps({"token": ""}) + "\n"
-                
                 for chunk in llm_engine.ask_stream(user_message, expert_context=system_prompt):
                      yield chunk
             # Using application/x-ndjson (Newline Delimited JSON) which matches our api.ts parser

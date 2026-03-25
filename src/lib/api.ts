@@ -8,8 +8,7 @@ export const apiService = {
             const response = await fetch(`${PYTHON_API_URL}/chat`, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
-                    'ngrok-skip-browser-warning': 'true'
+                    'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
                     message: newMessage,
@@ -34,9 +33,9 @@ export const apiService = {
     },
 
     async streamMessage(
-        history: Message[], 
-        newMessage: string, 
-        userId: string, 
+        history: Message[],
+        newMessage: string,
+        userId: string,
         onChunk: (chunk: string) => void,
         onComplete: (fullResponse: any) => void
     ) {
@@ -44,10 +43,7 @@ export const apiService = {
         try {
             const response = await fetch(`${PYTHON_API_URL}/chat`, {
                 method: 'POST',
-                headers: { 
-                    'Content-Type': 'application/json',
-                    'ngrok-skip-browser-warning': 'any'
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     message: newMessage,
                     userId: userId,
@@ -74,7 +70,7 @@ export const apiService = {
 
             while (true) {
                 const { done, value } = await reader.read();
-                
+
                 if (value) {
                     buffer += decoder.decode(value, { stream: true });
                     const lines = buffer.split('\n');
@@ -104,17 +100,17 @@ export const apiService = {
                     // One last decode to flush
                     const lastValue = decoder.decode();
                     if (lastValue && lastValue.trim()) {
-                         try {
+                        try {
                             const data = JSON.parse(lastValue);
                             if (data.response) {
                                 totalAccumulated += data.response;
                                 onChunk(data.response);
                             }
                             safeOnComplete(data);
-                         } catch(e) {
+                        } catch (e) {
                             // If we can't parse the last chunk, still complete with what we have
                             safeOnComplete({ response: totalAccumulated, done: true });
-                         }
+                        }
                     } else {
                         // Stream ended cleanly, call safeOnComplete with accumulated data
                         if (totalAccumulated) {
