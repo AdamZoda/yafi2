@@ -584,28 +584,27 @@ const ChatLayout = ({
 
       let accumulatedResponse = "";
 
-      // --- NON-STREAMING FALLBACK FOR DIAGNOSTIC ---
-      console.log("Sending non-streaming request for diagnostic...");
-      const data = await apiService.sendMessage([...messages, tempUserMsg], content, profile.id);
-      
-      if (data && data.response) {
-        accumulatedResponse = data.response;
-        setMessages(prev => prev.map(m => 
-          m.id === aiMsgId ? { ...m, content: accumulatedResponse } : m
-        ));
-        
-        if (data.entities) setExtractedProfile(data.entities);
-        
-        if (sessionId) {
-          await supabase.from('messages').insert({
-            session_id: sessionId,
-            role: 'assistant',
-            content: accumulatedResponse
-          });
+      await apiService.streamMessage(
+        [...messages, tempUserMsg], 
+        content, 
+        profile.id,
+        (chunk: string) => {
+          accumulatedResponse += chunk;
+          setMessages(prev => prev.map(m => 
+            m.id === aiMsgId ? { ...m, content: accumulatedResponse } : m
+          ));
+        },
+        async (data: any) => {
+          if (data && data.entities) setExtractedProfile(data.entities);
+          if (sessionId) {
+            await supabase.from('messages').insert({
+              session_id: sessionId,
+              role: 'assistant',
+              content: accumulatedResponse
+            });
+          }
         }
-      } else {
-        throw new Error("Empty response from server");
-      }
+      );
 
     } catch (error: any) {
       console.error(error);
