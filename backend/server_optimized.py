@@ -39,6 +39,14 @@ sys.path.insert(0, base_dir)
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
 
+@app.after_request
+def add_cors_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization,ngrok-skip-browser-warning'
+    response.headers['Access-Control-Allow-Methods'] = 'GET,PUT,POST,DELETE,OPTIONS'
+    return response
+
+
 # ============================================================================
 # INITIALIZATION
 # ============================================================================
@@ -680,10 +688,14 @@ DONNÉES EXPERTES :
         if should_stream:
             # Re-wrap in the dynamic engine
             def humanized_stream():
+                print("\n[DEBUG] Début de la génération IA...")
                 for chunk in llm_engine.ask_stream(user_message, expert_context=system_prompt):
-                     yield chunk
-            # Using application/x-ndjson (Newline Delimited JSON) which matches our api.ts parser
-            return Response(stream_with_context(humanized_stream()), mimetype='application/x-ndjson')
+                     print(chunk, end="", flush=True)
+                     yield json.dumps({"token": chunk}) + "\n"
+                print("\n[DEBUG] Fin de la génération.")
+            
+            # Using text/event-stream for maximum compatibility
+            return Response(stream_with_context(humanized_stream()), mimetype='text/event-stream')
         else:
             final_resp = llm_engine.ask(user_message, expert_context=system_prompt)
             return jsonify({"response": final_resp, "source": source_detected or "hybrid_axe"})
