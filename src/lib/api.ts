@@ -44,7 +44,10 @@ export const apiService = {
         try {
             const response = await fetch(`${PYTHON_API_URL}/chat`, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'ngrok-skip-browser-warning': 'any'
+                },
                 body: JSON.stringify({
                     message: newMessage,
                     userId: userId,
