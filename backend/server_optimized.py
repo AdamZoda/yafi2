@@ -18,7 +18,7 @@ import random
 import time
 import threading
 import unicodedata
-from flask import Flask, request, jsonify, Response
+from flask import Flask, request, jsonify, Response, stream_with_context
 from flask_cors import CORS
 from pyswip import Prolog
 
@@ -37,7 +37,14 @@ load_dotenv(os.path.join(root_dir, ".env"))
 sys.path.insert(0, base_dir)
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app)
+
+@app.after_request
+def add_cors_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type,Authorization,ngrok-skip-browser-warning'
+    response.headers['Access-Control-Allow-Methods'] = 'GET,PUT,POST,DELETE,OPTIONS'
+    return response
 
 # ============================================================================
 # INITIALIZATION
