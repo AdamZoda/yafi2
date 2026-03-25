@@ -37,7 +37,7 @@ load_dotenv(os.path.join(root_dir, ".env"))
 sys.path.insert(0, base_dir)
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # ============================================================================
 # INITIALIZATION
